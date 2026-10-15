@@ -5,159 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momdoマッサージ整体｜福岡市城南区七隈</title>
     <style>
+        /* ==========================================================================
+           🎨 サイバーテック・コアカラー＆バックグラウンド定義
+           ========================================================================== */
         :root {
-            --bg-dark: #000c24;
-            --bg-gradient: radial-gradient(circle at center, #001f5c 0%, #000c24 100%);
-            --gold: #d4af37;
-            --neon-blue: #00f0ff;
-            --text-white: #ffffff;
-            --text-gray: #b0c4de;
+            --bg-base: #000511;       /* 漆黒の宇宙空間 */
+            --sapphire: #001238;      /* 深淵のサファイアブルー */
+            --gold: #e5c158;          /* 輝く高純度ゴールド */
+            --gold-glow: rgba(229, 193, 88, 0.4);
+            --neon-cyan: #00f0ff;     /* 体をハックするネオンシアン */
+            --cyan-glow: rgba(0, 240, 255, 0.5);
+            --text-main: #ffffff;
+            --text-sub: #8fa3cc;
         }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        
         body {
-            background: var(--bg-dark); background: var(--bg-gradient); color: var(--text-white);
-            font-family: Arial, sans-serif; line-height: 1.7; overflow-x: hidden;
+            background-color: var(--bg-base);
+            background-image: 
+                radial-gradient(circle at 50% 30%, var(--sapphire) 0%, var(--bg-base) 70%),
+                linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            color: var(--text-main);
+            font-family: 'Times New Roman', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            line-height: 1.8;
+            overflow-x: hidden;
+            letter-spacing: 0.05em;
         }
+
         a { color: inherit; text-decoration: none; }
-        section { padding: 50px 20px; max-width: 800px; margin: 0 auto; border-bottom: 1px solid rgba(212, 175, 55, 0.1); }
-        .section-title { font-size: 24px; color: var(--gold); text-align: center; margin-bottom: 30px; letter-spacing: 2px; }
-        .btn-gold { display: inline-block; padding: 12px 30px; background: transparent; color: var(--gold); border: 2px solid var(--gold); border-radius: 4px; font-weight: bold; transition: all 0.3s; cursor: pointer; text-align: center; }
-        .btn-gold:hover { background: var(--gold); color: var(--bg-dark); }
-        .btn-neon { display: inline-block; padding: 12px 30px; background: transparent; color: var(--neon-blue); border: 2px solid var(--neon-blue); border-radius: 4px; font-weight: bold; transition: all 0.3s; }
-        .btn-neon:hover { background: var(--neon-blue); color: var(--bg-dark); box-shadow: 0 0 15px var(--neon-blue); }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; max-width: 1200px; margin: 0 auto; }
-        .hero { text-align: center; padding: 60px 20px; }
-        .hero-title { font-size: 36px; font-weight: 700; line-height: 1.4; margin-bottom: 20px; }
-        .gateways { display: grid; grid-template-columns: 1fr; gap: 20px; }
-        .gate-card { border: 1px solid rgba(255,255,255,0.1); padding: 25px 15px; text-align: center; border-radius: 8px; background: rgba(255,255,255,0.02); }
-        .gate-card.explorer { border-color: var(--neon-blue); }
-        .voice-card { background: rgba(255,255,255,0.03); padding: 20px; border-left: 3px solid var(--gold); margin-bottom: 15px; }
-        .price-cat { color: var(--gold); font-size: 18px; margin: 20px 0 10px; border-bottom: 1px solid rgba(212,175,55,0.2); }
-        .price-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .access-box { text-align: center; background: rgba(0, 31, 92, 0.3); border: 1px solid rgba(212, 175, 55, 0.2); padding: 25px 15px; border-radius: 8px; }
-        .cta-buttons { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
-        .btn-tel { background: #d4af37; color: #000c24; font-weight: bold; padding: 15px; border-radius: 4px; text-align: center; }
-        .btn-line { background: #06C755; color: #fff; font-weight: bold; padding: 15px; border-radius: 4px; text-align: center; }
-        .blog-card { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 6px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.05); }
-        .blog-tag { display: inline-block; font-size: 11px; background: rgba(212, 175, 55, 0.2); color: var(--gold); padding: 2px 8px; border-radius: 3px; margin-bottom: 10px; }
+
+        section {
+            padding: 80px 24px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.05);
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 50px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px var(--gold-glow);
+            font-weight: 600;
+        }
+        .section-title.cyan {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 15px var(--cyan-glow);
+        }
+
+        .btn-gold {
+            display: inline-block;
+            padding: 16px 36px;
+            background: rgba(0, 5, 17, 0.6);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(229, 193, 88, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        .btn-gold:hover {
+            background: var(--gold);
+            color: var(--bg-base);
+            box-shadow: 0 0 25px var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-neon {
+            display: inline-block;
+            padding: 16px 36px;
+            background: rgba(0, 5, 17, 0.6);
+            color: var(--neon-cyan);
+            border: 1px solid var(--neon-cyan);
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+            backdrop-filter: blur(5px);
+        }
+        .btn-neon:hover {
+            background: var(--neon-cyan);
+            color: var(--bg-base);
+            box-shadow: 0 0 30px var(--neon-cyan);
+            transform: translateY(-2px);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.08);
+        }
+        .logo-text {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 8px;
+            color: var(--text-main);
+            text-shadow: 0 0 10px rgba(255,255,255,0.3);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 24px 140px;
+            position: relative;
+        }
+        .hero-subtitle {
+            color: var(--gold);
+            font-size: 14px;
+            letter-spacing: 6px;
+            margin-bottom: 25px;
+            text-shadow: 0 0 8px var(--gold-glow);
+            font-weight: 600;
+        }
+        .hero-title {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 35px;
+            letter-spacing: 4px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+        .hero-desc {
+            color: var(--text-sub);
+            max-width: 650px;
+            margin: 0 auto 50px;
+            font-size: 15px;
+            line-height: 2;
+        }
+        .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .gateways {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 35px;
+            margin-top: 20px;
+        }
+        .gate-card {
+            border: 1px solid rgba(229, 193, 88, 0.2);
+            padding: 45px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0, 18, 56, 0.6) 0%, rgba(0, 5, 17, 0.8) 100%);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .gate-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--gold);
+        }
+        .gate-card.explorer {
+            border-color: rgba(0, 240, 255, 0.3);
+            background: linear-gradient(135deg, rgba(0, 30, 80, 0.4) 0%, rgba(0, 5, 17, 0.9) 100%);
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.05);
+        }
+        .gate-card.explorer::before {
+            background: var(--neon-cyan);
+        }
+        .gate-card h3 { font-size: 22px; margin-bottom: 15px; letter-spacing: 2px; }
+        .gate-card.explorer h3 { color: var(--neon-cyan); text-shadow: 0 0 10px var(--cyan-glow); }
+        .gate-card p { font-size: 14px; color: var(--text-sub); margin-bottom: 35px; }
+
+        .voice-card {
+            background: rgba(0, 18, 56, 0.4);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 30px;
+            border-left: 4px solid var(--gold);
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        .voice-meta { font-size: 12px; color: var(--gold); margin-bottom: 8px; letter-spacing: 1px; }
+
+        .price-cat {
+            color: var(--gold);
+            font-size: 16px;
+            margin: 40px 0 15px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border-left: 2px solid var(--gold);
+            padding-left: 12px;
+            font-weight: bold;
+        }
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+        .price-row:hover { background: rgba(0, 240, 255, 0.02); }
+
+        /* コクピット風アクセスボックス */
+        .access-box {
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0, 18, 56, 0.8) 0%, rgba(0, 5, 17, 0.9) 100%);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            padding: 50px 30px;
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.05);
+            position: relative;
+        }
+        .access-box h3 { color: var(--gold); letter-spacing: 2px; margin-bottom: 20px; font-size: 22px; }
+        .access-box p { color: var(--text-sub); margin-bottom: 12px; font-size: 15px; }
+
+        .btn-tel { background: var(--gold); color: var(--bg-base); font-weight: bold; padding: 16px; border: none; display: block; text-align: center; width: 100%; letter-spacing: 1px; box-shadow: 0 0 15px var(--gold-glow); transition: all 0.3s; }
+        .btn-tel:hover { transform: translateY(-2px); box-shadow: 0 0 25px var(--gold); }
+        .btn-line { background: #06C755; color: #ffffff; font-weight: bold; padding: 16px; border: none; display: block; text-align: center; width: 100%; letter-spacing: 1px; box-shadow: 0 0 15px rgba(6, 199, 85, 0.3); transition: all 0.3s; }
+        .btn-line:hover { transform: translateY(-2px); box-shadow: 0 0 25px #06C755; }
+
+        .blog-card {
+            background: rgba(0, 18, 56, 0.3);
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.03);
+        }
+        .blog-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: rgba(229, 193, 88, 0.15);
+            color: var(--gold);
+            padding: 3px 10px;
+            border-radius: 2px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+        .blog-card.manga .blog-tag {
+            background: rgba(0, 240, 255, 0.15);
+            color: var(--neon-cyan);
+        }
+
         @media (min-width: 768px) {
-            .hero-title { font-size: 52px; }
+            .hero-title { font-size: 56px; }
+            .hero-cta-group { flex-direction: row; max-width: 600px; }
+            .hero-cta-group a { flex: 1; }
             .gateways { grid-template-columns: 1fr 1fr; }
-            .cta-buttons { flex-direction: row; justify-content: center; }
-            .cta-buttons a { width: 240px; }
+            .hero-cta-group-access { display: flex; gap: 20px; max-width: 500px; margin: 30px auto 0; }
+            .hero-cta-group-access a { flex: 1; margin-top: 0 !important; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <div style="font-size:24px; font-weight:bold; letter-spacing:3px;">MOMDO</div>
-        <div style="font-size:12px; color:var(--gold);">福岡市城南区七隈｜金山駅徒歩2分</div>
+        <div class="logo-text">MOMDO</div>
+        <div style="font-size: 13px; color: var(--gold); letter-spacing: 2px;">七隈 | 金山駅徒歩2分</div>
     </header>
 
-    <!-- 01｜ファーストビュー -->
-    <section class="hero" style="border-bottom:none;">
-        <p style="color:var(--gold); letter-spacing:2px; margin-bottom:10px;">MOMDO MASSAGE & BODYWORK</p>
-        <h1 class="hero-title">こんな施術、<br><span style="color:var(--gold);">受けたことがない。</span></h1>
-        <p style="color:var(--text-gray); max-width:600px; margin:0 auto 30px;">身体の見方が変わる。痛む場所だけでなく、筋肉・関節・姿勢・動きのつながりに目を向ける。身体を知ることから、Momdoの施術が始まります。</p>
-        <div class="cta-buttons" style="margin-top:0;">
-            <a href="#gateways" class="btn-gold">お悩み・構造から探す</a>
-            <a href="#access" class="btn-gold" style="background:var(--gold); color:var(--bg-dark);">今すぐ予約する</a>
-        </div>
-    </section>
-
-    <!-- 02｜Momdoの考え方 -->
-    <section id="concept">
-        <h2 class="section-title">Momdoの考え方</h2>
-        <div style="text-align:center; max-width:700px; margin:0 auto;">
-            <p style="font-size:20px; color:var(--gold); margin-bottom:15px;">「痛む場所＝原因、ではありません。」</p>
-            <p style="color:var(--text-gray);">肩こり、腰痛、膝の痛み。それは単なる「痛む場所」だけが原因ではないかもしれません。身体はすべて繋がっています。Momdoは解剖学に基づいたアプローチで、根本からの改善を目指します。</p>
-        </div>
-    </section>
-
-    <!-- 03｜2つの入口 -->
-    <section id="gateways">
-        <h2 class="section-title">2つの入口</h2>
-        <div class="gateways">
-            <div class="gate-card">
-                <h3>お悩みから探す</h3>
-                <p style="font-size:14px; color:var(--text-gray); margin:15px 0 25px;">肩こり、腰痛、姿勢の歪みなど、今抱えている具体的な症状から原因とケアを探ります。</p>
-                <a href="#access" class="btn-gold">お悩みから探す</a>
-            </div>
-            <div class="gate-card explorer">
-                <h3 style="color:var(--neon-blue);">身体を知る｜BODY EXPLORER</h3>
-                <p style="font-size:14px; color:var(--text-gray); margin:15px 0 25px;">人体メカニズムをハックする。筋肉・関節・姿勢・動作がどう関係しているかを紐解くコンテンツ。</p>
-                <a href="#explorer" class="btn-neon">BODY EXPLORER (試作版)</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 04 & 05｜施術 & BODY EXPLORER -->
-    <section id="explorer">
-        <h2 class="section-title" style="color:var(--neon-blue);">BODY EXPLORER</h2>
-        <div style="text-align:center;">
-            <p style="color:var(--text-gray); margin-bottom:20px;">気になる部位を選択すると、連動して働く他の筋肉や関節がハイライトされる体験コンテンツ。<br><span style="color:var(--neon-blue); font-size:13px;">※現在、第3段階に向けて「肩・肩甲骨」の連動モジュールを試作開発中です。</span></p>
-        </div>
-    </section>
-
-    <!-- 06｜Momdoが生まれた理由 -->
-    <section id="story">
-        <h2 class="section-title">Momdoが生まれた理由</h2>
-        <div style="max-width:700px; margin:0 auto; color:var(--text-gray);">
-            <p style="margin-bottom:15px;">これまでの整骨院・整体の現場での長い経験の中で、どこに行っても悩みが解決せず、長年同じ痛みを抱え続けている多くの方々に出会ってきました。</p>
-            <p>「その場しのぎではなく、お客様自身が身体の仕組みを理解し、納得できる場所を作りたい。」その強い想いからベースを科学的に学び続け、誠実に向き合います。</p>
-        </div>
-    </section>
-
-    <!-- 07｜お客様の声 -->
-    <section id="voices">
-        <h2 class="section-title">お客様の声</h2>
-        <div class="voice-card">
-            <div style="font-size:12px; color:var(--gold); margin-bottom:5px;">40代 女性 / デスクワーク</div>
-            <p>「長年の肩こりで悩んでいました。ここでは痛い場所だけでなく全体の繋がりから説明してくれて、とても納得がいきました。」</p>
-        </div>
-    </section>
-
-    <!-- 08｜メニュー・料金 -->
-    <section id="pricing">
-        <h2 class="section-title">メニュー・料金</h2>
-        
-        <div class="price-cat">メディカルマッサージ（おすすめ）</div>
-        <div class="price-row"><span>30分 / 60分 / 90分</span><span style="color:var(--gold);">3,000円〜</span></div>
-
-        <div class="price-cat">オーダーメイドコース</div>
-        <div class="price-row"><span>60分 ＋ 15分</span><span style="color:var(--gold);">7,480円</span></div>
-
-        <div class="price-cat">リラクゼーション / ヘッド</div>
-        <div class="price-row"><span>各 30分</span><span style="color:var(--gold);">2,480円〜</span></div>
-    </section>
-
-    <!-- 09 & 10｜アクセス・予約・FAQ -->
-    <section id="access">
-        <h2 class="section-title">アクセス・ご予約</h2>
-        <div class="access-box">
-            <h3>MOMDO MASSAGE & BODYWORK</h3>
-            <p style="margin:10px 0;">住所：福岡市城南区七隈3-5-1（金山駅 徒歩2分・完全予約制）</p>
-            <p style="margin:5px 0;">営業時間：9:00 〜 21:00 / 定休日：水曜日</p>
-            <div class="cta-buttons">
-                <a href="tel:092-123-4567" class="btn-tel">📞 電話で予約<br><span style="font-size:11px; font-weight:normal;">092-123-4567</span></a>
-                <a href="#" class="btn-line">💬 LINEで24時間受付</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 11｜ブログ・お知らせ -->
-    <section id="blog">
-        <h2 class="section-title">ブログ・最新情報</h2>
-        <div class="blog-card">
-            <div class="blog-tag">漫画で知るスタッフ</div>
-            <div style="font-weight:bold;">【新連載】漫画でわかる！代表 達也ってどんな人？（男性編）</div>
-        </div>
-    </section>
-
-    <footer style="text-align:center; padding:30px; font-size:12px; color:var(--text-gray);">
-        <p>&copy; 2026 Momdo Massage & Bodywork. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
