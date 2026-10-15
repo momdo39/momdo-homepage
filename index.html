@@ -3,333 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momdoマッサージ整体｜福岡市城南区七隈・金山駅徒歩2分</title>
+    <title>Momdoマッサージ整体｜福岡市城南区七隈</title>
     <style>
-        /* ==========================================================================
-           🎨 共通スタイル & カラー定義（サファイアブルー × ゴールド × ホワイト）
-           ========================================================================== */
         :root {
-            --bg-dark: #000c24;       /* サファイアブルーのベース（極暗） */
+            --bg-dark: #000c24;
             --bg-gradient: radial-gradient(circle at center, #001f5c 0%, #000c24 100%);
-            --gold: #d4af37;          /* ゴールド（アクセント・見出し） */
-            --neon-blue: #00f0ff;     /* BODY EXPLORER用のネオンブルー */
+            --gold: #d4af37;
+            --neon-blue: #00f0ff;
             --text-white: #ffffff;
             --text-gray: #b0c4de;
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            background: var(--bg-dark);
-            background: var(--bg-gradient);
-            color: var(--text-white);
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-            line-height: 1.7;
-            overflow-x: hidden;
+            background: var(--bg-dark); background: var(--bg-gradient); color: var(--text-white);
+            font-family: Arial, sans-serif; line-height: 1.7; overflow-x: hidden;
         }
-
-        a {
-            color: inherit;
-            text-decoration: none;
+        a { color: inherit; text-decoration: none; }
+        section { padding: 60px 20px; max-width: 900px; margin: 0 auto; border-bottom: 1px solid rgba(212, 175, 55, 0.1); }
+        .section-title { font-size: 24px; color: var(--gold); text-align: center; margin-bottom: 30px; letter-spacing: 2px; }
+        .btn-gold { display: inline-block; padding: 12px 30px; background: transparent; color: var(--gold); border: 2px solid var(--gold); border-radius: 4px; font-weight: bold; transition: all 0.3s; cursor: pointer; text-align: center; }
+        .btn-gold:hover { background: var(--gold); color: var(--bg-dark); }
+        .btn-neon { display: inline-block; padding: 12px 30px; background: transparent; color: var(--neon-blue); border: 2px solid var(--neon-blue); border-radius: 4px; font-weight: bold; transition: all 0.3s; }
+        .btn-neon:hover { background: var(--neon-blue); color: var(--bg-dark); box-shadow: 0 0 15px var(--neon-blue); }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        .hero { text-align: center; padding: 80px 20px; }
+        .hero-title { font-size: 40px; font-weight: 700; line-height: 1.4; margin-bottom: 20px; }
+        .gateways { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .gate-card { border: 1px solid rgba(255,255,255,0.1); padding: 30px 20px; text-align: center; border-radius: 8px; background: rgba(255,255,255,0.02); }
+        .gate-card.explorer { border-color: var(--neon-blue); }
+        .voice-card { background: rgba(255,255,255,0.03); padding: 20px; border-left: 3px solid var(--gold); margin-bottom: 15px; }
+        .price-cat { color: var(--gold); font-size: 18px; margin: 20px 0 10px; border-bottom: 1px solid rgba(212,175,55,0.2); }
+        .price-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .access-box { text-align: center; background: rgba(0, 31, 92, 0.3); border: 1px solid rgba(212, 175, 55, 0.2); padding: 30px 20px; border-radius: 8px; }
+        .cta-buttons { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; }
+        .btn-tel { background: #d4af37; color: #000c24; font-weight: bold; padding: 15px; border-radius: 4px; text-align: center; }
+        .btn-line { background: #06C755; color: #fff; font-weight: bold; padding: 15px; border-radius: 4px; text-align: center; }
+        .blog-card { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 6px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        .blog-tag { display: inline-block; font-size: 11px; background: rgba(212, 175, 55, 0.2); color: var(--gold); padding: 2px 8px; border-radius: 3px; margin-bottom: 10px; }
+        .blog-card.manga .blog-tag { background: rgba(0, 240, 255, 0.2); color: var(--neon-blue); }
+        @media (min-width: 768px) {
+            .hero-title { font-size: 56px; }
+            .gateways { grid-template-columns: 1fr 1fr; }
+            .cta-buttons { flex-direction: row; justify-content: center; }
+            .cta-buttons a { width: 240px; }
         }
+    </style>
+</head>
+<body>
 
-        /* セクション共通 */
-        section {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-        }
+    <header>
+        <div style="font-size:24px; font-weight:bold; letter-spacing:3px;">MOMDO</div>
+        <div style="font-size:12px; color:var(--gold);">福岡市城南区七隈｜金山駅徒歩2分</div>
+    </header>
 
-        .section-title {
-            font-size: 28px;
-            color: var(--gold);
-            text-align: center;
-            margin-bottom: 40px;
-            letter-spacing: 2px;
-            position: relative;
-        }
+    <!-- 01｜ファーストビュー -->
+    <section class="hero" style="border-bottom:none;">
+        <p style="color:var(--gold); letter-spacing:2px; margin-bottom:10px;">MOMDO MASSAGE & BODYWORK</p>
+        <h1 class="hero-title">こんな施術、<br><span style="color:var(--gold);">受けたことがない。</span></h1>
+        <p style="color:var(--text-gray); max-width:600px; margin:0 auto 30px;">身体の見方が変わる。痛む場所だけでなく、筋肉・関節・姿勢・動きのつながりに目を向ける。身体を知ることから、Momdo의 施術が始まります。</p>
+        <div class="cta-buttons" style="margin-top:0;">
+            <a href="#gateways" class="btn-gold">お悩み・身体の構造から探す</a>
+            <a href="#access" class="btn-gold" style="background:var(--gold); color:var(--bg-dark);">今すぐ予約する</a>
+        </div>
+    </section>
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background: var(--gold);
-            margin: 15px auto 0;
-        }
+    <!-- 02｜Momdoの考え方 -->
+    <section id="concept">
+        <h2 class="section-title">Momdoの考え方</h2>
+        <div style="text-align:center; max-width:700px; margin:0 auto;">
+            <p style="font-size:20px; color:var(--gold); margin-bottom:15px;">「痛む場所＝原因、ではありません。」</p>
+            <p style="color:var(--text-gray);">肩こり、腰痛、膝の痛み。それは単なる「痛む場所」だけが原因ではないかもしれません。身体はすべて繋がっています。Momdoは解剖学に基づいたアプローチで、根本からの改善を目指します。</p>
+        </div>
+    </section>
 
-        /* ボタン共通 */
-        .btn-gold {
-            display: inline-block;
-            padding: 15px 35px;
-            background: transparent;
-            color: var(--gold);
-            border: 2px solid var(--gold);
-            border-radius: 4px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-align: center;
-        }
+    <!-- 03｜2つの入口 -->
+    <section id="gateways">
+        <h2 class="section-title">2つの入口</h2>
+        <div class="gateways">
+            <div class="gate-card">
+                <h3>お悩みから探す</h3>
+                <p style="font-size:14px; color:var(--text-gray); margin:15px 0 25px;">肩こり、腰痛、姿勢の歪みなど、今抱えている具体的な症状から原因とケアを探ります。</p>
+                <a href="#symptoms" class="btn-gold">お悩み一覧を見る</a>
+            </div>
+            <div class="gate-card explorer">
+                <h3 style="color:var(--neon-blue);">身体を知る｜BODY EXPLORER</h3>
+                <p style="font-size:14px; color:var(--text-gray); margin:15px 0 25px;">人体メカニズムをハックする。筋肉・関節・姿勢・動作がどう関係しているかを紐解くコンテンツ。</p>
+                <a href="#explorer" class="btn-neon">BODY EXPLORER (試作版)</a>
+            </div>
+        </div>
+    </section>
 
-        .btn-gold:hover {
-            background: var(--gold);
-            color: var(--bg-dark);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-        }
+    <!-- 04｜Momdoの施術 -->
+    <section id="treatment">
+        <h2 class="section-title">Momdoの施術</h2>
+        <div style="text-align:center; color:var(--text-gray);">
+            <p>施術の考え方、身体の見方、施術の進め方を丁寧にご説明します。衣服を着た状態で行う、お身体に負担の少ない安心安全な施術風景を中心に、リラックスして受けていただける環境を整えています。</p>
+        </div>
+    </section>
 
-        .btn-neon {
-            display: inline-block;
-            padding: 15px 35px;
-            background: transparent;
-            color: var(--neon-blue);
-            border: 2px solid var(--neon-blue);
-            border-radius: 4px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
-        }
+    <!-- 05｜人体メカニズムをハックする -->
+    <section id="explorer">
+        <h2 class="section-title" style="color:var(--neon-blue);">BODY EXPLORER</h2>
+        <div style="text-align:center;">
+            <p style="color:var(--text-gray); margin-bottom:20px;">気になる部位を選択すると、連動して働く他の筋肉や関節がハイライトされる体験コンテンツ。<br><span style="color:var(--neon-blue); font-size:13px;">※現在、第3段階に向けて「肩・肩甲骨」の連動モジュールを試作開発中です。</span></p>
+        </div>
+    </section>
 
-        .btn-neon:hover {
-            background: var(--neon-blue);
-            color: var(--bg-dark);
-            box-shadow: 0 0 25px rgba(0, 240, 255, 0.8);
-        }
+    <!-- 06｜Momdoが生まれた理由 -->
+    <section id="story">
+        <h2 class="section-title">Momdoが生まれた理由</h2>
+        <div style="max-width:700px; margin:0 auto; color:var(--text-gray);">
+            <p style="margin-bottom:15px;">これまでの整骨院・整体の現場での長い経験の中で、どこに行っても悩みが解決せず、長年同じ痛みを抱え続けている多くの方々に出会ってきました。</p>
+            <p>「その場しのぎではなく、お客様自身が身体の仕組みを理解し、納得できる場所を作りたい。」その強い想いからベースを科学的に学び続け、誠実に向き合います。</p>
+        </div>
+    </section>
 
-        /* ==========================================================================
-           📱 各セクションのレイアウト
-           ========================================================================== */
+    <!-- 07｜お客様の声 -->
+    <section id="voices">
+        <h2 class="section-title">お客様の声</h2>
+        <div class="voice-card">
+            <div style="font-size:12px; color:var(--gold); margin-bottom:5px;">40代 女性 / デスクワーク</div>
+            <p>「長年の肩こりで悩んでいました。ここでは痛い場所だけでなく全体の繋がりから説明してくれて、とても納得がいきました。」</p>
+        </div>
+        <div class="voice-card">
+            <div style="font-size:12px; color:var(--gold); margin-bottom:5px;">40代 男性 / 自営業</div>
+            <p>「施術を繰り返すうちに、自分の身体のクセが分かるようになってきました。一緒に良くしていく感覚が信頼できます。」</p>
+        </div>
+    </section>
+
+    <!-- 08｜メニュー・料金 -->
+    <section id="pricing">
+        <h2 class="section-title">メニュー・料金</h2>
         
-        /* 01｜ファーストビュー & ヘッダー */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: var(--text-white);
-            letter-spacing: 3px;
-        }
-        .hero {
-            text-align: center;
-            padding: 100px 20px 140px;
-        }
-        .hero-subtitle {
-            color: var(--gold);
-            font-size: 16px;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-        }
-        .hero-title {
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 1.4;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-        .hero-desc {
-            font-size: 16px;
-            color: var(--text-gray);
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-        .hero-meta {
-            font-size: 14px;
-            color: var(--gold);
-            margin-bottom: 40px;
-        }
-        .hero-cta-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 300px;
-            margin: 0 auto;
-        }
+        <div class="price-cat">メディカルマッサージ（おすすめ）</div>
+        <div class="price-row"><span>30分</span><span style="color:var(--gold);">3,000円</span></div>
+        <div class="price-row"><span>60分</span><span style="color:var(--gold);">6,000円</span></div>
+        <div class="price-row"><span>90分</span><span style="color:var(--gold);">9,000円</span></div>
 
-        /* 02｜Momdoの考え方 */
-        .concept-box {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .concept-highlight {
-            font-size: 24px;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
+        <div class="price-cat">オーダーメイドコース</div>
+        <div class="price-row"><span>30分 ＋ 30分</span><span style="color:var(--gold);">5,480円</span></div>
+        <div class="price-row"><span>60分 ＋ 15分</span><span style="color:var(--gold);">7,480円</span></div>
 
-        /* 03｜2つの入口 */
-        .gateways {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-        .gate-card {
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 8px;
-            background: rgba(255,255,255,0.02);
-        }
-        .gate-card.explorer {
-            border-color: rgba(0, 240, 255, 0.3);
-            background: linear-gradient(180deg, rgba(0, 240, 255, 0.02) 0%, transparent 100%);
-        }
-        .gate-card h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-        .gate-card.explorer h3 { color: var(--neon-blue); }
-        .gate-card h3::after {
-            content: ''; display: block; width: 30px; height: 1px; background: currentColor; margin: 10px auto 0;
-        }
-        .gate-card p {
-            font-size: 14px; color: var(--text-gray); margin-bottom: 30px;
-        }
+        <div class="price-cat">リラクゼーション / ヘッド</div>
+        <div class="price-row"><span>リラクゼーションマッサージ (30分)</span><span style="color:var(--gold);">2,480円</span></div>
+        <div class="price-row"><span>ヘッド＆フェイスマッサージ (30分)</span><span style="color:var(--gold);">3,000円</span></div>
+    </section>
 
-        /* 04 & 05｜施術 & BODY EXPLORER誘導 */
-        .info-block {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
+    <!-- 09｜よくある質問 -->
+    <section id="faq">
+        <h2 class="section-title">よくある質問</h2>
+        <div style="margin-bottom:20px;">
+            <p style="color:var(--gold); font-weight:bold;">Q. どんな服装で行けばいいですか？</p>
+            <p style="color:var(--text-gray); padding-left:20px;">動きやすい服装であればそのままで大丈夫です。お着替えの準備もございます。</p>
+        </div>
+        <div>
+            <p style="color:var(--gold); font-weight:bold;">Q. 予約は必須ですか？</p>
+            <p style="color:var(--text-gray); padding-left:20px;">はい、完全予約制とさせていただいております。お電話または公式LINEよりご予約ください。</p>
+        </div>
+    </section>
 
-        /* 06｜生まれた理由 */
-        .story-content {
-            max-width: 700px;
-            margin: 0 auto;
-            color: var(--text-gray);
-        }
-        .story-content p { margin-bottom: 20px; }
-
-        /* 07｜お客様の声 */
-        .voice-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        .voice-card {
-            background: rgba(255,255,255,0.03);
-            padding: 25px;
-            border-left: 3px solid var(--gold);
-            border-radius: 0 4px 4px 0;
-        }
-        .voice-meta {
-            font-size: 13px;
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-
-        /* 08｜メニュー・料金 */
-        .price-table-wrapper {
-            margin-bottom: 30px;
-        }
-        .price-cat-title {
-            color: var(--gold);
-            font-size: 18px;
-            margin: 30px 0 15px;
-            border-bottom: 1px solid rgba(212,175,55,0.3);
-            padding-bottom: 5px;
-        }
-        .price-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 5px;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 15px;
-        }
-        .price-row .price {
-            font-weight: bold;
-            color: var(--gold);
-        }
-
-        /* 09｜よくある質問 */
-        .faq-item {
-            margin-bottom: 25px;
-            background: rgba(255,255,255,0.02);
-            padding: 20px;
-            border-radius: 6px;
-        }
-        .faq-q {
-            font-weight: bold;
-            color: var(--gold);
-            margin-bottom: 10px;
-            display: flex;
-            gap: 10px;
-        }
-        .faq-a {
-            color: var(--text-gray);
-            font-size: 14px;
-            padding-left: 24px;
-        }
-
-        /* 10｜アクセス・予約 */
-        .access-box {
-            text-align: center;
-            background: rgba(0, 31, 92, 0.3);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 40px 20px;
-            border-radius: 8px;
-        }
-        .access-info h3 { color: var(--gold); margin-bottom: 15px; font-size: 20px;}
-        .access-info p { margin-bottom: 10px; font-size: 15px;}
-        .cta-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 30px;
-            max-width: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .btn-tel { background: #d4af37; color: #000c24; border: none; font-weight: bold; padding: 15px; border-radius: 4px; text-align: center;}
-        .btn-line { background: #06C755; color: #fff; border: none; font-weight: bold; padding: 15px; border-radius: 4px; text-align: center;}
-
-        /* 11｜ブログ・お知らせ */
-        .blog-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-        .blog-card {
-            background: rgba(255,255,255,0.02);
-            padding: 20px;
-            border-radius: 6px;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-        .blog-tag {
-            display: inline-block;
-            font-size: 11px;
-            background: rgba(212, 175, 55, 0.2);
-            color: var(--gold);
-            padding: 2px 8px;
-            border-radius: 3px;
-            margin-bottom: 10px;
-        }
-        .blog-card.manga .blog-tag {
-            background: rgba(0, 240, 255, 0.2);
-            color: var(--neon-blue);
-        }
-        .blog-title { font-weight: bold; margin-bottom: 5px; font-size: 16px;}
-        .blog-date { font-size: 12px; color: var(--text-gray); }
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 12px;
-            color: var(--text-gray);
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-
+    <!-- 10｜アクセス・予約 -->
+    <section id="access">
+        <h2 class="section-title">アクセス・ご予約</h2>
+        <div class="access-box">
+            <h3>MOMDO MASSAGE & BODYWORK</h3>
+            <p style="margin:10px 0;">住所：福岡市城南区七隈3-5-1（金山駅 徒歩2分）</p>
+            <p style="margin:5px 0;">営業時間：9:00 〜 21:00 / 定休日：水曜日</p>
+            <div class="cta-buttons">
+                <a href="tel:092-123-4567" class="btn-tel">📞 電話で予約<br><span style="font-size:11px; font-weight:normal;">092-123-4567 (9:00-21:00)</span></a>
+                <a href="#" class="btn-line">💬 LINEで24時間受付</a>
+            </div>
