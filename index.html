@@ -1,272 +1,638 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momdoマッサージ整体｜福岡市城南区七隈</title>
-    <style>
-        /* ==========================================================================
-           🎨 サイバーテック・コアカラー＆バックグラウンド定義
-           ========================================================================== */
-        :root {
-            --bg-base: #000511;       /* 漆黒の宇宙空間 */
-            --sapphire: #001238;      /* 深淵のサファイアブルー */
-            --gold: #e5c158;          /* 輝く高純度ゴールド */
-            --gold-glow: rgba(229, 193, 88, 0.4);
-            --neon-cyan: #00f0ff;     /* 体をハックするネオンシアン */
-            --cyan-glow: rgba(0, 240, 255, 0.5);
-            --text-main: #ffffff;
-            --text-sub: #8fa3cc;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            background-color: var(--bg-base);
-            background-image: 
-                radial-gradient(circle at 50% 30%, var(--sapphire) 0%, var(--bg-base) 70%),
-                linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
-            background-size: 100% 100%, 40px 40px, 40px 40px;
-            color: var(--text-main);
-            font-family: 'Times New Roman', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
-            line-height: 1.8;
-            overflow-x: hidden;
-            letter-spacing: 0.05em;
-        }
+<title>Momdoマッサージ整体｜身体の見方が変わる</title>
 
-        a { color: inherit; text-decoration: none; }
+<meta name="description" content="福岡市城南区七隈・金山駅徒歩2分。身体の構造や動きのつながりに目を向けるMomdoマッサージ整体。お悩みから探す、BODY EXPLORERで身体を知る。">
 
-        section {
-            padding: 80px 24px;
-            max-width: 900px;
-            margin: 0 auto;
-            position: relative;
-            border-bottom: 1px solid rgba(0, 240, 255, 0.05);
-        }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        .section-title {
-            font-size: 28px;
-            color: var(--gold);
-            text-align: center;
-            margin-bottom: 50px;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            text-shadow: 0 0 15px var(--gold-glow);
-            font-weight: 600;
-        }
-        .section-title.cyan {
-            color: var(--neon-cyan);
-            text-shadow: 0 0 15px var(--cyan-glow);
-        }
+html {
+  scroll-behavior: smooth;
+}
 
-        .btn-gold {
-            display: inline-block;
-            padding: 16px 36px;
-            background: rgba(0, 5, 17, 0.6);
-            color: var(--gold);
-            border: 1px solid var(--gold);
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: all 0.4s ease;
-            cursor: pointer;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(229, 193, 88, 0.1);
-            backdrop-filter: blur(5px);
-        }
-        .btn-gold:hover {
-            background: var(--gold);
-            color: var(--bg-base);
-            box-shadow: 0 0 25px var(--gold);
-            transform: translateY(-2px);
-        }
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+  color: #18243b;
+  background: #ffffff;
+  line-height: 1.9;
+}
 
-        .btn-neon {
-            display: inline-block;
-            padding: 16px 36px;
-            background: rgba(0, 5, 17, 0.6);
-            color: var(--neon-cyan);
-            border: 1px solid var(--neon-cyan);
-            font-weight: bold;
-            letter-spacing: 2px;
-            transition: all 0.4s ease;
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
-            backdrop-filter: blur(5px);
-        }
-        .btn-neon:hover {
-            background: var(--neon-cyan);
-            color: var(--bg-base);
-            box-shadow: 0 0 30px var(--neon-cyan);
-            transform: translateY(-2px);
-        }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 24px;
-            max-width: 1200px;
-            margin: 0 auto;
-            border-bottom: 1px solid rgba(0, 240, 255, 0.08);
-        }
-        .logo-text {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 8px;
-            color: var(--text-main);
-            text-shadow: 0 0 10px rgba(255,255,255,0.3);
-        }
+header {
+  background: #061b45;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #bda568;
+}
 
-        .hero {
-            text-align: center;
-            padding: 120px 24px 140px;
-            position: relative;
-        }
-        .hero-subtitle {
-            color: var(--gold);
-            font-size: 14px;
-            letter-spacing: 6px;
-            margin-bottom: 25px;
-            text-shadow: 0 0 8px var(--gold-glow);
-            font-weight: 600;
-        }
-        .hero-title {
-            font-size: 44px;
-            font-weight: 700;
-            line-height: 1.5;
-            margin-bottom: 35px;
-            letter-spacing: 4px;
-            text-shadow: 0 0 20px rgba(0,0,0,0.8);
-        }
-        .hero-desc {
-            color: var(--text-sub);
-            max-width: 650px;
-            margin: 0 auto 50px;
-            font-size: 15px;
-            line-height: 2;
-        }
-        .hero-cta-group {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 320px;
-            margin: 0 auto;
-        }
+.logo {
+  color: #e6cc87;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
-        .gateways {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 35px;
-            margin-top: 20px;
-        }
-        .gate-card {
-            border: 1px solid rgba(229, 193, 88, 0.2);
-            padding: 45px 30px;
-            text-align: center;
-            background: linear-gradient(135deg, rgba(0, 18, 56, 0.6) 0%, rgba(0, 5, 17, 0.8) 100%);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            position: relative;
-            overflow: hidden;
-        }
-        .gate-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--gold);
-        }
-        .gate-card.explorer {
-            border-color: rgba(0, 240, 255, 0.3);
-            background: linear-gradient(135deg, rgba(0, 30, 80, 0.4) 0%, rgba(0, 5, 17, 0.9) 100%);
-            box-shadow: 0 0 25px rgba(0, 240, 255, 0.05);
-        }
-        .gate-card.explorer::before {
-            background: var(--neon-cyan);
-        }
-        .gate-card h3 { font-size: 22px; margin-bottom: 15px; letter-spacing: 2px; }
-        .gate-card.explorer h3 { color: var(--neon-cyan); text-shadow: 0 0 10px var(--cyan-glow); }
-        .gate-card p { font-size: 14px; color: var(--text-sub); margin-bottom: 35px; }
+.logo small {
+  display: block;
+  font-size: 10px;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
 
-        .voice-card {
-            background: rgba(0, 18, 56, 0.4);
-            border: 1px solid rgba(255,255,255,0.05);
-            padding: 30px;
-            border-left: 4px solid var(--gold);
-            margin-bottom: 25px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-        }
-        .voice-meta { font-size: 12px; color: var(--gold); margin-bottom: 8px; letter-spacing: 1px; }
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
 
-        .price-cat {
-            color: var(--gold);
-            font-size: 16px;
-            margin: 40px 0 15px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            border-left: 2px solid var(--gold);
-            padding-left: 12px;
-            font-weight: bold;
-        }
-        .price-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 16px 5px;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-            font-size: 15px;
-            transition: background 0.3s;
-        }
-        .price-row:hover { background: rgba(0, 240, 255, 0.02); }
+nav a:hover {
+  color: #e6cc87;
+}
 
-        /* コクピット風アクセスボックス */
-        .access-box {
-            text-align: center;
-            background: linear-gradient(180deg, rgba(0, 18, 56, 0.8) 0%, rgba(0, 5, 17, 0.9) 100%);
-            border: 1px solid rgba(0, 240, 255, 0.2);
-            padding: 50px 30px;
-            box-shadow: 0 0 40px rgba(0, 240, 255, 0.05);
-            position: relative;
-        }
-        .access-box h3 { color: var(--gold); letter-spacing: 2px; margin-bottom: 20px; font-size: 22px; }
-        .access-box p { color: var(--text-sub); margin-bottom: 12px; font-size: 15px; }
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  padding: 110px 20px 100px;
+  background:
+    radial-gradient(ellipse at 50% 40%, #174a8c 0%, transparent 55%),
+    linear-gradient(135deg, #06132f, #09285b 55%, #030c22);
+}
 
-        .btn-tel { background: var(--gold); color: var(--bg-base); font-weight: bold; padding: 16px; border: none; display: block; text-align: center; width: 100%; letter-spacing: 1px; box-shadow: 0 0 15px var(--gold-glow); transition: all 0.3s; }
-        .btn-tel:hover { transform: translateY(-2px); box-shadow: 0 0 25px var(--gold); }
-        .btn-line { background: #06C755; color: #ffffff; font-weight: bold; padding: 16px; border: none; display: block; text-align: center; width: 100%; letter-spacing: 1px; box-shadow: 0 0 15px rgba(6, 199, 85, 0.3); transition: all 0.3s; }
-        .btn-line:hover { transform: translateY(-2px); box-shadow: 0 0 25px #06C755; }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 25%, #ffffff55 1px, transparent 2px),
+    radial-gradient(circle at 80% 35%, #d5c17c66 1px, transparent 2px),
+    radial-gradient(circle at 65% 80%, #ffffff44 1px, transparent 2px);
+  background-size: 100px 100px, 130px 130px, 170px 170px;
+  pointer-events: none;
+}
 
-        .blog-card {
-            background: rgba(0, 18, 56, 0.3);
-            padding: 25px;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.03);
-        }
-        .blog-tag {
-            display: inline-block;
-            font-size: 11px;
-            background: rgba(229, 193, 88, 0.15);
-            color: var(--gold);
-            padding: 3px 10px;
-            border-radius: 2px;
-            margin-bottom: 12px;
-            font-weight: bold;
-        }
-        .blog-card.manga .blog-tag {
-            background: rgba(0, 240, 255, 0.15);
-            color: var(--neon-cyan);
-        }
+.hero-content {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
 
-        @media (min-width: 768px) {
-            .hero-title { font-size: 56px; }
-            .hero-cta-group { flex-direction: row; max-width: 600px; }
-            .hero-cta-group a { flex: 1; }
-            .gateways { grid-template-columns: 1fr 1fr; }
-            .hero-cta-group-access { display: flex; gap: 20px; max-width: 500px; margin: 30px auto 0; }
-            .hero-cta-group-access a { flex: 1; margin-top: 0 !important; }
-        }
-    </style>
+.eyebrow {
+  color: #e6cc87;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.hero h1 {
+  color: #f0d99a;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1.5;
+  margin: 25px 0 12px;
+  letter-spacing: 2px;
+}
+
+.hero h2 {
+  font-size: clamp(17px, 3vw, 25px);
+  font-weight: normal;
+  margin: 10px 0 25px;
+}
+
+.hero p {
+  font-size: 14px;
+  color: #e2e9f6;
+  max-width: 620px;
+  margin: 0 auto 35px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 24px;
+  border: 1px solid #d9bf79;
+  color: #f0d99a;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+.button.primary {
+  background: #d9bf79;
+  color: #071a3d;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: white;
+  color: #061b45;
+}
+
+.location {
+  margin-top: 35px;
+  color: #cbd7ea;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+section {
+  padding: 75px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-title span {
+  color: #a58a48;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.section-title h2 {
+  font-size: clamp(25px, 4vw, 36px);
+  color: #0a2453;
+  margin: 8px 0;
+}
+
+.section-title p {
+  color: #647086;
+  font-size: 14px;
+}
+
+.philosophy {
+  text-align: center;
+  background: #f7f9fc;
+}
+
+.philosophy h2 {
+  color: #0a2453;
+  font-size: clamp(24px, 4vw, 38px);
+  line-height: 1.7;
+}
+
+.philosophy h2 span {
+  color: #ad8c42;
+}
+
+.philosophy p {
+  max-width: 720px;
+  margin: 20px auto 0;
+  font-size: 15px;
+}
+
+.entry-section {
+  background: #ffffff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  border: 1px solid #dce3ef;
+  border-top: 4px solid #bca15d;
+  background: #ffffff;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px #0a245315;
+}
+
+.card .number {
+  color: #a58a48;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.card h3 {
+  font-size: 25px;
+  color: #0a2453;
+  margin: 12px 0;
+}
+
+.card p {
+  color: #647086;
+  font-size: 14px;
+}
+
+.card .link {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #9b7a31;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.explorer {
+  color: white;
+  background:
+    radial-gradient(ellipse at 80% 20%, #075c94 0%, transparent 45%),
+    linear-gradient(135deg, #03162e, #052c54);
+}
+
+.explorer .section-title h2 {
+  color: white;
+}
+
+.explorer .section-title p {
+  color: #d1e6f6;
+}
+
+.explorer .section-title span {
+  color: #54ddff;
+}
+
+.explorer-box {
+  max-width: 850px;
+  margin: auto;
+  padding: 35px;
+  border: 1px solid #42c9f688;
+  background: #041a35cc;
+  text-align: center;
+}
+
+.explorer-box h3 {
+  color: #71e4ff;
+  font-size: clamp(25px, 4vw, 36px);
+  margin: 0 0 15px;
+}
+
+.explorer-box p {
+  color: #e0edf8;
+}
+
+.explorer .button {
+  border-color: #55d9ff;
+  color: #8beaff;
+  margin-top: 15px;
+}
+
+.explorer .button:hover {
+  background: #55d9ff;
+  color: #03162e;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.step {
+  border: 1px solid #5ed9f755;
+  padding: 16px 8px;
+  font-size: 13px;
+}
+
+.step strong {
+  display: block;
+  color: #69e3ff;
+  margin-bottom: 8px;
+}
+
+.service {
+  background: #f7f9fc;
+}
+
+.service-box {
+  max-width: 780px;
+  margin: auto;
+  text-align: center;
+}
+
+.service-box p {
+  color: #59667b;
+}
+
+.service-box .button {
+  background: #0a2453;
+  color: white;
+}
+
+.service-box .button:hover {
+  background: #173d78;
+  color: white;
+}
+
+.cta {
+  text-align: center;
+  background: #081d46;
+  color: white;
+}
+
+.cta h2 {
+  color: #e6cc87;
+  font-size: clamp(25px, 4vw, 36px);
+}
+
+.cta p {
+  color: #e0e8f5;
+  font-size: 14px;
+}
+
+.cta .button {
+  margin: 8px;
+}
+
+footer {
+  background: #041128;
+  color: #d2dced;
+  text-align: center;
+  padding: 35px 20px;
+  font-size: 12px;
+}
+
+footer .footer-logo {
+  color: #e6cc87;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+footer p {
+  margin: 8px 0;
+}
+
+@media (max-width: 700px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 75px 18px;
+  }
+
+  section {
+    padding: 55px 18px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card {
+    padding: 26px;
+  }
+
+  .explorer-box {
+    padding: 24px 16px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo-text">MOMDO</div>
-        <div style="font-size: 13px; color: var(--gold); letter-spacing: 2px;">七隈 | 金山駅徒歩2分</div>
-    </header>
+<header>
+  <a class="logo" href="#home">
+    MOMDO
+    <small>MASSAGE & BODYWORK</small>
+  </a>
 
+  <nav>
+    <a href="#home">ホーム</a>
+    <a href="#concerns">お悩みから探す</a>
+    <a href="#explorer">BODY EXPLORER</a>
+    <a href="#treatment">Momdoの施術</a>
+    <a href="#access">アクセス・予約</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">MOMDO MASSAGE & BODYWORK</div>
+
+    <h1>こんな施術、<br>受けたことがない。</h1>
+
+    <h2>身体の見方が変わる。</h2>
+
+    <p>
+      痛む場所だけでなく、筋肉・関節・姿勢・動きのつながりに目を向ける。<br>
+      身体を知ることから、Momdoの施術が始まります。
+    </p>
+
+    <div class="button-row">
+      <a class="button primary" href="#concerns">
+        お悩みから探す ↗
+      </a>
+
+      <a class="button" href="#explorer">
+        身体を知る ↗
+      </a>
+    </div>
+
+    <div class="location">
+      福岡市城南区七隈 ｜ 金山駅徒歩2分
+    </div>
+  </div>
+</section>
+
+<section class="philosophy">
+  <div class="container">
+    <div class="section-title">
+      <span>THE MOMDO APPROACH</span>
+    </div>
+
+    <h2>
+      <span>痛む場所＝原因、</span><br>
+      ではありません。
+    </h2>
+
+    <p>
+      身体は、筋肉・関節・姿勢・動きが関係し合っています。
+      Momdoは、痛みのある場所だけにとらわれず、
+      身体全体のつながりに目を向けます。
+    </p>
+  </div>
+</section>
+
+<section class="entry-section" id="concerns">
+  <div class="container">
+    <div class="section-title">
+      <span>DISCOVER YOUR BODY</span>
+      <h2>身体を知る、ふたつの入口。</h2>
+      <p>
+        気になる症状からでも、身体の構造からでも。<br>
+        あなたの知りたいところから始められます。
+      </p>
+    </div>
+
+    <div class="cards">
+      <a class="card" href="concerns.html">
+        <span class="number">01 / CONCERNS</span>
+        <h3>お悩みから探す</h3>
+        <p>
+          肩こり、腰痛、頭痛、股関節や足の悩み。
+          症状の背景にある身体のつながりを見ていきます。
+        </p>
+        <span class="link">お悩み一覧へ ↗</span>
+      </a>
+
+      <a class="card" href="body-explorer.html">
+        <span class="number">02 / BODY EXPLORER</span>
+        <h3>身体のつながりを知る</h3>
+        <p>
+          人体の構造や動きを知り、自分の身体に隠れた
+          つながりを発見する体験型コンテンツ。
+        </p>
+        <span class="link">身体を探検する ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="explorer" id="explorer">
+  <div class="container">
+    <div class="section-title">
+      <span>BODY EXPLORER</span>
+      <h2>人体メカニズムをハックする。</h2>
+      <p>
+        身体のつながりを知ると、自分の身体の見方が変わる。
+      </p>
+    </div>
+
+    <div class="explorer-box">
+      <h3>身体には、つながりがある。</h3>
+
+      <p>
+        肩が気になるとき、見るべき場所は肩だけでしょうか？<br>
+        肩甲骨、胸郭、背中。身体の動きは互いに関係しています。
+      </p>
+
+      <p>
+        BODY EXPLORERは、身体の構造・役割・動きを
+        楽しく学ぶためのコンテンツです。
+      </p>
+
+      <a class="button" href="body-explorer.html">
+        BODY EXPLORER を体験する ↗
+      </a>
+
+      <div class="steps">
+        <div class="step">
+          <strong>STEP 01</strong>
+          身体を選ぶ
+        </div>
+
+        <div class="step">
+          <strong>STEP 02</strong>
+          身体を知る
+        </div>
+
+        <div class="step">
+          <strong>STEP 03</strong>
+          つながりを見る
+        </div>
+
+        <div class="step">
+          <strong>STEP 04</strong>
+          動きを見る
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service" id="treatment">
+  <div class="container">
+    <div class="section-title">
+      <span>OUR APPROACH</span>
+      <h2>Momdoの施術</h2>
+      <p>身体を知り、一人ひとりの状態に目を向ける。</p>
+    </div>
+
+    <div class="service-box">
+      <p>
+        身体の状態や動きは、一人ひとり異なります。
+        Momdoでは、筋肉・関節・姿勢などのつながりに着目し、
+        身体の状態に合わせた施術を大切にしています。
+      </p>
+
+      <a class="button" href="treatment.html">
+        Momdoの施術について ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="access">
+  <div class="container">
+    <h2>身体のこと、もっと知ってみませんか？</h2>
+
+    <p>
+      Momdoマッサージ整体<br>
+      福岡市城南区七隈 ｜ 金山駅徒歩2分
+    </p>
+
+    <p>
+      ご予約・お問い合わせは、お電話またはLINEから。
+    </p>
+
+    <a class="button" href="access.html">
+      アクセス・予約方法 ↗
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-logo">MOMDO</div>
+  <p>MASSAGE & BODYWORK</p>
+  <p>身体の見方が変わる。</p>
+  <p>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </p>
+  <p>&copy; Momdo Massage & Bodywork</p>
+</footer>
+
+</body>
+</html>
