@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解剖学深層アプローチ - Momdoマッサージ整体</title>
+    <style>
+        /* ホームページのデザイン（サファイアブルーの世界観）と100%同期 */
+        :root {
+            --bg-dark: #030712;
+            --sapphire-blue: #0052cc;
+            --sapphire-glow: #00d2ff;
+            --text-light: #f3f4f6;
+            --text-muted: #9ca3af;
+            --gold-accent: #d4af37;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* サファイアブルーの光を表現した背景グラデーション */
+        .sapphire-bg {
+            background: radial-gradient(circle at 50% 20%, #0a1931 0%, #030712 70%);
+            position: relative;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        /* サイエンス・近未来的なネットワーク光の装飾 */
+        .sapphire-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                radial-gradient(var(--sapphire-blue) 1px, transparent 0),
+                radial-gradient(var(--sapphire-glow) 1px, transparent 0);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            opacity: 0.07;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 50px;
+            padding-top: 20px;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* ① ファーストビュー（3秒で伝わるキャッチコピー） */
+        .hero-section {
+            margin-bottom: 60px;
+            padding: 40px 0;
+        }
+
+        .main-copy {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 0.1rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff 0%, #a5c7f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub-copy {
+            font-size: 1.1rem;
+            color: var(--sapphire-glow);
+            font-weight: 500;
+            letter-spacing: 0.05rem;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+        }
+
+        /* ② 共感セクション */
+        .message-section {
+            background: rgba(10, 25, 49, 0.5);
+            border: 1px solid rgba(0, 82, 204, 0.3);
+            border-radius: 16px;
+            padding: 35px 25px;
+            margin-bottom: 50px;
+            backdrop-filter: blur(8px);
+            text-align: left;
+        }
+
+        .message-text {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .message-highlight {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--gold-accent);
+            border-left: 3px solid var(--gold-accent);
+            padding-left: 10px;
+            margin: 25px 0 15px 0;
+        }
+
+        /* ③ こだわり（3つの理由） */
+        .features-section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            letter-spacing: 0.1rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        .feature-num {
+            color: var(--sapphire-glow);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* ④ アクセス・店舗案内 */
+        .info-section {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+
+        .info-section strong {
+            color: var(--text-light);
+        }
+
+        /* ⑤ アクションボタン */
+        .cta-container {
+            position: sticky;
+            bottom: 20px;
+            padding: 0 10px;
+            z-index: 100;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(135deg, #0052cc 0%, #00d2ff 100%);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 16px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 210, 255, 0.4);
+            transition: all 0.3s ease;
+            letter-spacing: 0.1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 210, 255, 0.6);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-bottom: 40px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="sapphire-bg">
+    <div class="container">
+        
+        <header>
+            <div class="logo-text">Momdo Massage & Bodywork</div>
+        </header>
+
+        <!-- ① ファーストビュー -->
+        <section class="hero-section">
+            <h1 class="main-copy">こんな施術、<br>受けたことがない。</h1>
+            <p class="sub-copy">解剖学に基づく、深層へのアプローチ。</p>
+        </section>
+
+        <!-- ② 共感セクション -->
+        <section class="message-section">
+            <p class="message-text">どこへ行っても変わらなかった重い痛みを、根本から整える。</p>
+            <p class="message-highlight">「腰が痛いから腰を揉む」で満足できなかったあなたへ</p>
+            <p class="message-text">表面的な筋肉をほぐすだけのケアは、もう終わりにしませんか？筋肉や骨格のつながりを紐解くことで、眠っていた本来の治癒力を呼び覚まします。</p>
+        </section>
+
+        <!-- ③ こだわりセクション -->
+        <section class="features-section">
+            <h2 class="section-title">Momdoが選ばれる理由</h2>
+            
+            <div class="feature-card">
+                <div class="feature-num">01</div>
+                <div class="feature-title">痛む場所だけを見ない</div>
+                <div class="feature-desc">身体全体の連動性や筋膜のつながりに着目し、不調の根本背景へアプローチします。</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-num">02</div>
+                <div class="feature-title">解剖学・仕組みに基づく施術</div>
+                <div class="feature-desc">確かな専門知識をもとに、一人ひとりの深い筋肉（深層）の状態に合わせて最適化します。</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-num">03</div>
+                <div class="feature-title">自分の身体を深く知る</div>
+                <div class="feature-desc">ただ施術を受けるだけでなく、自分の理想的なバランスを理解する「BODY EXPLORER」を体験。</div>
+            </div>
+        </section>
+
+        <!-- ④ アクセス・案内 -->
+        <section class="info-section">
+            <p><strong>Momdoマッサージ整体</strong></p>
+            <p>福岡市城南区七隈｜金山駅 徒歩2分（完全予約制）</p>
+        </section>
+
+        <!-- ⑤ 浮き出る予約ボタン -->
+        <div class="cta-container">
+            <a href="https://github.io" class="cta-button">ご予約・お問合せはこちら</a>
+        </div>
+
+        <footer>
+            &copy; Momdo Massage & Bodywork
+        </footer>
+
+    </div>
+</div>
+
+</body>
+</html>
