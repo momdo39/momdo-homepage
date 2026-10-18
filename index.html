@@ -105,19 +105,87 @@
   }
 }
 /* Momdoが選ばれる3つの理由 */
-.reasons-banner {
-  background: #fff;
-  padding: 30px 0;
+.reasons-section {
+  padding: 64px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f7fc 100%);
+  color: #14213b;
 }
 
-.reasons-banner img {
-  display: block;
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  margin: 0 auto;
+.reasons-section .eyebrow {
+  color: #9b762d;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
 }
 
+.reasons-section h2 {
+  margin: 12px 0 16px;
+  text-align: center;
+  color: #06142f;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.reasons-section .lead {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+  line-height: 1.9;
+  color: #61708a;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.reason-card {
+  position: relative;
+  padding: 30px 24px;
+  background: #ffffff;
+  border: 1px solid #dce5f1;
+  border-top: 3px solid #e5c17a;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(6, 20, 47, 0.06);
+}
+
+.reason-number {
+  margin-bottom: 18px;
+  color: #b18a3c;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.reason-card h3 {
+  margin: 0 0 14px;
+  color: #0b2c64;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.reason-card p {
+  margin: 0;
+  color: #61708a;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 750px) {
+  .reasons-section {
+    padding: 44px 0;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .reason-card {
+    padding: 24px 20px;
+  }
+}
 </style>
 </head>
 <body>
@@ -157,10 +225,34 @@
 </div>
 
 </div></section>
-  <section class="reasons-banner">
+ <section class="reasons-section" id="reasons">
   <div class="wrap">
-    <img src="momdo-reasons.png"
-         alt="Momdoが選ばれる3つの理由">
+    <div class="eyebrow">WHY MOMDO</div>
+    <h2>Momdoが選ばれる3つの理由</h2>
+    <p class="lead">
+      痛む場所だけでなく、身体全体のつながりに目を向ける。
+      それがMomdoの施術です。
+    </p>
+
+    <div class="reasons-grid">
+      <article class="reason-card">
+        <div class="reason-number">01</div>
+        <h3>痛む場所だけを見ない</h3>
+        <p>身体全体のつながりに着目し、不調の背景にある動きやバランスを考えます。</p>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-number">02</div>
+        <h3>身体の仕組みに基づく施術</h3>
+        <p>筋肉・関節・神経などの仕組みを踏まえ、一人ひとりの状態に合わせて施術します。</p>
+      </article>
+
+      <article class="reason-card">
+        <div class="reason-number">03</div>
+        <h3>自分の身体を知る</h3>
+        <p>施術を受けるだけでなく、身体のつながりや動きについて理解を深められます。</p>
+      </article>
+    </div>
   </div>
 </section>
 <section class="section concerns" id="concerns"><div class="wrap"><div class="eyebrow" style="color:#9b762d">Explore by concern</div><h2>その悩み、身体のつながりから考える。</h2><p class="lead">症状だけで決めつけず、身体のしくみを知る入口としてご覧ください。各ページは順次、詳しい解説を追加していく予定です。</p>
