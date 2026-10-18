@@ -190,7 +190,39 @@
 </head>
 <body>
 <div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>完全予約制などの営業情報はご来店前に最新情報をご確認ください</span></div></div>
-<header class="header"><div class="wrap nav"><a class="brand" href="#home">Momdo<small>Massage & Manipulative</small></a><nav class="navlinks"><a href="#approach">Momdoの考え方</a><a href="body-explorer.html">BODY EXPLORER</a><a href="concerns.html">お悩みから探す</a><a href="#menu">メニュー・料金</a><a href="#access">アクセス</a></nav><a class="btn btn-outline" href="#contact">お問い合わせ</a></div></header>
+
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#home">
+      Momdo
+      <small>Massage & Manipulative</small>
+    </a>
+
+    <nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
+      <a href="#approach">Momdoの考え方</a>
+      <a href="body-explorer.html">BODY EXPLORER</a>
+      <a href="concerns.html">お悩みから探す</a>
+      <a href="#menu">メニュー・料金</a>
+      <a href="#access">アクセス</a>
+    </nav>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-controls="main-navigation"
+      aria-expanded="false"
+      aria-label="メニューを開く"
+    >
+      <span class="menu-icon">☰</span>
+      <span>メニュー</span>
+    </button>
+
+    <a class="btn btn-outline header-contact" href="#contact">
+      お問い合わせ
+    </a>
+  </div>
+</header>
+
 <main id="home">
 <section class="hero hero-image" aria-label="Momdoのメインビジュアル">
   <div class="wrap hero-image-wrap">
@@ -391,8 +423,41 @@
 <section class="section blog"><div class="wrap"><div class="eyebrow" style="color:#9b762d">Journal / Body knowledge</div><h2>身体の知識を、もっと身近に。</h2><div class="blog-grid"><article class="blog-card"><small>BODY KNOWLEDGE</small><h3>肩を上げるとき、肩甲骨はどう動く？</h3><p>肩だけでなく、肩甲骨や胸郭の動きにも目を向けてみましょう。</p></article><article class="blog-card"><small>BODY KNOWLEDGE</small><h3>足首の動きと歩くことの関係</h3><p>足首の機能を知ることは、歩行を理解する入口のひとつです。</p></article><article class="blog-card"><small>MOMDO STORY</small><h3>スタッフ紹介・マンガ企画</h3><p>スタッフの実際の経験や人柄を取材し、事実確認をしてから掲載します。</p></article></div></div></section>
 </main><footer><div class="wrap"><div><div class="footbrand">MOMDO</div><div>Massage & Manipulative</div><div>福岡市城南区七隈｜金山駅周辺</div></div><div>掲載内容は公開前に最新情報をご確認ください。<br><a href="#home">ページ上部へ ↑</a></div><div>© Momdo Massage & Bodywork</div></div></footer>
 <div class="mobile-cta"><a class="btn btn-gold" href="#concerns">悩みから探す</a><a class="btn btn-outline" href="body-explorer.html">身体を知る</a><a class="btn btn-outline" href="#contact">お問い合わせ</a></div>
-<script>
 
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNavigation = document.querySelector('#main-navigation');
+
+if (menuToggle && mainNavigation) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNavigation.classList.toggle('is-open');
+
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute(
+      'aria-label',
+      isOpen ? 'メニューを閉じる' : 'メニューを開く'
+    );
+
+    const menuIcon = menuToggle.querySelector('.menu-icon');
+    if (menuIcon) {
+      menuIcon.textContent = isOpen ? '✕' : '☰';
+    }
+  });
+
+  mainNavigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNavigation.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'メニューを開く');
+
+      const menuIcon = menuToggle.querySelector('.menu-icon');
+      if (menuIcon) {
+        menuIcon.textContent = '☰';
+      }
+    });
+  });
+}
 </script>
+
 </body>
 </html>
