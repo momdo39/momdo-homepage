@@ -105,6 +105,65 @@
       color: var(--navy);
     }
 
+    /* Momdo treatment section */
+    .treatment-section {
+      margin: 20px 0;
+      padding: 42px 28px;
+      background: linear-gradient(180deg, #f3f7fc 0%, #ffffff 100%);
+      border: 1px solid #dce5ef;
+      border-top: 4px solid var(--gold);
+      border-radius: 12px;
+    }
+
+    .treatment-section > p:not(.treatment-note) {
+      margin-bottom: 28px;
+    }
+
+    .treatment-card {
+      margin: 18px 0;
+      padding: 22px 24px;
+      background: #ffffff;
+      border: 1px solid #dce5ef;
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+    }
+
+    .step-number {
+      color: #9a762e;
+      font-family: Georgia, serif;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: .15em;
+    }
+
+    .treatment-card h3 {
+      margin: 6px 0 10px;
+      color: var(--navy);
+      font-size: 19px;
+    }
+
+    .treatment-card p {
+      margin: 0;
+    }
+
+    .treatment-note {
+      margin-top: 24px;
+      padding: 14px 16px;
+      background: #fffaf0;
+      border-left: 3px solid var(--gold);
+      font-size: 13px;
+    }
+
+    @media (max-width: 520px) {
+      .treatment-section {
+        padding: 28px 18px;
+      }
+
+      .treatment-card {
+        padding: 18px;
+      }
+    }
+    
     .notice {
       padding: 16px 18px;
       background: #fffaf0;
