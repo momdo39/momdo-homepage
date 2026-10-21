@@ -342,13 +342,12 @@ padding-left: 24px;
 /* Momdoストーリー詳細ページへのリンク */
 .story-more{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:10px 18px;border:1px solid var(--gold);border-radius:3px;color:var(--gold);font-weight:700;transition:background .2s,color .2s}
 .story-more:hover{background:var(--gold);color:#1C100B}
-.about-momdo{position:relative;isolation:isolate;overflow:hidden;background:#06142f url("momdo-network-bg.jpg") center 42%/cover no-repeat;color:#fff}
-.about-momdo .wrap{position:relative}
-.about-momdo h2,.about-momdo h3{color:#fff}
-.about-momdo .about-intro,.about-momdo p{color:#eef6ff}
-.about-momdo .eyebrow{color:#f1d89b}
-.about-momdo .about-catch{margin-top:28px;padding:20px 24px;border-left:3px solid #e5c17a;background:rgba(4,18,48,.46)}
-@media(max-width:600px){.about-momdo{background-position:center 35%}.about-momdo .about-catch{padding:18px}}
+.connection-banner{background:#fff;padding:0}
+.about-momdo{background:#fff;color:var(--ink)}
+.entry{position:relative;isolation:isolate;background:#061b4a url("choose-your-way-bg.jpg") center 42%/cover no-repeat;color:#fff}
+.entry .entry-head .eyebrow{color:#f1d89b;text-shadow:0 2px 7px rgba(0,15,48,.85)}
+.entry .entry-head h2,.entry .entry-head p{color:#fff!important;text-shadow:0 2px 8px rgba(0,15,48,.9)}
+@media(max-width:600px){.entry{background-position:center 35%}}
 </style>
 </head>
 <body>
@@ -367,6 +366,7 @@ padding-left: 24px;
   <a href="menu.html">メニュー・料金</a>
   <a href="access.html">アクセス</a>
   <a href="faq.html">FAQ</a>
+  <a href="contact.html">ご予約・お問い合わせ</a>
 
   <div class="nav-dropdown">
     <button
@@ -398,7 +398,7 @@ padding-left: 24px;
       <span>メニュー</span>
     </button>
 
-    <a class="btn btn-outline header-contact" href="#contact">
+    <a class="btn btn-outline header-contact" href="contact.html">
       お問い合わせ
     </a>
   </div>
@@ -411,7 +411,7 @@ padding-left: 24px;
     <div class="hero-image-links" aria-label="メインメニュー">
       <a class="btn btn-gold" href="#concerns">お悩みから探す ↗</a>
       <a class="btn btn-outline" href="body-explorer.html">身体を知る・BODY EXPLORER ↗</a>
-      <a class="btn btn-outline" href="#contact">お問い合わせ ↗</a>
+      <a class="btn btn-outline" href="contact.html">お問い合わせ ↗</a>
     </div>
   </div>
 </section>
@@ -527,51 +527,28 @@ padding-left: 24px;
     <a class="btn btn-gold" href="menu.html">メニュー・料金を見る <span aria-hidden="true">→</span></a>
   </div>
 </section>
-<section class="section faq"><div class="wrap"><div class="eyebrow" style="color:#9b762d">FAQ</div>
+<section class="section faq" id="faq"><div class="wrap"><div class="eyebrow" style="color:#9b762d">FAQ</div>
   <h2>よくあるご質問</h2>
-  <div class="faq-list">
-    <details><summary>どんな服装で行けばいいですか？</summary>
-    <p>服を着たまま受ける施術を中心に想定しています。適した服装や着替えの有無は、来店前にお問い合わせください。</p>
-  </details><details><summary>痛みがあるときも施術を受けられますか？</summary>
-    <p>症状や状態によって適切な対応は異なります。強い痛み、急な症状、しびれや力の入りにくさなどがある場合は、まず医療機関へご相談ください。</p>
-  </details><details><summary>予約方法を教えてください。</summary>
-    <p>電話番号・LINE予約先などの正式情報を確認後、このページに掲載します。現時点では予約先を仮設定していません。</p>
-  </details><details><summary>一度で必ず改善しますか？</summary>
-    <p>身体の状態や症状の背景には個人差があり、結果を保証することはできません。状態を確認し、できることを相談しながら進めます。</p>
-   </details></div>
-  <div style="text-align:center;margin-top:28px">
-    <a class="btn btn-gold" href="faq.html">よくあるご質問をもっと見る <span aria-hidden="true">→</span></a>
-  </div>
+  <p class="lead">服装やご予約、施術についてのご質問をまとめています。</p>
+  <div style="text-align:center;margin-top:28px"><a class="btn btn-gold" href="faq.html">よくあるご質問を見る <span aria-hidden="true">→</span></a></div>
 </div></section>
 <section class="section access" id="access">
-
  <div class="wrap">
   <div class="eyebrow" style="color:#9b762d">Visit Momdo</div>
   <h2>アクセス・ご来店について</h2>
-  <p class="lead">所在地や最寄り駅、ご来店に関する情報をご案内します。</p>
-  <div style="text-align:center;margin:28px 0">
-    <a class="btn btn-gold" href="access.html">アクセス情報を見る <span aria-hidden="true">→</span></a>
-  </div>
+  <p class="lead">福岡市城南区七隈。地下鉄七隈線「金山駅」1番出口から徒歩約2分です。</p>
   <div class="access-grid">
-    <div class="access-card">
-      <h3>Momdoマッサージ整体</h3>
-      <p><strong>所在地：</strong>福岡市城南区七隈<br><strong>最寄り：</strong>金山駅 徒歩2分</p>
-      <p>住所の詳細、営業時間、定休日、駐車場などは、公開前に最新情報を確認して掲載します。</p>
-    </div>
-    <div class="access-card">
-      <h3>ご予約・お問い合わせ</h3>
-      <p>ご予約の電話番号・LINE公式アカウントなど、確認できた連絡先をここに追加します。</p>
-      <a class="btn btn-gold" href="#contact">連絡先情報を確認する</a>
-    </div>
+    <div class="access-card"><h3>所在地</h3><p>〒814-0133<br>福岡県福岡市城南区七隈3丁目5-14</p><a class="btn btn-gold" href="access.html">アクセス・来店の流れを見る</a></div>
+    <div class="access-card"><h3>ご予約・お問い合わせ</h3><p>ご予約はお電話で承っています。詳細と受付時間はお問い合わせページをご覧ください。</p><a class="btn btn-gold" href="contact.html">ご予約・お問い合わせへ</a></div>
   </div>
-</div>
+ </div>
 </section>
 
     
-<section class="contact-band" id="contact"><div class="wrap"><div class="eyebrow">Start by understanding</div><h2>身体を知ることから、始めませんか。</h2><p>気になる症状や施術について、まずはお気軽にご相談ください。</p><div class="contact-actions"><a class="btn btn-gold" href="#access">アクセス・予約情報</a><a class="btn btn-outline" href="body-explorer.html">BODY EXPLORERを試す</a></div><p style="font-size:.78rem;margin-top:20px">※電話番号・LINEリンクは、正式な情報を確認してから設定します。</p></div></section>
+<section class="contact-band" id="contact"><div class="wrap"><div class="eyebrow">Start by understanding</div><h2>身体を知ることから、始めませんか。</h2><p>気になる症状や施術について、まずはお気軽にご相談ください。</p><div class="contact-actions"><a class="btn btn-gold" href="contact.html">ご予約・お問い合わせ</a><a class="btn btn-outline" href="body-explorer.html">BODY EXPLORERを試す</a></div><p style="font-size:.78rem;margin-top:20px">アクセスやご来店の流れは専用ページでご案内しています。</p></div></section>
 <section class="section blog"><div class="wrap"><div class="eyebrow" style="color:#9b762d">Journal / Body knowledge</div><h2>身体の知識を、もっと身近に。</h2><div class="blog-grid"><article class="blog-card"><small>BODY KNOWLEDGE</small><h3>肩を上げるとき、肩甲骨はどう動く？</h3><p>肩だけでなく、肩甲骨や胸郭の動きにも目を向けてみましょう。</p></article><article class="blog-card"><small>BODY KNOWLEDGE</small><h3>足首の動きと歩くことの関係</h3><p>足首の機能を知ることは、歩行を理解する入口のひとつです。</p></article><article class="blog-card"><small>MOMDO STORY</small><h3>スタッフ紹介・マンガ企画</h3><p>スタッフの実際の経験や人柄を取材し、事実確認をしてから掲載します。</p></article></div></div></section>
 </main><footer><div class="wrap"><div><div class="footbrand">MOMDO</div><div>Massage & Manipulative</div><div>福岡市城南区七隈｜金山駅周辺</div></div><div>掲載内容は公開前に最新情報をご確認ください。<br><a href="#home">ページ上部へ ↑</a></div><div>© Momdo Massage & Bodywork</div></div></footer>
-<div class="mobile-cta"><a class="btn btn-gold" href="#concerns">悩みから探す</a><a class="btn btn-outline" href="body-explorer.html">身体を知る</a><a class="btn btn-outline" href="#contact">お問い合わせ</a></div>
+<div class="mobile-cta"><a class="btn btn-gold" href="#concerns">悩みから探す</a><a class="btn btn-outline" href="body-explorer.html">身体を知る</a><a class="btn btn-outline" href="contact.html">お問い合わせ</a></div>
 
 
 <script>
