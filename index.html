@@ -406,8 +406,15 @@ padding-left: 24px;
 
 <main id="home">
 <section class="hero hero-image" aria-label="Momdoのメインビジュアル">
-  <div class="wrap hero-image-wrap">
-    <img src="momdo-hero-cropped.png" alt="サファイアブルーの光で人体の肩・背骨・筋肉のつながりを表現した、Momdoマッサージ整体の近未来的なメインビジュアル">
+  <div class="wrap hero-image-wrap"><picture>
+  <source
+    media="(max-width: 600px)"
+    srcset="momdo-hero-mobile.png">
+  <img
+    src="momdo-hero-cropped.png"
+    alt="Momdoマッサージ整体。こんな施術、受けたことがない。身体の見方が変わる。"
+  >
+</picture>
     <div class="hero-image-links" aria-label="メインメニュー">
       <a class="btn btn-gold" href="#concerns">お悩みから探す ↗</a>
       <a class="btn btn-outline" href="body-explorer.html">身体を知る・BODY EXPLORER ↗</a>
