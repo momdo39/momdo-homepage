@@ -11,7 +11,36 @@
 .page-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 .page-back{display:inline-block;margin-top:24px;color:#135b91;font-weight:700}
 .note-box{padding:16px 18px;background:#f3f7fc;border-left:3px solid #d9b66f;color:#45546d;margin-top:26px}
-.body-regions{background:#f5f8fc}.regions-intro{max-width:820px;margin-bottom:28px}.region-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.region-card{display:flex;flex-direction:column;min-height:176px;padding:20px;background:#fff;border:1px solid #dce5f1;border-radius:8px;transition:.2s}.region-card[href]:hover{transform:translateY(-3px);border-color:#75b6d8;box-shadow:0 10px 24px #143b6412}.region-number{font-size:.74rem;letter-spacing:.12em;color:#9b762d;font-weight:700}.region-card h3{margin:7px 0;color:#123c70;font-size:1.08rem}.region-card p{margin:0 0 12px;color:#61708a;font-size:.87rem;line-height:1.65}.region-status{margin-top:auto;color:#0b64a6;font-size:.78rem;font-weight:700}.region-status.pending{color:#7a8494}.region-plan{margin-top:28px;padding:22px 24px;background:#fff;border-left:3px solid #d9b66f}.region-plan h3{margin:0 0 8px;color:#123c70}.region-plan ol{margin:0;padding-left:1.4em;color:#45546d}.region-plan li+li{margin-top:3px}.region-disclaimer{margin:18px 0 0;color:#69778c;font-size:.82rem}@media(max-width:850px){.region-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.region-grid{grid-template-columns:1fr}.region-card{min-height:150px}}.body-zone[data-part=elbow] .zone-shape,.body-zone[data-part=forearm] .zone-shape,.body-zone[data-part=hand] .zone-shape{stroke-width:2}.body-picker .body-pick{line-height:1.35}</style></head><body>
+.body-regions{background:#f5f8fc}.regions-intro{max-width:820px;margin-bottom:28px}
+  .region-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .region-card{display:flex;flex-direction:column;min-height:176px;padding:20px;background:#fff;border:1px solid #dce5f1;border-radius:8px;transition:.2s}
+  .region-card[href]:hover{transform:translateY(-3px);border-color:#75b6d8;box-shadow:0 10px 24px #143b6412}.region-number{font-size:.74rem;letter-spacing:.12em;color:#9b762d;font-weight:700}
+  .region-card h3{margin:7px 0;color:#123c70;font-size:1.08rem}.region-card p{margin:0 0 12px;color:#61708a;font-size:.87rem;line-height:1.65}
+  .region-status{margin-top:auto;color:#0b64a6;font-size:.78rem;font-weight:700}.region-status.pending{color:#7a8494}.region-plan{margin-top:28px;padding:22px 24px;background:#fff;border-left:3px solid #d9b66f}
+  .region-plan h3{margin:0 0 8px;color:#123c70}.region-plan ol{margin:0;padding-left:1.4em;color:#45546d}.region-plan li+li{margin-top:3px}
+  .region-disclaimer{margin:18px 0 0;color:#69778c;font-size:.82rem}@media(max-width:850px){.region-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.region-grid{grid-template-columns:1fr}
+  .region-card{min-height:150px}}.body-zone[data-part=elbow]
+  .zone-shape,.body-zone[data-part=forearm]
+  .zone-shape,.body-zone[data-part=hand]
+  .zone-shape{stroke-width:2}.body-picker .body-pick{line-height:1.35}
+
+/* スマホ用メニューボタン */ .menu-toggle { display: none; width: 44px; height: 44px; padding: 10px; border: 1px solid #d9c18b; border-radius: 4px; background: transparent; cursor: pointer; flex-shrink: 0; }
+.menu-toggle span { display: block; height: 2px; width: 100%; margin: 5px 0; background: #e5c17a; transition: transform .2s, opacity .2s; }
+/* スマホではメニューを開閉式にする */ @media (max-width: 850px) { .nav { position: relative; min-height: 70px; gap: 10px; }
+.brand { font-size: 1.3rem; }
+.header-reserve { display: none; }
+.menu-toggle { display: block; }
+.navlinks { display: none; position: absolute; top: 100%; left: -4.35%; right: -4.35%; z-index: 100; padding: 12px 5%; background: #081a3b; border-top: 1px solid #ffffff22; border-bottom: 1px solid #d9c18b; box-shadow: 0 8px 20px #0004; }
+.navlinks.is-open { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+.navlinks a { display: block; padding: 12px 8px; border-bottom: 1px solid #ffffff18; font-size: .9rem; }
+.navlinks a:last-child { border-bottom: none; }
+.navlinks a:hover { color: #61e5ff; }
+/* メニューを開くとボタンが×印になる */ .menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); } }
+
+
+</style></head><body>
 <div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>Momdo Massage &amp; Manipulative</span></div></div>
 <header class="header"><div class="wrap nav"><a class="brand" href="index.html">Momdo<small>Massage &amp; Manipulative</small></a>
   
@@ -190,4 +219,11 @@ const bodyConnections={head:["neck"],neck:["head","shoulder","thorax","back"],sh
 function selectPart(key){const d=bodyInfo[key];if(!d)return;const linked=bodyConnections[key]||[];document.querySelectorAll(".body-zone").forEach(el=>{el.classList.toggle("active",el.dataset.part===key);el.classList.toggle("related",linked.includes(el.dataset.part));});document.querySelectorAll(".body-pick").forEach(el=>el.setAttribute("aria-pressed",el.dataset.part===key?"true":"false"));document.getElementById("part-title").textContent=d.title;document.getElementById("part-desc").textContent=d.desc;document.getElementById("part-motion").textContent=d.motion;const r=document.getElementById("related");r.replaceChildren(...d.related.map(label=>{const s=document.createElement("span");s.className="chip";s.textContent=label;return s;}));const detailLink=document.getElementById("part-detail-link");const shoulderKeys=["shoulder","scapula"];const armKeys=["elbow","forearm","hand"];if(shoulderKeys.includes(key)){detailLink.href="body-shoulder.html";detailLink.textContent="肩・肩甲骨の構造と働きを詳しく見る ↗";detailLink.hidden=false;}else if(armKeys.includes(key)){detailLink.href="body-elbow-hand.html";detailLink.textContent="肘・手の構造と働きを詳しく見る ↗";detailLink.hidden=false;}else if(key==="lumbar"||key==="pelvis"){detailLink.href="body-waist.html";detailLink.textContent="腰・骨盤の構造と働きを詳しく見る ↗";detailLink.hidden=false;}else{detailLink.hidden=true;}}
 document.querySelectorAll(".body-zone").forEach(el=>{el.addEventListener("click",()=>selectPart(el.dataset.part));el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();selectPart(el.dataset.part);}});});document.querySelectorAll(".body-pick").forEach(el=>el.addEventListener("click",()=>selectPart(el.dataset.part)));
 selectPart("shoulder");
+
+const menuToggle = document.querySelector(".menu-toggle"); const siteNav = document.getElementById("site-nav");
+menuToggle.addEventListener("click", () => { const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+menuToggle.setAttribute("aria-expanded", String(!isOpen)); menuToggle.setAttribute( "aria-label", isOpen ? "メニューを開く" : "メニューを閉じる" );
+siteNav.classList.toggle("is-open", !isOpen); });
+// リンクをタップしたらメニューを閉じる siteNav.querySelectorAll("a").forEach(link => { link.addEventListener("click", () => { menuToggle.setAttribute("aria-expanded", "false"); menuToggle.setAttribute("aria-label", "メニューを開く"); siteNav.classList.remove("is-open"); }); });
+
 </script></body></html>
