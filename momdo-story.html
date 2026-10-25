@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --navy: #092b52;
@@ -19,7 +20,9 @@
       --text: #24364b;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -29,7 +32,9 @@
       line-height: 1.9;
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
 
     .hero {
       padding: 76px 20px 82px;
@@ -70,7 +75,9 @@
       margin: 0 auto;
     }
 
-    section { padding: 54px 0; }
+    section {
+      padding: 54px 0;
+    }
 
     .eyebrow {
       color: #9a762e;
@@ -166,7 +173,7 @@
         padding: 18px;
       }
     }
-    
+
     .notice {
       padding: 16px 18px;
       background: #fffaf0;
@@ -184,7 +191,9 @@
       text-decoration: none;
     }
 
-    .back:hover { background: var(--blue); }
+    .back:hover {
+      background: var(--blue);
+    }
 
     .footer {
       padding: 28px 18px;
@@ -194,70 +203,387 @@
       font-size: 13px;
     }
 
-    .footer a { color: #e6c783; }
-
-    @media (max-width: 520px) {
-      .hero { padding: 58px 18px; }
-      section { padding: 40px 0; }
-      .story-card { padding: 20px; }
+    .footer a {
+      color: #e6c783;
     }
 
-/* Accessページと共通のカラー・タイポグラフィ・ページ枠 */
-:root{--brown:#1C100B;--brown2:#352219;--gold:#C69B52;--gold-light:#F3DDA6;--cream:#F8F5EF;--ink:#33251D;--muted:#786A60;--line:#E8DFD2}
-html{scroll-padding-top:90px}
-body{background:var(--cream);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.9}
-header{position:sticky;top:0;z-index:100;background:rgba(28,16,11,.97);border-bottom:1px solid rgba(198,155,82,.4);color:#fff}
-.header-inner{width:min(1080px,calc(100% - 36px));min-height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;flex-direction:column;line-height:1.4;flex-shrink:0;margin:0;color:#fff}
-.brand-name{font-family:"Shippori Mincho",serif;font-size:25px;letter-spacing:.12em}
-.brand-sub{font-family:"Cinzel",serif;font-size:9px;letter-spacing:.16em;color:var(--gold-light)}
-.site-nav{display:flex;align-items:center;flex-wrap:wrap;gap:18px;font-size:12px}
-.site-nav a{color:#fff;text-decoration:none}
-.site-nav a:hover{color:var(--gold-light)}
-.site-nav .nav-button{padding:8px 13px;border:1px solid var(--gold);color:var(--gold-light)}
-.hero{padding:78px 0 72px;text-align:center;color:#fff;background:radial-gradient(ellipse at 80% 10%,rgba(198,155,82,.18),transparent 40%),linear-gradient(135deg,#38271C,#1C100B);border-bottom:0}
-.hero .container{width:min(1080px,calc(100% - 36px));margin:auto}
-.hero h1{font-family:"Shippori Mincho",serif;font-size:clamp(29px,4vw,43px);font-weight:500;letter-spacing:.07em;line-height:1.6}
-.hero .brand{font-family:"Cinzel",serif;color:var(--gold-light);font-size:12px;letter-spacing:.16em;margin:0 0 16px}
-.hero-sub{font-family:"Cinzel",serif;color:var(--gold-light);font-size:12px;letter-spacing:.18em}
-.hero p:last-child{color:#eee4d8}
-.gold-line{width:75px;height:2px;margin:24px auto;background:linear-gradient(90deg,#B88E43,#FFF0D0,#C69B52)}
-main{width:min(1080px,calc(100% - 36px));margin:0 auto}
-section{padding:76px 0;border-bottom:1px solid var(--line)}
-.eyebrow{font-family:"Cinzel",serif;color:var(--gold);font-size:11px;font-weight:500;letter-spacing:.2em}
-h2,h3{font-family:"Shippori Mincho",serif;font-weight:500}
-h2{margin:8px 0 20px;color:var(--brown2);font-size:clamp(25px,3.3vw,34px);line-height:1.6}
-h3{color:var(--brown2)}
-.intro{padding:68px 32px;background:#fff;text-align:center;border-bottom:1px solid var(--line)}
-.intro p{max-width:700px;margin:0 auto;color:var(--muted)}
-.story-card{padding:30px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:0;box-shadow:0 12px 35px rgba(48,31,19,.05)}
-.story-card h3{font-size:21px}
-.profile-message{font-family:"Shippori Mincho",serif;font-size:1.2rem;font-weight:500;color:var(--brown2);line-height:1.8}
-.notice,.treatment-note{background:var(--cream);border-left:3px solid var(--gold);color:var(--muted)}
-.treatment-section{margin:20px 0;padding:42px 28px;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:0}
-.treatment-card{background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0;box-shadow:0 8px 24px rgba(48,31,19,.04)}
-.step-number{font-family:"Cinzel",serif;color:var(--gold)}
-.treatment-card h3{font-size:20px}
-.back{padding:12px 24px;background:var(--brown);border:1px solid var(--gold);border-radius:0;color:#fff;text-decoration:none}
-.back:hover{background:var(--brown2)}
-.footer{padding:28px 18px;background:var(--brown);color:#eee4d8;text-align:center;font-size:13px}
-.footer-brand{font-family:"Shippori Mincho",serif;font-size:22px;color:#fff}
-.footer-sub{font-family:"Cinzel",serif;font-size:9px;letter-spacing:.16em;color:var(--gold-light)}
-.footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 20px;margin:18px 0 20px;font-size:11px}
-.footer-nav a{color:#fff;text-decoration:none}
-.footer-nav a:hover{color:var(--gold-light)}.footer a{color:#fff}
-.footer small{color:#b8a99d}
-@media(max-width:800px){.header-inner{padding:14px 0;align-items:flex-start;flex-direction:column;gap:12px}.site-nav{gap:12px 15px}.treatment-section{padding:34px 22px}}
-@media(max-width:560px){.header-inner,main,.hero .container{width:calc(100% - 28px)}.hero{padding:55px 0}.hero h1{font-size:28px}section{padding:54px 0}.intro{padding:48px 14px}.story-card{padding:20px}.treatment-section{padding:28px 18px}.treatment-card{padding:18px}}
-</style>
+    @media (max-width: 520px) {
+      .hero {
+        padding: 58px 18px;
+      }
+
+      section {
+        padding: 40px 0;
+      }
+
+      .story-card {
+        padding: 20px;
+      }
+    }
+
+    /* Accessページと共通のカラー・タイポグラフィ・ページ枠 */
+    :root {
+      --brown: #1C100B;
+      --brown2: #352219;
+      --gold: #C69B52;
+      --gold-light: #F3DDA6;
+      --cream: #F8F5EF;
+      --ink: #33251D;
+      --muted: #786A60;
+      --line: #E8DFD2;
+    }
+
+    html {
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Noto Sans JP", sans-serif;
+      line-height: 1.9;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(28,16,11,.97);
+      border-bottom: 1px solid rgba(198,155,82,.4);
+      color: #fff;
+    }
+
+    .header-inner {
+      width: min(1080px, calc(100% - 36px));
+      min-height: 76px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.4;
+      flex-shrink: 0;
+      margin: 0;
+      color: #fff;
+    }
+
+    .brand-name {
+      font-family: "Shippori Mincho", serif;
+      font-size: 25px;
+      letter-spacing: .12em;
+    }
+
+    .brand-sub {
+      font-family: "Cinzel", serif;
+      font-size: 9px;
+      letter-spacing: .16em;
+      color: var(--gold-light);
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 12px;
+    }
+
+    .site-nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .site-nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .site-nav .nav-button {
+      padding: 8px 13px;
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+    }
+
+    .hero {
+      padding: 78px 0 72px;
+      text-align: center;
+      color: #fff;
+      background:
+        radial-gradient(ellipse at 80% 10%, rgba(198,155,82,.18), transparent 40%),
+        linear-gradient(135deg, #38271C, #1C100B);
+      border-bottom: 0;
+    }
+
+    .hero .container {
+      width: min(1080px, calc(100% - 36px));
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-family: "Shippori Mincho", serif;
+      font-size: clamp(29px, 4vw, 43px);
+      font-weight: 500;
+      letter-spacing: .07em;
+      line-height: 1.6;
+    }
+
+    .hero .brand {
+      font-family: "Cinzel", serif;
+      color: var(--gold-light);
+      font-size: 12px;
+      letter-spacing: .16em;
+      margin: 0 0 16px;
+    }
+
+    .hero-sub {
+      font-family: "Cinzel", serif;
+      color: var(--gold-light);
+      font-size: 12px;
+      letter-spacing: .18em;
+    }
+
+    .hero p:last-child {
+      color: #eee4d8;
+    }
+
+    .gold-line {
+      width: 75px;
+      height: 2px;
+      margin: 24px auto;
+      background: linear-gradient(90deg, #B88E43, #FFF0D0, #C69B52);
+    }
+
+    main {
+      width: min(1080px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 76px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      font-family: "Cinzel", serif;
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .2em;
+    }
+
+    h2,
+    h3 {
+      font-family: "Shippori Mincho", serif;
+      font-weight: 500;
+    }
+
+    h2 {
+      margin: 8px 0 20px;
+      color: var(--brown2);
+      font-size: clamp(25px, 3.3vw, 34px);
+      line-height: 1.6;
+    }
+
+    h3 {
+      color: var(--brown2);
+    }
+
+    .intro {
+      padding: 68px 32px;
+      background: #fff;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .intro p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .story-card {
+      padding: 30px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-top: 2px solid var(--gold);
+      border-radius: 0;
+      box-shadow: 0 12px 35px rgba(48,31,19,.05);
+    }
+
+    .story-card h3 {
+      font-size: 21px;
+    }
+
+    .profile-message {
+      font-family: "Shippori Mincho", serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--brown2);
+      line-height: 1.8;
+    }
+
+    .notice,
+    .treatment-note {
+      background: var(--cream);
+      border-left: 3px solid var(--gold);
+      color: var(--muted);
+    }
+
+    .treatment-section {
+      margin: 20px 0;
+      padding: 42px 28px;
+      background: linear-gradient(180deg, #fff 0%, var(--cream) 100%);
+      border: 1px solid var(--line);
+      border-top: 2px solid var(--gold);
+      border-radius: 0;
+    }
+
+    .treatment-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--gold);
+      border-radius: 0;
+      box-shadow: 0 8px 24px rgba(48,31,19,.04);
+    }
+
+    .step-number {
+      font-family: "Cinzel", serif;
+      color: var(--gold);
+    }
+
+    .treatment-card h3 {
+      font-size: 20px;
+    }
+
+    .back {
+      padding: 12px 24px;
+      background: var(--brown);
+      border: 1px solid var(--gold);
+      border-radius: 0;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      background: var(--brown2);
+    }
+
+    .footer {
+      padding: 28px 18px;
+      background: var(--brown);
+      color: #eee4d8;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .footer-brand {
+      font-family: "Shippori Mincho", serif;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    .footer-sub {
+      font-family: "Cinzel", serif;
+      font-size: 9px;
+      letter-spacing: .16em;
+      color: var(--gold-light);
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin: 18px 0 20px;
+      font-size: 11px;
+    }
+
+    .footer-nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer a {
+      color: #fff;
+    }
+
+    .footer small {
+      color: #b8a99d;
+    }
+
+    @media (max-width: 800px) {
+      .header-inner {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .site-nav {
+        gap: 12px 15px;
+      }
+
+      .treatment-section {
+        padding: 34px 22px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .header-inner,
+      main,
+      .hero .container {
+        width: calc(100% - 28px);
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .intro {
+        padding: 48px 14px;
+      }
+
+      .story-card {
+        padding: 20px;
+      }
+
+      .treatment-section {
+        padding: 28px 18px;
+      }
+
+      .treatment-card {
+        padding: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <header>
     <div class="header-inner">
+
       <a class="brand" href="index.html" aria-label="Momdo トップページ">
         <span class="brand-name">Momdo</span>
         <span class="brand-sub">MASSAGE &amp; BODYWORK</span>
       </a>
+
       <nav class="site-nav" aria-label="メインナビゲーション">
         <a href="index.html">ホーム</a>
         <a href="concerns.html">お悩みから探す</a>
@@ -267,255 +593,347 @@ h3{color:var(--brown2)}
         <a href="access.html">アクセス</a>
         <a class="nav-button" href="contact.html">ご予約・お問い合わせ</a>
       </nav>
+
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
+
       <p class="brand">MOMDO MASSAGE &amp; BODYWORK</p>
+
       <h1>MOMDO STORY</h1>
+
       <div class="gold-line" aria-hidden="true"></div>
+
       <p class="hero-sub">PEOPLE · EXPERIENCE · STORY</p>
+
       <p>人を知る。経験を知る。Momdoを知る。</p>
+
     </div>
   </section>
 
   <main>
+
     <section class="intro">
+
       <div class="eyebrow">OUR STORY</div>
+
       <h2>施術の向こう側にある、人の物語。</h2>
+
       <p>
         施術を受ける場所を選ぶとき、技術だけでなく、
         「どんな人が向き合ってくれるのか」も大切なこと。
         MOMDO STORYでは、スタッフの経験や人柄、
         Momdoに込めた思いを少しずつお伝えしていきます。
       </p>
+
     </section>
 
     <section>
+
       <div class="eyebrow">01 / ORIGIN</div>
+
       <h2>Momdoが生まれた背景</h2>
+
       <div class="story-card">
-        <h3>「もうどこに行けばいいか分からない」と悩む、すべての人の受け皿になりたい。</h3>
+
+        <h3>
+          「もうどこに行けばいいか分からない」と悩む、
+          すべての人の受け皿になりたい。
+        </h3>
+
         <p>
-          以前、整骨院で働いていた時、私はある現実を目の当たりにしました。それは、身体の深い痛みを抱えながらも、どこに行っても良くならず、
-          途方に暮れている「治療難民」の方が想像以上に多いということでした。</p>
-    
-    <p>「こんなにも困っている人がいるのに、なぜ救えないのだろう」<br><br>
-    その悔しさが、私の原動力となりました。</p>
-    
-    <p style="font-size: 1.15rem; font-weight: bold; color: #111; line-height: 1.8; margin: 25px 0; text-align: center;">
-  痛みの原因は、決して一箇所だけではありません。<br>
-  筋肉、関節、神経系、トリガーポイント、さらには自律神経やホルモンバランスまで、あらゆる要素が複雑に絡み合っています。
-</p>
-    
-    <p>一人ひとりの身体の仕組みを根本から紐解き、本当のサポートを届けるために。私は数々の講習に足を運び、専門知識とあらゆる施術技術を
-      徹底的に学び続けてきました。</p>
-    
-    <p>地域の皆様はもちろん、どこに行っても改善しなかった遠方の皆様にも「ここに相談して本当に良かった」と安心して頼っていただける場所を作りたい。
-      その想いで立ち上げたのが、この『Momdo（モンド）』です。</p>
-    
-    <p>ありがたいことに現在では、口コミやご紹介を通じて、福岡県内にとどまらず県外からも多くの方が足を運んでくださるようになりました。
-      また、身体のケアに一切の妥協が許されないプロのアスリートの方々からも、お忍びで深く信頼を寄せていただいています。</p>
-    
-    <p>「もう諦めるしかないのかな」と悩む前に、ぜひ一度、あなたの身体の声を私たちに聞かせてください。</p>
-  </div>
+          以前、整骨院で働いていた時、私はある現実を目の当たりにしました。
+          それは、身体の深い痛みを抱えながらも、どこに行っても良くならず、
+          途方に暮れている「治療難民」の方が想像以上に多いということでした。
+        </p>
+
+        <p>
+          「こんなにも困っている人がいるのに、なぜ救えないのだろう」
+          <br><br>
+          その悔しさが、私の原動力となりました。
+        </p>
+
+        <p style="font-size: 1.15rem; font-weight: bold; color: #111; line-height: 1.8; margin: 25px 0; text-align: center;">
+          痛みの原因は、決して一箇所だけではありません。
+          <br>
+          筋肉、関節、神経系、トリガーポイント、さらには自律神経やホルモンバランスまで、
+          あらゆる要素が複雑に絡み合っています。
+        </p>
+
+        <p>
+          一人ひとりの身体の仕組みを根本から紐解き、
+          本当のサポートを届けるために。
+          私は数々の講習に足を運び、専門知識とあらゆる施術技術を
+          徹底的に学び続けてきました。
+        </p>
+
+        <p>
+          地域の皆様はもちろん、どこに行っても改善しなかった遠方の皆様にも
+          「ここに相談して本当に良かった」と安心して頼っていただける場所を作りたい。
+          その想いで立ち上げたのが、この『Momdo（モンド）』です。
+        </p>
+
+        <p>
+          ありがたいことに現在では、口コミやご紹介を通じて、
+          福岡県内にとどまらず県外からも多くの方が足を運んでくださるようになりました。
+          また、身体のケアに一切の妥協が許されないプロのアスリートの方々からも、
+          お忍びで深く信頼を寄せていただいています。
+        </p>
+
+        <p>
+          「もう諦めるしかないのかな」と悩む前に、
+          ぜひ一度、あなたの身体の声を私たちに聞かせてください。
+        </p>
+
+      </div>
+
     </section>
 
-  
-<section>
-  <div class="eyebrow">02 / STAFF</div>
-  <h2>スタッフ紹介</h2>
+    <section>
 
-  <div class="story-card">
+      <div class="eyebrow">02 / STAFF</div>
 
-    <p class="step-number">MOMDO STAFF</p>
+      <h2>スタッフ紹介</h2>
 
-    <h3>井手 智一</h3>
+      <div class="story-card">
 
-    <p class="profile-message">
-      施術経験24年。身体と向き合い続けてきた施術者。
-    </p>
+        <p class="step-number">MOMDO STAFF</p>
 
-    <p>
-      「もう、どこに行けばいいか分からない」
-      そんな悩みを抱える方の力になりたい。
-    </p>
+        <h3>井手 智一</h3>
 
-    <p>
-      整骨院で働いていた頃、私は、身体の痛みを抱えながら、
-      どこに行っても改善せず、途方に暮れている方が
-      多くいることを知りました。
-    </p>
+        <p class="profile-message">
+          施術経験24年。身体と向き合い続けてきた施術者。
+        </p>
 
-    <p>
-      その現実を目の前にして、もっと身体について学び、
-      一人ひとりに合ったサポートを届けたいと思うようになりました。
-    </p>
+        <p>
+          「もう、どこに行けばいいか分からない」
+          そんな悩みを抱える方の力になりたい。
+        </p>
 
-    <p>
-      その思いから、さまざまな講習に参加し、
-      身体の仕組みや施術技術を学び続けてきました。
-    </p>
+        <p>
+          整骨院で働いていた頃、私は、身体の痛みを抱えながら、
+          どこに行っても改善せず、途方に暮れている方が
+          多くいることを知りました。
+        </p>
 
-    <p>
-      そして、これまでの経験を活かし、
-      身体のことで悩む方が安心して相談できる場所として、
-      Momdoを始めました。
-    </p>
+        <p>
+          その現実を目の前にして、もっと身体について学び、
+          一人ひとりに合ったサポートを届けたいと思うようになりました。
+        </p>
 
-    <h3>施術で大切にしていること</h3>
+        <p>
+          その思いから、さまざまな講習に参加し、
+          身体の仕組みや施術技術を学び続けてきました。
+        </p>
 
-    <p>
-      痛みのある場所だけを見るのではなく、
-      身体全体のつながりや動きにも目を向けること。
-    </p>
+        <p>
+          そして、これまでの経験を活かし、
+          身体のことで悩む方が安心して相談できる場所として、
+          Momdoを始めました。
+        </p>
 
-    <p>
-      一人ひとり身体の状態は違います。
-      だからこそ、決まった施術を一律に行うのではなく、
-      その方の状態を確認しながら、
-      何が必要なのかを考えることを大切にしています。
-    </p>
+        <h3>施術で大切にしていること</h3>
 
-    <h3>Momdoを始めた理由</h3>
+        <p>
+          痛みのある場所だけを見るのではなく、
+          身体全体のつながりや動きにも目を向けること。
+        </p>
 
-    <p class="profile-message">
-      「こんなにも困っている人がいるのに、
-      なぜ救えないのだろう」
-    </p>
+        <p>
+          一人ひとり身体の状態は違います。
+          だからこそ、決まった施術を一律に行うのではなく、
+          その方の状態を確認しながら、
+          何が必要なのかを考えることを大切にしています。
+        </p>
 
-    <p>
-      その悔しさが、私の原動力になりました。
-    </p>
+        <h3>Momdoを始めた理由</h3>
 
-    <p>
-      どこに行けばいいか分からず悩んでいる方に、
-      身体について考えるきっかけと、
-      安心して相談できる場所を届けたい。
-    </p>
+        <p class="profile-message">
+          「こんなにも困っている人がいるのに、
+          なぜ救えないのだろう」
+        </p>
 
-    <p>
-      それが、Momdoを始めた理由です。
-    </p>
+        <p>
+          その悔しさが、私の原動力になりました。
+        </p>
 
-  </div>
+        <p>
+          どこに行けばいいか分からず悩んでいる方に、
+          身体について考えるきっかけと、
+          安心して相談できる場所を届けたい。
+        </p>
 
-  <div class="story-card">
+        <p>
+          それが、Momdoを始めた理由です。
+        </p>
 
-    <h3>波多江　真紀子</h3>
+      </div>
 
-    <p>深層筋へのアプローチ × 神経ストレッチ。身体の状態を見極め、一人ひとりに向き合う施術者。
+      <div class="story-card">
 
-筋肉の深層部へのアプローチや、神経の動きに着目した施術を通じて、身体のさまざまなお悩みに向き合っています。
+        <h3>波多江 真紀子</h3>
 
-慢性的な肩こりや腰のつらさ、筋肉のこわばり、身体の動かしにくさ。
+        <p>
+          深層筋へのアプローチ × 神経ストレッチ。
+          身体の状態を見極め、一人ひとりに向き合う施術者。
+        </p>
 
-気になる部分だけを見るのではなく、身体全体のバランスや動きにも目を向けながら、一人ひとりのお身体の状態を確認することを大切にしています。
+        <p>
+          筋肉の深層部へのアプローチや、神経の動きに着目した施術を通じて、
+          身体のさまざまなお悩みに向き合っています。
+        </p>
 
-施術で大切にしていること
+        <p>
+          慢性的な肩こりや腰のつらさ、筋肉のこわばり、身体の動かしにくさ。
+        </p>
 
-身体の状態は、一人ひとり違います。
+        <p>
+          気になる部分だけを見るのではなく、
+          身体全体のバランスや動きにも目を向けながら、
+          一人ひとりのお身体の状態を確認することを大切にしています。
+        </p>
 
-だからこそ、決まった施術を一律に行うのではなく、その方のお身体の状態や動きを確認しながら、必要な施術を考えることを大切にしています。
+        <h3>施術で大切にしていること</h3>
 
-筋肉の深層部へのアプローチと、神経や身体の動きを意識した施術を組み合わせ、お一人おひとりに合わせた丁寧な施術を心がけています。
+        <p>
+          身体の状態は、一人ひとり違います。
+        </p>
 
-Momdoで大切にしていること
+        <p>
+          だからこそ、決まった施術を一律に行うのではなく、
+          その方のお身体の状態や動きを確認しながら、
+          必要な施術を考えることを大切にしています。
+        </p>
 
-専門的な技術を、もっと身近に。
+        <p>
+          筋肉の深層部へのアプローチと、
+          神経や身体の動きを意識した施術を組み合わせ、
+          お一人おひとりに合わせた丁寧な施術を心がけています。
+        </p>
 
-身体のことで悩んでいる方が、安心して相談できる場所でありたい。
+        <h3>Momdoで大切にしていること</h3>
 
-技術へのこだわりはもちろん、初めての方にも気軽にお話しいただける雰囲気を大切にしています。
+        <<p>
+          専門的な技術を、もっと身近に。
+        </p>
 
-お客様一人ひとりのお身体と真剣に向き合い、毎日を少しでも快適に過ごしていただけるよう、心を込めて施術いたします。</p>
+        <<p>
+          身体のことで悩んでいる方が、
+          安心して相談できる場所でありたい。
+        </p>
 
-    <p class="notice">
-      掲載内容は、本人への確認と事実確認を行ったうえで公開します。
-    </p>
+        <<p>
+          技術へのこだわりはもちろん、
+          初めての方にも気軽にお話しいただける雰囲気を大切にしています。
+        </p>
 
-  </div>
-</section>
+        <<p>
+          お客様一人ひとりのお身体と真剣に向き合い、
+          毎日を少しでも快適に過ごしていただけるよう、
+          心を込めて施術いたします。
+        </p>
 
+      </div>
+
+    </section>
 
     <section>
+
       <div class="eyebrow">03 / MANGA</div>
+
       <h2>マンガで知るMomdo</h2>
+
       <div class="story-card">
-        <h3>経験や思いを、ストーリーに。</h3>
-        <p>
-          実際の経験やエピソードをもとに、
-          スタッフの人柄やMomdoの考え方をマンガで伝えていく企画です。
+
+        <p class="step-number">MOMDO STAFF</p>
+
+        <h3>波多江 真紀子</h3>
+
+        <p class="profile-message">
+          深層筋へのアプローチ × 神経ストレッチ。
+          身体の状態を見極め、一人ひとりに向き合う施術者。
         </p>
+
         <p>
-          エピソードを確認しながら、準備ができたものから順次掲載します。
+          筋肉の深層部へのアプローチや、神経の動きに着目した施術を通じて、
+          身体のさまざまなお悩みに向き合っています。
         </p>
+
+        <p>
+          慢性的な肩こりや腰のつらさ、筋肉のこわばり、身体の動かしにくさ。
+        </p>
+
+        <p>
+          気になる部分だけを見るのではなく、
+          身体全体のバランスや動きにも目を向けながら、
+          一人ひとりのお身体の状態を確認することを大切にしています。
+        </p>
+
+        <h3>施術で大切にしていること</h3>
+
+        <p>
+          身体の状態は、一人ひとり違います。
+        </p>
+
+        <p>
+          だからこそ、決まった施術を一律に行うのではなく、
+          その方のお身体の状態や動きを確認しながら、
+          必要な施術を考えることを大切にしています。
+        </p>
+
+        <p>
+          筋肉の深層部へのアプローチと、
+          神経や身体の動きを意識した施術を組み合わせ、
+          お一人おひとりに合わせた丁寧な施術を心がけています。
+        </p>
+
+        <h3>Momdoを始めた理由</h3>
+
+        <p class="profile-message">
+          専門的な技術を、もっと身近に。
+        </p>
+
+        <p>
+          身体のことで悩んでいる方が、
+          安心して相談できる場所でありたい。
+        </p>
+
+        <p>
+          技術へのこだわりはもちろん、
+          初めての方にも気軽にお話しいただける雰囲気を大切にしています。
+        </p>
+
+        <p>
+          お客様一人ひとりのお身体と真剣に向き合い、
+          毎日を少しでも快適に過ごしていただけるよう、
+          心を込めて施術いたします。
+        </p>
+
+        <p class="notice">
+          現在は企画ページです。スタッフ紹介やマンガの各エピソードは、
+          内容の確認・準備ができたものから公開します。
+        </p>
+
       </div>
-    </section>
 
-
-    <section class="treatment-section">
-      <div class="eyebrow">MOMDO TREATMENT</div>
-      <h2>身体を知り、状態を見て、施術を考える。</h2>
-
-      <p>
-        Momdoでは、つらい場所だけでなく、身体の動きや関連する部位にも目を向けながら、
-        一人ひとりの状態に合わせた施術を目指します。
-      </p>
-
-      <div class="treatment-card">
-        <span class="step-number">01</span>
-        <h3>まずは、身体のお悩みを知る。</h3>
-        <p>
-          どこが、いつから、どのようにつらいのか。
-          日常生活で困っている動作なども伺いながら、身体のお悩みを確認します。
-        </p>
-      </div>
-
-      <div class="treatment-card">
-        <span class="step-number">02</span>
-        <h3>動きから、身体を読み解く。</h3>
-        <p>
-          姿勢や関節の動きなど、確認できる範囲で身体の状態を確認します。
-          何を確認したのか、どのように考えたのかを、できるだけわかりやすく説明します。
-        </p>
-      </div>
-
-      <div class="treatment-card">
-        <span class="step-number">03</span>
-        <h3>一人ひとりに合った施術を考える。</h3>
-        <p>
-          身体の状態やご希望を踏まえ、相談しながら施術を進めます。
-          すべての方に同じ方法を当てはめるのではなく、一人ひとりに合った施術を目指します。
-        </p>
-      </div>
-
-      <p class="treatment-note">
-        ※実際の施術方法は、身体の状態やコースによって異なります。
-      </p>
-    </section>
-    <section>
-      <div class="eyebrow">COMING SOON</div>
-      <h2>ストーリーは、これから。</h2>
-      <p>
-        MOMDO STORYは、取材と事実確認を重ねながら、
-        少しずつ内容を充実させていきます。
-      </p>
-      <p class="notice">
-        現在は企画ページです。スタッフ紹介やマンガの各エピソードは、
-        内容の確認・準備ができたものから公開します。
-      </p>
     </section>
 
     <section style="text-align:center">
+
       <a class="back" href="index.html">トップページへ戻る</a>
+
     </section>
+
   </main>
 
   <footer class="footer">
+
     <div class="footer-brand">Momdo</div>
+
     <div class="footer-sub">MASSAGE &amp; BODYWORK</div>
+
     <nav class="footer-nav" aria-label="フッターメニュー">
       <a href="index.html">ホーム</a>
       <a href="menu.html">メニュー・料金</a>
@@ -523,7 +941,10 @@ Momdoで大切にしていること
       <a href="access.html">アクセス・予約</a>
       <a href="contact.html">お問い合わせ</a>
     </nav>
+
     <small>&copy; Momdo Massage &amp; Bodywork</small>
+
   </footer>
+
 </body>
 </html>
