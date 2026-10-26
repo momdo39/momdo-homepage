@@ -639,6 +639,126 @@
     max-width: 240px;
   }
 }
+
+
+/* MANGA */
+.manga-section {
+  padding: 76px 0;
+}
+
+.manga-intro {
+  margin-bottom: 28px;
+  color: var(--muted);
+}
+
+.manga-item {
+  margin: 18px 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--gold);
+  box-shadow: 0 8px 24px rgba(48, 31, 19, .04);
+}
+
+.manga-item summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.manga-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.manga-item summary:hover {
+  background: var(--cream);
+}
+
+.manga-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  font-family: "Cinzel", serif;
+}
+
+.manga-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+}
+
+.manga-title strong {
+  color: var(--brown2);
+  font-family: "Shippori Mincho", serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.manga-title small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.manga-arrow {
+  color: var(--gold);
+  font-size: 24px;
+  transition: transform .2s;
+}
+
+.manga-item[open] .manga-arrow {
+  transform: rotate(45deg);
+}
+
+.manga-content {
+  padding: 0 22px 24px;
+}
+
+.manga-content img {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 560px) {
+  .manga-section {
+    padding: 54px 0;
+  }
+
+  .manga-item summary {
+    gap: 10px;
+    padding: 16px 12px;
+  }
+
+  .manga-number {
+    width: 34px;
+    height: 34px;
+    font-size: 12px;
+  }
+
+  .manga-title strong {
+    font-size: 14px;
+  }
+
+  .manga-title small {
+    font-size: 11px;
+  }
+
+  .manga-content {
+    padding: 0 10px 16px;
+  }
+}
+
     
   </style>
 </head>
