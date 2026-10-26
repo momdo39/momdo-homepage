@@ -615,7 +615,31 @@
     padding: 8px;
   }
 }
- 
+
+
+
+/* 波多江真紀子 スタッフメッセージ画像 */
+.staff-message-image {
+  margin: 32px auto 10px;
+  text-align: center;
+}
+
+.staff-message-image img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(48, 31, 19, .08);
+}
+
+@media (max-width: 560px) {
+  .staff-message-image img {
+    max-width: 240px;
+  }
+}
+    
   </style>
 </head>
 
@@ -853,6 +877,16 @@
         <p>
           お客様一人ひとりのお身体と真剣に向き合い、毎日を少しでも快適に過ごしていただけるよう心を込めて施術いたします。
         </p>
+
+<div class="staff-message-image">
+
+  <img
+    src="assets/images/hatae-message.png"
+    alt="波多江真紀子。皆さまのご来店をお待ちしています。"
+    loading="lazy"
+  >
+
+</div>
 
       </div>
 
