@@ -347,62 +347,97 @@ padding-left: 24px;
   .comparison-cards {
     grid-template-columns: 1fr;
   }
-}.comparison-card{padding:18px;background:#f7f9fc;border:1px solid #dce5f1;border-radius:6px}.comparison-card h3{margin:0 0 8px;color:#123c70;font-size:1.02rem}.comparison-card p{margin:0;color:#61708a;font-size:.9rem;line-height:1.75}.comparison-table-wrap{overflow-x:auto;margin-top:20px}.comparison-table{width:100%;min-width:540px;border-collapse:collapse;font-size:.9rem}.comparison-table th,.comparison-table td{padding:13px 15px;border:1px solid #dce5f1;text-align:left;vertical-align:top;line-height:1.65}.comparison-table thead th{background:#1C100B;color:#fff}.comparison-table thead th:first-child{width:24%;background:#f1f3f6;color:#45546d}.comparison-table tbody th{background:#f7f9fc;color:#123c70;white-space:nowrap}.comparison-caption{margin:10px 0 0;color:#69778c;font-size:.78rem}.@media(max-width:850px){.comparison-overview{padding:20px 16px}.comparison-cards{grid-template-columns:1fr;gap:9px}.comparison-table th,.comparison-table td{padding:10px 11px;font-size:.83rem}}.menu-main-visual{margin:20px 0 30px;overflow:hidden;border-radius:8px;background:#1C100B;box-shadow:0 8px 26px rgba(6,20,47,.12)}.menu-main-visual img{display:block;width:100%;height:auto;object-fit:cover}.medical-approach-title{margin:24px 0 10px;color:#123c70;font-size:1.18rem;line-height:1.6}.medical-feature-list{max-width:800px;margin:14px 0 20px;padding:17px 20px 17px 42px;background:#f7f9fc;border:1px solid #dce5f1;border-radius:6px;color:#45546d;line-height:1.9}.medical-feature-list li+li{margin-top:6px}.medical-details-lead a{color:#0b64a6;font-weight:700;text-underline-offset:3px}.medical-concept-image{margin:18px 0 22px;overflow:hidden;border-radius:6px;background:#081a3b}.medical-concept-image img{display:block;width:100%;height:auto}</style>
+}.comparison-card{padding:18px;background:#f7f9fc;border:1px solid #dce5f1;border-radius:6px}.comparison-card h3{margin:0 0 8px;color:#123c70;font-size:1.02rem}.comparison-card p{margin:0;color:#61708a;font-size:.9rem;line-height:1.75}.comparison-table-wrap{overflow-x:auto;margin-top:20px}.comparison-table{width:100%;min-width:540px;border-collapse:collapse;font-size:.9rem}.comparison-table th,.comparison-table td{padding:13px 15px;border:1px solid #dce5f1;text-align:left;vertical-align:top;line-height:1.65}.comparison-table thead th{background:#1C100B;color:#fff}.comparison-table thead th:first-child{width:24%;background:#f1f3f6;color:#45546d}.comparison-table tbody th{background:#f7f9fc;color:#123c70;white-space:nowrap}.comparison-caption{margin:10px 0 0;color:#69778c;font-size:.78rem}.@media(max-width:850px){.comparison-overview{padding:20px 16px}.comparison-cards{grid-template-columns:1fr;gap:9px}.comparison-table th,.comparison-table td{padding:10px 11px;font-size:.83rem}}.menu-main-visual{margin:20px 0 30px;overflow:hidden;border-radius:8px;background:#1C100B;box-shadow:0 8px 26px rgba(6,20,47,.12)}.menu-main-visual img{display:block;width:100%;height:auto;object-fit:cover}.medical-approach-title{margin:24px 0 10px;color:#123c70;font-size:1.18rem;line-height:1.6}.medical-feature-list{max-width:800px;margin:14px 0 20px;padding:17px 20px 17px 42px;background:#f7f9fc;border:1px solid #dce5f1;border-radius:6px;color:#45546d;line-height:1.9}.medical-feature-list li+li{margin-top:6px}.medical-details-lead a{color:#0b64a6;font-weight:700;text-underline-offset:3px}.medical-concept-image{margin:18px 0 22px;overflow:hidden;border-radius:6px;background:#081a3b}.medical-concept-image img{display:block;width:100%;height:auto}/* Accessページと共通の落ち着いたブラウン・ゴールドのデザイン */
+:root{--navy:#1c100b;--blue:#3a281e;--blue2:#6f543f;--cyan:#d8c09a;--gold:#cbb28a;--ink:#34271f;--muted:#76695f;--line:#e7ded4}
+body{background:#fff;color:#34271f}
+.topbar{display:none}
+.header{position:sticky;top:0;z-index:20;background:#1c100b;border-bottom:1px solid rgba(230,197,135,.32)}
+.nav{min-height:76px}
+.brand{color:#f0dfbd;font-size:1.45rem}
+.brand small{color:#e7d9c4;letter-spacing:.18em}
+.navlinks{gap:22px;font-size:.84rem}
+.navlinks a{color:#f6f1e8}
+.navlinks a:hover,.navlinks a[aria-current="page"]{color:#d8c09a}
+.header-contact{color:#f0dfbd;border:1px solid #b99b69;background:transparent;padding:11px 18px}
+.menu-toggle{color:#f6f1e8}
+.menu-page-hero{min-height:490px;display:grid;place-items:center;text-align:center;padding:72px 0;background:radial-gradient(ellipse at 50% 35%,#493224 0,#2c1c14 58%,#1c100b 100%);color:#fff}
+.menu-page-hero .eyebrow{color:#d3b987;letter-spacing:.25em}
+.menu-page-hero h1{margin:18px 0 20px;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:500;letter-spacing:.1em;line-height:1.45}
+.menu-page-hero p{margin:0 auto 24px;color:#efe5d7;font-size:1rem;line-height:2}
+.menu-page-location{display:inline-block;padding:10px 20px;border:1px solid #9e8156;color:#decba7;font-size:.82rem;letter-spacing:.08em}
+.menu-section-image{width:min(1080px,91%);margin:0 auto;padding:34px 0 0}
+.menu-section-image img{display:block;width:100%;height:auto;border-radius:4px;box-shadow:0 10px 30px rgba(45,29,19,.08)}
+.section.menu{padding:66px 0 82px;background:#fff}
+.section.menu>.wrap{width:min(1080px,91%)}
+.menu-updated-note{margin:0 auto 28px;text-align:center;color:#76695f}
+.comparison-overview,.menu-box,.medical-details{border:1px solid #e7ded4;border-radius:4px;background:#fff;box-shadow:0 10px 30px rgba(45,29,19,.045)}
+.comparison-overview{padding:clamp(22px,4vw,42px);margin:0 0 34px}
+.comparison-overview h2,.menu-box h3,.medical-details h2,.medical-details h3{color:#3a281e}
+.comparison-card{background:#fbf9f6;border-color:#e7ded4;border-radius:4px}
+.comparison-card h3{color:#6e563a}
+.comparison-table th,.comparison-table td{border-color:#e7ded4}
+.comparison-table thead th{background:#2c1c14}
+.comparison-table thead th:first-child,.comparison-table tbody th{background:#f5f0e9;color:#574638}
+.comparison-use-note,.comparison-caption,.menu-page-note{color:#76695f}
+.menu-intro{border-left-color:#b99b69;background:#f8f5f0;color:#574638}
+.menu-grid{gap:18px;margin:34px 0}
+.menu-box{padding:26px}
+.menu-box h3{border-bottom-color:#e7ded4}
+.price-row{border-bottom-color:#e7ded4}
+.price-row span:first-child{color:#6e6258}
+.price-row strong{color:#3a281e}
+.price-note{color:#76695f}
+.medical-details{margin:30px 0;padding:clamp(24px,4vw,42px);background:#fbf9f6}
+.medical-details .eyebrow{color:#9b8058!important}
+.medical-details .btn-gold{background:#b99b69;color:#1c100b}
+.head-face-details{background:#fff}
+.medical-details-note{color:#76695f}
+.menu-page-note{margin:28px auto 0;text-align:center}
+.menu-page-note a{color:#775a35;text-decoration:underline;text-underline-offset:3px}
+footer{background:#1c100b;color:#eadfce}
+footer a{color:#d8c09a}
+.mobile-cta{background:#1c100b}
+.menu-guide-launcher{background:#1c100b!important;border-color:#b99b69!important;color:#f6f1e8!important}
+.menu-guide-message--user{background:#493224!important}
+.menu-guide-form button{background:#1c100b!important}
+@media(max-width:850px){.menu-page-hero{min-height:390px;padding:58px 0}.menu-section-image{padding-top:24px}.section.menu{padding-top:48px}.navlinks.is-open{background:#1c100b;border-top:1px solid #493224}.header-contact{padding:9px 12px;font-size:.8rem}}
+</style>
 </head>
 <body data-menu-guide-api="https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev/api/menu-guide">
 <div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>完全予約制などの営業情報はご来店前に最新情報をご確認ください</span></div></div>
 <header class="header">
   <div class="wrap nav">
-    <a class="brand" href="index.html#home">
+    <a class="brand" href="index.html">
       Momdo
-      <small>Massage & Manipulative</small>
+      <small>MASSAGE &amp; BODYWORK</small>
     </a>
-    <nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
-  <a href="body-explorer.html">BODY EXPLORER</a>
-  <a href="concerns.html">お悩みから探す</a>
-  <a href="menu.html">メニュー・料金</a>
-  <a href="access.html">アクセス</a>
-  <a href="faq.html">FAQ</a>
-  <div class="nav-dropdown">
-    <button
-      class="nav-dropdown-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="other-menu"
-    >
-      その他 <span aria-hidden="true">▼</span>
+    <nav class="navlinks" id="main-navigation" aria-label="メインナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="menu.html" aria-current="page">メニュー・料金</a>
+      <a href="faq.html">よくあるご質問</a>
+      <a href="access.html">アクセス</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="メニューを開く">
+      <span class="menu-icon">☰</span><span>メニュー</span>
     </button>
-    <div class="nav-dropdown-menu" id="other-menu" hidden>
-      <a href="momdo-story.html">Momdoについて</a>
-      <a href="index.html#voice">お客様の声</a>
-      <a href="index.html#blog">ブログ・お知らせ</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-    </div>
-  </div>
-</nav>
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-controls="main-navigation"
-      aria-expanded="false"
-      aria-label="メニューを開く"
-    >
-      <span class="menu-icon">☰</span>
-      <span>メニュー</span>
-    </button>
-    <a class="btn btn-outline header-contact" href="index.html#contact">
-      お問い合わせ
-    </a>
+    <a class="btn btn-outline header-contact" href="index.html#contact">ご予約・お問い合わせ</a>
   </div>
 </header>
 <main id="home">
+  <section class="menu-page-hero" aria-labelledby="menu-page-title">
+    <div class="wrap">
+      <div class="eyebrow">MENU &amp; PRICE</div>
+      <h1 id="menu-page-title">メニュー・料金</h1>
+      <p>ご希望や身体の状態に合わせて、コースをご案内します。</p>
+      <span class="menu-page-location">福岡市城南区七隈｜金山駅徒歩2分</span>
+    </div>
+  </section>
+  <figure class="menu-section-image">
+    <img src="menu-main.png" alt="深層へ。解剖学に基づき、身体のつながりを見極めるMomdoマッサージ整体">
+  </figure>
   <section class="section menu" id="menu">
     <div class="wrap">
-      
-      <figure class="menu-main-visual"><img src="menu-main.png" alt="深層へ。解剖学に基づき、身体のつながりを見極める Momdoマッサージ整体"></figure>
-      <div class="eyebrow" style="color:#9b762d">Menu &amp; price</div>
-      <h1 class="section-title">メニュー・料金</h1>
-      <p class="lead">ご希望や身体の状態に合わせてコースをご検討ください。掲載料金・コース内容は公開前に必ず最新情報をご確認ください。</p>
+      <p class="lead menu-updated-note">掲載料金・コース内容は、ご予約前に最新情報をご確認ください。</p>
       
       <section class="comparison-overview" aria-labelledby="comparison-title">
   <h2 id="comparison-title">目的に合わせて選べる、2つのマッサージ</h2>
