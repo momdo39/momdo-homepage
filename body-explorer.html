@@ -40,70 +40,151 @@
 .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); } }
 
 
-</style></head><body>
-<div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>Momdo Massage &amp; Manipulative</span></div></div>
-<header class="header"><div class="wrap nav"><a class="brand" href="index.html">Momdo<small>Massage &amp; Manipulative</small></a>
-  
- <nav class="navlinks" id="site-nav">
-   <a href="index.html">ホーム</a>
-   <a href="concerns.html">お悩みから探す</a>
-   <a href="index.html#treatment">Momdoの施術</a>
-   <a href="index.html#menu">メニュー・料金</a>
-   <a href="index.html#access">アクセス</a>
-   <a href="index.html#faq">FAQ</a>
- </nav>
-
-<a class="btn btn-outline header-reserve" href="index.html#access"> アクセス・予約 </a>
-
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"> 
-  <span></span> <span></span> <span></span> </button>
-  
-</div></header>
+/* 人体図を立体感のある解剖学イラスト風に整え、選択部位の下の輪郭も見えるようにする */
+.body-base{filter:drop-shadow(0 5px 8px rgba(0,0,0,.22))}
+.body-details{pointer-events:none}
+.zone-shape{fill:#28628f;fill-opacity:.42;stroke:#a8def3;stroke-width:1.7;transition:fill-opacity .2s,filter .2s}
+.body-zone.active .zone-shape{fill-opacity:.76}
+.body-zone.related .zone-shape{fill-opacity:.62}
+.body-zone:focus-visible{outline:none}
+.zone-hit{fill:transparent;stroke:transparent;pointer-events:all}
+.body-picker{gap:10px}
+.body-pick{min-height:56px;padding:12px 7px;font-size:.9rem}
+/* index.html と同じヘッダーメニュー */
+.nav-dropdown{position:relative}.nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px;padding:8px 0;border:0;background:transparent;color:#fff;font:inherit;cursor:pointer}.nav-dropdown-toggle:hover{color:var(--cyan)}
+.nav-dropdown-menu{position:absolute;top:100%;right:0;z-index:200;min-width:210px;padding:8px;background:#25140D;border:1px solid var(--gold);border-radius:6px;box-shadow:0 8px 20px #0005}.nav-dropdown-menu[hidden]{display:none}.nav-dropdown-menu a{display:block;padding:12px;color:#fff;border-bottom:1px solid #ffffff20}.nav-dropdown-menu a:last-child{border-bottom:0}.nav-dropdown-menu a:hover{color:var(--cyan);background:#ffffff0d}
+.menu-toggle{display:none;align-items:center;justify-content:center;gap:8px;width:auto;height:auto;padding:10px 12px;border:1px solid var(--gold);border-radius:4px;background:transparent;color:#fff;cursor:pointer;white-space:nowrap}
+.menu-toggle span{height:auto;width:auto;margin:0;background:transparent}.menu-icon{font-size:1.2rem;line-height:1}.menu-label{font-size:.9rem}.menu-toggle[aria-expanded=true] span{transform:none;opacity:1}
+@media(max-width:850px){.header .nav{position:relative;min-height:70px;gap:10px;flex-wrap:wrap;padding:10px 0}.menu-toggle{display:inline-flex;margin-left:auto}.header-contact,.header-reserve{display:none}.header .navlinks{display:none;position:absolute;top:100%;left:-4.35%;right:-4.35%;z-index:100;flex-direction:column;align-items:stretch;gap:0;padding:8px 5%;background:#081a3b;border-top:1px solid #ffffff22;border-bottom:1px solid #d9c18b;box-shadow:0 8px 18px #0005;font-size:.95rem}.header .navlinks.is-open{display:flex}.header .navlinks>a{display:block;padding:12px 8px;color:#fff;border-bottom:1px solid #ffffff20}.nav-dropdown-toggle{width:100%;justify-content:space-between;padding:12px 8px}.nav-dropdown-menu{position:static;min-width:0;margin:0 0 8px;box-shadow:none}.nav-dropdown-menu a{padding-left:24px}}/* 人体図を見やすくし、タップしやすくする */
+.body-panel{padding:20px;background:linear-gradient(160deg,#0a1d3d,#06122c);}
+.body-panel svg{max-height:none;filter:drop-shadow(0 8px 18px #0005);}
+.body-base{filter:drop-shadow(0 0 5px #50dfff55);}
+.body-details{stroke:#d7f5ff;stroke-width:1.65;opacity:.95;}
+.body-map-label{font-size:15px;stroke:#04132c;stroke-width:4.5px;}
+.zone-shape{fill:#2878ad;fill-opacity:.42;stroke:#a9e9ff;stroke-width:2;}
+.body-zone.active .zone-shape{fill-opacity:.9;}
+.body-zone.related .zone-shape{fill-opacity:.72;}
+.body-pick{min-height:54px;font-size:.92rem;}
+@media(max-width:850px){.body-panel{padding:14px}.body-panel svg{width:100%;max-height:none}.body-map-label{font-size:16px;stroke-width:5px}.body-picker{gap:9px}.body-pick{min-height:56px;padding:10px 6px;font-size:.94rem}}/* Counselling mode: quiet, premium dark interface */
+.hero-image,main>.page-hero{display:none}
+.counselling{--shell:#151a20;--panel:#1c232b;--panel-soft:#202a32;--line:#38434b;--sage:#9aae91;--gold:#d7bd8a;--coral:#d98770;--quiet:#aeb9bd;background:radial-gradient(ellipse at 48% 0,#26323a 0,#171d23 48%,#12171c 100%);padding:34px 0 40px;color:#edf0ec;font-family:Inter,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
+.counselling .wrap{width:min(1600px,96%)}.counselling .wrap>.wrap{width:100%;margin:0}
+.counselling .eyebrow{color:var(--gold);letter-spacing:.22em}.counselling .eyebrow span{color:#9aa8ae;font-weight:500}
+.counselling h2{font-size:clamp(1.65rem,2.4vw,2.35rem);font-weight:500;letter-spacing:.02em;margin:7px 0}.counselling .lead{font-size:.91rem;color:#b9c2c3;margin:0;max-width:720px}
+.counselling-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 22px;padding:0 2px}.session-label{border:1px solid #4b5a5d;color:#c4d0c2;border-radius:30px;padding:8px 14px;font-size:.78rem;white-space:nowrap;background:#ffffff06}
+.counselling-grid{grid-template-columns:minmax(245px,.78fr) minmax(360px,1.2fr) minmax(285px,.95fr);gap:14px;align-items:stretch;margin:0}
+.counselling-input,.counselling .body-panel,.counselling .explainer,.simulator{border:1px solid var(--line);border-radius:12px;background:linear-gradient(150deg,#202831ed,#171e25ed);box-shadow:0 14px 34px #0003;}
+.counselling-input{padding:19px 18px}.panel-kicker{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#aab7b1;font-weight:700}.counselling-input h3{font-size:1.28rem;font-weight:500;margin:5px 0}.counselling-input h3 span{font-size:.82rem;color:#a8b1b5}.input-caption{font-size:.79rem;color:#aeb9bd;margin:0 0 15px}.input-group{padding:15px 0;border-top:1px solid #ffffff17}.input-group>strong,.input-group label strong{font-size:.84rem;font-weight:600}.input-group label{display:flex;justify-content:space-between;align-items:center;gap:8px}.input-group output{color:var(--gold);font-size:.88rem}.choice-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:9px}.state-choice,.pain-choice,.save-note{color:#e5e9e5;background:#ffffff05;border:1px solid #45515a;border-radius:9px;cursor:pointer;touch-action:manipulation}.state-choice{min-height:43px;padding:6px 4px;font-size:.78rem}.state-choice.is-active{border-color:var(--sage);background:#8fa58c25;color:#e3ecd9;box-shadow:0 0 0 1px #9aae9140}.input-group input[type=range],.simulator input[type=range]{width:100%;accent-color:var(--gold);margin:13px 0 0}.range-labels{display:flex;justify-content:space-between;color:#9eaaad;font-size:.72rem}.pain-choices{display:grid;gap:7px;margin-top:9px}.pain-choice{text-align:left;padding:9px 11px;font-size:.83rem}.pain-choice i{display:inline-block;width:10px;height:10px;border-radius:50%;background:#606c71;margin-right:9px}.pain-choice.is-active{border-color:#9aae91;background:#839b8421}.pain-choice.is-active i{background:var(--sage);box-shadow:0 0 10px #9aae9180}.save-note{width:100%;min-height:43px;margin-top:7px;font-size:.82rem}.privacy-note{font-size:.66rem;color:#89969a;line-height:1.55;margin:9px 0 0}
+.counselling .body-panel{padding:15px;display:flex;flex-direction:column;justify-content:center;min-width:0}.counselling .body-panel svg{width:min(100%,440px);max-height:570px;margin:0 auto}.counselling .body-panel>svg{display:none}.counselling .map-instruction{color:#c0c9c9}.counselling .body-picker{margin:10px 0}.counselling .body-pick{background:#242e35;color:#e1e8e3;border-color:#45545a;border-radius:8px;min-height:44px}.counselling .body-pick:hover,.counselling .body-pick:focus-visible{outline-color:var(--sage);border-color:var(--sage)}.counselling .body-pick[aria-pressed=true]{background:#a5b89a;color:#17201a;border-color:#c4d0b9}
+.counselling .zone-shape{fill:#728999;fill-opacity:.28;stroke:#b9c9c9;stroke-width:1.8}.counselling .body-base{filter:drop-shadow(0 0 7px #70899640)}.counselling .body-details{stroke:#c7d3d0;opacity:.9;stroke-width:1.5}.counselling .nerve-lines{stroke:#cdbb91;opacity:.72}.counselling .body-map-label{fill:#f0eee5;stroke:#172027;stroke-width:4.5px;font-size:15px}.counselling .body-zone.active .zone-shape{fill:var(--body-highlight,#d98770);fill-opacity:.82;stroke:#f0d4bc;filter:none}.counselling .body-zone.related .zone-shape{fill:#9aae91;fill-opacity:.64;stroke:#d6dfcf;filter:none}.counselling .small-note{color:#9eabad}.counselling .explainer{padding:17px;min-width:0}.compare-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.compare-head h3{font-size:1rem;margin:4px 0 10px;font-weight:500}.compare-control{border:1px solid #4a555d;color:#c7ceca;border-radius:18px;padding:3px 9px;font-size:.7rem}.compare-cards{display:grid;gap:8px}.compare-card{border:1px solid #3d494f;border-radius:9px;padding:10px 11px;display:grid;grid-template-columns:minmax(88px,.7fr) 1.3fr;gap:4px 10px;align-items:center;background:#ffffff04}.compare-card h4{grid-column:1/-1;margin:0;font-size:.78rem;font-weight:600}.compare-card.normal h4{color:#bdcdb7}.compare-card.current h4{color:#e2a18a}.mini-body{height:66px;border-radius:7px;background:linear-gradient(140deg,#33414b,#202a32);position:relative;overflow:hidden}.mini-body:before{content:"";position:absolute;width:36px;height:48px;left:calc(50% - 18px);top:8px;border-radius:48% 48% 20% 20%;border:1px solid #9aafb2;background:linear-gradient(90deg,#536875,#879995,#40545f);clip-path:polygon(30% 0,70% 0,78% 20%,100% 35%,82% 50%,76% 100%,57% 100%,50% 63%,43% 100%,24% 100%,18% 50%,0 35%,22% 20%)}.mini-body span{position:absolute;z-index:1;left:22%;right:22%;top:43px;border-top:2px solid var(--sage);transform:rotate(0)}.current .mini-body span{border-color:var(--coral);transform:rotate(-7deg);box-shadow:0 0 10px #d9877070}.compare-card ul{padding-left:15px;margin:0;color:#b9c3c4;font-size:.68rem;line-height:1.6}.context-card{margin-top:10px;padding:11px 12px;border-radius:8px;background:#ffffff07;border:1px solid #39454b}.context-card p{font-size:.75rem;line-height:1.7;color:#c3ccca;margin:6px 0 0}.detail-divider{height:1px;background:#ffffff19;margin:16px 0}.counselling .tag{color:var(--gold);font-size:.7rem;letter-spacing:.12em}.counselling .map-legend{font-size:.67rem;margin:6px 0}.counselling .legend-dot{background:var(--coral)}.counselling .legend-dot.connected{background:var(--sage)}.counselling .explainer>h3{font-size:1.3rem;color:#f1eee5}.counselling .explainer>p{font-size:.79rem;color:#c0c9c8;line-height:1.7}.counselling .explainer>strong{font-size:.74rem;color:#dce1dc}.counselling .related{gap:6px;margin:8px 0 12px}.counselling .chip{border-color:#788a7b;color:#d3ddcf;font-size:.69rem;padding:3px 9px}.counselling .detail-link{color:#d7bd8a;font-size:.76rem}.counselling .small-note{font-size:.68rem}.simulator{grid-column:1/-1;padding:14px 18px;display:grid;grid-template-columns:minmax(220px,.7fr) 1.4fr auto;gap:18px;align-items:center}.simulator-title p{color:#aeb9bd;font-size:.72rem;margin:3px 0 0}.simulator-title>span{display:none}.simulator-track{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:13px;color:#c6cfc9;font-size:.78rem}.simulator-track input{margin:0}.simulator-track span:last-child{color:var(--sage)}.simulator-caption{grid-column:2/-1;margin:-12px 0 0;color:#9eabad;font-size:.68rem}.counselling.is-after .current .mini-body span{border-color:var(--sage);transform:rotate(0);box-shadow:0 0 8px #9aae9170}.counselling.is-after .body-zone.active .zone-shape{fill:var(--sage);}
+@media(max-width:1100px){.counselling-grid{grid-template-columns:minmax(210px,.8fr) minmax(300px,1.1fr)}.counselling .explainer{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}.counselling .compare-head,.counselling .compare-cards,.counselling .context-card{grid-column:1/-1}.counselling .explainer .detail-divider{grid-column:1/-1;margin:5px 0}.counselling .explainer .tag,.counselling .map-legend,.counselling .explainer>h3,.counselling .explainer>p,.counselling .explainer>strong,.counselling .related,.counselling .detail-link{grid-column:auto}.counselling .compare-cards{grid-template-columns:1fr 1fr}.simulator{grid-template-columns:1fr 1.5fr}.simulator-caption{grid-column:2}}
+@media(max-width:700px){.counselling{padding:22px 0 30px}.counselling-heading{align-items:flex-start;flex-direction:column;margin-bottom:16px}.session-label{font-size:.7rem}.counselling-grid{grid-template-columns:1fr}.counselling .body-panel{grid-row:1}.counselling-input{grid-row:2}.counselling .explainer{grid-row:3;display:block;grid-column:auto}.counselling .compare-cards{grid-template-columns:1fr 1fr}.counselling .body-panel svg{width:min(100%,390px);max-height:none}.counselling .body-panel>svg{display:none}.counselling .body-picker{grid-template-columns:repeat(3,minmax(0,1fr))}.counselling .body-pick{min-height:48px}.simulator{grid-column:auto;grid-template-columns:1fr;gap:9px}.simulator-caption{grid-column:auto;margin:0}.simulator-track{gap:8px}.counselling .explainer .detail-divider{margin:13px 0}}
+@media(max-width:390px){.counselling .compare-card{grid-template-columns:1fr}.compare-card h4{grid-column:auto}.mini-body{height:56px}.counselling .compare-cards{grid-template-columns:1fr 1fr}.compare-card ul{font-size:.63rem}.counselling .body-picker{gap:6px}.counselling .body-pick{font-size:.78rem}}.anatomy-viewer{width:100%;border:1px solid #46545b;border-radius:9px;overflow:hidden;background:#1b2025}.anatomy-viewer iframe{display:block;width:100%;height:620px;border:0;background:#1b2025}.anatomy-viewer p{font-size:.7rem;line-height:1.55;color:#c3ccca;margin:9px 3px 0}.anatomy-viewer a{color:#d7bd8a;text-decoration:underline;text-underline-offset:2px}.anatomy-viewer .viewer-limit{color:#aeb9bd;margin-bottom:3px}
+@media(max-width:1100px){.anatomy-viewer iframe{height:560px}}
+@media(max-width:700px){.anatomy-viewer iframe{height:520px}}</style></head><body>
+<div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>営業情報はご来店前に最新情報をご確認ください</span></div></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="../../index.html#home" aria-label="Momdo トップページ">
+      Momdo<small>Massage &amp; Manipulative</small>
+    </a>
+    <nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
+      <a href="../../pages/concerns/concerns.html">お悩みから探す</a>
+      <a href="../../pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
+      <a href="../../pages/menu/menu.html">メニュー・料金</a>
+      <a href="../../pages/access/access.html">アクセス</a>
+      <a href="../../pages/others/FAQ.html">FAQ</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="other-menu">その他 <span aria-hidden="true">▼</span></button>
+        <div class="nav-dropdown-menu" id="other-menu" hidden>
+          <a href="../../momdo-story2.html">Momdo</a>
+          <a href="../../index.html#voice">お客様の声</a>
+          <a href="../../index.html#blog">ブログ・お知らせ</a>
+          <a href="../../momdo-story.html">Momdoについて</a>
+          <a href="../../privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="メニューを開く"><span class="menu-icon">☰</span><span class="menu-label">メニュー</span></button>
+    <a class="btn btn-outline header-contact" href="../../contact.html">お問い合わせ</a>
+  </div>
+</header>
 <main><section class="hero-image" aria-label="BODY EXPLORERのメイン画像">
   <div class="hero-image-wrap">
-    <img src="body-explorer-hero.jpg" alt="解剖学的な人体メカニズムを表したイラスト">
+    <picture>
+      <source media="(max-width: 850px)" srcset="images/body-explorer-hero-mobile.png">
+      <img src="images/body-explorer-hero.png" alt="解剖学的な人体メカニズムを表したイラスト">
+    </picture>
   </div></section><section class="page-hero"><div class="wrap">
     <div class="eyebrow">Interactive anatomy</div>
     <h1>身体のことを知る</h1>
     <p>症状から探す入口に加えて、気になる部位から身体のしくみを学べるコーナーです。身体を知ると、自分の身体がもっと分かる。部位ごとの構造や働きを知り、全身のつながりにも目を向けてみませんか？</p>
   <div class="page-nav">
-    <a class="btn btn-gold" href="concerns.html">お悩みから探す ↗</a>
-    <a class="btn btn-outline" href="#body-regions">身体の部位から選ぶ</a><a class="btn btn-outline" href="index.html">トップページへ</a>
+    <a class="btn btn-outline" href="../../index.html">トップページへ</a>
+    <a class="btn btn-gold" href="../../pages/concerns/concerns.html">お悩みから探す ↗</a>
+    <a class="btn btn-outline" href="#body-regions">身体の部位から選ぶ</a>
   </div></div></section>
- <section class="section explorer" id="body-map">
-   <div class="wrap"><div class="wrap"><div class="eyebrow">BODY EXPLORER</div>
-     <h2>BODY EXPLORER</h2>
-     <p class="lead">身体は、パーツの寄せ集めではありません。下の人体図から気になる部位を選んでみてください。関連する部位と、動きのつながりを表示します。</p>
-     <div class="explorer-grid"><div class="body-panel">
-       <svg viewBox="0 0 360 510" role="img" aria-label="クリックして部位を選べる人体模式図">
-         <defs><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/>
-           <feMergeNode in="SourceGraphic"/></feMerge></filter>
-         </defs><g fill="#123d76" stroke="#78dfff" stroke-width="1.4"><ellipse cx="180" cy="49" rx="27" ry="34"/>
-           <path d="M165 80L164 97Q133 98 117 119L90 181Q83 194 96 200Q107 204 113 190L135 143L141 205L145 250L137 331L128 445Q127 460 140 461Q153 462 157 447L180 339L203 447Q207 462 220 460Q233 458 232 444L219 331L215 250L219 205L225 143L247 190Q253 204 265 200Q277 194 270 181L243 119Q227 98 196 97L195 80Z"/></g>
-
-<g class="body-zone" data-part="head" tabindex="0" role="button" aria-label="頭を選ぶ"><ellipse class="zone-shape" cx="180" cy="49" rx="27" ry="34"/></g>
-<g class="body-zone" data-part="neck" tabindex="0" role="button" aria-label="首を選ぶ"><rect class="zone-shape" x="166" y="78" width="28" height="26" rx="7"/></g>
-<g class="body-zone" data-part="shoulder" tabindex="0" role="button" aria-label="肩を選ぶ"><path class="zone-shape" d="M163 101Q138 100 119 121L137 151Q155 135 168 136Z M197 101Q222 100 241 121L223 151Q205 135 192 136Z"/></g>
-<g class="body-zone" data-part="scapula" tabindex="0" role="button" aria-label="肩甲骨を選ぶ"><path class="zone-shape" d="M143 137L164 145L158 177L138 165Z M217 137L196 145L202 177L222 165Z"/></g>
-<g class="body-zone" data-part="thorax" tabindex="0" role="button" aria-label="胸郭を選ぶ"><path class="zone-shape" d="M164 136Q180 145 196 136L207 190Q180 208 153 190Z"/></g>
-<g class="body-zone" data-part="back" tabindex="0" role="button" aria-label="背中を選ぶ"><path class="zone-shape" d="M165 142L195 142L202 210L180 225L158 210Z"/></g>
-<g class="body-zone" data-part="lumbar" tabindex="0" role="button" aria-label="腰を選ぶ"><path class="zone-shape" d="M155 207Q180 218 205 207L202 242Q180 254 158 242Z"/></g>
-<g class="body-zone" data-part="pelvis" tabindex="0" role="button" aria-label="骨盤を選ぶ"><path class="zone-shape" d="M158 239Q180 253 202 239L215 272L194 291L180 276L166 291L145 272Z"/></g>
-<g class="body-zone" data-part="hip" tabindex="0" role="button" aria-label="股関節を選ぶ"><ellipse class="zone-shape" cx="157" cy="274" rx="16" ry="21"/><ellipse class="zone-shape" cx="203" cy="274" rx="16" ry="21"/></g>
-<g class="body-zone" data-part="knee" tabindex="0" role="button" aria-label="膝を選ぶ"><ellipse class="zone-shape" cx="150" cy="365" rx="13" ry="18"/><ellipse class="zone-shape" cx="210" cy="365" rx="13" ry="18"/></g>
-<g class="body-zone" data-part="ankle" tabindex="0" role="button" aria-label="足首を選ぶ"><ellipse class="zone-shape" cx="139" cy="439" rx="11" ry="15"/><ellipse class="zone-shape" cx="221" cy="439" rx="11" ry="15"/></g>
-<g class="body-zone" data-part="foot" tabindex="0" role="button" aria-label="足を選ぶ"><path class="zone-shape" d="M130 447L147 447L155 474Q143 485 119 478L116 469Z M213 447L230 447L244 469L241 478Q217 485 205 474Z"/></g>
-<g class="body-zone" data-part="elbow" tabindex="0" role="button" aria-label="肘を選ぶ"><ellipse class="zone-shape" cx="105" cy="167" rx="13" ry="12"/><ellipse class="zone-shape" cx="255" cy="167" rx="13" ry="12"/></g><g class="body-zone" data-part="forearm" tabindex="0" role="button" aria-label="前腕を選ぶ"><path class="zone-shape" d="M96 171Q104 174 114 177L108 191Q100 195 92 188Z M264 171Q256 174 246 177L252 191Q260 195 268 188Z"/></g><g class="body-zone" data-part="hand" tabindex="0" role="button" aria-label="手を選ぶ"><ellipse class="zone-shape" cx="94" cy="198" rx="11" ry="9"/><ellipse class="zone-shape" cx="266" cy="198" rx="11" ry="9"/></g><g class="body-map-label"><text x="15" y="50">頭・顔</text><path d="M49 47H146" stroke="#7deaff"/><text x="12" y="112">肩・肩甲骨</text><text x="14" y="168">肘</text><path d="M29 165H90" stroke="#7deaff"/><text x="14" y="202">手</text><path d="M27 199H80" stroke="#7deaff"/><path d="M83 109H120" stroke="#7deaff"/><text x="248" y="163">胸郭</text><path d="M220 160H245" stroke="#7deaff"/><text x="245" y="251">腰・骨盤</text><path d="M205 248H241" stroke="#7deaff"/><text x="250" y="366">膝</text><path d="M224 363H247" stroke="#7deaff"/><text x="238" y="447">足・足裏</text><path d="M233 444H235" stroke="#7deaff"/></g></svg><p class="map-instruction">気になる部位を図または下のボタンから選んでください。肘・前腕・手も選べます。</p><div class="body-picker" role="group" aria-label="人体図の部位を選ぶ"><button class="body-pick" type="button" data-part="head" aria-pressed="false">頭・顔</button><button class="body-pick" type="button" data-part="neck" aria-pressed="false">首</button><button class="body-pick" type="button" data-part="shoulder" aria-pressed="false">肩</button><button class="body-pick" type="button" data-part="scapula" aria-pressed="false">肩甲骨</button><button class="body-pick" type="button" data-part="elbow" aria-pressed="false">肘</button><button class="body-pick" type="button" data-part="forearm" aria-pressed="false">前腕</button><button class="body-pick" type="button" data-part="hand" aria-pressed="false">手・手指</button><button class="body-pick" type="button" data-part="thorax" aria-pressed="false">胸郭</button><button class="body-pick" type="button" data-part="back" aria-pressed="false">背中</button><button class="body-pick" type="button" data-part="lumbar" aria-pressed="false">腰</button><button class="body-pick" type="button" data-part="pelvis" aria-pressed="false">骨盤</button><button class="body-pick" type="button" data-part="hip" aria-pressed="false">股関節</button><button class="body-pick" type="button" data-part="knee" aria-pressed="false">膝</button><button class="body-pick" type="button" data-part="ankle" aria-pressed="false">足首</button><button class="body-pick" type="button" data-part="foot" aria-pressed="false">足・足裏</button></div><p class="small-note">※人体図は部位の関係を学ぶための模式図です。診断用画像ではありません。</p></div><div class="explainer" aria-live="polite"><div class="tag">選択した部位</div><div class="map-legend"><span><i class="legend-dot"></i>選択中</span><span><i class="legend-dot connected"></i>関連する部位</span></div><h3 id="part-title">肩</h3><p id="part-desc">腕を上げる動きでは、肩関節だけでなく肩甲骨や胸郭なども協調して働きます。</p><strong>関連して見たい部位</strong><div class="related" id="related"><span class="chip">肩甲骨</span><span class="chip">胸郭</span><span class="chip">背中</span><span class="chip">首</span></div><strong>動きのポイント</strong><p id="part-motion">腕を上げるとき、肩甲骨は胸郭の上を動きます。肩だけに注目せず、複数の部位の動きを合わせて観察することが大切です。</p><p class="small-note">これは一般的な身体のしくみの解説です。痛みの原因をこの図だけで判断することはできません。</p><a class="detail-link" id="part-detail-link" href="body-shoulder.html">肩・肩甲骨の構造と働きを詳しく見る ↗</a></div></div></div>
-</div></section><div class="wrap note-box">人体図は身体のつながりを学ぶための模式図です。痛みの原因を診断するものではなく、表示内容だけで個別の状態を判断することはできません。</div><section class="section body-regions" id="body-regions">
+ <section class="section explorer counselling" id="body-map">
+   <div class="wrap"><div class="wrap"><div class="eyebrow">BODY EXPLORER <span>/ COUNSELLING MODE</span></div>
+     <h2>身体の状態を、一緒に見つめる。</h2>
+     <p class="lead">気になる症状や身体の動きを確認しながら、施術者と一緒に状態を整理するための説明画面です。</p>
+     <div class="explorer-grid counselling-grid"><aside class="counselling-input"><div class="panel-kicker">検査データ・インプット</div><h3>坐骨神経痛 <span>Sciatica</span></h3><p class="input-caption">状態を一緒に確認しながら選択してください。</p><div class="input-group"><strong>1. 骨盤アライメント</strong><div class="choice-row" role="group" aria-label="骨盤アライメント"><button class="state-choice" type="button" data-alignment="前傾">前傾</button><button class="state-choice" type="button" data-alignment="後傾">後傾</button><button class="state-choice is-active" type="button" data-alignment="右UP" aria-pressed="true">右UP</button><button class="state-choice" type="button" data-alignment="左UP">左UP</button></div></div><div class="input-group"><label for="mobility"><strong>2. 可動域（モビリティ）</strong><output id="mobility-value" for="mobility">+20 cm</output></label><input id="mobility" type="range" min="0" max="30" value="20"><div class="range-labels"><span>低い</span><span>高い</span></div></div><div class="input-group"><strong>3. ペインマップ（感覚検査）</strong><div class="pain-choices"><button type="button" class="pain-choice is-active" data-pain="お尻"><i></i>お尻</button><button type="button" class="pain-choice" data-pain="太もも裏"><i></i>太もも裏</button><button type="button" class="pain-choice" data-pain="足先"><i></i>足先</button></div></div><button class="save-note" type="button" id="reset-counselling">入力をリセット</button><p class="privacy-note">入力内容はこの画面内だけで扱われ、保存・送信されません。</p></aside><div class="body-panel"><div class="anatomy-viewer"><iframe src="https://charleeh.github.io/ecorche/" title="回転して観察できる3D人体モデル（骨格・筋肉）" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p>3Dモデル：<a href="https://github.com/Charleeh/ecorche" target="_blank" rel="noopener">Écorché</a>（CC BY-SA 4.0）。BodyParts3D / Z-Anatomy由来。モデルを回転・拡大し、骨格や筋肉の構造を確認できます。</p><p class="viewer-limit">このモデルに神経は含まれません。モデル内の選択と、左右の入力欄・説明はまだ連動していません。</p></div>
+       <svg viewBox="0 0 360 510" role="img" aria-label="クリックして部位を選べる人体模式図"><defs>
+  <linearGradient id="bodySkin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b92bd"/><stop offset=".45" stop-color="#28618d"/><stop offset="1" stop-color="#173c67"/></linearGradient>
+  <linearGradient id="bodyShade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#102d52"/><stop offset=".5" stop-color="#4a8db5"/><stop offset="1" stop-color="#102d52"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<ellipse cx="180" cy="485" rx="70" ry="8" fill="#020b1b" opacity=".35"/>
+<g class="body-base" fill="url(#bodySkin)" stroke="#9bd7ef" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M180 13C162 13 151 27 151 46c0 17 7 30 18 37 3 2 7 4 11 4s8-2 11-4c11-7 18-20 18-37 0-19-11-33-29-33Z"/>
+  <path d="M151 42c-7-2-9 5-6 12 2 5 5 8 9 8M209 42c7-2 9 5 6 12-2 5-5 8-9 8"/>
+  <path d="M164 77c1 9-2 17-8 23l-7 8c9 7 20 11 31 11s22-4 31-11l-7-8c-6-6-9-14-8-23-7 5-11 7-16 7s-9-2-16-7Z"/>
+  <!-- くびれをつけた胴体 -->
+  <path d="M149 101c-12 2-23 8-29 18l-10 17c6 10 14 17 25 22 3 17 3 39 5 57l2 24c-2 10-7 20-12 29 13 11 30 17 50 18 20-1 37-7 50-18-5-9-10-19-12-29l2-24c2-18 2-40 5-57 11-5 19-12 25-22l-10-17c-6-10-17-16-29-18-10 8-20 12-31 12s-21-4-31-12Z"/>
+  <!-- 腕を手首まで長くし、手指も描画 -->
+  <path d="M124 114c-9 2-15 9-19 20l-11 29c-4 10-8 20-9 31l-4 34c-1 8 2 13 7 14 6 1 9-3 10-10l5-29 8-27 17-31-4-31Z"/>
+  <path d="M87 237c-5 2-8 7-9 13l-1 20c0 5 2 8 5 8s5-3 5-8l2-11v17c0 4 2 7 5 7s5-3 5-7v-18l2 16c0 4 2 6 5 5s4-4 3-8l-2-20c-1-11-9-17-20-14Z"/>
+  <path d="M236 114c9 2 15 9 19 20l11 29c4 10 8 20 9 31l4 34c1 8-2 13-7 14-6 1-9-3-10-10l-5-29-8-27-17-31 4-31Z"/>
+  <path d="M273 237c5 2 8 7 9 13l1 20c0 5-2 8-5 8s-5-3-5-8l-2-11v17c0 4-2 7-5 7s-5-3-5-7v-18l-2 16c0 4-2 6-5 5s-4-4-3-8l2-20c1-11 9-17 20-14Z"/>
+  <!-- すっきりした脚と足 -->
+  <path d="M151 263c-9 7-13 18-12 34l3 48c1 13-4 25-6 39l-5 43c-1 10 2 16 9 17 7 1 11-4 13-12l12-49c4-16 7-31 6-47l-2-57c0-12-7-20-18-26Z"/>
+  <path d="M139 438c-4 4-7 10-8 18l-7 18c-2 5 1 8 7 9l20 1c6 0 9-3 8-8l-3-20c-1-8-4-15-8-19Z"/>
+  <path d="M209 263c9 7 13 18 12 34l-3 48c-1 13 4 25 6 39l5 43c1 10-2 16-9 17-7 1-11-4-13-12l-12-49c-4-16-7-31-6-47l2-57c0-12 7-20 18-26Z"/>
+  <path d="M221 438c4 4 7 10 8 18l7 18c2 5-1 8-7 9l-20 1c-6 0-9-3-8-8l3-20c1-8 4-15 8-19Z"/>
+</g>
+<g class="body-details" fill="none" stroke="#b9e7f6" stroke-width="1.15" stroke-linecap="round" opacity=".82">
+  <!-- 顔、首、鎖骨 -->
+  <path d="M166 43q5-3 10 0m8 0q5-3 10 0M180 46l-3 12 4 2m-7 8q6 4 12 0M164 82l6 13m26-13-6 13m-41 23q15-7 31-3m36 3q-15-7-31-3"/>
+  <path d="M145 116q17 11 35 9 18 2 35-9M180 126v112m-28-89q12 7 28 8m28-8q-12 7-28 8"/>
+  <!-- 胸郭と腹部 -->
+  <path d="M150 151q14 11 30 9m30-9q-14 11-30 9M148 164q15 11 32 10m32-10q-15 11-32 10M147 178q15 10 33 10m33-10q-15 10-33 10M150 194q13 8 30 8m30-8q-13 8-30 8M153 211q12 6 27 6m27-6q-12 6-27 6M155 226q11 5 25 4m25-4q-11 5-25 4"/>
+  <path d="M151 244q12 10 29 12 17-2 29-12m-42 17q13 7 26 0"/>
+  <!-- 関節と脚の筋肉の流れ -->
+  <path d="M117 136q10 7 16 14m-30 19q8 4 15 2m-24 17q7 4 13 2m155-54q-10 7-16 14m30 19q-8 4-15 2m24 17q-7 4-13 2"/>
+  <path d="M143 282q10 20 8 49m-13 20q10 8 22 0m-15 13q8 9 15 3m47-85q-10 20-8 49m13 20q-10 8-22 0m15 13q-8 9-15 3M139 405l-2 25m84-25 2 25"/>
+</g><g class="nerve-lines" fill="none" stroke="#cdbb91" stroke-width="2.1" stroke-linecap="round" opacity=".72" pointer-events="none"><path d="M180 82C177 111 183 129 180 153S177 190 180 215 181 237 180 252"/><path d="M179 143C163 149 151 163 140 180M181 143C197 149 209 163 220 180M180 220C164 235 155 251 151 272M180 220C196 235 205 251 209 272M151 272C145 301 148 327 151 353M209 272C215 301 212 327 209 353M151 353C148 379 143 401 140 428M209 353C212 379 217 401 220 428"/></g><g class="body-zone" data-part="head" tabindex="0" role="button" aria-label="頭を選ぶ"><ellipse class="zone-hit" cx="180" cy="49" rx="27" ry="34" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-shape" cx="180" cy="49" rx="27" ry="34"/></g>
+<g class="body-zone" data-part="neck" tabindex="0" role="button" aria-label="首を選ぶ"><rect class="zone-hit" x="166" y="78" width="28" height="26" rx="7" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><rect class="zone-shape" x="166" y="78" width="28" height="26" rx="7"/></g>
+<g class="body-zone" data-part="shoulder" tabindex="0" role="button" aria-label="肩を選ぶ"><path class="zone-hit" d="M163 101Q138 100 119 121L137 151Q155 135 168 136Z M197 101Q222 100 241 121L223 151Q205 135 192 136Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M163 101Q138 100 119 121L137 151Q155 135 168 136Z M197 101Q222 100 241 121L223 151Q205 135 192 136Z"/></g>
+<g class="body-zone" data-part="scapula" tabindex="0" role="button" aria-label="肩甲骨を選ぶ"><path class="zone-hit" d="M143 137L164 145L158 177L138 165Z M217 137L196 145L202 177L222 165Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M143 137L164 145L158 177L138 165Z M217 137L196 145L202 177L222 165Z"/></g>
+<g class="body-zone" data-part="thorax" tabindex="0" role="button" aria-label="胸郭を選ぶ"><path class="zone-hit" d="M164 136Q180 145 196 136L207 190Q180 208 153 190Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M164 136Q180 145 196 136L207 190Q180 208 153 190Z"/></g>
+<g class="body-zone" data-part="back" tabindex="0" role="button" aria-label="背中を選ぶ"><path class="zone-hit" d="M165 142L195 142L202 210L180 225L158 210Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M165 142L195 142L202 210L180 225L158 210Z"/></g>
+<g class="body-zone" data-part="lumbar" tabindex="0" role="button" aria-label="腰を選ぶ"><path class="zone-hit" d="M155 207Q180 218 205 207L202 242Q180 254 158 242Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M155 207Q180 218 205 207L202 242Q180 254 158 242Z"/></g>
+<g class="body-zone" data-part="pelvis" tabindex="0" role="button" aria-label="骨盤を選ぶ"><path class="zone-hit" d="M158 239Q180 253 202 239L215 272L194 291L180 276L166 291L145 272Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M158 239Q180 253 202 239L215 272L194 291L180 276L166 291L145 272Z"/></g>
+<g class="body-zone" data-part="hip" tabindex="0" role="button" aria-label="股関節を選ぶ"><ellipse class="zone-hit" cx="157" cy="274" rx="16" ry="21" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-hit" cx="203" cy="274" rx="16" ry="21" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-shape" cx="157" cy="274" rx="16" ry="21"/><ellipse class="zone-shape" cx="203" cy="274" rx="16" ry="21"/></g>
+<g class="body-zone" data-part="knee" tabindex="0" role="button" aria-label="膝を選ぶ"><ellipse class="zone-hit" cx="150" cy="365" rx="13" ry="18" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-hit" cx="210" cy="365" rx="13" ry="18" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-shape" cx="150" cy="365" rx="13" ry="18"/><ellipse class="zone-shape" cx="210" cy="365" rx="13" ry="18"/></g>
+<g class="body-zone" data-part="ankle" tabindex="0" role="button" aria-label="足首を選ぶ"><ellipse class="zone-hit" cx="139" cy="439" rx="11" ry="15" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-hit" cx="221" cy="439" rx="11" ry="15" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-shape" cx="139" cy="439" rx="11" ry="15"/><ellipse class="zone-shape" cx="221" cy="439" rx="11" ry="15"/></g>
+<g class="body-zone" data-part="foot" tabindex="0" role="button" aria-label="足を選ぶ"><path class="zone-hit" d="M130 447L147 447L155 474Q143 485 119 478L116 469Z M213 447L230 447L244 469L241 478Q217 485 205 474Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M130 447L147 447L155 474Q143 485 119 478L116 469Z M213 447L230 447L244 469L241 478Q217 485 205 474Z"/></g>
+<g class="body-zone" data-part="elbow" tabindex="0" role="button" aria-label="肘を選ぶ"><ellipse class="zone-hit" cx="96" cy="174" rx="16" ry="16" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-hit" cx="264" cy="174" rx="16" ry="16" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-shape" cx="96" cy="174" rx="13" ry="13"/><ellipse class="zone-shape" cx="264" cy="174" rx="13" ry="13"/></g><g class="body-zone" data-part="forearm" tabindex="0" role="button" aria-label="前腕を選ぶ"><path class="zone-hit" d="M86 184Q96 185 107 188L99 234Q89 239 80 232Z M274 184Q264 185 253 188L261 234Q271 239 280 232Z" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><path class="zone-shape" d="M89 184Q97 186 105 188L98 224Q91 230 83 226Z M271 184Q263 186 255 188L262 224Q269 230 277 226Z"/></g><g class="body-zone" data-part="hand" tabindex="0" role="button" aria-label="手を選ぶ"><ellipse class="zone-hit" cx="87" cy="253" rx="17" ry="20" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-hit" cx="273" cy="253" rx="17" ry="20" fill="transparent" stroke="transparent" stroke-width="36" pointer-events="all"/><ellipse class="zone-shape" cx="87" cy="253" rx="12" ry="17"/><ellipse class="zone-shape" cx="273" cy="253" rx="12" ry="17"/></g><g class="body-map-label"><text x="15" y="50">頭・顔</text><path d="M49 47H146" stroke="#7deaff"/><text x="12" y="112">肩・肩甲骨</text><text x="14" y="168">肘</text><path d="M29 165H90" stroke="#7deaff"/><text x="14" y="257">手</text><path d="M27 254H72" stroke="#7deaff"/><path d="M83 109H120" stroke="#7deaff"/><text x="248" y="163">胸郭</text><path d="M220 160H245" stroke="#7deaff"/><text x="245" y="251">腰・骨盤</text><path d="M205 248H241" stroke="#7deaff"/><text x="250" y="366">膝</text><path d="M224 363H247" stroke="#7deaff"/><text x="238" y="447">足・足裏</text><path d="M233 444H235" stroke="#7deaff"/></g></svg><p class="map-instruction">3Dモデルはドラッグで回転、ピンチで拡大できます。下の部位ボタンから説明内容も切り替えられます。</p><div class="body-picker" role="group" aria-label="人体図の部位を選ぶ"><button class="body-pick" type="button" data-part="head" aria-pressed="false">頭・顔</button><button class="body-pick" type="button" data-part="neck" aria-pressed="false">首</button><button class="body-pick" type="button" data-part="shoulder" aria-pressed="false">肩</button><button class="body-pick" type="button" data-part="scapula" aria-pressed="false">肩甲骨</button><button class="body-pick" type="button" data-part="elbow" aria-pressed="false">肘</button><button class="body-pick" type="button" data-part="forearm" aria-pressed="false">前腕</button><button class="body-pick" type="button" data-part="hand" aria-pressed="false">手・手指</button><button class="body-pick" type="button" data-part="thorax" aria-pressed="false">胸郭</button><button class="body-pick" type="button" data-part="back" aria-pressed="false">背中</button><button class="body-pick" type="button" data-part="lumbar" aria-pressed="false">腰</button><button class="body-pick" type="button" data-part="pelvis" aria-pressed="false">骨盤</button><button class="body-pick" type="button" data-part="hip" aria-pressed="false">股関節</button><button class="body-pick" type="button" data-part="knee" aria-pressed="false">膝</button><button class="body-pick" type="button" data-part="ankle" aria-pressed="false">足首</button><button class="body-pick" type="button" data-part="foot" aria-pressed="false">足・足裏</button></div><p class="small-note">※人体図は部位の関係を学ぶための模式図です。診断用画像ではありません。</p></div><div class="explainer" aria-live="polite"><div class="compare-head"><div><div class="panel-kicker">状態の比較</div><h3>身体の状態を見比べる</h3></div><span class="compare-control">A / B</span></div><div class="compare-cards"><article class="compare-card normal"><h4>A. 正常（整った状態）</h4><div class="mini-body"><span></span></div><ul><li>骨盤の水平が保たれている</li><li>神経への負担が少ない状態</li></ul></article><article class="compare-card current"><h4>B. 現在の状態</h4><div class="mini-body"><span></span></div><ul><li id="current-alignment">骨盤の右上がり</li><li>筋肉の緊張を一緒に確認</li></ul></article></div><div class="context-card"><div class="panel-kicker">現在の状態について</div><p id="counselling-summary">骨盤の右側がやや上がった状態を表示しています。これは説明用のイメージです。個別の状態は施術者と確認してください。</p></div><div class="detail-divider"></div><div class="tag">選択した部位</div><div class="map-legend"><span><i class="legend-dot"></i>選択中</span><span><i class="legend-dot connected"></i>関連する部位</span></div><h3 id="part-title">肩</h3><p id="part-desc">腕を上げる動きでは、肩関節だけでなく肩甲骨や胸郭なども協調して働きます。</p><strong>関連して見たい部位</strong><div class="related" id="related"><span class="chip">肩甲骨</span><span class="chip">胸郭</span><span class="chip">背中</span><span class="chip">首</span></div><strong>動きのポイント</strong><p id="part-motion">腕を上げるとき、肩甲骨は胸郭の上を動きます。肩だけに注目せず、複数の部位の動きを合わせて観察することが大切です。</p><p class="small-note">これは一般的な身体のしくみの解説です。痛みの原因をこの図だけで判断することはできません。</p><a class="detail-link" id="part-detail-link" href="../../body-shoulder.html">肩・肩甲骨の構造と働きを詳しく見る ↗</a></div><div class="simulator"><div class="simulator-title"><div><div class="panel-kicker">施術シミュレーター</div><p>スライダーを動かして、説明用イメージの変化を確認できます。</p></div><span id="simulator-state">施術中</span></div><div class="simulator-track"><span>Before</span><input id="treatment-slider" type="range" min="0" max="100" value="50" aria-label="説明用イメージの変化"><span>After</span></div><p class="simulator-caption" id="simulator-caption">骨盤の傾きや筋肉の緊張を、施術者と一緒に確認します。</p></div></div></div>
+</div></section><div class="wrap note-box">人体図は身体のつながりを学ぶための模式図です。</div><section class="section body-regions" id="body-regions">
   <div class="wrap">
     <div class="eyebrow" style="color:#9b762d">BODY KNOWLEDGE</div>
-    <h2>身体の知識を、もっと身近に</h2>
+    <h2>身体の構造と機能を、もっと身近に</h2>
     <div class="regions-intro">
-      <p class="lead">身体を知ると、自分の身体がもっと分かる。部位ごとの構造や働きを知り、首・肩・背中・腕のような全身のつながりにも目を向けてみましょう。</p>
-      <p>症状から探す入口に加えて、気になる部位から身体のしくみを学べるコーナーです。まずは肩・肩甲骨の解説からご覧ください。</p>
+      <p class="lead">骨・関節・筋肉などの構造と働きを知り、首・肩・背中・腕など、部位どうしが連携して動くしくみを見ていきましょう。</p>
+      <p>部位を選ぶと、関連する部位や動きのポイントが表示されます。詳しい構造と機能の解説は、肩・肩甲骨、肘・手、腰・骨盤からご覧いただけます。</p>
     </div>
     <div class="region-grid">
-      <a class="region-card" href="body-shoulder.html">
+      <a class="region-card" href="../../body-shoulder.html">
         <span class="region-number">01 / FIRST GUIDE</span><h3>肩・肩甲骨</h3>
         <p>構造・働き・首や背中、腕とのつながり</p><span class="region-status">構造と機能の解説を見る ↗</span>
       </a>
@@ -113,7 +194,7 @@
       <a class="region-card" href="#body-map" onclick="selectPart('back')">
         <span class="region-number">04 / CHEST &amp; BACK</span><h3>胸・背中</h3><p>胸郭、背骨、肩甲骨の動き</p><span class="region-status">人体図で位置を見る ↗</span>
       </a>
-      <a class="region-card" href="body-waist.html">
+      <a class="region-card" href="../../body-waist.html">
         <span class="region-number">05 / LOW BACK &amp; PELVIS</span><h3>腰・骨盤</h3><p>体幹と股関節をつなぐ動き</p><span class="region-status">構造と機能の解説を見る ↗</span>
       </a>
       <a class="region-card" href="#body-map" onclick="selectPart('hip')">
@@ -126,7 +207,7 @@
         <span class="region-number">08 / FOOT</span><h3>足・足裏</h3><p>接地や歩行に関わる足部の働き</p><span class="region-status">人体図で位置を見る ↗</span>
       </a>
       <div class="region-card"><span class="region-number">09 / HEAD &amp; FACE</span><h3>頭・顔</h3><p>頭部の構造や首とのつながりを解説予定</p><span class="region-status pending">記事を準備中</span></div>
-      <a class="region-card" href="body-elbow-hand.html"><span class="region-number">02 / ELBOW &amp; HAND</span><h3>肘・手</h3><p>肘・前腕・手指の構造と、肩から続く動き</p><span class="region-status">構造と機能の解説を見る ↗</span></a>
+      <a class="region-card" href="../../body-elbow-hand.html"><span class="region-number">02 / ELBOW &amp; HAND</span><h3>肘・手</h3><p>肘・前腕・手指の構造と、肩から続く動き</p><span class="region-status">構造と機能の解説を見る ↗</span></a>
       <div class="region-card"><span class="region-number">10 / THIGH</span><h3>太もも</h3><p>股関節や膝と連動する太ももの働きを解説予定</p><span class="region-status pending">記事を準備中</span></div>
       <div class="region-card"><span class="region-number">11 / CALF</span><h3>ふくらはぎ</h3><p>足首や歩行との関係を解説予定</p><span class="region-status pending">記事を準備中</span></div>
     </div>
@@ -200,31 +281,77 @@
   </div>
 </section>
 
-  <div class="wrap"><div><div class="footbrand">Momdo</div><div>Massage &amp; Manipulative</div><div>福岡市城南区七隈｜金山駅周辺</div></div><div><a href="concerns.html">お悩みから探す</a>　/　<a href="body-explorer.html">身体のことを知る</a><br><a href="index.html">トップページへ ↑</a></div><div>© Momdo Massage &amp; Bodywork</div></div></footer>
+  <div class="wrap"><div><div class="footbrand">Momdo</div><div>Massage &amp; Manipulative</div><div>福岡市城南区七隈｜金山駅周辺</div></div><div><a href="../../pages/concerns/concerns.html">お悩みから探す</a>　/　<a href="body-explorer.html">身体のことを知る</a><br><a href="../../index.html">トップページへ ↑</a></div><div>© Momdo Massage &amp; Bodywork</div></div></footer>
 <script>
-const bodyInfo={
-head:{title:"頭",desc:"頭の不快感にはさまざまな背景があり、これだけで原因を決めることはできません。首や肩の状態、生活状況なども含めて考えます。",related:["首","肩","姿勢"],motion:"頭痛が急に強く出た場合や、発熱・麻痺・意識の変化などを伴う場合は、施術よりも速やかな医療相談を優先してください。"},
-neck:{title:"首",desc:"首は頭を支え、向きを変える働きを担います。首そのものに加え、胸郭や肩甲骨の動きも関連します。",related:["頭","肩","胸郭","背中"],motion:"首を動かすときは、動かしやすい方向と違和感が出る方向を無理のない範囲で比べます。強い痛みを我慢して動かさないでください。"},
-shoulder:{title:"肩",desc:"腕を上げる動きでは、肩関節だけでなく肩甲骨や胸郭なども協調して働きます。",related:["肩甲骨","胸郭","背中","首"],motion:"腕を上げるとき、肩甲骨は胸郭の上を動きます。肩だけに注目せず、複数の部位の動きを合わせて観察することが大切です。"},
-scapula:{title:"肩甲骨",desc:"肩甲骨は胸郭の上を滑るように動き、腕の動きを支える役割があります。",related:["肩","胸郭","背中","首"],motion:"腕を上げる動作では、肩甲骨の上方回旋など複数の動きが組み合わさります。左右差だけで問題と決めつけず、動作全体を見ます。"},
-thorax:{title:"胸郭",desc:"胸郭は肋骨や胸骨、胸椎などから構成され、呼吸や体幹の動きに関わります。",related:["肩甲骨","背中","首","腰"],motion:"胸郭の動きは呼吸や上半身の回旋に関わり、肩甲骨が動く土台にもなります。"},
-back:{title:"背中",desc:"背中には背骨や肋骨、肩甲骨を動かす筋肉などがあり、姿勢や上肢の動きに関係します。",related:["肩甲骨","胸郭","腰","骨盤"],motion:"背中の張りを感じるときも、同じ場所だけでなく、胸郭や肩甲骨、体幹の動きも合わせて確認します。"},
-lumbar:{title:"腰",desc:"腰部は体幹を支え、股関節や骨盤と協調してさまざまな動作を行います。",related:["骨盤","股関節","背中","膝"],motion:"前かがみや立ち上がりでは、腰だけでなく股関節や膝なども使われます。強い痛みを伴う動作は無理に試さないでください。"},
-pelvis:{title:"骨盤",desc:"骨盤は体幹と下肢をつなぐ位置にあり、股関節や腰部とともに動作を支えます。",related:["腰","股関節","膝","背中"],motion:"歩く、立つ、座るといった動作では、骨盤の位置や動きが腰部・股関節の動きと関わります。"},
-hip:{title:"股関節",desc:"股関節は骨盤と大腿骨をつなぐ関節で、歩行や立ち座りなど多くの動きに関わります。",related:["骨盤","腰","膝","足首"],motion:"股関節の曲げ伸ばしや回旋は、立ち座りや歩行で使われます。痛みが強いときは無理なストレッチを避けてください。"},
-knee:{title:"膝",desc:"膝は股関節と足首の間にあり、体重を支えながら曲げ伸ばしを行う関節です。",related:["股関節","足首","骨盤","足"],motion:"階段や歩行では、膝だけでなく股関節や足首も連動します。腫れや急な痛みがある場合は医療機関での確認を検討してください。"},
-ankle:{title:"足首",desc:"足首は歩行時に身体を前へ進めたり、地面の変化に対応したりするために重要な役割を担います。",related:["足","膝","股関節","骨盤"],motion:"歩くときは足首の動きに加えて、足部・膝・股関節も連携します。捻挫直後など腫れや強い痛みがある場合は医療相談を優先してください。"},
-foot:{title:"足",desc:"足部は体重を受け止め、地面からの情報を感じ取りながらバランスや歩行を支えます。",related:["足首","膝","股関節","骨盤"],motion:"立つ・歩く動作では、足部の接地と足首、膝、股関節の動きが組み合わさります。"},elbow:{title:"肘",desc:"肘は上腕骨と前腕の尺骨・橈骨がつくる複合関節です。曲げ伸ばしに加え、前腕を回す動きにも関わります。",related:["肩","前腕","手・手指"],motion:"肘の曲げ伸ばしと前腕の回内・回外が組み合わさり、手をさまざまな位置へ運びます。"},forearm:{title:"前腕",desc:"前腕には橈骨と尺骨があり、手首や手指につながる筋肉・腱が通っています。",related:["肘","手首","手・手指"],motion:"橈骨と尺骨の位置関係が変わることで、手のひらを上や下へ向ける動きができます。"},hand:{title:"手・手指",desc:"手は手根骨・中手骨・指骨で構成され、手首や指の関節、前腕から続く腱と手の筋肉が協調して働きます。",related:["肘","前腕","肩"],motion:"握る、指先でつまむ、指を広げるなど、目的に応じて複数の関節や筋肉を使い分けます。"}
+const menuToggle=document.querySelector('.menu-toggle');
+const mainNavigation=document.querySelector('#main-navigation');
+if(menuToggle&&mainNavigation){
+  menuToggle.addEventListener('click',()=>{
+    const isOpen=mainNavigation.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded',String(isOpen));
+    menuToggle.setAttribute('aria-label',isOpen?'メニューを閉じる':'メニューを開く');
+    const icon=menuToggle.querySelector('.menu-icon');
+    if(icon) icon.textContent=isOpen?'✕':'☰';
+  });
+  mainNavigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+    mainNavigation.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded','false');
+    menuToggle.setAttribute('aria-label','メニューを開く');
+    const icon=menuToggle.querySelector('.menu-icon');
+    if(icon) icon.textContent='☰';
+  }));
+  const dropdownToggle=mainNavigation.querySelector('.nav-dropdown-toggle');
+  const dropdownMenu=mainNavigation.querySelector('.nav-dropdown-menu');
+  if(dropdownToggle&&dropdownMenu){
+    dropdownToggle.addEventListener('click',()=>{
+      const isOpen=dropdownToggle.getAttribute('aria-expanded')==='true';
+      dropdownToggle.setAttribute('aria-expanded',String(!isOpen));
+      dropdownMenu.hidden=isOpen;
+    });
+    dropdownMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+      dropdownToggle.setAttribute('aria-expanded','false');
+      dropdownMenu.hidden=true;
+    }));
+  }
+}
+const bodyPartInfo={
+ head:{title:'頭・顔',desc:'頭部は首や肩、姿勢の影響を受けながら支えられています。',related:['neck','shoulder','back'],motion:'首の動きや肩まわりの緊張とのつながりを、全身の姿勢と合わせて見ていきます。'},
+ neck:{title:'首',desc:'首は頭を支え、胸郭や肩甲骨と連携して動きます。',related:['head','shoulder','scapula','thorax'],motion:'首を動かすときは、胸郭や肩甲骨も一緒に動いているか確認します。'},
+ shoulder:{title:'肩',desc:'肩の動きには肩甲骨、胸郭、背中など複数の部位が関わります。',related:['scapula','thorax','back','neck'],motion:'腕を上げる動きでは、肩甲骨が胸郭の上を滑るように動きます。'},
+ scapula:{title:'肩甲骨',desc:'肩甲骨は胸郭の上を動き、腕の動きを支える土台になります。',related:['shoulder','thorax','back','neck'],motion:'腕を上げるときの肩甲骨の向きや、胸郭との連動を見ていきます。'},
+ thorax:{title:'胸郭',desc:'胸郭は呼吸や体幹の動きに関わり、肩や背中とも連携します。',related:['shoulder','scapula','back','lumbar'],motion:'呼吸や上半身の動きに合わせた胸郭の広がりを確認します。'},
+ back:{title:'背中',desc:'背中は肩甲骨や胸郭、腰とつながりながら姿勢を支えます。',related:['scapula','thorax','lumbar','pelvis'],motion:'背骨まわりの動きと、肩・骨盤とのつながりに目を向けます。'},
+ lumbar:{title:'腰',desc:'腰の動きは骨盤や股関節、胸郭と影響し合います。',related:['back','pelvis','hip','knee'],motion:'腰だけでなく、骨盤や股関節の動きも合わせて確認します。'},
+ pelvis:{title:'骨盤',desc:'骨盤は上半身と脚をつなぎ、立つ・歩く動きの土台になります。',related:['lumbar','hip','knee','back'],motion:'左右の高さや傾き、股関節との動きのつながりを見ていきます。'},
+ hip:{title:'股関節',desc:'股関節は骨盤と脚をつなぎ、立つ・歩く・座る動作に関わります。',related:['pelvis','lumbar','knee','foot'],motion:'骨盤や膝、足の動きと合わせて股関節の動きを確認します。'},
+ knee:{title:'膝',desc:'膝は股関節と足首の間で、脚全体の動きを受け止めます。',related:['hip','ankle','foot','pelvis'],motion:'歩行やしゃがむ動作の中で、股関節・足首との連携を見ていきます。'},
+ ankle:{title:'足首',desc:'足首は地面からの力を受け、歩行や立位のバランスを支えます。',related:['knee','foot','hip'],motion:'足裏の接地や膝との連動を確かめながら動きを見ていきます。'},
+ foot:{title:'足・足裏',desc:'足部は立つ・歩くときに地面と接し、身体のバランスを支えます。',related:['ankle','knee','hip'],motion:'足裏の接地や足首、膝の向きを合わせて確認します。'},
+ elbow:{title:'肘',desc:'肘は肩から手へ力を伝え、腕の曲げ伸ばしを助けます。',related:['shoulder','forearm','hand'],motion:'肩や手首との連携を見ながら、腕の動きを確認します。'},
+ forearm:{title:'前腕',desc:'前腕は肘と手首をつなぎ、手の向きや握る動きに関わります。',related:['elbow','hand','shoulder'],motion:'手首を返す動きや、肘・手指との連携を見ていきます。'},
+ hand:{title:'手・手指',desc:'手指の細かな動きは、前腕や肘、肩から続く動きとつながります。',related:['forearm','elbow','shoulder'],motion:'指を動かすときの前腕や手首の動きも合わせて確認します。'}
 };
-const bodyConnections={head:["neck"],neck:["head","shoulder","thorax","back"],shoulder:["neck","scapula","thorax","back"],scapula:["shoulder","thorax","back","neck"],thorax:["neck","shoulder","scapula","back","lumbar"],back:["neck","scapula","thorax","lumbar","pelvis"],lumbar:["back","pelvis","hip"],pelvis:["lumbar","back","hip"],hip:["pelvis","lumbar","knee"],knee:["hip","ankle","foot"],ankle:["knee","foot","hip"],foot:["ankle","knee"],elbow:["shoulder","forearm","hand"],forearm:["elbow","hand","shoulder"],hand:["forearm","elbow","shoulder"]};
-function selectPart(key){const d=bodyInfo[key];if(!d)return;const linked=bodyConnections[key]||[];document.querySelectorAll(".body-zone").forEach(el=>{el.classList.toggle("active",el.dataset.part===key);el.classList.toggle("related",linked.includes(el.dataset.part));});document.querySelectorAll(".body-pick").forEach(el=>el.setAttribute("aria-pressed",el.dataset.part===key?"true":"false"));document.getElementById("part-title").textContent=d.title;document.getElementById("part-desc").textContent=d.desc;document.getElementById("part-motion").textContent=d.motion;const r=document.getElementById("related");r.replaceChildren(...d.related.map(label=>{const s=document.createElement("span");s.className="chip";s.textContent=label;return s;}));const detailLink=document.getElementById("part-detail-link");const shoulderKeys=["shoulder","scapula"];const armKeys=["elbow","forearm","hand"];if(shoulderKeys.includes(key)){detailLink.href="body-shoulder.html";detailLink.textContent="肩・肩甲骨の構造と働きを詳しく見る ↗";detailLink.hidden=false;}else if(armKeys.includes(key)){detailLink.href="body-elbow-hand.html";detailLink.textContent="肘・手の構造と働きを詳しく見る ↗";detailLink.hidden=false;}else if(key==="lumbar"||key==="pelvis"){detailLink.href="body-waist.html";detailLink.textContent="腰・骨盤の構造と働きを詳しく見る ↗";detailLink.hidden=false;}else{detailLink.hidden=true;}}
-document.querySelectorAll(".body-zone").forEach(el=>{el.addEventListener("click",()=>selectPart(el.dataset.part));el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();selectPart(el.dataset.part);}});});document.querySelectorAll(".body-pick").forEach(el=>el.addEventListener("click",()=>selectPart(el.dataset.part)));
-selectPart("shoulder");
-
-const menuToggle = document.querySelector(".menu-toggle"); const siteNav = document.getElementById("site-nav");
-menuToggle.addEventListener("click", () => { const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-menuToggle.setAttribute("aria-expanded", String(!isOpen)); menuToggle.setAttribute( "aria-label", isOpen ? "メニューを開く" : "メニューを閉じる" );
-siteNav.classList.toggle("is-open", !isOpen); });
-// リンクをタップしたらメニューを閉じる siteNav.querySelectorAll("a").forEach(link => { link.addEventListener("click", () => { menuToggle.setAttribute("aria-expanded", "false"); menuToggle.setAttribute("aria-label", "メニューを開く"); siteNav.classList.remove("is-open"); }); });
-
+const partNames={head:'頭・顔',neck:'首',shoulder:'肩',scapula:'肩甲骨',thorax:'胸郭',back:'背中',lumbar:'腰',pelvis:'骨盤',hip:'股関節',knee:'膝',ankle:'足首',foot:'足・足裏',elbow:'肘',forearm:'前腕',hand:'手・手指'};
+function selectPart(part){const info=bodyPartInfo[part];if(!info)return;document.getElementById('part-title').textContent=info.title;document.getElementById('part-desc').textContent=info.desc;document.getElementById('part-motion').textContent=info.motion;document.getElementById('related').replaceChildren(...info.related.map(key=>{const chip=document.createElement('button');chip.type='button';chip.className='chip chip-button';chip.textContent=partNames[key];chip.addEventListener('click',()=>selectPart(key));return chip}));document.querySelectorAll('.body-zone').forEach(zone=>{zone.classList.toggle('active',zone.dataset.part===part);zone.classList.toggle('related',info.related.includes(zone.dataset.part))});document.querySelectorAll('.body-pick').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.part===part)));}
+document.querySelectorAll('.body-zone').forEach(zone=>{zone.addEventListener('click',()=>selectPart(zone.dataset.part));zone.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPart(zone.dataset.part)}})});
+document.querySelectorAll('.body-pick').forEach(button=>button.addEventListener('click',()=>selectPart(button.dataset.part)));
+const mobility=document.getElementById('mobility');mobility?.addEventListener('input',()=>document.getElementById('mobility-value').textContent='+'+mobility.value+' cm');
+let selectedAlignment='右UP';document.querySelectorAll('.state-choice').forEach(button=>button.addEventListener('click',()=>{selectedAlignment=button.dataset.alignment;document.querySelectorAll('.state-choice').forEach(item=>{item.classList.toggle('is-active',item===button);item.setAttribute('aria-pressed',String(item===button))});document.getElementById('current-alignment').textContent='骨盤の'+selectedAlignment;document.getElementById('counselling-summary').textContent='骨盤の'+selectedAlignment+'を選択中です。これは説明用の表示です。個別の状態は施術者と確認してください。';document.querySelector('.current .mini-body span').style.transform=selectedAlignment==='右UP'?'rotate(-7deg)':selectedAlignment==='左UP'?'rotate(7deg)':selectedAlignment==='前傾'?'rotate(4deg)':'rotate(-4deg)'}));
+document.querySelectorAll('.pain-choice').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.pain-choice').forEach(item=>item.classList.toggle('is-active',item===button));document.getElementById('counselling-summary').textContent='感覚のある部位として「'+button.dataset.pain+'」を選択中です。感じ方を施術者と一緒に確認してください。'}));
+const treatmentSlider=document.getElementById('treatment-slider');treatmentSlider?.addEventListener('input',()=>{const value=Number(treatmentSlider.value);const ratio=value/100;const mix=(a,b)=>Math.round(a+(b-a)*ratio).toString(16).padStart(2,'0');document.querySelector('.counselling').style.setProperty('--body-highlight','#'+mix(217,154)+mix(135,174)+mix(112,145));const after=value>=80;document.querySelector('.counselling').classList.toggle('is-after',after);document.getElementById('simulator-state').textContent=value<30?'Before':after?'After':'施術中';document.getElementById('simulator-caption').textContent=after?'説明用のイメージです。実際の変化を示すものではありません。':'状態の変化を施術者と一緒に確認するための説明用イメージです。'});
+document.getElementById('reset-counselling')?.addEventListener('click',()=>{document.querySelectorAll('.state-choice').forEach(button=>{const active=button.dataset.alignment==='右UP';button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active))});document.querySelectorAll('.pain-choice').forEach(button=>button.classList.toggle('is-active',button.dataset.pain==='お尻'));mobility.value=20;document.getElementById('mobility-value').textContent='+20 cm';treatmentSlider.value=50;document.querySelector('.counselling').classList.remove('is-after');document.getElementById('current-alignment').textContent='骨盤の右上がり';document.getElementById('counselling-summary').textContent='骨盤の右側がやや上がった状態を表示しています。これは説明用のイメージです。個別の状態は施術者と確認してください。';document.getElementById('simulator-state').textContent='施術中';document.getElementById('simulator-caption').textContent='状態の変化を施術者と一緒に確認するための説明用イメージです。'});selectPart('shoulder');
+document.getElementById('reset-counselling')?.addEventListener('click',()=>{selectedAlignment='右UP';document.querySelector('.counselling').style.setProperty('--body-highlight','#d98770')});
 </script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
