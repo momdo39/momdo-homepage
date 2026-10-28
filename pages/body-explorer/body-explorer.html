@@ -85,7 +85,10 @@
 </header>
 <main><section class="hero-image" aria-label="BODY EXPLORERのメイン画像">
   <div class="hero-image-wrap">
-    <img src="../../body-explorer-hero.jpg" alt="解剖学的な人体メカニズムを表したイラスト">
+    <picture>
+      <source media="(max-width: 850px)" srcset="images/body-explorer-hero-mobile.png">
+      <img src="images/body-explorer-hero.png" alt="解剖学的な人体メカニズムを表したイラスト">
+    </picture>
   </div></section><section class="page-hero"><div class="wrap">
     <div class="eyebrow">Interactive anatomy</div>
     <h1>身体のことを知る</h1>
@@ -286,6 +289,9 @@ if(menuToggle&&mainNavigation){
   }
 }
 </script></body></html>
+
+
+
 
 
 
