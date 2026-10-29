@@ -514,25 +514,77 @@ footer small{color:#b8a99d}
   .reservation{padding:54px 0}
   .reservation .button{display:flex;width:100%;margin:10px 0}
 }
+
+/* トップページと共通のメインナビゲーション */
+.header .header-inner{position:relative;min-height:76px;flex-direction:row;align-items:center;justify-content:space-between;gap:20px}
+.header .brand{display:flex;flex-direction:column;line-height:1.4;flex-shrink:0}
+.header .brand-name{font-family:"Shippori Mincho",serif;font-size:25px;letter-spacing:.12em}
+.header .brand-sub{font-family:"Cinzel",serif;font-size:9px;letter-spacing:.16em;color:var(--gold-light)}
+.header .navlinks{display:flex;align-items:center;flex-wrap:nowrap;gap:22px;font-size:.85rem}
+.header .navlinks a{color:#fff}
+.header .navlinks a:hover,.header .navlinks a[aria-current="page"]{color:var(--gold-light)}
+.header .nav-dropdown{position:relative}
+.header .nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px;padding:8px 0;border:0;background:transparent;color:#fff;font:inherit;cursor:pointer}
+.header .nav-dropdown-toggle:hover{color:var(--gold-light)}
+.header .nav-dropdown-menu{position:absolute;top:100%;right:0;z-index:200;min-width:210px;padding:8px;background:#25140D;border:1px solid var(--gold);border-radius:6px;box-shadow:0 8px 20px #0005}
+.header .nav-dropdown-menu[hidden]{display:none}
+.header .nav-dropdown-menu a{display:block;padding:12px;border-bottom:1px solid #ffffff20}
+.header .nav-dropdown-menu a:last-child{border-bottom:0}
+.header .nav-dropdown-menu a:hover{color:var(--gold-light);background:#ffffff0d}
+.header .menu-toggle{display:none;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border:1px solid var(--gold);border-radius:4px;background:transparent;color:#fff;cursor:pointer;white-space:nowrap}
+.header .menu-icon{font-size:1.25rem;line-height:1}
+.header .header-contact{white-space:nowrap;color:var(--gold-light)}
+@media(max-width:850px){
+  .header .header-inner{min-height:70px;padding:10px 0;align-items:center;flex-direction:row;flex-wrap:wrap;gap:10px}
+  .header .menu-toggle{display:inline-flex;margin-left:auto}
+  .header .header-contact{display:none}
+  .header .navlinks{display:none;position:absolute;top:100%;left:0;right:0;z-index:100;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px;background:#25140D;border:1px solid #D4AF37;box-shadow:0 8px 18px #0005;font-size:.95rem}
+  .header .navlinks.is-open{display:flex}
+  .header .navlinks a{display:block;padding:12px 8px;border-bottom:1px solid #ffffff20}
+  .header .navlinks a:last-child{border-bottom:0}
+  .header .nav-dropdown{width:100%}
+  .header .nav-dropdown-toggle{width:100%;justify-content:space-between;padding:12px 8px}
+  .header .nav-dropdown-menu{position:static;min-width:0;margin:0 0 8px;box-shadow:none}
+  .header .nav-dropdown-menu a{padding-left:24px}
+}
 </style>
 </head>
 
 <body>
 
-<header>
+<header class="header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="../../index.html#home" aria-label="Momdo Massage &amp; Manipulative">
       <span class="brand-name">Momdo</span>
       <span class="brand-sub">Massage &amp; Manipulative</span>
     </a>
 
-    <nav aria-label="メインナビゲーション">
-      <a href="index.html">ホーム</a>
-      <a href="menu.html">メニュー・料金</a>
-      <a href="faq.html">よくあるご質問</a>
-      <a href="#access">アクセス</a>
-      <a class="nav-button" href="#reservation">ご予約・お問い合わせ</a>
+    <nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
+      <a href="../concerns/concerns.html">お悩みから探す</a>
+      <a href="../body-explorer/body-explorer.html">BODY EXPLORER</a>
+      <a href="../menu/menu.html">メニュー・料金</a>
+      <a href="access.html#access" aria-current="page">アクセス</a>
+      <a href="../others/FAQ.html">FAQ</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="other-menu">
+          その他 <span aria-hidden="true">▼</span>
+        </button>
+        <div class="nav-dropdown-menu" id="other-menu" hidden>
+          <a href="../../momdo-story2.html">Momdo</a>
+          <a href="../../index.html#voice">お客様の声</a>
+          <a href="../../index.html#blog">ブログ・お知らせ</a>
+          <a href="../../momdo-story.html">Momdo STORY</a>
+          <a href="../../privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
     </nav>
+
+    <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="メニューを開く">
+      <span class="menu-icon">☰</span>
+      <span>メニュー</span>
+    </button>
+
+    <a class="nav-button header-contact" href="../../contact.html">お問い合わせ</a>
   </div>
 </header>
 
@@ -825,6 +877,35 @@ footer small{color:#b8a99d}
   </div>
 </footer>
 
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNavigation = document.querySelector('#main-navigation');
+const dropdownToggle = mainNavigation?.querySelector('.nav-dropdown-toggle');
+const dropdownMenu = mainNavigation?.querySelector('.nav-dropdown-menu');
+if (menuToggle && mainNavigation) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNavigation.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+    const icon = menuToggle.querySelector('.menu-icon');
+    if (icon) icon.textContent = isOpen ? '✕' : '☰';
+  });
+  mainNavigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+    mainNavigation.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'メニューを開く');
+    const icon = menuToggle.querySelector('.menu-icon');
+    if (icon) icon.textContent = '☰';
+  }));
+}
+if (dropdownToggle && dropdownMenu) {
+  dropdownToggle.addEventListener('click', () => {
+    const isOpen = dropdownToggle.getAttribute('aria-expanded') === 'true';
+    dropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+    dropdownMenu.hidden = isOpen;
+  });
+}
+</script>
 </body>
 </html>
 
