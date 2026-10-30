@@ -547,6 +547,11 @@ footer small{color:#b8a99d}
   .header .nav-dropdown-menu{position:static;min-width:0;margin:0 0 8px;box-shadow:none}
   .header .nav-dropdown-menu a{padding-left:24px}
 }
+
+/* 駐車場案内と店舗写真を横並びに */
+.parking{grid-template-columns:minmax(0,.9fr) minmax(0,1fr) minmax(0,1.2fr);gap:24px}
+.parking .parking-photo{height:auto;max-height:330px;object-fit:contain;background:#F0E8DB;border:1px solid var(--line)}
+@media(max-width:800px){.parking{grid-template-columns:1fr}.parking .parking-photo{height:auto;max-height:none;object-fit:contain}}
 </style>
 </head>
 
@@ -729,8 +734,8 @@ footer small{color:#b8a99d}
     </div>
 
     <div class="parking">
-  <img src="momdo-parking.jpg"
-       alt="Momdo店舗前と駐車場の案内">
+      <img src="momdo-parking.jpg"
+           alt="Momdo店舗前と駐車場の案内">
 
       <div class="parking-copy">
         <h3>駐車場のご案内</h3>
@@ -744,6 +749,9 @@ footer small{color:#b8a99d}
           ご不明な場合はご来店前にお問い合わせください。
         </div>
       </div>
+
+      <img class="parking-photo" src="momdo-parking.png"
+           alt="Momdo店舗前と駐車場入口の様子">
     </div>
   </div>
 </section>
