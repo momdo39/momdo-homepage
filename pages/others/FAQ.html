@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Momdoマッサージ整体の施術・身体のお悩み・メニュー・予約について、よくある質問にお答えします。">
 <meta name="theme-color" content="#1C100B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
 <title>よくある質問｜Momdoマッサージ整体</title>
 <style>
 :root{--navy:#06142f;--blue:#0b2c64;--blue2:#124b91;--cyan:#61e5ff;--gold:#e5c17a;--white:#f8fbff;--ink:#14213b;--muted:#61708a;--line:#dce5f1}
@@ -386,73 +389,110 @@ padding-left: 24px;
 .faq-bottom-cta p{margin:0 auto 18px;max-width:700px;color:#d8e5f9}
 @media(max-width:600px){.faq-hero{padding:42px 0 32px}.faq-search-box{gap:7px;padding-left:11px}.faq-search-clear{padding:8px 9px;font-size:.82rem}.faq-main{padding:34px 0 58px}.faq-category-head{gap:9px}.faq-item summary{padding:16px 36px 16px 37px}.faq-item summary:before{left:0;top:15px}.faq-item summary:after{right:3px;top:15px}.faq-answer{padding:0 6px 18px 37px}.faq-bottom-cta{padding:24px 18px}}
 </style>
+<style>
+:root{--brown:#1C100B;--brown2:#352219;--gold:#C69B52;--gold-light:#F3DDA6;--cream:#F8F5EF;--ink:#33251D;--muted:#786A60;--line:#E8DFD2}
+html{scroll-padding-top:90px}
+body{background:var(--cream);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.9}
+.wrap,.container{width:min(1080px,calc(100% - 36px));margin-inline:auto}
+.header{position:sticky;top:0;z-index:100;background:rgba(28,16,11,.97);border-bottom:1px solid rgba(198,155,82,.4);color:#fff}
+.header .header-inner{position:relative;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.header .brand{display:flex;flex-direction:column;line-height:1.4;flex-shrink:0;color:#fff}
+.header .brand-name{font-family:"Shippori Mincho",serif;font-size:25px;letter-spacing:.12em;color:var(--gold-light)}
+.header .brand-sub{font-family:"Cinzel",serif;font-size:9px;letter-spacing:.16em;color:var(--gold-light)}
+.header .navlinks{display:flex;align-items:center;flex-wrap:nowrap;gap:22px;font-size:.85rem}
+.header .navlinks a{color:#fff}
+.header .navlinks a:hover,.header .navlinks a[aria-current="page"]{color:var(--gold-light)}
+.header .nav-dropdown{position:relative}
+.header .nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px;padding:8px 0;border:0;background:transparent;color:#fff;font:inherit;cursor:pointer}
+.header .nav-dropdown-toggle:hover{color:var(--gold-light)}
+.header .nav-dropdown-menu{position:absolute;top:100%;right:0;z-index:200;min-width:210px;padding:8px;background:#25140D;border:1px solid var(--gold);border-radius:6px;box-shadow:0 8px 20px #0005}
+.header .nav-dropdown-menu[hidden]{display:none}
+.header .nav-dropdown-menu a{display:block;padding:12px;border-bottom:1px solid #ffffff20}
+.header .nav-dropdown-menu a:last-child{border-bottom:0}
+.header .nav-dropdown-menu a:hover{color:var(--gold-light);background:#ffffff0d}
+.header .menu-toggle{display:none;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border:1px solid var(--gold);border-radius:4px;background:transparent;color:#fff;cursor:pointer;white-space:nowrap}
+.header .menu-icon{font-size:1.25rem;line-height:1}
+.header .header-contact{white-space:nowrap;color:var(--gold-light)}
+.hero.faq-hero{min-height:0;padding:70px 0 64px;text-align:center;color:#fff;background:radial-gradient(ellipse at 80% 10%,rgba(198,155,82,.18),transparent 40%),linear-gradient(135deg,#38271C,#1C100B)}
+.faq-hero .eyebrow{margin:0 0 13px;color:var(--gold-light);font-family:"Cinzel",serif;font-size:12px;letter-spacing:.24em}
+.faq-hero h1{margin:0;color:#fff;font-family:"Shippori Mincho",serif;font-size:clamp(29px,4vw,43px);font-weight:500;letter-spacing:.07em;line-height:1.6}
+.faq-hero .gold-line{width:75px;height:2px;margin:24px auto;background:linear-gradient(90deg,#B88E43,#FFF0D0,#C69B52)}
+.faq-hero .description{max-width:760px;margin:0 auto;color:#eee4d8;font-size:14px;line-height:2.2}
+.faq-search-section{padding:56px 0}
+.faq-search-wrap{max-width:850px;margin:0 auto}
+.faq-search-label{color:var(--ink)}
+.faq-search-box{border-color:var(--line);border-radius:4px;box-shadow:0 12px 35px rgba(48,31,19,.05)}
+.faq-search-box input{color:var(--ink)}
+.faq-search-box input::placeholder{color:#9b8d82}
+.faq-search-clear{border-color:var(--line);background:var(--cream);color:var(--ink)}
+.faq-search-hint,.faq-result-count{color:var(--muted)}
+.faq-shortcuts button{border-color:var(--gold);color:#76571d}
+.faq-shortcuts button:hover{background:#fbf5e8}
+.faq-main{padding:70px 0;background:var(--cream)}
+.faq-category{margin:0 0 24px;padding:28px 30px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 35px rgba(48,31,19,.04)}
+.faq-category-head{border-color:var(--line)}
+.faq-category-number{color:var(--gold)}
+.faq-category h2{color:var(--ink);font-family:"Shippori Mincho",serif;font-weight:500}
+.faq-item{border-color:var(--line)}
+.faq-item summary{color:var(--ink)}
+.faq-item summary:before{border-color:var(--gold);color:#967037}
+.faq-item summary:after{color:#967037}
+.faq-answer{color:var(--muted)}
+.faq-no-results{background:var(--cream);border-color:var(--line);border-left-color:var(--gold);color:var(--muted)}
+.faq-bottom-cta{padding:42px 24px;background:radial-gradient(ellipse at 80% 10%,rgba(198,155,82,.18),transparent 40%),linear-gradient(135deg,#38271C,#1C100B);border-radius:0;color:#fff}
+.faq-bottom-cta h2{font-family:"Shippori Mincho",serif;font-weight:500}
+.faq-bottom-cta p{color:#eee4d8}
+footer{padding:32px 0 24px;background:#120905;color:#fff;text-align:center}
+.footer-brand{font-family:"Shippori Mincho",serif;font-size:22px;letter-spacing:.1em}
+.footer-sub{margin-bottom:18px;font-family:"Cinzel",serif;font-size:9px;letter-spacing:.18em;color:var(--gold-light)}
+.footer-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 20px;margin-bottom:20px;font-size:11px}
+footer small{color:#b8a99d}
+@media(max-width:850px){.header .header-inner{min-height:70px;padding:10px 0;flex-wrap:wrap;gap:10px}.header .menu-toggle{display:inline-flex;margin-left:auto}.header .header-contact{display:none}.header .navlinks{display:none;position:absolute;top:100%;left:0;right:0;z-index:100;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px;background:#25140D;border:1px solid var(--gold);box-shadow:0 8px 18px #0005;font-size:.95rem}.header .navlinks.is-open{display:flex}.header .navlinks a{display:block;padding:12px 8px;border-bottom:1px solid #ffffff20}.header .nav-dropdown{width:100%}.header .nav-dropdown-toggle{width:100%;justify-content:space-between;padding:12px 8px}.header .nav-dropdown-menu{position:static;min-width:0;margin:0 0 8px;box-shadow:none}.header .nav-dropdown-menu a{padding-left:24px}.faq-main{padding:54px 0}.faq-category{padding:23px 20px}}
+@media(max-width:560px){.menu-guide-widget{bottom:14px}.container,.wrap{width:calc(100% - 28px)}.hero.faq-hero{padding:55px 0}.faq-hero h1{font-size:28px}.faq-hero .description{font-size:12px}.faq-search-section{padding:42px 0}.faq-search-box{gap:7px;padding-left:11px}.faq-search-clear{padding:8px 9px;font-size:.82rem}.faq-category{padding:21px 16px}.faq-category-head{gap:9px}.faq-item summary{padding:16px 36px 16px 37px}.faq-item summary:before{left:0;top:15px}.faq-item summary:after{right:3px;top:15px}.faq-answer{padding:0 6px 18px 37px}.faq-bottom-cta{padding:30px 18px}}
+.mobile-cta{display:none!important}.menu-guide-widget{bottom:20px}
+</style>
 </head>
 <body data-menu-guide-api="https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev/api/menu-guide">
-<div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>完全予約制などの営業情報はご来店前に最新情報をご確認ください</span></div></div>
 <header class="header">
-  <div class="wrap nav">
-    <a class="brand" href="../../index.html#home">
-      Momdo
-      <small>Massage & Manipulative</small>
+  <div class="container header-inner">
+    <a class="brand" href="../../index.html#home" aria-label="Momdo Massage &amp; Manipulative">
+      <span class="brand-name">Momdo</span>
+      <span class="brand-sub">Massage &amp; Manipulative</span>
     </a>
     <nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
-  <a href="../../index.html">ホーム</a>
-  <a href="../body-explorer/body-explorer.html">BODY EXPLORER</a>
-  <a href="../concerns/concerns.html">お悩みから探す</a>
-  <a href="../menu/menu.html">メニュー・料金</a>
-  <a href="../access/access.html">アクセス</a>
-  <a href="FAQ.html">FAQ</a>
-  <div class="nav-dropdown">
-    <button
-      class="nav-dropdown-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="other-menu"
-    >
-      その他 <span aria-hidden="true">▼</span>
-    </button>
-    <div class="nav-dropdown-menu" id="other-menu" hidden>
-      <a href="../story/momdo-story.html">Momdoについて</a>
-      <a href="../../index.html#voice">お客様の声</a>
-      <a href="../../index.html#blog">ブログ・お知らせ</a>
-      <a href="privacy.html">プライバシーポリシー</a>
-    </div>
-  </div>
-</nav>
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-controls="main-navigation"
-      aria-expanded="false"
-      aria-label="メニューを開く"
-    >
-      <span class="menu-icon">☰</span>
-      <span>メニュー</span>
-    </button>
-    <a class="btn btn-outline header-contact" href="../../contact.html">
-      お問い合わせ
-    </a>
+      <a href="../concerns/concerns.html">お悩みから探す</a>
+      <a href="../body-explorer/body-explorer.html">BODY EXPLORER</a>
+      <a href="../menu/menu.html">メニュー・料金</a>
+      <a href="../access/access.html">アクセス</a>
+      <a href="FAQ.html" aria-current="page">FAQ</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="other-menu">その他 <span aria-hidden="true">▼</span></button>
+        <div class="nav-dropdown-menu" id="other-menu" hidden>
+          <a href="../story/momdo-story.html">Momdoについて</a>
+          <a href="../../index.html#voice">お客様の声</a>
+          <a href="../../index.html#blog">ブログ・お知らせ</a>
+          <a href="../../privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="メニューを開く"><span class="menu-icon">☰</span><span>メニュー</span></button>
+    <a class="nav-button header-contact" href="../../contact.html">お問い合わせ</a>
   </div>
 </header>
 <main class="faq-page" id="home">
-<section class="faq-hero"><div class="wrap">
-<div class="eyebrow" style="color:#9b762d">FAQ / Help</div>
+<section class="hero faq-hero"><div class="container">
+<p class="eyebrow">FAQ / HELP</p>
 <h1>よくある質問</h1>
-<p class="lead">身体のこと、施術のこと、メニューやご予約のこと。Momdoに寄せられる疑問にお答えします。知りたい言葉を入力すると、関連する質問をすぐに探せます。</p>
-<div class="faq-search-wrap"><label class="faq-search-label" for="faq-search">質問を検索する</label><div class="faq-search-box"><span class="faq-search-icon" aria-hidden="true">⌕</span><input id="faq-search" type="search" placeholder="例：肩こり・腰痛・料金・深部筋肉・ダブルモーション" autocomplete="off"><button class="faq-search-clear" type="button" id="faq-search-clear">クリア</button></div><p class="faq-search-hint">質問と回答の両方を検索します。入力すると、その場で表示が絞り込まれます。</p><div class="faq-shortcuts" aria-label="検索キーワードの例"><button type="button" data-faq-keyword="肩こり">肩こり</button><button type="button" data-faq-keyword="腰痛">腰痛</button><button type="button" data-faq-keyword="料金">料金</button><button type="button" data-faq-keyword="深部">深部筋肉</button><button type="button" data-faq-keyword="ダブルモーション">ダブルモーション</button><button type="button" data-faq-keyword="予約">予約</button></div><p class="faq-result-count" id="faq-result-count" aria-live="polite"></p></div>
+<div class="gold-line"></div>
+<p class="description">身体のこと、施術のこと、メニューやご予約のこと。Momdoに寄せられる疑問にお答えします。知りたい言葉を入力すると、関連する質問をすぐに探せます。</p>
 </div></section>
-<section class="faq-main"><div class="wrap">
+<section class="section white faq-search-section"><div class="container">
+<div class="faq-search-wrap"><label class="faq-search-label" for="faq-search">質問を検索する</label><div class="faq-search-box"><span class="faq-search-icon" aria-hidden="true">⌕</span><input id="faq-search" type="search" placeholder="例：肩こり・腰痛・料金・深部筋肉・ダブルモーション" autocomplete="off"><button class="faq-search-clear" type="button" id="faq-search-clear">クリア</button></div><p class="faq-search-hint">質問と回答の両方を検索します。入力すると、その場で表示が絞り込まれます。</p><div class="faq-shortcuts" aria-label="検索キーワードの例"><button type="button" data-faq-keyword="肩こり">肩こり</button><button type="button" data-faq-keyword="腰痛">腰痛</button><button type="button" data-faq-keyword="料金">料金</button><button type="button" data-faq-keyword="深部">深部筋肉</button><button type="button" data-faq-keyword="ダブルモーション">ダブルモーション</button><button type="button" data-faq-keyword="予約">予約</button></div><p class="faq-result-count" id="faq-result-count" aria-live="polite"></p></div>
+
+</div></section>
+<section class="faq-main"><div class="container">
 <div class="faq-no-results" id="faq-no-results">関連する質問が見つかりませんでした。別のキーワードをお試しください。解決しない場合は、下のAIメニュー案内やお問い合わせもご利用ください。</div>
-<section class="faq-category" data-faq-category aria-labelledby="faq-cat-01">
-  <div class="faq-category-head">
-    <span class="faq-category-number">CATEGORY 01</span><br>
-    <h2 id="faq-cat-01">初めての方へ</h2>
-  </div>
-  <details class="faq-item" data-faq-item><summary>初めてでも施術を受けられますか？</summary><div class="faq-answer">
-    <p>もちろんです。初めての方にも安心してご利用いただけるよう、お身体のお悩みや気になることを伺い、状態に合わせて施術を進めます。不安なことや苦手な刺激があれば、遠慮なくお伝えください。</p>
-  </div>
-  </details>
-  <details class="faq-item" data-faq-item>
+<section class="faq-category" data-faq-category aria-labelledby="faq-cat-01"><div class="faq-category-head"><span class="faq-category-number">CATEGORY 01</span><h2 id="faq-cat-01">初めての方へ</h2></div><details class="faq-item" data-faq-item><summary>初めてでも施術を受けられますか？</summary><div class="faq-answer"><p>もちろんです。初めての方にも安心してご利用いただけるよう、お身体のお悩みや気になることを伺い、状態に合わせて施術を進めます。不安なことや苦手な刺激があれば、遠慮なくお伝えください。</p></div></details><details class="faq-item" data-faq-item>
   <summary>どのような服装で行けばいいですか？</summary>
   <div class="faq-answer"><p>Momdoでは、洋服を着たまま受けていただく施術を中心に行っています。身体を動かしやすく、締め付けの少ない服装がおすすめです。</p>
   </div></details><details class="faq-item" data-faq-item>
@@ -547,7 +587,20 @@ padding-left: 24px;
   
   <section class="faq-category" data-faq-category aria-labelledby="faq-cat-04"><div class="faq-category-head"><span class="faq-category-number">CATEGORY 04</span><h2 id="faq-cat-04">Momdo独自の施術について</h2></div><details class="faq-item" data-faq-item><summary>ダブルモーションテクニックとは何ですか？</summary><div class="faq-answer"><p>ダブルモーションテクニックは、2つのモーションを組み合わせ、関節の動きをコントロールしながらアプローチするMomdoの施術テクニックです。股関節では、脚を内側に動かす「内転」などの動きと、術者の手による関節の動きの誘導を組み合わせます。具体的な方法は関節やお身体の状態によって異なります。</p></div></details><details class="faq-item" data-faq-item><summary>なぜ筋肉だけでなく関節の動きにも着目するのですか？</summary><div class="faq-answer"><p>身体は筋肉や関節などが連動することで動いています。そのため、身体の状態を考える際には、筋肉の緊張だけでなく、関節の動きや身体全体の連動性も考慮することが大切です。</p></div></details><details class="faq-item" data-faq-item><summary>ダブルモーションテクニックは骨盤や美容の悩みにも使いますか？</summary><div class="faq-answer"><p>Momdoでは、股関節や骨盤周辺の状態に着目した施術を行うことがあります。ただし、骨盤の形や位置を必ず変える、または美容上の変化を保証するものではありません。施術の適否はお身体の状態やご希望を伺ったうえで判断します。</p></div></details><details class="faq-item" data-faq-item><summary>CSFプラクティスとは何ですか？</summary><div class="faq-answer"><p>施術の具体的な考え方や手技については、実際の施術内容に沿って「Momdoの施術」ページでご案内します。分からない点は、ご予約前にお問い合わせください。</p></div></details><details class="faq-item" data-faq-item><summary>施術ではどのようなことを重視していますか？</summary><div class="faq-answer"><p>Momdoでは、筋肉の状態、関節の動き、身体の使い方、関連する部位とのつながりなどを考慮し、一人ひとりの状態に合わせて施術を組み立てることを大切にしています。</p></div></details><details class="faq-item" data-faq-item><summary>施術後に気をつけることはありますか？</summary><div class="faq-answer"><p>施術後の身体の状態には個人差があります。無理な運動や過度な負担を避け、身体の様子を見ながら日常生活を送ってください。痛みが強くなる、しびれが新たに現れるなど、気になる症状がある場合は医療機関にご相談ください。</p></div></details></section><section class="faq-category" data-faq-category aria-labelledby="faq-cat-05"><div class="faq-category-head"><span class="faq-category-number">CATEGORY 05</span><h2 id="faq-cat-05">症状について</h2></div><details class="faq-item" data-faq-item><summary>肩こりについて相談できますか？</summary><div class="faq-answer"><p>はい。肩こりや首のこわばりなどのお悩みについてご相談いただけます。肩周辺だけでなく、首や肩甲骨の動きなども考慮しながら、お身体の状態に合わせて対応します。</p></div></details><details class="faq-item" data-faq-item><summary>長引く腰痛についても相談できますか？</summary><div class="faq-answer"><p>腰痛についてご相談いただけます。ただし、腰痛にはさまざまな原因が考えられます。強い痛みや急な悪化、発熱、足の力が入りにくい症状、排尿・排便の異常などがある場合は、施術よりも速やかな医療機関への相談を優先してください。</p></div></details><details class="faq-item" data-faq-item><summary>四十肩・五十肩についても相談できますか？</summary><div class="faq-answer"><p>肩の痛みや腕を上げにくいなどのお悩みについてご相談いただけます。ただし、肩の痛みには複数の原因があり、すべてが四十肩・五十肩とは限りません。症状が強い場合は、まず医療機関で状態を確認することをおすすめします。</p></div></details><details class="faq-item" data-faq-item><summary>しびれがある場合も施術を受けられますか？</summary><div class="faq-answer"><p>しびれは神経などに関係するさまざまな原因で起こることがあります。原因が分からないしびれや続いているしびれがある場合は、まず医療機関での評価をおすすめします。突然のしびれや手足に力が入らないなどの症状がある場合は、緊急の受診が必要です。</p></div></details></section><section class="faq-category" data-faq-category aria-labelledby="faq-cat-06"><div class="faq-category-head"><span class="faq-category-number">CATEGORY 06</span><h2 id="faq-cat-06">メニュー・料金・予約・アクセス</h2></div><details class="faq-item" data-faq-item><summary>施術料金を教えてください。</summary><div class="faq-answer"><p>料金はコースによって異なります。最新のメニューと料金については「メニュー・料金」ページをご確認ください。</p></div></details><details class="faq-item" data-faq-item><summary>予約方法を教えてください。</summary><div class="faq-answer"><p>現在利用できる予約方法や受付状況については「アクセス・予約」ページをご確認ください。</p></div></details><details class="faq-item" data-faq-item><summary>予約の変更やキャンセルはできますか？</summary><div class="faq-answer"><p>予約の変更やキャンセルをご希望の場合は、できるだけ早めにご連絡ください。具体的な受付方法や期限については、Momdoの予約ルールに沿ってご案内します。</p></div></details><details class="faq-item" data-faq-item><summary>駐車場はありますか？</summary><div class="faq-answer"><p>駐車場の有無や利用方法については、最新のアクセス情報をご確認ください。</p></div></details><details class="faq-item" data-faq-item><summary>Momdoはどこにありますか？</summary><div class="faq-answer"><p>Momdoマッサージ整体は、福岡市城南区七隈にあります。福岡市地下鉄七隈線の金山駅から徒歩約2分です。詳しいアクセス方法は「アクセス・予約」ページをご覧ください。</p></div></details></section><section class="faq-bottom-cta"><h2>身体のこと、ひとりで悩まずご相談ください。</h2><p>「どこに相談すればよいか分からない」「自分に合うメニューを知りたい」など、ご不明な点はお気軽にお問い合わせください。</p><a class="btn btn-gold" href="../access/access.html">アクセス・予約を見る →</a> <a class="btn btn-outline" href="../menu/menu.html">メニュー・料金を見る →</a></section>
 </div></section></main>
-<footer><div class="wrap"><div><div class="footbrand">MOMDO</div><div>Massage & Manipulative</div><div>福岡市城南区七隈｜金山駅周辺</div></div><div>掲載内容は公開前に最新情報をご確認ください。<br><a href="../../index.html#home">ページ上部へ ↑</a></div><div>© Momdo Massage & Bodywork</div></div></footer>
+<footer>
+  <div class="container">
+    <div class="footer-brand">Momdo</div>
+    <div class="footer-sub">MASSAGE &amp; BODYWORK</div>
+    <div class="footer-nav">
+      <a href="../../index.html">ホーム</a>
+      <a href="../menu/menu.html">メニュー・料金</a>
+      <a href="FAQ.html" aria-current="page">よくあるご質問</a>
+      <a href="../access/access.html">アクセス・予約</a>
+      <a href="../../contact.html">お問い合わせ</a>
+    </div>
+    <small>&copy; Momdo Massage &amp; Bodywork</small>
+  </div>
+</footer>
 <div class="mobile-cta"><a class="btn btn-gold" href="../../index.html#home">トップページ</a><a class="btn btn-outline" href="../../contact.html">お問い合わせ</a></div>
 <script>
 const menuToggle = document.querySelector('.menu-toggle');
@@ -598,53 +651,6 @@ if (menuToggle && mainNavigation) {
 }
 </script>
 <script>
-const menuToggle = document.querySelector('.menu-toggle');
-const mainNavigation = document.querySelector('#main-navigation');
-if (menuToggle && mainNavigation) {
-  // スマホ用メニューの開閉
-  menuToggle.addEventListener('click', () => {
-    const isOpen = mainNavigation.classList.toggle('is-open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-    menuToggle.setAttribute(
-      'aria-label',
-      isOpen ? 'メニューを閉じる' : 'メニューを開く'
-    );
-    const menuIcon = menuToggle.querySelector('.menu-icon');
-    if (menuIcon) {
-      menuIcon.textContent = isOpen ? '✕' : '☰';
-    }
-  });
-  // メニュー内のリンクを押したらスマホ用メニューを閉じる
-  mainNavigation.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      mainNavigation.classList.remove('is-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggle.setAttribute('aria-label', 'メニューを開く');
-      const menuIcon = menuToggle.querySelector('.menu-icon');
-      if (menuIcon) {
-        menuIcon.textContent = '☰';
-      }
-    });
-  });
-  // その他メニューの開閉
-  const dropdownToggle = mainNavigation.querySelector('.nav-dropdown-toggle');
-  const dropdownMenu = mainNavigation.querySelector('.nav-dropdown-menu');
-  if (dropdownToggle && dropdownMenu) {
-    dropdownToggle.addEventListener('click', () => {
-      const isOpen = dropdownToggle.getAttribute('aria-expanded') === 'true';
-      dropdownToggle.setAttribute('aria-expanded', String(!isOpen));
-      dropdownMenu.hidden = isOpen;
-    });
-    // その他のリンクを押したらサブメニューを閉じる
-    dropdownMenu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        dropdownToggle.setAttribute('aria-expanded', 'false');
-        dropdownMenu.hidden = true;
-      });
-    });
-  }
-}
-</script><script>
 (function(){
  const input=document.getElementById('faq-search');
  const clear=document.getElementById('faq-search-clear');
