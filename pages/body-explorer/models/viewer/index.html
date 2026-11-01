@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>3D人体モデル｜Écorché</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23577259'/%3E%3Cpath d='M32 12v40M20 22c8 4 16 4 24 0M20 34c8 4 16 4 24 0' stroke='%23faf8f4' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="description" content="A full human figure, skeleton and muscles, one named mesh per structure. Built from BodyParts3D and Z-Anatomy, free under CC BY-SA 4.0.">
+<style>
+:root {
+  --bg: #efece6; --panel: #f8f6f2; --ink: #1d1b19; --ink-2: #5d5750; --line: rgba(29, 27, 25, .14); --accent: #577259; --on-accent: #faf8f4;
+  --sans: "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1b1d21; --panel: #24282d; --ink: #ece8e2; --ink-2: #a8a29a; --line: rgba(236, 232, 226, .14); --accent: #93ae92; --on-accent: #1b1d21; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; min-height: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 var(--sans); -webkit-font-smoothing: antialiased; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: 0; padding: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+body { display: grid; grid-template-rows: auto auto minmax(180px, 1fr) 82px auto auto; gap: 7px; padding: 10px 14px 8px; overflow: hidden; }
+canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+
+.top { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-width: 0; padding: 0 2px; }
+.brand h1 { margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -.01em; }
+.brand p { margin: 2px 0 0; color: var(--ink-2); font-size: .85rem; max-width: 42ch; }
+.links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 14px; font-size: .82rem; }
+.links a { color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.links a:hover { color: var(--ink); text-decoration-color: currentColor; }
+
+.search { position: relative; display: flex; flex-direction: column; width: 100%; min-width: 0; z-index: 4; }
+.search input { width: 100%; height: 40px; padding: 0 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.search input::placeholder { color: var(--ink-2); }
+.results { list-style: none; margin: 4px 0 0; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); max-height: 22vh; overflow: auto; }
+.results:empty { display: none; }
+.results button { width: 100%; text-align: left; padding: 7px 10px; border-radius: 6px; font-size: .9rem; }
+.results button:hover, .results button:focus-visible { background: var(--bg); outline: none; }
+.results small { color: var(--ink-2); }
+
+.stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+.info { position: relative; width: 100%; height: 82px; min-width: 0; overflow: auto; padding: 7px 34px 7px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); opacity: 0; visibility: hidden; transition: opacity .2s; pointer-events: none; }
+.info.on { opacity: 1; visibility: visible; pointer-events: auto; }
+.info h2 { margin: 0 0 4px; font-size: .82rem; font-weight: 600; line-height: 1.2; }
+.info dl { display: grid; grid-template-columns: auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); gap: 2px 7px; margin: 0; font-size: .68rem; line-height: 1.25; }
+.info dt { color: var(--ink-2); }
+.info dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+.info .x { position: absolute; top: 5px; right: 5px; width: 26px; height: 26px; border-radius: 50%; color: var(--ink-2); }
+.info .x:hover { background: var(--bg); color: var(--ink); }
+
+.control-panel { min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.control-panel summary { padding: 7px 11px; color: var(--ink-2); cursor: pointer; font-size: .76rem; font-weight: 600; }
+.dock { position: static; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px; width: 100%; max-width: none; padding: 5px 9px 8px; border-top: 1px solid var(--line); background: transparent; }
+.seg { display: flex; gap: 2px; }
+.seg button { height: 30px; padding: 0 12px; border-radius: 999px; color: var(--ink-2); font-size: .82rem; transition: background-color .3s, color .3s; }
+.seg button:hover { color: var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--panel); }
+.xray { display: flex; align-items: center; gap: 8px; padding-right: 6px; font-size: .76rem; color: var(--ink-2); }
+.xray input { width: 110px; accent-color: var(--accent); }
+
+.foot { min-width: 0; margin: 0; font-size: .63rem; line-height: 1.3; color: var(--ink-2); }
+.foot a { color: inherit; }
+.interaction-help { margin: 0; color: var(--ink-2); font-size: .68rem; line-height: 1.3; text-align: center; }
+
+.loading { position: absolute; inset: 0; z-index: 3; display: grid; place-items: center; transition: opacity .6s; pointer-events: none; background: color-mix(in srgb, var(--bg) 30%, transparent); }
+.loading.done { opacity: 0; }
+.bar { width: 160px; height: 2px; background: var(--line); overflow: hidden; border-radius: 2px; }
+.bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+.loading p { margin: 10px 0 0; font-size: .8rem; color: var(--ink-2); text-align: center; }
+
+@media (max-width: 760px) {
+  body { grid-template-rows: auto auto minmax(180px, 1fr) 88px auto auto; gap: 6px; padding: 7px 9px 6px; }
+  .brand p { display: none; }
+  .brand h1 { font-size: 1.05rem; }
+  .links { gap: 5px 9px; font-size: .72rem; }
+  .info { height: 88px; padding: 7px 32px 6px 8px; }
+  .info dl { grid-template-columns: auto minmax(0,1fr) auto minmax(0,1fr); gap: 2px 6px; font-size: .65rem; }
+  .control-panel summary { padding: 6px 9px; }
+  .dock { display: grid; grid-template-columns: 1fr auto; gap: 4px 7px; padding: 4px 7px 7px; }
+  .seg { grid-column: 1 / -1; justify-content: center; }
+  .seg button { padding: 0 9px; font-size: .76rem; }
+  .xray { grid-column: 1; gap: 5px; padding: 0; white-space: nowrap; font-size: .68rem; }
+  .xray input { width: min(24vw, 90px); }
+  .dock > #reset-view { grid-column: 2; height: 29px; padding: 0 8px; font-size: .72rem; }
+  .interaction-help { font-size: .63rem; }
+  .foot { font-size: .56rem; }
+}
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Écorché</h1>
+    <p>骨格と筋肉を観察できる成人男性の解剖モデル。構造ごとに選択できます。</p>
+  </div>
+  <nav class="links" aria-label="モデル情報">
+    <a href="https://github.com/Charleeh/ecorche" target="_blank" rel="noopener">配布元</a>
+    <a href="model/ecorche.glb" download>モデルをダウンロード</a>
+  </nav>
+</header>
+
+<div class="search">
+  <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Find a structure</label>
+  <input id="q" type="search" placeholder="筋肉・骨を検索" autocomplete="off" spellcheck="false" disabled>
+  <ul class="results" id="results"></ul>
+</div>
+
+<main class="stage" id="stage" aria-label="3D人体モデル表示領域">
+  <div class="loading" id="loading" role="status" aria-live="polite"><div><div class="bar"><i id="bar"></i></div><p id="lmsg">モデルを読み込み中です（約6 MB）</p></div></div>
+</main>
+
+<section class="info" id="info" aria-live="polite">
+  <button class="x" type="button" id="close" aria-label="選択情報を閉じる">✕</button>
+  <h2 id="iName"></h2>
+  <dl id="iMeta"></dl>
+</section>
+
+<details class="control-panel" id="control-panel">
+  <summary>表示設定（筋肉・骨格・透過率）</summary>
+  <div class="dock">
+    <div class="seg" role="group" aria-label="表示する構造">
+      <button type="button" data-layer="both" aria-pressed="true">すべて</button>
+      <button type="button" data-layer="muscles" aria-pressed="false">筋肉</button>
+      <button type="button" data-layer="bones" aria-pressed="false">骨格</button>
+    </div>
+    <label class="xray">表層筋の透過 <input type="range" id="xray" min="0.08" max="1" step="0.01" value="1"></label>
+    <button type="button" id="reset-view" aria-label="モデルの初期位置に戻す">リセット</button>
+  </div>
+</details>
+
+<p class="interaction-help">3Dモデルはドラッグで回転、ホイールまたはピンチで拡大・縮小できます。部位ボタンから説明内容も切り替えられます。</p>
+
+<p class="foot">データ出典：<a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/">BodyParts3D</a> © The Database Center for Life Science (CC BY 4.0) and <a href="https://www.z-anatomy.com/">Z-Anatomy</a> by Gauthier Kervyn (CC BY-SA 4.0).</p>
+
+<script>addEventListener("error",(event)=>{const status=document.querySelector("#lmsg");if(status)status.textContent="3D表示を開始できませんでした。ネットワーク接続または対応ブラウザーをご確認ください。";});</script><script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const $ = (s) => document.querySelector(s);
+const stage = document.querySelector('#stage');
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(Math.max(1, stage.clientWidth), Math.max(1, stage.clientHeight));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.AgXToneMapping;
+renderer.toneMappingExposure = 1.05;
+stage.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+const dark = matchMedia('(prefers-color-scheme: dark)');
+const setBg = () => { scene.background = new THREE.Color(dark.matches ? 0x1b1d21 : 0xefece6); render(); };
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+scene.environmentIntensity = 0.8;
+const key = new THREE.DirectionalLight(0xfff4e8, 1.6); key.position.set(2, 3, 2.5); scene.add(key);
+const rim = new THREE.DirectionalLight(0xe8f0ff, 0.9); rim.position.set(-2.5, 2, -2.5); scene.add(rim);
+
+// soft contact shadow under the feet
+const sh = document.createElement('canvas'); sh.width = sh.height = 128;
+const g = sh.getContext('2d'), grad = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+grad.addColorStop(0, 'rgba(0,0,0,.32)'); grad.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = grad; g.fillRect(0, 0, 128, 128);
+const shadow = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.6), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(sh), transparent: true, depthWrite: false }));
+shadow.rotation.x = -Math.PI / 2; shadow.position.y = 0.001; scene.add(shadow);
+
+const camera = new THREE.PerspectiveCamera(30, stage.clientWidth / Math.max(1, stage.clientHeight), 0.05, 50);
+const home = { pos: new THREE.Vector3(1.4, 1.2, 4.1), target: new THREE.Vector3(0, 0.9, 0) };
+camera.position.copy(home.pos);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.copy(home.target); controls.enableDamping = true; controls.dampingFactor = 0.08;
+controls.minDistance = 0.25; controls.maxDistance = 8; controls.maxPolarAngle = Math.PI * 0.92;
+let figureCenter = null, figureRadius = 0;
+
+let needs = true, fly = null;
+function render() { needs = true; }
+controls.addEventListener('change', render);
+function fitDistanceForStage() {
+  const verticalFov = THREE.MathUtils.degToRad(camera.fov);
+  const horizontalFov = 2 * Math.atan(Math.tan(verticalFov / 2) * camera.aspect);
+  return figureRadius / Math.sin(Math.min(verticalFov, horizontalFov) / 2) * 1.12;
+}
+function resizeStage(resetView = false) {
+  const width = Math.max(1, stage.clientWidth), height = Math.max(1, stage.clientHeight);
+  const oldTarget = controls.target.clone();
+  const oldOffset = camera.position.clone().sub(oldTarget);
+  const oldHomeDistance = Math.max(0.001, home.pos.distanceTo(home.target));
+  const zoomRatio = Math.max(0.001, oldOffset.length() / oldHomeDistance);
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+  if (figureRadius && figureCenter) {
+    const distance = fitDistanceForStage();
+    const direction = new THREE.Vector3(1.4, 0.35, 4.1).normalize();
+    home.target.copy(figureCenter);
+    home.pos.copy(figureCenter).addScaledVector(direction, distance);
+    if (resetView) {
+      camera.position.copy(home.pos);
+      controls.target.copy(home.target);
+    } else if (oldOffset.lengthSq() > 0) {
+      camera.position.copy(oldTarget).addScaledVector(oldOffset.normalize(), distance * zoomRatio);
+    }
+  }
+  controls.update();
+  render();
+}
+if ('ResizeObserver' in window) new ResizeObserver(() => resizeStage()).observe(stage);
+else addEventListener('resize', () => resizeStage());
+dark.addEventListener('change', setBg); setBg();
+renderer.setAnimationLoop(() => {
+  if (fly) {
+    const t = Math.min(1, (performance.now() - fly.t0) / 900), e = 1 - Math.pow(1 - t, 3);
+    camera.position.lerpVectors(fly.p0, fly.p1, e); controls.target.lerpVectors(fly.c0, fly.c1, e);
+    if (t >= 1) fly = null; needs = true;
+  }
+  if (controls.update()) needs = true;
+  if (needs) { needs = false; renderer.render(scene, camera); }
+});
+
+// ---------- the figure ----------
+const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+const meshes = [], layers = { skeleton: [], deep: [], superficial: [] };
+let mats = null, hovered = null, selected = null, linkedMeshes = new Set(), pendingPart = null;
+const PART_KEYS = new Set(['head','neck','shoulder','scapula','elbow','forearm','hand','thorax','back','lumbar','pelvis','hip','knee','ankle','foot']);
+let structureMap = new Map();
+const structureMapReady = fetch('model/body-explorer-part-map.json').then((r) => { if (!r.ok) throw new Error('mapping HTTP ' + r.status); return r.json(); }).then((rows) => { if (!Array.isArray(rows) || rows.length !== 634) throw new Error('invalid mapping data'); structureMap = new Map(rows.filter((row) => row && typeof row.name === 'string' && Array.isArray(row.parts) && row.parts.every((part) => PART_KEYS.has(part))).map((row) => [row.name, row])); if (pendingPart) selectMappedPart(pendingPart); return rows; });
+structureMapReady.catch((error) => { const el = document.querySelector('#lmsg'); if (el) el.textContent = '対応データの読込に失敗: ' + error.message; });
+
+loader.load('model/ecorche.meshopt.glb', (gltf) => {
+  scene.add(gltf.scene);
+  gltf.scene.updateMatrixWorld(true);
+  const figureBounds = new THREE.Box3().setFromObject(gltf.scene);
+  figureCenter = figureBounds.getCenter(new THREE.Vector3());
+  figureRadius = Math.max(0.1, figureBounds.getBoundingSphere(new THREE.Sphere()).radius);
+  resizeStage(true);
+  const base = {};
+  gltf.scene.traverse((o) => {
+    if (!o.isMesh) return;
+    const x = o.userData; o.userData.base = o.material.name;
+    base[o.material.name] = o.material;
+    meshes.push(o);
+    (x.layer === 'skeleton' ? layers.skeleton : x.layer === 'deep muscles' ? layers.deep : layers.superficial).push(o);
+  });
+  // superficial muscles get their own material so the x-ray slider leaves the deep ones opaque
+  const outer = base.Muscle.clone(); outer.name = 'Outer muscle';
+  layers.superficial.forEach((m) => { m.material = outer; m.userData.base = 'Outer muscle'; });
+  const tint = (m, c, k) => { const h = m.clone(); h.emissive = new THREE.Color(c); h.emissiveIntensity = k; return h; };
+  // the selection drops the tissue colours for a flat sage tint, so it reads at a glance and keeps its shading
+  const pickMat = (m) => { const h = m.clone(); h.vertexColors = false; h.color = new THREE.Color(0x9fc29a); h.emissive = new THREE.Color(0x2c4a31); h.emissiveIntensity = 0.3; return h; };
+  const plain = { Bone: base.Bone, Muscle: base.Muscle, 'Outer muscle': outer };
+  mats = { ...plain,
+    hover: Object.fromEntries(Object.entries(plain).map(([n, m]) => [n, tint(m, 0x577259, 0.22)])),
+    pick: Object.fromEntries(Object.entries(plain).map(([n, m]) => [n, pickMat(m)])) };
+  buildSearch();
+  $('#q').disabled = false;
+  if (pendingPart) selectMappedPart(pendingPart);
+  $('#lmsg').textContent = 'モデルを読み込みました';
+  $('#loading').setAttribute('aria-hidden', 'true');
+  $('#loading').classList.add('done');
+  render();
+}, (e) => { if (e.total) $('#bar').style.width = (e.loaded / e.total * 100).toFixed(1) + '%'; },
+(err) => { $('#lmsg').textContent = 'モデルを読み込めませんでした。 ' + (err && err.message ? err.message : ''); });
+
+function paint(m) {
+  if (!m) return;
+  const b = m.userData.base;
+  m.material = linkedMeshes.has(m) || m === selected ? mats.pick[b] : m === hovered ? mats.hover[b] : mats[b];
+  if (b === 'Outer muscle') syncXray(m.material);
+}
+function syncXray(mat) {
+  const v = +$('#xray').value;
+  mat.transparent = v < 1; mat.opacity = v; mat.depthWrite = v >= 1; mat.needsUpdate = true;
+}
+
+// layers and x-ray
+$('.seg').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-layer]'); if (!b) return;
+  const mode = b.dataset.layer;
+  document.querySelectorAll('.seg [data-layer]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  layers.skeleton.forEach((m) => (m.visible = mode !== 'muscles'));
+  [...layers.deep, ...layers.superficial].forEach((m) => (m.visible = mode !== 'bones'));
+  if (selected && !selected.visible) select(null);
+  render();
+});
+$('#xray').addEventListener('input', () => {
+  if (!mats) return;
+  [mats['Outer muscle'], mats.hover['Outer muscle'], mats.pick['Outer muscle']].forEach(syncXray);
+  render();
+});
+
+// picking: hover while the pointer rests, click to select
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+let down = null, hoverTimer = 0;
+function pickAt(x, y) {
+  const rect = renderer.domElement.getBoundingClientRect();
+  ndc.set((x - rect.left) / rect.width * 2 - 1, -((y - rect.top) / rect.height) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  const xr = +$('#xray').value < 0.35;
+  const hit = ray.intersectObjects(meshes.filter((m) => m.visible && !(xr && m.userData.layer === 'superficial muscles')), false)[0];
+  return hit ? hit.object : null;
+}
+renderer.domElement.addEventListener('pointerdown', (e) => { down = { x: e.clientX, y: e.clientY }; });
+renderer.domElement.addEventListener('pointerup', (e) => {
+  if (!down || !mats) return;
+  if (Math.hypot(e.clientX - down.x, e.clientY - down.y) < 5) select(pickAt(e.clientX, e.clientY));
+  down = null;
+});
+renderer.domElement.addEventListener('pointermove', (e) => {
+  if (!mats || e.pointerType !== 'mouse' || e.buttons) return;
+  clearTimeout(hoverTimer);
+  hoverTimer = setTimeout(() => {
+    const m = pickAt(e.clientX, e.clientY);
+    if (m === hovered) return;
+    const old = hovered; hovered = m; paint(old); paint(m);
+    renderer.domElement.style.cursor = m ? 'pointer' : '';
+    render();
+  }, 60);
+});
+renderer.domElement.addEventListener('dblclick', () => { flyTo(home.pos, home.target); }); document.querySelector("#reset-view").addEventListener("click", () => flyTo(home.pos, home.target));
+
+const LAYER_LABEL = { skeleton: '骨格', 'deep muscles': '深層筋', 'superficial muscles': '表層筋' };
+function select(m, frame) {
+  if (linkedMeshes.size) { const previous = [...linkedMeshes]; linkedMeshes.clear(); previous.forEach(paint); }
+  const old = selected; selected = m; paint(old); paint(m);
+  const info = $('#info');
+  if (!m) { info.classList.remove('on'); render(); return; }
+  const x = m.userData;
+  $('#iName').textContent = m.userData.name || m.name;
+  const rows = [['層', LAYER_LABEL[x.layer] || x.layer], ['左右', x.side === 'left' ? '左' : x.side === 'right' ? '右' : x.side]];
+  if (x.group) rows.push(['部位', x.group]);
+  if (x.tissue && x.tissue !== 'bone') rows.push(['組織', x.tissue]);
+  rows.push(['出典', x.source]);
+  if (x.fma) rows.push(['FMA', x.fma]);
+  const dl = $('#iMeta'); dl.replaceChildren();
+  rows.forEach(([k, v]) => { const dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = k; dd.textContent = v; dl.append(dt, dd); });
+  info.classList.add('on');
+  if (m) notifyParentOfModelPick(m);
+  if (frame) {
+    const box = new THREE.Box3().setFromObject(m), c = box.getCenter(new THREE.Vector3()), r = Math.max(0.12, box.getSize(new THREE.Vector3()).length() * 0.9);
+    // look at the structure from the side it faces: outward from the body's long axis
+    const dir = new THREE.Vector3(c.x, 0, c.z - 0.02);
+    if (dir.length() < 0.03) dir.copy(camera.position).sub(controls.target).setY(0);
+    dir.normalize().setY(0.18).normalize();
+    flyTo(c.clone().addScaledVector(dir, r / Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))), c);
+  }
+  render();
+}
+$('#close').addEventListener('click', () => select(null));
+addEventListener('keydown', (e) => { if (e.key === 'Escape') select(null); });
+function flyTo(p, c) { fly = { t0: performance.now(), p0: camera.position.clone(), p1: p.clone(), c0: controls.target.clone(), c1: c.clone() }; }
+
+const PART_LABELS = { head:'頭・顔',neck:'首',shoulder:'肩',scapula:'肩甲骨',elbow:'肘',forearm:'前腕',hand:'手・手指',thorax:'胸郭',back:'背中',lumbar:'腰',pelvis:'骨盤',hip:'股関節',knee:'膝',ankle:'足首',foot:'足・足裏' };
+function notifyParent(data) { if (location.origin !== 'null') parent.postMessage(data, location.origin); }
+function notifyParentOfModelPick(mesh) { const x=mesh.userData, name=x.name||mesh.name; if(typeof name==='string'&&name) notifyParent({type:'body-explorer-model-pick',name,side:x.side,fma:x.fma||null}); }
+function selectMappedPart(part) { pendingPart=part; if(!PART_KEYS.has(part)||!meshes.length||!structureMap.size)return; const both=document.querySelector('.seg [data-layer="both"]'); if(both.getAttribute('aria-pressed')!=='true')both.click(); const found=meshes.filter(m=>structureMap.get(m.userData.name||m.name)?.parts.includes(part)); if(!found.length){notifyParent({type:'body-explorer-selection-result',part,count:0});return;} select(null,false); linkedMeshes=new Set(found); selected=found[0]; found.forEach(paint); $('#iName').textContent=PART_LABELS[part]+'：関連する構造 '+found.length+' 件'; $('#iMeta').replaceChildren(); $('#info').classList.add('on');  notifyParent({type:'body-explorer-selection-result',part,count:found.length}); render(); }
+addEventListener('message',e=>{if(e.source!==parent||e.origin!==location.origin||!e.data||e.data.type!=='body-explorer-select'||!PART_KEYS.has(e.data.part))return;selectMappedPart(e.data.part);});
+// search
+function buildSearch() {
+  const q = $('#q'), out = $('#results');
+  const items = meshes.map((m) => ({ m, n: (m.userData.name || m.name).toLowerCase() }));
+  const show = () => {
+    const s = q.value.trim().toLowerCase(); out.replaceChildren();
+    if (s.length < 2) return;
+    const words = s.split(/\s+/);
+    items.filter((i) => words.every((w) => i.n.includes(w))).slice(0, 12).forEach(({ m }) => {
+      const li = document.createElement('li'), b = document.createElement('button'), sm = document.createElement('small');
+      b.type = 'button'; b.textContent = (m.userData.name || m.name) + ' '; sm.textContent = LAYER_LABEL[m.userData.layer]; b.append(sm);
+      b.addEventListener('click', () => {
+        if (!m.visible) document.querySelector('.seg [data-layer="both"]').click();
+        select(m, true); out.replaceChildren(); q.value = m.userData.name || m.name;
+      });
+      li.append(b); out.append(li);
+    });
+  };
+  q.addEventListener('input', show);
+  q.addEventListener('keydown', (e) => { if (e.key === 'Enter') { const b = out.querySelector('button'); if (b) b.click(); } });
+}
+</script>
+</body>
+</html>
