@@ -1,0 +1,4691 @@
+[
+  {
+    "name": "Body of sternum",
+    "side": "midline",
+    "fma": "FMA7487",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Distal phalanx of left big toe",
+    "side": "left",
+    "fma": "FMA32651",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of left fourth toe",
+    "side": "left",
+    "fma": "FMA32657",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of left index finger",
+    "side": "left",
+    "fma": "FMA23953",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of left little finger",
+    "side": "left",
+    "fma": "FMA23959",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of left little toe",
+    "side": "left",
+    "fma": "FMA32659",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of left middle finger",
+    "side": "left",
+    "fma": "FMA23955",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of left ring finger",
+    "side": "left",
+    "fma": "FMA23957",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of left second toe",
+    "side": "left",
+    "fma": "FMA32653",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of left third toe",
+    "side": "left",
+    "fma": "FMA32655",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of left thumb",
+    "side": "left",
+    "fma": "FMA23951",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of right big toe",
+    "side": "right",
+    "fma": "FMA32650",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of right fourth toe",
+    "side": "right",
+    "fma": "FMA32656",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of right index finger",
+    "side": "right",
+    "fma": "FMA24460",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of right little finger",
+    "side": "right",
+    "fma": "FMA24463",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of right little toe",
+    "side": "right",
+    "fma": "FMA32658",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of right middle finger",
+    "side": "right",
+    "fma": "FMA24461",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of right ring finger",
+    "side": "right",
+    "fma": "FMA24462",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Distal phalanx of right second toe",
+    "side": "right",
+    "fma": "FMA32652",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of right third toe",
+    "side": "right",
+    "fma": "FMA32654",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Distal phalanx of right thumb",
+    "side": "right",
+    "fma": "FMA24459",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Ethmoid",
+    "side": "midline",
+    "fma": "FMA52740",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "External ear",
+    "side": "midline",
+    "fma": "FMA52781",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Fifth cervical vertebra",
+    "side": "midline",
+    "fma": "FMA12523",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Fifth lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA13076",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "First lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA13072",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Fourth cervical vertebra",
+    "side": "midline",
+    "fma": "FMA12522",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Fourth lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA13075",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Frontal bone",
+    "side": "midline",
+    "fma": "FMA52734",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Intervertebral disk of fifth cervical vertebra",
+    "side": "midline",
+    "fma": "FMA13898",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Intervertebral disk of fifth lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA16037",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Intervertebral disk of first lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA16033",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Intervertebral disk of fourth cervical vertebra",
+    "side": "midline",
+    "fma": "FMA13897",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Intervertebral disk of fourth lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA16036",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Intervertebral disk of second lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA16034",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Intervertebral disk of seventh cervical vertebra",
+    "side": "midline",
+    "fma": "FMA13900",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Intervertebral disk of sixth cervical vertebra",
+    "side": "midline",
+    "fma": "FMA13899",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Intervertebral disk of third cervical vertebra",
+    "side": "midline",
+    "fma": "FMA13896",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Intervertebral disk of third lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA16035",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Left calcaneus",
+    "side": "left",
+    "fma": "FMA24498",
+    "parts": [
+      "ankle",
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left clavicle",
+    "side": "left",
+    "fma": "FMA13323",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left cornea",
+    "side": "left",
+    "fma": "FMA58240",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left cuboid bone",
+    "side": "left",
+    "fma": "FMA24529",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left eighth rib",
+    "side": "left",
+    "fma": "FMA8310",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left eleventh rib",
+    "side": "left",
+    "fma": "FMA8532",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left fifth costal cartilage",
+    "side": "left",
+    "fma": "FMA8112",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left fifth metacarpal bone",
+    "side": "left",
+    "fma": "FMA24473",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left fifth metatarsal bone",
+    "side": "left",
+    "fma": "FMA24516",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left fifth rib",
+    "side": "left",
+    "fma": "FMA8093",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left first costal cartilage",
+    "side": "left",
+    "fma": "FMA8005",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left first metacarpal bone",
+    "side": "left",
+    "fma": "FMA24465",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left first metatarsal bone",
+    "side": "left",
+    "fma": "FMA24508",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left first rib",
+    "side": "left",
+    "fma": "FMA7987",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left fourth costal cartilage",
+    "side": "left",
+    "fma": "FMA8167",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left fourth metacarpal bone",
+    "side": "left",
+    "fma": "FMA24471",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left fourth metatarsal bone",
+    "side": "left",
+    "fma": "FMA24514",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left fourth rib",
+    "side": "left",
+    "fma": "FMA8148",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left hip bone",
+    "side": "left",
+    "fma": "FMA16587",
+    "parts": [
+      "pelvis"
+    ],
+    "primaryPart": "pelvis"
+  },
+  {
+    "name": "Left inferior nasal concha",
+    "side": "left",
+    "fma": "FMA54738",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left intermediate cuneiform bone",
+    "side": "left",
+    "fma": "FMA24524",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left lacrimal bone",
+    "side": "left",
+    "fma": "FMA53646",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lateral cuneiform bone",
+    "side": "left",
+    "fma": "FMA24526",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left lateral nasal cartilage",
+    "side": "left",
+    "fma": "FMA59513",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower central secondary incisor tooth",
+    "side": "left",
+    "fma": "FMA57143",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower first secondary molar tooth",
+    "side": "left",
+    "fma": "FMA55704",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower first secondary premolar tooth",
+    "side": "left",
+    "fma": "FMA55693",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower lateral secondary incisor tooth",
+    "side": "left",
+    "fma": "FMA57141",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower second secondary molar tooth",
+    "side": "left",
+    "fma": "FMA55703",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower second secondary premolar tooth",
+    "side": "left",
+    "fma": "FMA55692",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left lower secondary canine tooth",
+    "side": "left",
+    "fma": "FMA55687",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left maxilla",
+    "side": "left",
+    "fma": "FMA53650",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left medial cuneiform bone",
+    "side": "left",
+    "fma": "FMA24522",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left nasal bone",
+    "side": "left",
+    "fma": "FMA53648",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left ninth rib",
+    "side": "left",
+    "fma": "FMA8391",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left palatine bone",
+    "side": "left",
+    "fma": "FMA53656",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left parietal bone",
+    "side": "left",
+    "fma": "FMA52789",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left patella",
+    "side": "left",
+    "fma": "FMA24487",
+    "parts": [
+      "knee"
+    ],
+    "primaryPart": "knee"
+  },
+  {
+    "name": "Left radius",
+    "side": "left",
+    "fma": "FMA23465",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left scapula",
+    "side": "left",
+    "fma": "FMA13396",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "scapula"
+  },
+  {
+    "name": "Left sclera",
+    "side": "left",
+    "fma": "FMA58272",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left second costal cartilage",
+    "side": "left",
+    "fma": "FMA8031",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left second metacarpal bone",
+    "side": "left",
+    "fma": "FMA24467",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left second metatarsal bone",
+    "side": "left",
+    "fma": "FMA24510",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left second rib",
+    "side": "left",
+    "fma": "FMA8012",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left seventh costal cartilage",
+    "side": "left",
+    "fma": "FMA8275",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left seventh rib",
+    "side": "left",
+    "fma": "FMA8256",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left sixth costal cartilage",
+    "side": "left",
+    "fma": "FMA8221",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left sixth rib",
+    "side": "left",
+    "fma": "FMA8202",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left talus",
+    "side": "left",
+    "fma": "FMA24483",
+    "parts": [
+      "ankle",
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left temporal bone",
+    "side": "left",
+    "fma": "FMA52739",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left tenth rib",
+    "side": "left",
+    "fma": "FMA8472",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left third costal cartilage",
+    "side": "left",
+    "fma": "FMA8058",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left third metacarpal bone",
+    "side": "left",
+    "fma": "FMA24469",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left third metatarsal bone",
+    "side": "left",
+    "fma": "FMA24512",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left third rib",
+    "side": "left",
+    "fma": "FMA8039",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left twelfth rib",
+    "side": "left",
+    "fma": "FMA8534",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left ulna",
+    "side": "left",
+    "fma": "FMA23468",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left upper central secondary incisor tooth",
+    "side": "left",
+    "fma": "FMA55682",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left upper first secondary molar tooth",
+    "side": "left",
+    "fma": "FMA55699",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left upper first secondary premolar tooth",
+    "side": "left",
+    "fma": "FMA55690",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left upper lateral secondary incisor tooth",
+    "side": "left",
+    "fma": "FMA55683",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left upper second secondary molar tooth",
+    "side": "left",
+    "fma": "FMA55700",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left upper second secondary premolar tooth",
+    "side": "left",
+    "fma": "FMA55691",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left upper secondary canine tooth",
+    "side": "left",
+    "fma": "FMA55799",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left zygomatic bone",
+    "side": "left",
+    "fma": "FMA52893",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Mandible",
+    "side": "midline",
+    "fma": "FMA52748",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Manubrium",
+    "side": "midline",
+    "fma": "FMA7486",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Middle phalanx of left fourth toe",
+    "side": "left",
+    "fma": "FMA32647",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of left index finger",
+    "side": "left",
+    "fma": "FMA23938",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of left little finger",
+    "side": "left",
+    "fma": "FMA23944",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of left little toe",
+    "side": "left",
+    "fma": "FMA230988",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of left middle finger",
+    "side": "left",
+    "fma": "FMA23940",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of left ring finger",
+    "side": "left",
+    "fma": "FMA23942",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of left second toe",
+    "side": "left",
+    "fma": "FMA32643",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of left third toe",
+    "side": "left",
+    "fma": "FMA32645",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of right fourth toe",
+    "side": "right",
+    "fma": "FMA32646",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of right index finger",
+    "side": "right",
+    "fma": "FMA24455",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of right little finger",
+    "side": "right",
+    "fma": "FMA24458",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of right little toe",
+    "side": "right",
+    "fma": "FMA230986",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of right middle finger",
+    "side": "right",
+    "fma": "FMA24456",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of right ring finger",
+    "side": "right",
+    "fma": "FMA24457",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Middle phalanx of right second toe",
+    "side": "right",
+    "fma": "FMA32642",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Middle phalanx of right third toe",
+    "side": "right",
+    "fma": "FMA32644",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Navicular bone of left foot",
+    "side": "left",
+    "fma": "FMA24501",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Navicular bone of right foot",
+    "side": "right",
+    "fma": "FMA24500",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Occipital bone",
+    "side": "midline",
+    "fma": "FMA52735",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Proximal phalanx of left big toe",
+    "side": "left",
+    "fma": "FMA43254",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of left fourth toe",
+    "side": "left",
+    "fma": "FMA32639",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of left index finger",
+    "side": "left",
+    "fma": "FMA71915",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of left little finger",
+    "side": "left",
+    "fma": "FMA66791",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of left little toe",
+    "side": "left",
+    "fma": "FMA32641",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of left middle finger",
+    "side": "left",
+    "fma": "FMA71908",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of left ring finger",
+    "side": "left",
+    "fma": "FMA71916",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of left second toe",
+    "side": "left",
+    "fma": "FMA32635",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of left third toe",
+    "side": "left",
+    "fma": "FMA32637",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of left thumb",
+    "side": "left",
+    "fma": "FMA65470",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of right big toe",
+    "side": "right",
+    "fma": "FMA43253",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of right fourth toe",
+    "side": "right",
+    "fma": "FMA32638",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of right index finger",
+    "side": "right",
+    "fma": "FMA24451",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of right little finger",
+    "side": "right",
+    "fma": "FMA24454",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of right little toe",
+    "side": "right",
+    "fma": "FMA32640",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of right middle finger",
+    "side": "right",
+    "fma": "FMA24452",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of right ring finger",
+    "side": "right",
+    "fma": "FMA24453",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Proximal phalanx of right second toe",
+    "side": "right",
+    "fma": "FMA32634",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of right third toe",
+    "side": "right",
+    "fma": "FMA32636",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Proximal phalanx of right thumb",
+    "side": "right",
+    "fma": "FMA24450",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right calcaneus",
+    "side": "right",
+    "fma": "FMA24497",
+    "parts": [
+      "ankle",
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right clavicle",
+    "side": "right",
+    "fma": "FMA13322",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right cornea",
+    "side": "right",
+    "fma": "FMA58239",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right cuboid bone",
+    "side": "right",
+    "fma": "FMA24528",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right eighth rib",
+    "side": "right",
+    "fma": "FMA8283",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right eleventh rib",
+    "side": "right",
+    "fma": "FMA8531",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right fifth costal cartilage",
+    "side": "right",
+    "fma": "FMA8070",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right fifth metacarpal bone",
+    "side": "right",
+    "fma": "FMA24472",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right fifth metatarsal bone",
+    "side": "right",
+    "fma": "FMA24515",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right fifth rib",
+    "side": "right",
+    "fma": "FMA8066",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right first costal cartilage",
+    "side": "right",
+    "fma": "FMA7875",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right first metacarpal bone",
+    "side": "right",
+    "fma": "FMA24464",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right first metatarsal bone",
+    "side": "right",
+    "fma": "FMA24507",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right first rib",
+    "side": "right",
+    "fma": "FMA7857",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right fourth costal cartilage",
+    "side": "right",
+    "fma": "FMA7976",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right fourth metacarpal bone",
+    "side": "right",
+    "fma": "FMA24470",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right fourth metatarsal bone",
+    "side": "right",
+    "fma": "FMA24513",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right fourth rib",
+    "side": "right",
+    "fma": "FMA7957",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right hip bone",
+    "side": "right",
+    "fma": "FMA16586",
+    "parts": [
+      "pelvis"
+    ],
+    "primaryPart": "pelvis"
+  },
+  {
+    "name": "Right inferior nasal concha",
+    "side": "right",
+    "fma": "FMA54737",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right intermediate cuneiform bone",
+    "side": "right",
+    "fma": "FMA24523",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right lacrimal bone",
+    "side": "right",
+    "fma": "FMA53645",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lateral cuneiform bone",
+    "side": "right",
+    "fma": "FMA24525",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right lateral nasal cartilage",
+    "side": "right",
+    "fma": "FMA59512",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower central secondary incisor tooth",
+    "side": "right",
+    "fma": "FMA57142",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower first secondary molar tooth",
+    "side": "right",
+    "fma": "FMA55705",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower first secondary premolar tooth",
+    "side": "right",
+    "fma": "FMA55694",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower lateral secondary incisor tooth",
+    "side": "right",
+    "fma": "FMA57140",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower second secondary molar tooth",
+    "side": "right",
+    "fma": "FMA55706",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower second secondary premolar tooth",
+    "side": "right",
+    "fma": "FMA55695",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right lower secondary canine tooth",
+    "side": "right",
+    "fma": "FMA55686",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right maxilla",
+    "side": "right",
+    "fma": "FMA53649",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right medial cuneiform bone",
+    "side": "right",
+    "fma": "FMA24521",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right nasal bone",
+    "side": "right",
+    "fma": "FMA53647",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right ninth rib",
+    "side": "right",
+    "fma": "FMA8364",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right palatine bone",
+    "side": "right",
+    "fma": "FMA53655",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right parietal bone",
+    "side": "right",
+    "fma": "FMA52788",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right patella",
+    "side": "right",
+    "fma": "FMA24486",
+    "parts": [
+      "knee"
+    ],
+    "primaryPart": "knee"
+  },
+  {
+    "name": "Right radius",
+    "side": "right",
+    "fma": "FMA23464",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right scapula",
+    "side": "right",
+    "fma": "FMA13395",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "scapula"
+  },
+  {
+    "name": "Right sclera",
+    "side": "right",
+    "fma": "FMA58271",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right second costal cartilage",
+    "side": "right",
+    "fma": "FMA7886",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right second metacarpal bone",
+    "side": "right",
+    "fma": "FMA24466",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right second metatarsal bone",
+    "side": "right",
+    "fma": "FMA24509",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right second rib",
+    "side": "right",
+    "fma": "FMA7882",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right seventh costal cartilage",
+    "side": "right",
+    "fma": "FMA8248",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right seventh rib",
+    "side": "right",
+    "fma": "FMA8229",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right sixth costal cartilage",
+    "side": "right",
+    "fma": "FMA8194",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right sixth rib",
+    "side": "right",
+    "fma": "FMA8175",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right talus",
+    "side": "right",
+    "fma": "FMA24482",
+    "parts": [
+      "ankle",
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right temporal bone",
+    "side": "right",
+    "fma": "FMA52738",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right tenth rib",
+    "side": "right",
+    "fma": "FMA8445",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right third costal cartilage",
+    "side": "right",
+    "fma": "FMA7913",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right third metacarpal bone",
+    "side": "right",
+    "fma": "FMA24468",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right third metatarsal bone",
+    "side": "right",
+    "fma": "FMA24511",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right third rib",
+    "side": "right",
+    "fma": "FMA7909",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right twelfth rib",
+    "side": "right",
+    "fma": "FMA8533",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right ulna",
+    "side": "right",
+    "fma": "FMA23467",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right upper central secondary incisor tooth",
+    "side": "right",
+    "fma": "FMA55681",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right upper first secondary molar tooth",
+    "side": "right",
+    "fma": "FMA55698",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right upper first secondary premolar tooth",
+    "side": "right",
+    "fma": "FMA55689",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right upper lateral secondary incisor tooth",
+    "side": "right",
+    "fma": "FMA55680",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right upper second secondary molar tooth",
+    "side": "right",
+    "fma": "FMA55697",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right upper second secondary premolar tooth",
+    "side": "right",
+    "fma": "FMA55688",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right upper secondary canine tooth",
+    "side": "right",
+    "fma": "FMA55798",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right zygomatic bone",
+    "side": "right",
+    "fma": "FMA52892",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Sacrum",
+    "side": "midline",
+    "fma": "FMA16202",
+    "parts": [
+      "pelvis"
+    ],
+    "primaryPart": "pelvis"
+  },
+  {
+    "name": "Second lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA13073",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Septal nasal cartilage",
+    "side": "midline",
+    "fma": "FMA59503",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Seventh cervical vertebra",
+    "side": "midline",
+    "fma": "FMA12525",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Sixth cervical vertebra",
+    "side": "midline",
+    "fma": "FMA12524",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Sphenoid bone",
+    "side": "midline",
+    "fma": "FMA52736",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Third cervical vertebra",
+    "side": "midline",
+    "fma": "FMA12521",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Third lumbar vertebra",
+    "side": "midline",
+    "fma": "FMA13074",
+    "parts": [
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Vomer",
+    "side": "midline",
+    "fma": "FMA9710",
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Xiphoid process",
+    "side": "midline",
+    "fma": "FMA7488",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "External intercostal muscle",
+    "side": "midline",
+    "fma": "FMA9756",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "First lumbrical of left foot",
+    "side": "left",
+    "fma": "FMA37718",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "First lumbrical of right foot",
+    "side": "right",
+    "fma": "FMA37717",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "First plantar interosseous of left foot",
+    "side": "left",
+    "fma": "FMA37746",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "First plantar interosseous of right foot",
+    "side": "right",
+    "fma": "FMA37745",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Flexor digiti minimi brevis of left foot",
+    "side": "left",
+    "fma": "FMA37472",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Flexor digiti minimi brevis of right foot",
+    "side": "right",
+    "fma": "FMA37471",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Fourth lumbrical of left foot",
+    "side": "left",
+    "fma": "FMA37484",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Fourth lumbrical of right foot",
+    "side": "right",
+    "fma": "FMA37483",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Lateral head of left flexor hallucis brevis",
+    "side": "left",
+    "fma": "FMA45974",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Lateral head of right flexor hallucis brevis",
+    "side": "right",
+    "fma": "FMA45973",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left corrugator supercilii",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left deep part of masseter",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left extensor indicis",
+    "side": "left",
+    "fma": "FMA38526",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left flexor digitorum longus",
+    "side": "left",
+    "fma": "FMA65017",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left flexor digitorum profundus",
+    "side": "left",
+    "fma": "FMA38480",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left flexor hallucis longus",
+    "side": "left",
+    "fma": "FMA65015",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left flexor pollicis longus",
+    "side": "left",
+    "fma": "FMA38484",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left gemellus inferior",
+    "side": "left",
+    "fma": "FMA22337",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left gemellus superior",
+    "side": "left",
+    "fma": "FMA22335",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left gluteus minimus",
+    "side": "left",
+    "fma": "FMA22333",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left iliacus",
+    "side": "left",
+    "fma": "FMA22323",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left iliocostalis cervicis",
+    "side": "left",
+    "fma": "FMA22745",
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left iliocostalis lumborum",
+    "side": "left",
+    "fma": "FMA22741",
+    "parts": [
+      "back",
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Left iliocostalis thoracis",
+    "side": "left",
+    "fma": "FMA22743",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left inferior head of lateral pterygoid",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left longissimus capitis",
+    "side": "left",
+    "fma": "FMA22756",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left longissimus cervicis",
+    "side": "left",
+    "fma": "FMA22758",
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left longissimus thoracis",
+    "side": "left",
+    "fma": "FMA22753",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left medial pterygoid",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left multifidus cervicis",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left multifidus lumborum",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "back",
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Left multifidus thoracis",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left obliquus capitis inferior",
+    "side": "left",
+    "fma": "FMA32537",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left obliquus capitis superior",
+    "side": "left",
+    "fma": "FMA32535",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left obturator externus",
+    "side": "left",
+    "fma": "FMA22327",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left obturator internus",
+    "side": "left",
+    "fma": "FMA22325",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left opponens pollicis",
+    "side": "left",
+    "fma": "FMA37391",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left pectoralis minor",
+    "side": "left",
+    "fma": "FMA13376",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left piriformis",
+    "side": "left",
+    "fma": "FMA22341",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left plantaris",
+    "side": "left",
+    "fma": "FMA22561",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left popliteus",
+    "side": "left",
+    "fma": "FMA22592",
+    "parts": [
+      "knee"
+    ],
+    "primaryPart": "knee"
+  },
+  {
+    "name": "Left pronator quadratus",
+    "side": "left",
+    "fma": "FMA38455",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left psoas major",
+    "side": "left",
+    "fma": "FMA22343",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left quadratus femoris",
+    "side": "left",
+    "fma": "FMA22339",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left quadratus lumborum",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "back",
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Left rectus capitis posterior major",
+    "side": "left",
+    "fma": "FMA32531",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left rectus capitis posterior minor",
+    "side": "left",
+    "fma": "FMA32533",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left rhomboid major",
+    "side": "left",
+    "fma": "FMA13382",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left rhomboid minor",
+    "side": "left",
+    "fma": "FMA13384",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left rotatores",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left scalenus anterior",
+    "side": "left",
+    "fma": "FMA13393",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left scalenus medius",
+    "side": "left",
+    "fma": "FMA13391",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left scalenus posterior",
+    "side": "left",
+    "fma": "FMA13389",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left semispinalis capitis",
+    "side": "left",
+    "fma": "FMA22877",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left semispinalis cervicis",
+    "side": "left",
+    "fma": "FMA22875",
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left semispinalis thoracis",
+    "side": "left",
+    "fma": "FMA22873",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left serratus posterior inferior",
+    "side": "left",
+    "fma": "FMA13406",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left serratus posterior superior",
+    "side": "left",
+    "fma": "FMA13404",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left spinalis thoracis",
+    "side": "left",
+    "fma": "FMA22780",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left splenius cervicis",
+    "side": "left",
+    "fma": "FMA22727",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left subclavius",
+    "side": "left",
+    "fma": "FMA13411",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left subscapularis",
+    "side": "left",
+    "fma": "FMA13415",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "scapula"
+  },
+  {
+    "name": "Left superior head of lateral pterygoid",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left supinator",
+    "side": "left",
+    "fma": "FMA38514",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left supraspinatus",
+    "side": "left",
+    "fma": "FMA32545",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Medial head of left flexor hallucis brevis",
+    "side": "left",
+    "fma": "FMA45972",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Medial head of right flexor hallucis brevis",
+    "side": "right",
+    "fma": "FMA45971",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Oblique head of left adductor hallucis",
+    "side": "left",
+    "fma": "FMA46019",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Oblique head of left adductor pollicis",
+    "side": "left",
+    "fma": "FMA46122",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Oblique head of right adductor hallucis",
+    "side": "right",
+    "fma": "FMA46018",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Oblique head of right adductor pollicis",
+    "side": "right",
+    "fma": "FMA46121",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Opponens digiti minimi of left foot",
+    "side": "left",
+    "fma": "FMA86035",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Opponens digiti minimi of left hand",
+    "side": "left",
+    "fma": "FMA37401",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Opponens digiti minimi of right foot",
+    "side": "right",
+    "fma": "FMA86034",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Opponens digiti minimi of right hand",
+    "side": "right",
+    "fma": "FMA37400",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right corrugator supercilii",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right deep part of masseter",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right extensor indicis",
+    "side": "right",
+    "fma": "FMA38525",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right flexor digitorum longus",
+    "side": "right",
+    "fma": "FMA65016",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right flexor digitorum profundus",
+    "side": "right",
+    "fma": "FMA38479",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right flexor hallucis longus",
+    "side": "right",
+    "fma": "FMA65014",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right flexor pollicis longus",
+    "side": "right",
+    "fma": "FMA38482",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right gemellus inferior",
+    "side": "right",
+    "fma": "FMA22336",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right gemellus superior",
+    "side": "right",
+    "fma": "FMA22334",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right gluteus minimus",
+    "side": "right",
+    "fma": "FMA22332",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right iliacus",
+    "side": "right",
+    "fma": "FMA22322",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right iliocostalis cervicis",
+    "side": "right",
+    "fma": "FMA22744",
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right iliocostalis lumborum",
+    "side": "right",
+    "fma": "FMA22740",
+    "parts": [
+      "back",
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Right iliocostalis thoracis",
+    "side": "right",
+    "fma": "FMA22742",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right inferior head of lateral pterygoid",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right longissimus capitis",
+    "side": "right",
+    "fma": "FMA22754",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right longissimus cervicis",
+    "side": "right",
+    "fma": "FMA22757",
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right longissimus thoracis",
+    "side": "right",
+    "fma": "FMA22751",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right medial pterygoid",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right multifidus cervicis",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right multifidus lumborum",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "back",
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Right multifidus thoracis",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right obliquus capitis inferior",
+    "side": "right",
+    "fma": "FMA32536",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right obliquus capitis superior",
+    "side": "right",
+    "fma": "FMA32534",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right obturator externus",
+    "side": "right",
+    "fma": "FMA22326",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right obturator internus",
+    "side": "right",
+    "fma": "FMA22324",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right opponens pollicis",
+    "side": "right",
+    "fma": "FMA37390",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right pectoralis minor",
+    "side": "right",
+    "fma": "FMA13375",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right piriformis",
+    "side": "right",
+    "fma": "FMA22340",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right plantaris",
+    "side": "right",
+    "fma": "FMA22560",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right popliteus",
+    "side": "right",
+    "fma": "FMA22591",
+    "parts": [
+      "knee"
+    ],
+    "primaryPart": "knee"
+  },
+  {
+    "name": "Right pronator quadratus",
+    "side": "right",
+    "fma": "FMA38454",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right psoas major",
+    "side": "right",
+    "fma": "FMA22342",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right quadratus femoris",
+    "side": "right",
+    "fma": "FMA22338",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right quadratus lumborum",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "back",
+      "lumbar"
+    ],
+    "primaryPart": "lumbar"
+  },
+  {
+    "name": "Right rectus capitis posterior major",
+    "side": "right",
+    "fma": "FMA32530",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right rectus capitis posterior minor",
+    "side": "right",
+    "fma": "FMA32532",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right rhomboid major",
+    "side": "right",
+    "fma": "FMA13381",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right rhomboid minor",
+    "side": "right",
+    "fma": "FMA13383",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right rotatores",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right scalenus anterior",
+    "side": "right",
+    "fma": "FMA13392",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right scalenus medius",
+    "side": "right",
+    "fma": "FMA13390",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right scalenus posterior",
+    "side": "right",
+    "fma": "FMA13388",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right semispinalis capitis",
+    "side": "right",
+    "fma": "FMA22876",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right semispinalis cervicis",
+    "side": "right",
+    "fma": "FMA22874",
+    "parts": [
+      "neck",
+      "back"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right semispinalis thoracis",
+    "side": "right",
+    "fma": "FMA22872",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right serratus posterior inferior",
+    "side": "right",
+    "fma": "FMA13405",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right serratus posterior superior",
+    "side": "right",
+    "fma": "FMA13403",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right spinalis thoracis",
+    "side": "right",
+    "fma": "FMA22779",
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right splenius cervicis",
+    "side": "right",
+    "fma": "FMA22726",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right subclavius",
+    "side": "right",
+    "fma": "FMA13412",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right subscapularis",
+    "side": "right",
+    "fma": "FMA13414",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "scapula"
+  },
+  {
+    "name": "Right superior head of lateral pterygoid",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right supinator",
+    "side": "right",
+    "fma": "FMA38513",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right supraspinatus",
+    "side": "right",
+    "fma": "FMA32544",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Second lumbrical of left foot",
+    "side": "left",
+    "fma": "FMA37720",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Second lumbrical of right foot",
+    "side": "right",
+    "fma": "FMA37719",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Second plantar interosseous of left foot",
+    "side": "left",
+    "fma": "FMA37744",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Second plantar interosseous of right foot",
+    "side": "right",
+    "fma": "FMA37743",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Set of palmar interossei of left hand",
+    "side": "left",
+    "fma": "FMA42403",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Set of palmar interossei of right hand",
+    "side": "right",
+    "fma": "FMA42402",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Third lumbrical of left foot",
+    "side": "left",
+    "fma": "FMA37486",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Third lumbrical of right foot",
+    "side": "right",
+    "fma": "FMA37485",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Third plantar interosseous of left foot",
+    "side": "left",
+    "fma": "FMA37742",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Third plantar interosseous of right foot",
+    "side": "right",
+    "fma": "FMA37741",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Transverse head of left adductor hallucis",
+    "side": "left",
+    "fma": "FMA46021",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Transverse head of left adductor pollicis",
+    "side": "left",
+    "fma": "FMA46124",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Transverse head of right adductor hallucis",
+    "side": "right",
+    "fma": "FMA46020",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Transverse head of right adductor pollicis",
+    "side": "right",
+    "fma": "FMA46123",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Abdominal part of left pectoralis major",
+    "side": "left",
+    "fma": "FMA45875",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Abdominal part of right pectoralis major",
+    "side": "right",
+    "fma": "FMA45874",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Abductor digiti minimi of left foot",
+    "side": "left",
+    "fma": "FMA37464",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Abductor digiti minimi of left hand",
+    "side": "left",
+    "fma": "FMA37397",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Abductor digiti minimi of right foot",
+    "side": "right",
+    "fma": "FMA37463",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Abductor digiti minimi of right hand",
+    "side": "right",
+    "fma": "FMA37396",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Acromial part of left deltoid",
+    "side": "left",
+    "fma": "FMA34683",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Acromial part of right deltoid",
+    "side": "right",
+    "fma": "FMA34682",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Ascending part of left trapezius",
+    "side": "left",
+    "fma": "FMA33583",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Ascending part of right trapezius",
+    "side": "right",
+    "fma": "FMA33581",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Clavicular part of left deltoid",
+    "side": "left",
+    "fma": "FMA34681",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Clavicular part of left pectoralis major",
+    "side": "left",
+    "fma": "FMA34691",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Clavicular part of right deltoid",
+    "side": "right",
+    "fma": "FMA34680",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Clavicular part of right pectoralis major",
+    "side": "right",
+    "fma": "FMA34690",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Descending part of left trapezius",
+    "side": "left",
+    "fma": "FMA33587",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Descending part of right trapezius",
+    "side": "right",
+    "fma": "FMA33586",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Flexor digiti minimi brevis of left hand",
+    "side": "left",
+    "fma": "FMA37399",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Flexor digiti minimi brevis of right hand",
+    "side": "right",
+    "fma": "FMA37398",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Flexor retinaculum of left wrist",
+    "side": "left",
+    "fma": "FMA40121",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Flexor retinaculum of right wrist",
+    "side": "right",
+    "fma": "FMA40120",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Humeral head of left flexor carpi ulnaris",
+    "side": "left",
+    "fma": "FMA38618",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Humeral head of left pronator teres",
+    "side": "left",
+    "fma": "FMA38561",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Humeral head of right flexor carpi ulnaris",
+    "side": "right",
+    "fma": "FMA38617",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Humeral head of right pronator teres",
+    "side": "right",
+    "fma": "FMA38560",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left abductor hallucis",
+    "side": "left",
+    "fma": "FMA37460",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left abductor pollicis brevis",
+    "side": "left",
+    "fma": "FMA37387",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left abductor pollicis longus",
+    "side": "left",
+    "fma": "FMA38517",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left anconeus",
+    "side": "left",
+    "fma": "FMA37706",
+    "parts": [
+      "elbow"
+    ],
+    "primaryPart": "elbow"
+  },
+  {
+    "name": "Left brachialis",
+    "side": "left",
+    "fma": "FMA37669",
+    "parts": [
+      "elbow"
+    ],
+    "primaryPart": "elbow"
+  },
+  {
+    "name": "Left brachioradialis",
+    "side": "left",
+    "fma": "FMA38487",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left calcaneal tendon",
+    "side": "left",
+    "fma": "FMA264844",
+    "parts": [
+      "ankle"
+    ],
+    "primaryPart": "ankle"
+  },
+  {
+    "name": "Left coracobrachialis",
+    "side": "left",
+    "fma": "FMA37666",
+    "parts": [
+      "elbow"
+    ],
+    "primaryPart": "elbow"
+  },
+  {
+    "name": "Left depressor anguli oris",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left depressor labii inferioris",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left extensor carpi radialis brevis",
+    "side": "left",
+    "fma": "FMA38499",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left extensor carpi radialis longus",
+    "side": "left",
+    "fma": "FMA38496",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left extensor carpi ulnaris",
+    "side": "left",
+    "fma": "FMA38508",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left extensor carpi ulnaris (2)",
+    "side": "left",
+    "fma": "FMA38508",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left extensor digiti minimi",
+    "side": "left",
+    "fma": "FMA38505",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left extensor digitorum",
+    "side": "left",
+    "fma": "FMA38502",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left extensor digitorum longus",
+    "side": "left",
+    "fma": "FMA22549",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left extensor hallucis brevis",
+    "side": "left",
+    "fma": "FMA51145",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left extensor hallucis longus",
+    "side": "left",
+    "fma": "FMA22547",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Left extensor pollicis brevis",
+    "side": "left",
+    "fma": "FMA38520",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left extensor pollicis longus",
+    "side": "left",
+    "fma": "FMA38523",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left flexor carpi radialis",
+    "side": "left",
+    "fma": "FMA38461",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left flexor digitorum brevis",
+    "side": "left",
+    "fma": "FMA37462",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left flexor digitorum superficialis",
+    "side": "left",
+    "fma": "FMA38471",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left flexor digitorum superficialis (2)",
+    "side": "left",
+    "fma": "FMA38471",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left flexor pollicis brevis",
+    "side": "right",
+    "fma": "FMA37389",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Left frontalis",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left gluteus maximus",
+    "side": "left",
+    "fma": "FMA22329",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left gluteus medius",
+    "side": "left",
+    "fma": "FMA22331",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left infraspinatus muscle",
+    "side": "left",
+    "fma": "FMA32548",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left latissimus dorsi",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left levator labii superioris",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left levator scapulae",
+    "side": "left",
+    "fma": "FMA32541",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "scapula"
+  },
+  {
+    "name": "Left mentalis",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left nasalis",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left omohyoid",
+    "side": "left",
+    "fma": "FMA13349",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left orbicularis oris",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left orbital part of orbicularis oculi",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left palmaris longus",
+    "side": "left",
+    "fma": "FMA38464",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Left palpebral part of orbicularis oculi",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left posterior layer of thoracolumbar fascia",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Left procerus",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left risorius",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left serratus anterior",
+    "side": "left",
+    "fma": "FMA13399",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Left splenius capitis",
+    "side": "left",
+    "fma": "FMA22729",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left sternocleidomastoid",
+    "side": "left",
+    "fma": "FMA13409",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left sternohyoid",
+    "side": "left",
+    "fma": "FMA13347",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left sternothyroid",
+    "side": "left",
+    "fma": "FMA13351",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left superficial part of masseter",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left temporalis",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left tensor fasciae latae",
+    "side": "left",
+    "fma": "FMA22426",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Left teres major",
+    "side": "left",
+    "fma": "FMA32552",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left teres minor",
+    "side": "left",
+    "fma": "FMA32554",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Left thyrohyoid",
+    "side": "left",
+    "fma": "FMA13353",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Left zygomaticus major",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Left zygomaticus minor",
+    "side": "left",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right abductor hallucis",
+    "side": "right",
+    "fma": "FMA37459",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right abductor pollicis brevis",
+    "side": "right",
+    "fma": "FMA37386",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right abductor pollicis longus",
+    "side": "right",
+    "fma": "FMA38516",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right anconeus",
+    "side": "right",
+    "fma": "FMA37705",
+    "parts": [
+      "elbow"
+    ],
+    "primaryPart": "elbow"
+  },
+  {
+    "name": "Right brachialis",
+    "side": "right",
+    "fma": "FMA37668",
+    "parts": [
+      "elbow"
+    ],
+    "primaryPart": "elbow"
+  },
+  {
+    "name": "Right brachioradialis",
+    "side": "right",
+    "fma": "FMA38486",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right calcaneal tendon",
+    "side": "right",
+    "fma": "FMA258847",
+    "parts": [
+      "ankle"
+    ],
+    "primaryPart": "ankle"
+  },
+  {
+    "name": "Right coracobrachialis",
+    "side": "right",
+    "fma": "FMA37665",
+    "parts": [
+      "elbow"
+    ],
+    "primaryPart": "elbow"
+  },
+  {
+    "name": "Right depressor anguli oris",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right depressor labii inferioris",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right extensor carpi radialis brevis",
+    "side": "right",
+    "fma": "FMA38498",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right extensor carpi radialis longus",
+    "side": "right",
+    "fma": "FMA38495",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right extensor carpi ulnaris",
+    "side": "right",
+    "fma": "FMA38507",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right extensor carpi ulnaris (2)",
+    "side": "right",
+    "fma": "FMA38507",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right extensor digiti minimi",
+    "side": "right",
+    "fma": "FMA38504",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right extensor digitorum",
+    "side": "right",
+    "fma": "FMA38501",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right extensor digitorum longus",
+    "side": "right",
+    "fma": "FMA22548",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right extensor hallucis brevis",
+    "side": "right",
+    "fma": "FMA51144",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right extensor hallucis longus",
+    "side": "right",
+    "fma": "FMA22546",
+    "parts": [
+      "foot"
+    ],
+    "primaryPart": "foot"
+  },
+  {
+    "name": "Right extensor pollicis brevis",
+    "side": "right",
+    "fma": "FMA38519",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right extensor pollicis longus",
+    "side": "right",
+    "fma": "FMA38522",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right flexor carpi radialis",
+    "side": "right",
+    "fma": "FMA38460",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right flexor digitorum brevis",
+    "side": "right",
+    "fma": "FMA37461",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right flexor digitorum superficialis",
+    "side": "right",
+    "fma": "FMA38470",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right flexor digitorum superficialis (2)",
+    "side": "right",
+    "fma": "FMA38470",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right flexor pollicis brevis",
+    "side": "left",
+    "fma": "FMA37388",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Right frontalis",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right gluteus maximus",
+    "side": "right",
+    "fma": "FMA22328",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right gluteus medius",
+    "side": "right",
+    "fma": "FMA22330",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right infraspinatus muscle",
+    "side": "right",
+    "fma": "FMA32547",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right latissimus dorsi",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right levator labii superioris",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right levator scapulae",
+    "side": "right",
+    "fma": "FMA32540",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "scapula"
+  },
+  {
+    "name": "Right mentalis",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right nasalis",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right omohyoid",
+    "side": "right",
+    "fma": "FMA13348",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right orbicularis oris",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right orbital part of orbicularis oculi",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right palmaris longus",
+    "side": "right",
+    "fma": "FMA38463",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Right palpebral part of orbicularis oculi",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right posterior layer of thoracolumbar fascia",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "back"
+    ],
+    "primaryPart": "back"
+  },
+  {
+    "name": "Right procerus",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right risorius",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right serratus anterior",
+    "side": "right",
+    "fma": "FMA13398",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Right splenius capitis",
+    "side": "right",
+    "fma": "FMA22728",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right sternocleidomastoid",
+    "side": "right",
+    "fma": "FMA13408",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right sternohyoid",
+    "side": "right",
+    "fma": "FMA13346",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right sternothyroid",
+    "side": "right",
+    "fma": "FMA13350",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right superficial part of masseter",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right temporalis",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right tensor fasciae latae",
+    "side": "right",
+    "fma": "FMA22425",
+    "parts": [
+      "hip"
+    ],
+    "primaryPart": "hip"
+  },
+  {
+    "name": "Right teres major",
+    "side": "right",
+    "fma": "FMA32551",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right teres minor",
+    "side": "right",
+    "fma": "FMA32553",
+    "parts": [
+      "shoulder",
+      "scapula"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Right thyrohyoid",
+    "side": "right",
+    "fma": "FMA13352",
+    "parts": [
+      "neck"
+    ],
+    "primaryPart": "neck"
+  },
+  {
+    "name": "Right zygomaticus major",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Right zygomaticus minor",
+    "side": "right",
+    "fma": null,
+    "parts": [
+      "head"
+    ],
+    "primaryPart": "head"
+  },
+  {
+    "name": "Set of dorsal interossei of left hand",
+    "side": "left",
+    "fma": "FMA42405",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Set of dorsal interossei of right hand",
+    "side": "right",
+    "fma": "FMA42404",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Set of lumbricals of left hand",
+    "side": "left",
+    "fma": "FMA42399",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Set of lumbricals of right hand",
+    "side": "right",
+    "fma": "FMA42398",
+    "parts": [
+      "hand"
+    ],
+    "primaryPart": "hand"
+  },
+  {
+    "name": "Spinal part of left deltoid",
+    "side": "left",
+    "fma": "FMA34685",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Spinal part of right deltoid",
+    "side": "right",
+    "fma": "FMA34684",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Sternocostal part of left pectoralis major",
+    "side": "left",
+    "fma": "FMA79980",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Sternocostal part of right pectoralis major",
+    "side": "right",
+    "fma": "FMA79979",
+    "parts": [
+      "thorax"
+    ],
+    "primaryPart": "thorax"
+  },
+  {
+    "name": "Transverse part of left trapezius",
+    "side": "left",
+    "fma": "FMA33585",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Transverse part of right trapezius",
+    "side": "right",
+    "fma": "FMA33584",
+    "parts": [
+      "shoulder"
+    ],
+    "primaryPart": "shoulder"
+  },
+  {
+    "name": "Ulnar head of left flexor carpi ulnaris",
+    "side": "left",
+    "fma": "FMA38620",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Ulnar head of left pronator teres",
+    "side": "left",
+    "fma": "FMA38563",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Ulnar head of right flexor carpi ulnaris",
+    "side": "right",
+    "fma": "FMA38619",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  },
+  {
+    "name": "Ulnar head of right pronator teres",
+    "side": "right",
+    "fma": "FMA38562",
+    "parts": [
+      "forearm"
+    ],
+    "primaryPart": "forearm"
+  }
+]
