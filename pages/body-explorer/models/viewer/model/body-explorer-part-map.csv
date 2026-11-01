@@ -1,0 +1,635 @@
+name	parts	side	layer	fma	source	review
+Atlas	首	midline	skeleton	FMA12519	BodyParts3D	legacy-name-candidate-review
+Axis	首	midline	skeleton	FMA12520	BodyParts3D	legacy-name-candidate-review
+Body of sternum	胸郭	midline	skeleton	FMA7487	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left big toe	足・足裏	left	skeleton	FMA32651	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left fourth toe	足・足裏	left	skeleton	FMA32657	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left index finger	手・手指	left	skeleton	FMA23953	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left little finger	手・手指	left	skeleton	FMA23959	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left little toe	足・足裏	left	skeleton	FMA32659	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left middle finger	手・手指	left	skeleton	FMA23955	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left ring finger	手・手指	left	skeleton	FMA23957	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left second toe	足・足裏	left	skeleton	FMA32653	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left third toe	足・足裏	left	skeleton	FMA32655	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of left thumb		left	skeleton	FMA23951	BodyParts3D	unmapped
+Distal phalanx of right big toe	足・足裏	right	skeleton	FMA32650	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right fourth toe	足・足裏	right	skeleton	FMA32656	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right index finger	手・手指	right	skeleton	FMA24460	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right little finger	手・手指	right	skeleton	FMA24463	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right little toe	足・足裏	right	skeleton	FMA32658	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right middle finger	手・手指	right	skeleton	FMA24461	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right ring finger	手・手指	right	skeleton	FMA24462	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right second toe	足・足裏	right	skeleton	FMA32652	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right third toe	足・足裏	right	skeleton	FMA32654	BodyParts3D	legacy-name-candidate-review
+Distal phalanx of right thumb		right	skeleton	FMA24459	BodyParts3D	unmapped
+Eighth thoracic vertebra	胸郭|背中	midline	skeleton	FMA9991	BodyParts3D	overlap-review
+Eleventh thoracic vertebra	胸郭|背中	midline	skeleton	FMA10059	BodyParts3D	overlap-review
+Ethmoid	頭・顔	midline	skeleton	FMA52740	BodyParts3D	legacy-name-candidate-review
+External ear		midline	skeleton	FMA52781	BodyParts3D	unmapped
+Fifth cervical vertebra	首	midline	skeleton	FMA12523	BodyParts3D	legacy-name-candidate-review
+Fifth lumbar vertebra	背中|腰	midline	skeleton	FMA13076	BodyParts3D	overlap-review
+Fifth thoracic vertebra	胸郭|背中	midline	skeleton	FMA9922	BodyParts3D	overlap-review
+First lumbar vertebra	背中|腰	midline	skeleton	FMA13072	BodyParts3D	overlap-review
+First thoracic vertebra	胸郭|背中	midline	skeleton	FMA9165	BodyParts3D	overlap-review
+Fourth cervical vertebra	首	midline	skeleton	FMA12522	BodyParts3D	legacy-name-candidate-review
+Fourth lumbar vertebra	背中|腰	midline	skeleton	FMA13075	BodyParts3D	overlap-review
+Fourth thoracic vertebra	胸郭|背中	midline	skeleton	FMA9248	BodyParts3D	overlap-review
+Frontal bone	頭・顔	midline	skeleton	FMA52734	BodyParts3D	legacy-name-candidate-review
+Intervertebral disk of axis		midline	skeleton	FMA25058	BodyParts3D	unmapped
+Intervertebral disk of eighth thoracic vertebra	胸郭|背中	midline	skeleton	FMA13505	BodyParts3D	overlap-review
+Intervertebral disk of eleventh thoracic vertebra	胸郭|背中	midline	skeleton	FMA13508	BodyParts3D	overlap-review
+Intervertebral disk of fifth cervical vertebra	首	midline	skeleton	FMA13898	BodyParts3D	legacy-name-candidate-review
+Intervertebral disk of fifth lumbar vertebra	背中|腰	midline	skeleton	FMA16037	BodyParts3D	overlap-review
+Intervertebral disk of fifth thoracic vertebra	胸郭|背中	midline	skeleton	FMA13502	BodyParts3D	overlap-review
+Intervertebral disk of first lumbar vertebra	背中|腰	midline	skeleton	FMA16033	BodyParts3D	overlap-review
+Intervertebral disk of first thoracic vertebra	胸郭|背中	midline	skeleton	FMA10458	BodyParts3D	overlap-review
+Intervertebral disk of fourth cervical vertebra	首	midline	skeleton	FMA13897	BodyParts3D	legacy-name-candidate-review
+Intervertebral disk of fourth lumbar vertebra	背中|腰	midline	skeleton	FMA16036	BodyParts3D	overlap-review
+Intervertebral disk of fourth thoracic vertebra	胸郭|背中	midline	skeleton	FMA13501	BodyParts3D	overlap-review
+Intervertebral disk of ninth thoracic vertebra	胸郭|背中	midline	skeleton	FMA13506	BodyParts3D	overlap-review
+Intervertebral disk of second lumbar vertebra	背中|腰	midline	skeleton	FMA16034	BodyParts3D	overlap-review
+Intervertebral disk of second thoracic vertebra	胸郭|背中	midline	skeleton	FMA13495	BodyParts3D	overlap-review
+Intervertebral disk of seventh cervical vertebra	首	midline	skeleton	FMA13900	BodyParts3D	legacy-name-candidate-review
+Intervertebral disk of seventh thoracic vertebra	胸郭|背中	midline	skeleton	FMA13504	BodyParts3D	overlap-review
+Intervertebral disk of sixth cervical vertebra	首	midline	skeleton	FMA13899	BodyParts3D	legacy-name-candidate-review
+Intervertebral disk of sixth thoracic vertebra	胸郭|背中	midline	skeleton	FMA13503	BodyParts3D	overlap-review
+Intervertebral disk of tenth thoracic vertebra	胸郭|背中	midline	skeleton	FMA13507	BodyParts3D	overlap-review
+Intervertebral disk of third cervical vertebra	首	midline	skeleton	FMA13896	BodyParts3D	legacy-name-candidate-review
+Intervertebral disk of third lumbar vertebra	背中|腰	midline	skeleton	FMA16035	BodyParts3D	overlap-review
+Intervertebral disk of third thoracic vertebra	胸郭|背中	midline	skeleton	FMA13500	BodyParts3D	overlap-review
+Left calcaneus	足首	left	skeleton	FMA24498	BodyParts3D	legacy-name-candidate-review
+Left capitate		left	skeleton	FMA24447	BodyParts3D	unmapped
+Left clavicle	肩	left	skeleton	FMA13323	BodyParts3D	legacy-name-candidate-review
+Left cornea		left	skeleton	FMA58240	BodyParts3D	unmapped
+Left cuboid bone		left	skeleton	FMA24529	BodyParts3D	unmapped
+Left eighth rib	胸郭	left	skeleton	FMA8310	BodyParts3D	legacy-name-candidate-review
+Left eleventh rib	胸郭	left	skeleton	FMA8532	BodyParts3D	legacy-name-candidate-review
+Left femur	股関節|膝	left	skeleton	FMA24475	BodyParts3D	overlap-review
+Left fibula	膝|足首	left	skeleton	FMA24481	BodyParts3D	overlap-review
+Left fifth costal cartilage		left	skeleton	FMA8112	BodyParts3D	unmapped
+Left fifth metacarpal bone	手・手指	left	skeleton	FMA24473	BodyParts3D	legacy-name-candidate-review
+Left fifth metatarsal bone	足・足裏	left	skeleton	FMA24516	BodyParts3D	legacy-name-candidate-review
+Left fifth rib	胸郭	left	skeleton	FMA8093	BodyParts3D	legacy-name-candidate-review
+Left first costal cartilage		left	skeleton	FMA8005	BodyParts3D	unmapped
+Left first metacarpal bone	手・手指	left	skeleton	FMA24465	BodyParts3D	legacy-name-candidate-review
+Left first metatarsal bone	足・足裏	left	skeleton	FMA24508	BodyParts3D	legacy-name-candidate-review
+Left first rib	胸郭	left	skeleton	FMA7987	BodyParts3D	legacy-name-candidate-review
+Left fourth costal cartilage		left	skeleton	FMA8167	BodyParts3D	unmapped
+Left fourth metacarpal bone	手・手指	left	skeleton	FMA24471	BodyParts3D	legacy-name-candidate-review
+Left fourth metatarsal bone	足・足裏	left	skeleton	FMA24514	BodyParts3D	legacy-name-candidate-review
+Left fourth rib	胸郭	left	skeleton	FMA8148	BodyParts3D	legacy-name-candidate-review
+Left hamate		left	skeleton	FMA24449	BodyParts3D	unmapped
+Left hip bone	骨盤|股関節	left	skeleton	FMA16587	BodyParts3D	overlap-review
+Left humerus	肘	left	skeleton	FMA23131	BodyParts3D	legacy-name-candidate-review
+Left inferior nasal concha		left	skeleton	FMA54738	BodyParts3D	unmapped
+Left intermediate cuneiform bone		left	skeleton	FMA24524	BodyParts3D	unmapped
+Left lacrimal bone		left	skeleton	FMA53646	BodyParts3D	unmapped
+Left lateral cuneiform bone		left	skeleton	FMA24526	BodyParts3D	unmapped
+Left lateral nasal cartilage		left	skeleton	FMA59513	BodyParts3D	unmapped
+Left lower central secondary incisor tooth		left	skeleton	FMA57143	BodyParts3D	unmapped
+Left lower first secondary molar tooth		left	skeleton	FMA55704	BodyParts3D	unmapped
+Left lower first secondary premolar tooth		left	skeleton	FMA55693	BodyParts3D	unmapped
+Left lower lateral secondary incisor tooth		left	skeleton	FMA57141	BodyParts3D	unmapped
+Left lower second secondary molar tooth		left	skeleton	FMA55703	BodyParts3D	unmapped
+Left lower second secondary premolar tooth		left	skeleton	FMA55692	BodyParts3D	unmapped
+Left lower secondary canine tooth		left	skeleton	FMA55687	BodyParts3D	unmapped
+Left lunate		left	skeleton	FMA24438	BodyParts3D	unmapped
+Left major alar cartilage		left	skeleton	FMA59506	BodyParts3D	unmapped
+Left maxilla	頭・顔	left	skeleton	FMA53650	BodyParts3D	legacy-name-candidate-review
+Left medial cuneiform bone		left	skeleton	FMA24522	BodyParts3D	unmapped
+Left nasal bone	頭・顔	left	skeleton	FMA53648	BodyParts3D	legacy-name-candidate-review
+Left ninth rib	胸郭	left	skeleton	FMA8391	BodyParts3D	legacy-name-candidate-review
+Left palatine bone		left	skeleton	FMA53656	BodyParts3D	unmapped
+Left parietal bone		left	skeleton	FMA52789	BodyParts3D	unmapped
+Left patella	膝	left	skeleton	FMA24487	BodyParts3D	legacy-name-candidate-review
+Left pisiform		left	skeleton	FMA24442	BodyParts3D	unmapped
+Left radius	肘|前腕	left	skeleton	FMA23465	BodyParts3D	overlap-review
+Left scaphoid		left	skeleton	FMA24436	BodyParts3D	unmapped
+Left scapula	肩|肩甲骨	left	skeleton	FMA13396	BodyParts3D	overlap-review
+Left sclera		left	skeleton	FMA58272	BodyParts3D	unmapped
+Left second costal cartilage		left	skeleton	FMA8031	BodyParts3D	unmapped
+Left second metacarpal bone	手・手指	left	skeleton	FMA24467	BodyParts3D	legacy-name-candidate-review
+Left second metatarsal bone	足・足裏	left	skeleton	FMA24510	BodyParts3D	legacy-name-candidate-review
+Left second rib	胸郭	left	skeleton	FMA8012	BodyParts3D	legacy-name-candidate-review
+Left seventh costal cartilage		left	skeleton	FMA8275	BodyParts3D	unmapped
+Left seventh rib	胸郭	left	skeleton	FMA8256	BodyParts3D	legacy-name-candidate-review
+Left sixth costal cartilage		left	skeleton	FMA8221	BodyParts3D	unmapped
+Left sixth rib	胸郭	left	skeleton	FMA8202	BodyParts3D	legacy-name-candidate-review
+Left talus	足首	left	skeleton	FMA24483	BodyParts3D	legacy-name-candidate-review
+Left temporal bone	頭・顔	left	skeleton	FMA52739	BodyParts3D	legacy-name-candidate-review
+Left tenth rib	胸郭	left	skeleton	FMA8472	BodyParts3D	legacy-name-candidate-review
+Left third costal cartilage		left	skeleton	FMA8058	BodyParts3D	unmapped
+Left third metacarpal bone	手・手指	left	skeleton	FMA24469	BodyParts3D	legacy-name-candidate-review
+Left third metatarsal bone	足・足裏	left	skeleton	FMA24512	BodyParts3D	legacy-name-candidate-review
+Left third rib	胸郭	left	skeleton	FMA8039	BodyParts3D	legacy-name-candidate-review
+Left tibia	膝|足首	left	skeleton	FMA24478	BodyParts3D	overlap-review
+Left trapezium		left	skeleton	FMA24444	BodyParts3D	unmapped
+Left trapezoid		left	skeleton	FMA24445	BodyParts3D	unmapped
+Left twelfth rib	胸郭	left	skeleton	FMA8534	BodyParts3D	legacy-name-candidate-review
+Left ulna	肘|前腕	left	skeleton	FMA23468	BodyParts3D	overlap-review
+Left upper central secondary incisor tooth		left	skeleton	FMA55682	BodyParts3D	unmapped
+Left upper first secondary molar tooth		left	skeleton	FMA55699	BodyParts3D	unmapped
+Left upper first secondary premolar tooth		left	skeleton	FMA55690	BodyParts3D	unmapped
+Left upper lateral secondary incisor tooth		left	skeleton	FMA55683	BodyParts3D	unmapped
+Left upper second secondary molar tooth		left	skeleton	FMA55700	BodyParts3D	unmapped
+Left upper second secondary premolar tooth		left	skeleton	FMA55691	BodyParts3D	unmapped
+Left upper secondary canine tooth		left	skeleton	FMA55799	BodyParts3D	unmapped
+Left zygomatic bone	頭・顔	left	skeleton	FMA52893	BodyParts3D	legacy-name-candidate-review
+Mandible	頭・顔	midline	skeleton	FMA52748	BodyParts3D	legacy-name-candidate-review
+Manubrium		midline	skeleton	FMA7486	BodyParts3D	unmapped
+Middle phalanx of left fourth toe	足・足裏	left	skeleton	FMA32647	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left index finger	手・手指	left	skeleton	FMA23938	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left little finger	手・手指	left	skeleton	FMA23944	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left little toe	足・足裏	left	skeleton	FMA230988	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left middle finger	手・手指	left	skeleton	FMA23940	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left ring finger	手・手指	left	skeleton	FMA23942	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left second toe	足・足裏	left	skeleton	FMA32643	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of left third toe	足・足裏	left	skeleton	FMA32645	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right fourth toe	足・足裏	right	skeleton	FMA32646	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right index finger	手・手指	right	skeleton	FMA24455	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right little finger	手・手指	right	skeleton	FMA24458	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right little toe	足・足裏	right	skeleton	FMA230986	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right middle finger	手・手指	right	skeleton	FMA24456	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right ring finger	手・手指	right	skeleton	FMA24457	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right second toe	足・足裏	right	skeleton	FMA32642	BodyParts3D	legacy-name-candidate-review
+Middle phalanx of right third toe	足・足裏	right	skeleton	FMA32644	BodyParts3D	legacy-name-candidate-review
+Navicular bone of left foot		left	skeleton	FMA24501	BodyParts3D	unmapped
+Navicular bone of right foot		right	skeleton	FMA24500	BodyParts3D	unmapped
+Ninth thoracic vertebra	胸郭|背中	midline	skeleton	FMA10014	BodyParts3D	overlap-review
+Occipital bone	頭・顔	midline	skeleton	FMA52735	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left big toe	足・足裏	left	skeleton	FMA43254	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left fourth toe	足・足裏	left	skeleton	FMA32639	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left index finger	手・手指	left	skeleton	FMA71915	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left little finger	手・手指	left	skeleton	FMA66791	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left little toe	足・足裏	left	skeleton	FMA32641	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left middle finger	手・手指	left	skeleton	FMA71908	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left ring finger	手・手指	left	skeleton	FMA71916	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left second toe	足・足裏	left	skeleton	FMA32635	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left third toe	足・足裏	left	skeleton	FMA32637	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of left thumb		left	skeleton	FMA65470	BodyParts3D	unmapped
+Proximal phalanx of right big toe	足・足裏	right	skeleton	FMA43253	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right fourth toe	足・足裏	right	skeleton	FMA32638	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right index finger	手・手指	right	skeleton	FMA24451	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right little finger	手・手指	right	skeleton	FMA24454	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right little toe	足・足裏	right	skeleton	FMA32640	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right middle finger	手・手指	right	skeleton	FMA24452	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right ring finger	手・手指	right	skeleton	FMA24453	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right second toe	足・足裏	right	skeleton	FMA32634	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right third toe	足・足裏	right	skeleton	FMA32636	BodyParts3D	legacy-name-candidate-review
+Proximal phalanx of right thumb		right	skeleton	FMA24450	BodyParts3D	unmapped
+Right calcaneus	足首	right	skeleton	FMA24497	BodyParts3D	legacy-name-candidate-review
+Right capitate		right	skeleton	FMA24446	BodyParts3D	unmapped
+Right clavicle	肩	right	skeleton	FMA13322	BodyParts3D	legacy-name-candidate-review
+Right cornea		right	skeleton	FMA58239	BodyParts3D	unmapped
+Right cuboid bone		right	skeleton	FMA24528	BodyParts3D	unmapped
+Right eighth rib	胸郭	right	skeleton	FMA8283	BodyParts3D	legacy-name-candidate-review
+Right eleventh rib	胸郭	right	skeleton	FMA8531	BodyParts3D	legacy-name-candidate-review
+Right femur	股関節|膝	right	skeleton	FMA24474	BodyParts3D	overlap-review
+Right fibula	膝|足首	right	skeleton	FMA24480	BodyParts3D	overlap-review
+Right fifth costal cartilage		right	skeleton	FMA8070	BodyParts3D	unmapped
+Right fifth metacarpal bone	手・手指	right	skeleton	FMA24472	BodyParts3D	legacy-name-candidate-review
+Right fifth metatarsal bone	足・足裏	right	skeleton	FMA24515	BodyParts3D	legacy-name-candidate-review
+Right fifth rib	胸郭	right	skeleton	FMA8066	BodyParts3D	legacy-name-candidate-review
+Right first costal cartilage		right	skeleton	FMA7875	BodyParts3D	unmapped
+Right first metacarpal bone	手・手指	right	skeleton	FMA24464	BodyParts3D	legacy-name-candidate-review
+Right first metatarsal bone	足・足裏	right	skeleton	FMA24507	BodyParts3D	legacy-name-candidate-review
+Right first rib	胸郭	right	skeleton	FMA7857	BodyParts3D	legacy-name-candidate-review
+Right fourth costal cartilage		right	skeleton	FMA7976	BodyParts3D	unmapped
+Right fourth metacarpal bone	手・手指	right	skeleton	FMA24470	BodyParts3D	legacy-name-candidate-review
+Right fourth metatarsal bone	足・足裏	right	skeleton	FMA24513	BodyParts3D	legacy-name-candidate-review
+Right fourth rib	胸郭	right	skeleton	FMA7957	BodyParts3D	legacy-name-candidate-review
+Right hamate		right	skeleton	FMA24448	BodyParts3D	unmapped
+Right hip bone	骨盤|股関節	right	skeleton	FMA16586	BodyParts3D	overlap-review
+Right humerus	肘	right	skeleton	FMA23130	BodyParts3D	legacy-name-candidate-review
+Right inferior nasal concha		right	skeleton	FMA54737	BodyParts3D	unmapped
+Right intermediate cuneiform bone		right	skeleton	FMA24523	BodyParts3D	unmapped
+Right lacrimal bone		right	skeleton	FMA53645	BodyParts3D	unmapped
+Right lateral cuneiform bone		right	skeleton	FMA24525	BodyParts3D	unmapped
+Right lateral nasal cartilage		right	skeleton	FMA59512	BodyParts3D	unmapped
+Right lower central secondary incisor tooth		right	skeleton	FMA57142	BodyParts3D	unmapped
+Right lower first secondary molar tooth		right	skeleton	FMA55705	BodyParts3D	unmapped
+Right lower first secondary premolar tooth		right	skeleton	FMA55694	BodyParts3D	unmapped
+Right lower lateral secondary incisor tooth		right	skeleton	FMA57140	BodyParts3D	unmapped
+Right lower second secondary molar tooth		right	skeleton	FMA55706	BodyParts3D	unmapped
+Right lower second secondary premolar tooth		right	skeleton	FMA55695	BodyParts3D	unmapped
+Right lower secondary canine tooth		right	skeleton	FMA55686	BodyParts3D	unmapped
+Right lunate		right	skeleton	FMA24437	BodyParts3D	unmapped
+Right major alar cartilage		right	skeleton	FMA59505	BodyParts3D	unmapped
+Right maxilla	頭・顔	right	skeleton	FMA53649	BodyParts3D	legacy-name-candidate-review
+Right medial cuneiform bone		right	skeleton	FMA24521	BodyParts3D	unmapped
+Right nasal bone	頭・顔	right	skeleton	FMA53647	BodyParts3D	legacy-name-candidate-review
+Right ninth rib	胸郭	right	skeleton	FMA8364	BodyParts3D	legacy-name-candidate-review
+Right palatine bone		right	skeleton	FMA53655	BodyParts3D	unmapped
+Right parietal bone		right	skeleton	FMA52788	BodyParts3D	unmapped
+Right patella	膝	right	skeleton	FMA24486	BodyParts3D	legacy-name-candidate-review
+Right pisiform		right	skeleton	FMA24441	BodyParts3D	unmapped
+Right radius	肘|前腕	right	skeleton	FMA23464	BodyParts3D	overlap-review
+Right scaphoid		right	skeleton	FMA24435	BodyParts3D	unmapped
+Right scapula	肩|肩甲骨	right	skeleton	FMA13395	BodyParts3D	overlap-review
+Right sclera		right	skeleton	FMA58271	BodyParts3D	unmapped
+Right second costal cartilage		right	skeleton	FMA7886	BodyParts3D	unmapped
+Right second metacarpal bone	手・手指	right	skeleton	FMA24466	BodyParts3D	legacy-name-candidate-review
+Right second metatarsal bone	足・足裏	right	skeleton	FMA24509	BodyParts3D	legacy-name-candidate-review
+Right second rib	胸郭	right	skeleton	FMA7882	BodyParts3D	legacy-name-candidate-review
+Right seventh costal cartilage		right	skeleton	FMA8248	BodyParts3D	unmapped
+Right seventh rib	胸郭	right	skeleton	FMA8229	BodyParts3D	legacy-name-candidate-review
+Right sixth costal cartilage		right	skeleton	FMA8194	BodyParts3D	unmapped
+Right sixth rib	胸郭	right	skeleton	FMA8175	BodyParts3D	legacy-name-candidate-review
+Right talus	足首	right	skeleton	FMA24482	BodyParts3D	legacy-name-candidate-review
+Right temporal bone	頭・顔	right	skeleton	FMA52738	BodyParts3D	legacy-name-candidate-review
+Right tenth rib	胸郭	right	skeleton	FMA8445	BodyParts3D	legacy-name-candidate-review
+Right third costal cartilage		right	skeleton	FMA7913	BodyParts3D	unmapped
+Right third metacarpal bone	手・手指	right	skeleton	FMA24468	BodyParts3D	legacy-name-candidate-review
+Right third metatarsal bone	足・足裏	right	skeleton	FMA24511	BodyParts3D	legacy-name-candidate-review
+Right third rib	胸郭	right	skeleton	FMA7909	BodyParts3D	legacy-name-candidate-review
+Right tibia	膝|足首	right	skeleton	FMA24477	BodyParts3D	overlap-review
+Right trapezium		right	skeleton	FMA24443	BodyParts3D	unmapped
+Right trapezoid		right	skeleton	FMA23725	BodyParts3D	unmapped
+Right twelfth rib	胸郭	right	skeleton	FMA8533	BodyParts3D	legacy-name-candidate-review
+Right ulna	肘|前腕	right	skeleton	FMA23467	BodyParts3D	overlap-review
+Right upper central secondary incisor tooth		right	skeleton	FMA55681	BodyParts3D	unmapped
+Right upper first secondary molar tooth		right	skeleton	FMA55698	BodyParts3D	unmapped
+Right upper first secondary premolar tooth		right	skeleton	FMA55689	BodyParts3D	unmapped
+Right upper lateral secondary incisor tooth		right	skeleton	FMA55680	BodyParts3D	unmapped
+Right upper second secondary molar tooth		right	skeleton	FMA55697	BodyParts3D	unmapped
+Right upper second secondary premolar tooth		right	skeleton	FMA55688	BodyParts3D	unmapped
+Right upper secondary canine tooth		right	skeleton	FMA55798	BodyParts3D	unmapped
+Right zygomatic bone	頭・顔	right	skeleton	FMA52892	BodyParts3D	legacy-name-candidate-review
+Sacrum	骨盤	midline	skeleton	FMA16202	BodyParts3D	legacy-name-candidate-review
+Second lumbar vertebra	背中|腰	midline	skeleton	FMA13073	BodyParts3D	overlap-review
+Second thoracic vertebra	胸郭|背中	midline	skeleton	FMA9187	BodyParts3D	overlap-review
+Septal nasal cartilage		midline	skeleton	FMA59503	BodyParts3D	unmapped
+Seventh cervical vertebra	首	midline	skeleton	FMA12525	BodyParts3D	legacy-name-candidate-review
+Seventh thoracic vertebra	胸郭|背中	midline	skeleton	FMA9968	BodyParts3D	overlap-review
+Sixth cervical vertebra	首	midline	skeleton	FMA12524	BodyParts3D	legacy-name-candidate-review
+Sixth thoracic vertebra	胸郭|背中	midline	skeleton	FMA9945	BodyParts3D	overlap-review
+Sphenoid bone	頭・顔	midline	skeleton	FMA52736	BodyParts3D	legacy-name-candidate-review
+Tenth thoracic vertebra	胸郭|背中	midline	skeleton	FMA10037	BodyParts3D	overlap-review
+Third cervical vertebra	首	midline	skeleton	FMA12521	BodyParts3D	legacy-name-candidate-review
+Third lumbar vertebra	背中|腰	midline	skeleton	FMA13074	BodyParts3D	overlap-review
+Third thoracic vertebra	胸郭|背中	midline	skeleton	FMA9209	BodyParts3D	overlap-review
+Twelfth thoracic vertebra	胸郭|背中	midline	skeleton	FMA10081	BodyParts3D	overlap-review
+Vomer		midline	skeleton	FMA9710	BodyParts3D	unmapped
+Xiphoid process		midline	skeleton	FMA7488	BodyParts3D	unmapped
+External intercostal muscle	胸郭	midline	deep muscles	FMA9756	BodyParts3D	legacy-name-candidate-review
+First lumbrical of left foot	足・足裏	left	deep muscles	FMA37718	BodyParts3D	legacy-name-candidate-review
+First lumbrical of right foot	足・足裏	right	deep muscles	FMA37717	BodyParts3D	legacy-name-candidate-review
+First plantar interosseous of left foot	足・足裏	left	deep muscles	FMA37746	BodyParts3D	legacy-name-candidate-review
+First plantar interosseous of right foot	足・足裏	right	deep muscles	FMA37745	BodyParts3D	legacy-name-candidate-review
+Flexor digiti minimi brevis of left foot		left	deep muscles	FMA37472	BodyParts3D	unmapped
+Flexor digiti minimi brevis of right foot		right	deep muscles	FMA37471	BodyParts3D	unmapped
+Fourth lumbrical of left foot	足・足裏	left	deep muscles	FMA37484	BodyParts3D	legacy-name-candidate-review
+Fourth lumbrical of right foot	足・足裏	right	deep muscles	FMA37483	BodyParts3D	legacy-name-candidate-review
+Lateral head of left flexor hallucis brevis	足・足裏	left	deep muscles	FMA45974	BodyParts3D	legacy-name-candidate-review
+Lateral head of right flexor hallucis brevis	足・足裏	right	deep muscles	FMA45973	BodyParts3D	legacy-name-candidate-review
+Left adductor brevis	股関節	left	deep muscles	FMA22454	BodyParts3D	legacy-name-candidate-review
+Left adductor minimus	股関節	left	deep muscles	FMA43887	BodyParts3D	legacy-name-candidate-review
+Left corrugator supercilii		left	deep muscles		Z-Anatomy	unmapped
+Left deep part of masseter	頭・顔	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left extensor indicis		left	deep muscles	FMA38526	BodyParts3D	unmapped
+Left flexor digitorum longus	前腕	left	deep muscles	FMA65017	BodyParts3D	legacy-name-candidate-review
+Left flexor digitorum profundus	前腕	left	deep muscles	FMA38480	BodyParts3D	legacy-name-candidate-review
+Left flexor hallucis longus	足・足裏	left	deep muscles	FMA65015	BodyParts3D	legacy-name-candidate-review
+Left flexor pollicis longus	手・手指	left	deep muscles	FMA38484	BodyParts3D	legacy-name-candidate-review
+Left gemellus inferior	股関節	left	deep muscles	FMA22337	BodyParts3D	legacy-name-candidate-review
+Left gemellus superior	股関節	left	deep muscles	FMA22335	BodyParts3D	legacy-name-candidate-review
+Left gluteus minimus	骨盤|股関節	left	deep muscles	FMA22333	BodyParts3D	overlap-review
+Left iliacus	腰|骨盤|股関節	left	deep muscles	FMA22323	BodyParts3D	overlap-review
+Left iliocostalis cervicis	首|背中	left	deep muscles	FMA22745	BodyParts3D	overlap-review
+Left iliocostalis lumborum	背中|腰	left	deep muscles	FMA22741	BodyParts3D	overlap-review
+Left iliocostalis thoracis	背中	left	deep muscles	FMA22743	BodyParts3D	legacy-name-candidate-review
+Left inferior head of lateral pterygoid	頭・顔	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left internal oblique	腰	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left longissimus capitis	背中	left	deep muscles	FMA22756	BodyParts3D	legacy-name-candidate-review
+Left longissimus cervicis	首|背中	left	deep muscles	FMA22758	BodyParts3D	overlap-review
+Left longissimus thoracis	背中	left	deep muscles	FMA22753	BodyParts3D	legacy-name-candidate-review
+Left medial pterygoid	頭・顔	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left multifidus cervicis	首|背中	left	deep muscles		Z-Anatomy	overlap-review
+Left multifidus lumborum	背中|腰	left	deep muscles		Z-Anatomy	overlap-review
+Left multifidus thoracis	背中	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left obliquus capitis inferior	首	left	deep muscles	FMA32537	BodyParts3D	legacy-name-candidate-review
+Left obliquus capitis superior	首	left	deep muscles	FMA32535	BodyParts3D	legacy-name-candidate-review
+Left obturator externus	股関節	left	deep muscles	FMA22327	BodyParts3D	legacy-name-candidate-review
+Left obturator internus	股関節	left	deep muscles	FMA22325	BodyParts3D	legacy-name-candidate-review
+Left opponens pollicis	手・手指	left	deep muscles	FMA37391	BodyParts3D	legacy-name-candidate-review
+Left pectoralis minor	胸郭	left	deep muscles	FMA13376	BodyParts3D	legacy-name-candidate-review
+Left piriformis	股関節	left	deep muscles	FMA22341	BodyParts3D	legacy-name-candidate-review
+Left plantaris	足首	left	deep muscles	FMA22561	BodyParts3D	legacy-name-candidate-review
+Left popliteus	膝	left	deep muscles	FMA22592	BodyParts3D	legacy-name-candidate-review
+Left pronator quadratus	前腕	left	deep muscles	FMA38455	BodyParts3D	legacy-name-candidate-review
+Left psoas major	腰|骨盤|股関節	left	deep muscles	FMA22343	BodyParts3D	overlap-review
+Left quadratus femoris	股関節	left	deep muscles	FMA22339	BodyParts3D	legacy-name-candidate-review
+Left quadratus lumborum	腰	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left rectus capitis posterior major		left	deep muscles	FMA32531	BodyParts3D	unmapped
+Left rectus capitis posterior minor		left	deep muscles	FMA32533	BodyParts3D	unmapped
+Left rhomboid major	肩|肩甲骨|背中	left	deep muscles	FMA13382	BodyParts3D	overlap-review
+Left rhomboid minor	肩|肩甲骨|背中	left	deep muscles	FMA13384	BodyParts3D	overlap-review
+Left rotatores	背中	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left scalenus anterior	首	left	deep muscles	FMA13393	BodyParts3D	legacy-name-candidate-review
+Left scalenus medius	首	left	deep muscles	FMA13391	BodyParts3D	legacy-name-candidate-review
+Left scalenus posterior	首	left	deep muscles	FMA13389	BodyParts3D	legacy-name-candidate-review
+Left semispinalis capitis	背中	left	deep muscles	FMA22877	BodyParts3D	legacy-name-candidate-review
+Left semispinalis cervicis	首|背中	left	deep muscles	FMA22875	BodyParts3D	overlap-review
+Left semispinalis thoracis	背中	left	deep muscles	FMA22873	BodyParts3D	legacy-name-candidate-review
+Left serratus posterior inferior	胸郭|背中	left	deep muscles	FMA13406	BodyParts3D	overlap-review
+Left serratus posterior superior	胸郭|背中	left	deep muscles	FMA13404	BodyParts3D	overlap-review
+Left spinalis thoracis	背中	left	deep muscles	FMA22780	BodyParts3D	legacy-name-candidate-review
+Left splenius cervicis	首	left	deep muscles	FMA22727	BodyParts3D	legacy-name-candidate-review
+Left subclavius	肩	left	deep muscles	FMA13411	BodyParts3D	legacy-name-candidate-review
+Left subscapularis	肩|肩甲骨	left	deep muscles	FMA13415	BodyParts3D	overlap-review
+Left superior head of lateral pterygoid	頭・顔	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left supinator	前腕	left	deep muscles	FMA38514	BodyParts3D	legacy-name-candidate-review
+Left supraspinatus	肩|肩甲骨	left	deep muscles	FMA32545	BodyParts3D	overlap-review
+Left tibialis posterior	膝|足首	left	deep muscles	FMA65019	BodyParts3D	overlap-review
+Left transversus abdominis	腰	left	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Left vastus intermedius		left	deep muscles	FMA38935	BodyParts3D	unmapped
+Medial head of left flexor hallucis brevis	足・足裏	left	deep muscles	FMA45972	BodyParts3D	legacy-name-candidate-review
+Medial head of right flexor hallucis brevis	足・足裏	right	deep muscles	FMA45971	BodyParts3D	legacy-name-candidate-review
+Oblique head of left adductor hallucis	股関節	left	deep muscles	FMA46019	BodyParts3D	legacy-name-candidate-review
+Oblique head of left adductor pollicis	股関節	left	deep muscles	FMA46122	BodyParts3D	legacy-name-candidate-review
+Oblique head of right adductor hallucis	股関節	right	deep muscles	FMA46018	BodyParts3D	legacy-name-candidate-review
+Oblique head of right adductor pollicis	股関節	right	deep muscles	FMA46121	BodyParts3D	legacy-name-candidate-review
+Opponens digiti minimi of left foot	手・手指	left	deep muscles	FMA86035	BodyParts3D	legacy-name-candidate-review
+Opponens digiti minimi of left hand	手・手指	left	deep muscles	FMA37401	BodyParts3D	legacy-name-candidate-review
+Opponens digiti minimi of right foot	手・手指	right	deep muscles	FMA86034	BodyParts3D	legacy-name-candidate-review
+Opponens digiti minimi of right hand	手・手指	right	deep muscles	FMA37400	BodyParts3D	legacy-name-candidate-review
+Right adductor brevis	股関節	right	deep muscles	FMA22452	BodyParts3D	legacy-name-candidate-review
+Right adductor minimus	股関節	right	deep muscles	FMA43886	BodyParts3D	legacy-name-candidate-review
+Right corrugator supercilii		right	deep muscles		Z-Anatomy	unmapped
+Right deep part of masseter	頭・顔	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right extensor indicis		right	deep muscles	FMA38525	BodyParts3D	unmapped
+Right flexor digitorum longus	前腕	right	deep muscles	FMA65016	BodyParts3D	legacy-name-candidate-review
+Right flexor digitorum profundus	前腕	right	deep muscles	FMA38479	BodyParts3D	legacy-name-candidate-review
+Right flexor hallucis longus	足・足裏	right	deep muscles	FMA65014	BodyParts3D	legacy-name-candidate-review
+Right flexor pollicis longus	手・手指	right	deep muscles	FMA38482	BodyParts3D	legacy-name-candidate-review
+Right gemellus inferior	股関節	right	deep muscles	FMA22336	BodyParts3D	legacy-name-candidate-review
+Right gemellus superior	股関節	right	deep muscles	FMA22334	BodyParts3D	legacy-name-candidate-review
+Right gluteus minimus	骨盤|股関節	right	deep muscles	FMA22332	BodyParts3D	overlap-review
+Right iliacus	腰|骨盤|股関節	right	deep muscles	FMA22322	BodyParts3D	overlap-review
+Right iliocostalis cervicis	首|背中	right	deep muscles	FMA22744	BodyParts3D	overlap-review
+Right iliocostalis lumborum	背中|腰	right	deep muscles	FMA22740	BodyParts3D	overlap-review
+Right iliocostalis thoracis	背中	right	deep muscles	FMA22742	BodyParts3D	legacy-name-candidate-review
+Right inferior head of lateral pterygoid	頭・顔	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right internal oblique	腰	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right longissimus capitis	背中	right	deep muscles	FMA22754	BodyParts3D	legacy-name-candidate-review
+Right longissimus cervicis	首|背中	right	deep muscles	FMA22757	BodyParts3D	overlap-review
+Right longissimus thoracis	背中	right	deep muscles	FMA22751	BodyParts3D	legacy-name-candidate-review
+Right medial pterygoid	頭・顔	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right multifidus cervicis	首|背中	right	deep muscles		Z-Anatomy	overlap-review
+Right multifidus lumborum	背中|腰	right	deep muscles		Z-Anatomy	overlap-review
+Right multifidus thoracis	背中	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right obliquus capitis inferior	首	right	deep muscles	FMA32536	BodyParts3D	legacy-name-candidate-review
+Right obliquus capitis superior	首	right	deep muscles	FMA32534	BodyParts3D	legacy-name-candidate-review
+Right obturator externus	股関節	right	deep muscles	FMA22326	BodyParts3D	legacy-name-candidate-review
+Right obturator internus	股関節	right	deep muscles	FMA22324	BodyParts3D	legacy-name-candidate-review
+Right opponens pollicis	手・手指	right	deep muscles	FMA37390	BodyParts3D	legacy-name-candidate-review
+Right pectoralis minor	胸郭	right	deep muscles	FMA13375	BodyParts3D	legacy-name-candidate-review
+Right piriformis	股関節	right	deep muscles	FMA22340	BodyParts3D	legacy-name-candidate-review
+Right plantaris	足首	right	deep muscles	FMA22560	BodyParts3D	legacy-name-candidate-review
+Right popliteus	膝	right	deep muscles	FMA22591	BodyParts3D	legacy-name-candidate-review
+Right pronator quadratus	前腕	right	deep muscles	FMA38454	BodyParts3D	legacy-name-candidate-review
+Right psoas major	腰|骨盤|股関節	right	deep muscles	FMA22342	BodyParts3D	overlap-review
+Right quadratus femoris	股関節	right	deep muscles	FMA22338	BodyParts3D	legacy-name-candidate-review
+Right quadratus lumborum	腰	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right rectus capitis posterior major		right	deep muscles	FMA32530	BodyParts3D	unmapped
+Right rectus capitis posterior minor		right	deep muscles	FMA32532	BodyParts3D	unmapped
+Right rhomboid major	肩|肩甲骨|背中	right	deep muscles	FMA13381	BodyParts3D	overlap-review
+Right rhomboid minor	肩|肩甲骨|背中	right	deep muscles	FMA13383	BodyParts3D	overlap-review
+Right rotatores	背中	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right scalenus anterior	首	right	deep muscles	FMA13392	BodyParts3D	legacy-name-candidate-review
+Right scalenus medius	首	right	deep muscles	FMA13390	BodyParts3D	legacy-name-candidate-review
+Right scalenus posterior	首	right	deep muscles	FMA13388	BodyParts3D	legacy-name-candidate-review
+Right semispinalis capitis	背中	right	deep muscles	FMA22876	BodyParts3D	legacy-name-candidate-review
+Right semispinalis cervicis	首|背中	right	deep muscles	FMA22874	BodyParts3D	overlap-review
+Right semispinalis thoracis	背中	right	deep muscles	FMA22872	BodyParts3D	legacy-name-candidate-review
+Right serratus posterior inferior	胸郭|背中	right	deep muscles	FMA13405	BodyParts3D	overlap-review
+Right serratus posterior superior	胸郭|背中	right	deep muscles	FMA13403	BodyParts3D	overlap-review
+Right spinalis thoracis	背中	right	deep muscles	FMA22779	BodyParts3D	legacy-name-candidate-review
+Right splenius cervicis	首	right	deep muscles	FMA22726	BodyParts3D	legacy-name-candidate-review
+Right subclavius	肩	right	deep muscles	FMA13412	BodyParts3D	legacy-name-candidate-review
+Right subscapularis	肩|肩甲骨	right	deep muscles	FMA13414	BodyParts3D	overlap-review
+Right superior head of lateral pterygoid	頭・顔	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right supinator	前腕	right	deep muscles	FMA38513	BodyParts3D	legacy-name-candidate-review
+Right supraspinatus	肩|肩甲骨	right	deep muscles	FMA32544	BodyParts3D	overlap-review
+Right tibialis posterior	膝|足首	right	deep muscles	FMA65018	BodyParts3D	overlap-review
+Right transversus abdominis	腰	right	deep muscles		Z-Anatomy	legacy-name-candidate-review
+Right vastus intermedius		right	deep muscles	FMA38934	BodyParts3D	unmapped
+Second lumbrical of left foot	足・足裏	left	deep muscles	FMA37720	BodyParts3D	legacy-name-candidate-review
+Second lumbrical of right foot	足・足裏	right	deep muscles	FMA37719	BodyParts3D	legacy-name-candidate-review
+Second plantar interosseous of left foot	足・足裏	left	deep muscles	FMA37744	BodyParts3D	legacy-name-candidate-review
+Second plantar interosseous of right foot	足・足裏	right	deep muscles	FMA37743	BodyParts3D	legacy-name-candidate-review
+Set of palmar interossei of left hand		left	deep muscles	FMA42403	BodyParts3D	unmapped
+Set of palmar interossei of right hand		right	deep muscles	FMA42402	BodyParts3D	unmapped
+Short head of left biceps femoris	膝	left	deep muscles	FMA45892	BodyParts3D	legacy-name-candidate-review
+Short head of right biceps femoris	膝	right	deep muscles	FMA45891	BodyParts3D	legacy-name-candidate-review
+Third lumbrical of left foot	足・足裏	left	deep muscles	FMA37486	BodyParts3D	legacy-name-candidate-review
+Third lumbrical of right foot	足・足裏	right	deep muscles	FMA37485	BodyParts3D	legacy-name-candidate-review
+Third plantar interosseous of left foot	足・足裏	left	deep muscles	FMA37742	BodyParts3D	legacy-name-candidate-review
+Third plantar interosseous of right foot	足・足裏	right	deep muscles	FMA37741	BodyParts3D	legacy-name-candidate-review
+Transverse head of left adductor hallucis	股関節	left	deep muscles	FMA46021	BodyParts3D	legacy-name-candidate-review
+Transverse head of left adductor pollicis	股関節	left	deep muscles	FMA46124	BodyParts3D	legacy-name-candidate-review
+Transverse head of right adductor hallucis	股関節	right	deep muscles	FMA46020	BodyParts3D	legacy-name-candidate-review
+Transverse head of right adductor pollicis	股関節	right	deep muscles	FMA46123	BodyParts3D	legacy-name-candidate-review
+Abdominal part of left pectoralis major	肩|胸郭	left	superficial muscles	FMA45875	BodyParts3D	overlap-review
+Abdominal part of right pectoralis major	肩|胸郭	right	superficial muscles	FMA45874	BodyParts3D	overlap-review
+Abductor digiti minimi of left foot		left	superficial muscles	FMA37464	BodyParts3D	unmapped
+Abductor digiti minimi of left hand		left	superficial muscles	FMA37397	BodyParts3D	unmapped
+Abductor digiti minimi of right foot		right	superficial muscles	FMA37463	BodyParts3D	unmapped
+Abductor digiti minimi of right hand		right	superficial muscles	FMA37396	BodyParts3D	unmapped
+Acromial part of left deltoid	肩	left	superficial muscles	FMA34683	BodyParts3D	legacy-name-candidate-review
+Acromial part of right deltoid	肩	right	superficial muscles	FMA34682	BodyParts3D	legacy-name-candidate-review
+Ascending part of left trapezius	肩|肩甲骨|背中	left	superficial muscles	FMA33583	BodyParts3D	overlap-review
+Ascending part of right trapezius	肩|肩甲骨|背中	right	superficial muscles	FMA33581	BodyParts3D	overlap-review
+Clavicular part of left deltoid	肩	left	superficial muscles	FMA34681	BodyParts3D	legacy-name-candidate-review
+Clavicular part of left pectoralis major	肩|胸郭	left	superficial muscles	FMA34691	BodyParts3D	overlap-review
+Clavicular part of right deltoid	肩	right	superficial muscles	FMA34680	BodyParts3D	legacy-name-candidate-review
+Clavicular part of right pectoralis major	肩|胸郭	right	superficial muscles	FMA34690	BodyParts3D	overlap-review
+Descending part of left trapezius	肩|肩甲骨|背中	left	superficial muscles	FMA33587	BodyParts3D	overlap-review
+Descending part of right trapezius	肩|肩甲骨|背中	right	superficial muscles	FMA33586	BodyParts3D	overlap-review
+Flexor digiti minimi brevis of left hand		left	superficial muscles	FMA37399	BodyParts3D	unmapped
+Flexor digiti minimi brevis of right hand		right	superficial muscles	FMA37398	BodyParts3D	unmapped
+Flexor retinaculum of left wrist		left	superficial muscles	FMA40121	BodyParts3D	unmapped
+Flexor retinaculum of right wrist		right	superficial muscles	FMA40120	BodyParts3D	unmapped
+Humeral head of left flexor carpi ulnaris	肘|前腕	left	superficial muscles	FMA38618	BodyParts3D	overlap-review
+Humeral head of left pronator teres	前腕	left	superficial muscles	FMA38561	BodyParts3D	legacy-name-candidate-review
+Humeral head of right flexor carpi ulnaris	肘|前腕	right	superficial muscles	FMA38617	BodyParts3D	overlap-review
+Humeral head of right pronator teres	前腕	right	superficial muscles	FMA38560	BodyParts3D	legacy-name-candidate-review
+Lateral head of left gastrocnemius	足首	left	superficial muscles	FMA45961	BodyParts3D	legacy-name-candidate-review
+Lateral head of left triceps brachii	肘	left	superficial muscles	FMA37698	BodyParts3D	legacy-name-candidate-review
+Lateral head of right gastrocnemius	足首	right	superficial muscles	FMA45960	BodyParts3D	legacy-name-candidate-review
+Lateral head of right triceps brachii	肘	right	superficial muscles	FMA37697	BodyParts3D	legacy-name-candidate-review
+Left abductor hallucis	足・足裏	left	superficial muscles	FMA37460	BodyParts3D	legacy-name-candidate-review
+Left abductor pollicis brevis	手・手指	left	superficial muscles	FMA37387	BodyParts3D	legacy-name-candidate-review
+Left abductor pollicis longus	手・手指	left	superficial muscles	FMA38517	BodyParts3D	legacy-name-candidate-review
+Left adductor longus	股関節	left	superficial muscles	FMA22457	BodyParts3D	legacy-name-candidate-review
+Left adductor magnus	股関節	left	superficial muscles	FMA22460	BodyParts3D	legacy-name-candidate-review
+Left anconeus	肘	left	superficial muscles	FMA37706	BodyParts3D	legacy-name-candidate-review
+Left brachialis	肘	left	superficial muscles	FMA37669	BodyParts3D	legacy-name-candidate-review
+Left brachioradialis	前腕	left	superficial muscles	FMA38487	BodyParts3D	legacy-name-candidate-review
+Left calcaneal tendon		left	superficial muscles	FMA264844	BodyParts3D	unmapped
+Left coracobrachialis	肘	left	superficial muscles	FMA37666	BodyParts3D	legacy-name-candidate-review
+Left depressor anguli oris		left	superficial muscles		Z-Anatomy	unmapped
+Left depressor labii inferioris		left	superficial muscles		Z-Anatomy	unmapped
+Left extensor carpi radialis brevis	前腕	left	superficial muscles	FMA38499	BodyParts3D	legacy-name-candidate-review
+Left extensor carpi radialis longus	前腕	left	superficial muscles	FMA38496	BodyParts3D	legacy-name-candidate-review
+Left extensor carpi ulnaris	肘|前腕	left	superficial muscles	FMA38508	BodyParts3D	overlap-review
+Left extensor carpi ulnaris (2)	肘|前腕	left	superficial muscles	FMA38508	BodyParts3D	overlap-review
+Left extensor digiti minimi		left	superficial muscles	FMA38505	BodyParts3D	unmapped
+Left extensor digitorum	前腕	left	superficial muscles	FMA38502	BodyParts3D	legacy-name-candidate-review
+Left extensor digitorum longus	前腕	left	superficial muscles	FMA22549	BodyParts3D	legacy-name-candidate-review
+Left extensor hallucis brevis	足・足裏	left	superficial muscles	FMA51145	BodyParts3D	legacy-name-candidate-review
+Left extensor hallucis longus	足・足裏	left	superficial muscles	FMA22547	BodyParts3D	legacy-name-candidate-review
+Left extensor pollicis brevis	手・手指	left	superficial muscles	FMA38520	BodyParts3D	legacy-name-candidate-review
+Left extensor pollicis longus	手・手指	left	superficial muscles	FMA38523	BodyParts3D	legacy-name-candidate-review
+Left external oblique		left	superficial muscles	FMA13337	BodyParts3D	unmapped
+Left fibularis brevis	膝|足首	left	superficial muscles	FMA22555	BodyParts3D	overlap-review
+Left fibularis longus	膝|足首	left	superficial muscles	FMA22553	BodyParts3D	overlap-review
+Left fibularis tertius	膝|足首	left	superficial muscles	FMA22551	BodyParts3D	overlap-review
+Left flexor carpi radialis	前腕	left	superficial muscles	FMA38461	BodyParts3D	legacy-name-candidate-review
+Left flexor digitorum brevis	前腕	left	superficial muscles	FMA37462	BodyParts3D	legacy-name-candidate-review
+Left flexor digitorum superficialis	前腕	left	superficial muscles	FMA38471	BodyParts3D	legacy-name-candidate-review
+Left flexor digitorum superficialis (2)	前腕	left	superficial muscles	FMA38471	BodyParts3D	legacy-name-candidate-review
+Left flexor pollicis brevis	手・手指	right	superficial muscles	FMA37389	BodyParts3D	legacy-name-candidate-review
+Left frontalis	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left gluteus maximus	骨盤|股関節	left	superficial muscles	FMA22329	BodyParts3D	overlap-review
+Left gluteus medius	骨盤|股関節	left	superficial muscles	FMA22331	BodyParts3D	overlap-review
+Left gracilis		left	superficial muscles	FMA43884	BodyParts3D	unmapped
+Left iliotibial tract	膝|足首	left	superficial muscles	FMA58777	BodyParts3D	overlap-review
+Left infraspinatus muscle	肩|肩甲骨	left	superficial muscles	FMA32548	BodyParts3D	overlap-review
+Left latissimus dorsi	背中	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left levator labii superioris		left	superficial muscles		Z-Anatomy	unmapped
+Left levator scapulae	肩|肩甲骨	left	superficial muscles	FMA32541	BodyParts3D	overlap-review
+Left mentalis	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left nasalis	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left omohyoid		left	superficial muscles	FMA13349	BodyParts3D	unmapped
+Left orbicularis oris	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left orbital part of orbicularis oculi	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left palmaris longus	前腕	left	superficial muscles	FMA38464	BodyParts3D	legacy-name-candidate-review
+Left palpebral part of orbicularis oculi	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left pectineus		left	superficial muscles	FMA22451	BodyParts3D	unmapped
+Left posterior layer of thoracolumbar fascia	背中|腰	left	superficial muscles		Z-Anatomy	overlap-review
+Left procerus		left	superficial muscles		Z-Anatomy	unmapped
+Left rectus abdominis	腰	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left rectus femoris		left	superficial muscles	FMA38929	BodyParts3D	unmapped
+Left risorius		left	superficial muscles		Z-Anatomy	unmapped
+Left sartorius		left	superficial muscles	FMA22355	BodyParts3D	unmapped
+Left semimembranosus	膝	left	superficial muscles	FMA22449	BodyParts3D	legacy-name-candidate-review
+Left semitendinosus	膝	left	superficial muscles	FMA22359	BodyParts3D	legacy-name-candidate-review
+Left serratus anterior	胸郭	left	superficial muscles	FMA13399	BodyParts3D	legacy-name-candidate-review
+Left soleus	足首	left	superficial muscles	FMA22559	BodyParts3D	legacy-name-candidate-review
+Left splenius capitis		left	superficial muscles	FMA22729	BodyParts3D	unmapped
+Left sternocleidomastoid	首	left	superficial muscles	FMA13409	BodyParts3D	legacy-name-candidate-review
+Left sternohyoid		left	superficial muscles	FMA13347	BodyParts3D	unmapped
+Left sternothyroid		left	superficial muscles	FMA13351	BodyParts3D	unmapped
+Left superficial part of masseter	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left temporalis	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left tensor fasciae latae		left	superficial muscles	FMA22426	BodyParts3D	unmapped
+Left teres major	肩|肩甲骨	left	superficial muscles	FMA32552	BodyParts3D	overlap-review
+Left teres minor	肩|肩甲骨	left	superficial muscles	FMA32554	BodyParts3D	overlap-review
+Left thyrohyoid		left	superficial muscles	FMA13353	BodyParts3D	unmapped
+Left tibialis anterior	膝|足首	left	superficial muscles	FMA22545	BodyParts3D	overlap-review
+Left vastus lateralis		left	superficial muscles	FMA38931	BodyParts3D	unmapped
+Left vastus medialis		left	superficial muscles	FMA38933	BodyParts3D	unmapped
+Left zygomaticus major	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Left zygomaticus minor	頭・顔	left	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Linea alba		midline	superficial muscles	FMA11336	BodyParts3D	unmapped
+Long head of left biceps brachii	肘	left	superficial muscles	FMA37687	BodyParts3D	legacy-name-candidate-review
+Long head of left biceps femoris	膝	left	superficial muscles	FMA45889	BodyParts3D	legacy-name-candidate-review
+Long head of left triceps brachii	肘	left	superficial muscles	FMA37700	BodyParts3D	legacy-name-candidate-review
+Long head of right biceps brachii	肘	right	superficial muscles	FMA37686	BodyParts3D	legacy-name-candidate-review
+Long head of right biceps femoris	膝	right	superficial muscles	FMA45888	BodyParts3D	legacy-name-candidate-review
+Long head of right triceps brachii	肘	right	superficial muscles	FMA37699	BodyParts3D	legacy-name-candidate-review
+Medial head of left gastrocnemius	足首	left	superficial muscles	FMA45958	BodyParts3D	legacy-name-candidate-review
+Medial head of left triceps brachii	肘	left	superficial muscles	FMA37696	BodyParts3D	legacy-name-candidate-review
+Medial head of right gastrocnemius	足首	right	superficial muscles	FMA45957	BodyParts3D	legacy-name-candidate-review
+Medial head of right triceps brachii	肘	right	superficial muscles	FMA37695	BodyParts3D	legacy-name-candidate-review
+Right abductor hallucis	足・足裏	right	superficial muscles	FMA37459	BodyParts3D	legacy-name-candidate-review
+Right abductor pollicis brevis	手・手指	right	superficial muscles	FMA37386	BodyParts3D	legacy-name-candidate-review
+Right abductor pollicis longus	手・手指	right	superficial muscles	FMA38516	BodyParts3D	legacy-name-candidate-review
+Right adductor longus	股関節	right	superficial muscles	FMA22456	BodyParts3D	legacy-name-candidate-review
+Right adductor magnus	股関節	right	superficial muscles	FMA22459	BodyParts3D	legacy-name-candidate-review
+Right anconeus	肘	right	superficial muscles	FMA37705	BodyParts3D	legacy-name-candidate-review
+Right brachialis	肘	right	superficial muscles	FMA37668	BodyParts3D	legacy-name-candidate-review
+Right brachioradialis	前腕	right	superficial muscles	FMA38486	BodyParts3D	legacy-name-candidate-review
+Right calcaneal tendon		right	superficial muscles	FMA258847	BodyParts3D	unmapped
+Right coracobrachialis	肘	right	superficial muscles	FMA37665	BodyParts3D	legacy-name-candidate-review
+Right depressor anguli oris		right	superficial muscles		Z-Anatomy	unmapped
+Right depressor labii inferioris		right	superficial muscles		Z-Anatomy	unmapped
+Right extensor carpi radialis brevis	前腕	right	superficial muscles	FMA38498	BodyParts3D	legacy-name-candidate-review
+Right extensor carpi radialis longus	前腕	right	superficial muscles	FMA38495	BodyParts3D	legacy-name-candidate-review
+Right extensor carpi ulnaris	肘|前腕	right	superficial muscles	FMA38507	BodyParts3D	overlap-review
+Right extensor carpi ulnaris (2)	肘|前腕	right	superficial muscles	FMA38507	BodyParts3D	overlap-review
+Right extensor digiti minimi		right	superficial muscles	FMA38504	BodyParts3D	unmapped
+Right extensor digitorum	前腕	right	superficial muscles	FMA38501	BodyParts3D	legacy-name-candidate-review
+Right extensor digitorum longus	前腕	right	superficial muscles	FMA22548	BodyParts3D	legacy-name-candidate-review
+Right extensor hallucis brevis	足・足裏	right	superficial muscles	FMA51144	BodyParts3D	legacy-name-candidate-review
+Right extensor hallucis longus	足・足裏	right	superficial muscles	FMA22546	BodyParts3D	legacy-name-candidate-review
+Right extensor pollicis brevis	手・手指	right	superficial muscles	FMA38519	BodyParts3D	legacy-name-candidate-review
+Right extensor pollicis longus	手・手指	right	superficial muscles	FMA38522	BodyParts3D	legacy-name-candidate-review
+Right external oblique		right	superficial muscles	FMA13336	BodyParts3D	unmapped
+Right fibularis brevis	膝|足首	right	superficial muscles	FMA22554	BodyParts3D	overlap-review
+Right fibularis longus	膝|足首	right	superficial muscles	FMA22552	BodyParts3D	overlap-review
+Right fibularis tertius	膝|足首	right	superficial muscles	FMA22550	BodyParts3D	overlap-review
+Right flexor carpi radialis	前腕	right	superficial muscles	FMA38460	BodyParts3D	legacy-name-candidate-review
+Right flexor digitorum brevis	前腕	right	superficial muscles	FMA37461	BodyParts3D	legacy-name-candidate-review
+Right flexor digitorum superficialis	前腕	right	superficial muscles	FMA38470	BodyParts3D	legacy-name-candidate-review
+Right flexor digitorum superficialis (2)	前腕	right	superficial muscles	FMA38470	BodyParts3D	legacy-name-candidate-review
+Right flexor pollicis brevis	手・手指	left	superficial muscles	FMA37388	BodyParts3D	legacy-name-candidate-review
+Right frontalis	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right gluteus maximus	骨盤|股関節	right	superficial muscles	FMA22328	BodyParts3D	overlap-review
+Right gluteus medius	骨盤|股関節	right	superficial muscles	FMA22330	BodyParts3D	overlap-review
+Right gracilis		right	superficial muscles	FMA43883	BodyParts3D	unmapped
+Right iliotibial tract	膝|足首	right	superficial muscles	FMA58776	BodyParts3D	overlap-review
+Right infraspinatus muscle	肩|肩甲骨	right	superficial muscles	FMA32547	BodyParts3D	overlap-review
+Right latissimus dorsi	背中	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right levator labii superioris		right	superficial muscles		Z-Anatomy	unmapped
+Right levator scapulae	肩|肩甲骨	right	superficial muscles	FMA32540	BodyParts3D	overlap-review
+Right mentalis	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right nasalis	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right omohyoid		right	superficial muscles	FMA13348	BodyParts3D	unmapped
+Right orbicularis oris	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right orbital part of orbicularis oculi	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right palmaris longus	前腕	right	superficial muscles	FMA38463	BodyParts3D	legacy-name-candidate-review
+Right palpebral part of orbicularis oculi	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right pectineus		right	superficial muscles	FMA22450	BodyParts3D	unmapped
+Right posterior layer of thoracolumbar fascia	背中|腰	right	superficial muscles		Z-Anatomy	overlap-review
+Right procerus		right	superficial muscles		Z-Anatomy	unmapped
+Right rectus abdominis	腰	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right rectus femoris		right	superficial muscles	FMA38928	BodyParts3D	unmapped
+Right risorius		right	superficial muscles		Z-Anatomy	unmapped
+Right sartorius		right	superficial muscles	FMA22354	BodyParts3D	unmapped
+Right semimembranosus	膝	right	superficial muscles	FMA22448	BodyParts3D	legacy-name-candidate-review
+Right semitendinosus	膝	right	superficial muscles	FMA22358	BodyParts3D	legacy-name-candidate-review
+Right serratus anterior	胸郭	right	superficial muscles	FMA13398	BodyParts3D	legacy-name-candidate-review
+Right soleus	足首	right	superficial muscles	FMA22558	BodyParts3D	legacy-name-candidate-review
+Right splenius capitis		right	superficial muscles	FMA22728	BodyParts3D	unmapped
+Right sternocleidomastoid	首	right	superficial muscles	FMA13408	BodyParts3D	legacy-name-candidate-review
+Right sternohyoid		right	superficial muscles	FMA13346	BodyParts3D	unmapped
+Right sternothyroid		right	superficial muscles	FMA13350	BodyParts3D	unmapped
+Right superficial part of masseter	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right temporalis	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right tensor fasciae latae		right	superficial muscles	FMA22425	BodyParts3D	unmapped
+Right teres major	肩|肩甲骨	right	superficial muscles	FMA32551	BodyParts3D	overlap-review
+Right teres minor	肩|肩甲骨	right	superficial muscles	FMA32553	BodyParts3D	overlap-review
+Right thyrohyoid		right	superficial muscles	FMA13352	BodyParts3D	unmapped
+Right tibialis anterior	膝|足首	right	superficial muscles	FMA22544	BodyParts3D	overlap-review
+Right vastus lateralis		right	superficial muscles	FMA38930	BodyParts3D	unmapped
+Right vastus medialis		right	superficial muscles	FMA38932	BodyParts3D	unmapped
+Right zygomaticus major	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Right zygomaticus minor	頭・顔	right	superficial muscles		Z-Anatomy	legacy-name-candidate-review
+Set of dorsal interossei of left hand		left	superficial muscles	FMA42405	BodyParts3D	unmapped
+Set of dorsal interossei of right hand		right	superficial muscles	FMA42404	BodyParts3D	unmapped
+Set of lumbricals of left hand		left	superficial muscles	FMA42399	BodyParts3D	unmapped
+Set of lumbricals of right hand		right	superficial muscles	FMA42398	BodyParts3D	unmapped
+Short head of left biceps brachii	肘	left	superficial muscles	FMA37685	BodyParts3D	legacy-name-candidate-review
+Short head of right biceps brachii	肘	right	superficial muscles	FMA37684	BodyParts3D	legacy-name-candidate-review
+Spinal part of left deltoid	肩	left	superficial muscles	FMA34685	BodyParts3D	legacy-name-candidate-review
+Spinal part of right deltoid	肩	right	superficial muscles	FMA34684	BodyParts3D	legacy-name-candidate-review
+Sternocostal part of left pectoralis major	肩|胸郭	left	superficial muscles	FMA79980	BodyParts3D	overlap-review
+Sternocostal part of right pectoralis major	肩|胸郭	right	superficial muscles	FMA79979	BodyParts3D	overlap-review
+Transverse part of left trapezius	肩|肩甲骨|背中	left	superficial muscles	FMA33585	BodyParts3D	overlap-review
+Transverse part of right trapezius	肩|肩甲骨|背中	right	superficial muscles	FMA33584	BodyParts3D	overlap-review
+Ulnar head of left flexor carpi ulnaris	肘|前腕	left	superficial muscles	FMA38620	BodyParts3D	overlap-review
+Ulnar head of left pronator teres	肘|前腕	left	superficial muscles	FMA38563	BodyParts3D	overlap-review
+Ulnar head of right flexor carpi ulnaris	肘|前腕	right	superficial muscles	FMA38619	BodyParts3D	overlap-review
+Ulnar head of right pronator teres	肘|前腕	right	superficial muscles	FMA38562	BodyParts3D	overlap-review
