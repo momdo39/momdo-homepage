@@ -1,59 +1,1009 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="肩関節・肩甲骨の構造、筋肉、動き、身体とのつながりを解説。福岡市城南区七隈のMomdoが肩のメカニズムをわかりやすく紹介します。">
-<title>肩・肩甲骨のメカニズム｜MOMDO</title>
-<style>
-:root{--navy:#04152f;--navy2:#09264d;--gold:#e8b94f;--gold2:#ffe09a;--white:#f7f8fb;--line:#8fa9c7;--cyan:#57caff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#17243a;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.7}
-a{color:inherit;text-decoration:none}.wrap{width:min(1200px,96%);margin:auto}
-header{height:68px;background:#020b1beF;border-bottom:1px solid #c99c43;display:flex;align-items:center;position:relative;z-index:2}.head{display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font: bold 1.6rem Georgia,serif;letter-spacing:.12em;color:#f3d18a;white-space:nowrap}.logo small{display:block;font: .55rem Arial,sans-serif;letter-spacing:.2em;color:white}.nav{display:flex;gap:clamp(10px,2vw,28px);align-items:center;font-size:.8rem}.nav a:hover{color:var(--gold2)}.reserve{background:linear-gradient(135deg,#ffe5a4,#bd8628);color:#15233a;padding:9px 18px;border-radius:30px;font-weight:bold}
-.hero{width:100%;max-width:1210px;min-height:0;aspect-ratio:1210/370;display:block;margin:0 auto;padding:0;position:relative;overflow:hidden;background-image:url("shoulder/shoulder-hero.jpg");background-size:100% 100%;background-position:center;background-repeat:no-repeat;background-color:#061a35;border-radius:0 0 14px 14px}.hero:after{content:none}.hero-copy{display:none}.eyebrow{color:var(--gold);font:bold .86rem Georgia,serif;letter-spacing:.16em}.hero h1{color:#fff;font-family:"Yu Mincho",serif;font-size:clamp(2.5rem,5.5vw,4.8rem);line-height:1.2;margin:8px 0 12px;letter-spacing:.08em}.hero h1 span{color:var(--gold2)}.hero .tag{color:#fff;font-size:1.18rem;font-weight:bold}.hero p{font-size:.9rem;color:#d7e4f5;max-width:560px;border-top:1px solid #c59a4c;padding-top:13px}.hero-visual{display:none}.hero-visual svg{width:min(100%,590px);height:auto;filter:drop-shadow(0 0 25px #43aaff66)}
-.strip{text-align:center;color:#14233b;background:linear-gradient(90deg,#c38d32,#ffe7a7,#c38d32);font-size:.72rem;letter-spacing:.2em;font-weight:bold;padding:7px}
-.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;padding:16px 0 24px}.card{grid-column:span 2;min-width:0;position:relative;border:1px solid #d5dce5;border-radius:13px;background:linear-gradient(145deg,#fff,#f4f7fb);color:#17243a;box-shadow:0 8px 24px #0005;overflow:hidden;padding:15px 15px 13px;min-height:300px}.card.wide{grid-column:span 4;min-height:220px}.card.side{grid-column:span 2;min-height:220px}.card:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 85% 90%,#dceeff66,transparent 55%);pointer-events:none}.card-head{display:flex;align-items:center;gap:12px;position:relative}.num{font: bold 1.65rem Georgia,serif;color:var(--gold)}.card h2{font: bold 1.15rem "Yu Mincho",serif;margin:0}.arrow{margin-left:auto;border:1px solid var(--gold);color:var(--gold);border-radius:50%;width:27px;height:27px;text-align:center;line-height:24px;font-size:1.2rem}.card p{font-size:.83rem;color:#34445b;margin:8px 0 12px;max-width:95%;position:relative}.art{height:150px;display:grid;place-items:center;position:relative}.art svg{height:100%;max-width:100%;filter:drop-shadow(0 4px 12px #0008)}.labels{display:flex;flex-wrap:wrap;gap:6px}.labels span{font-size:.72rem;border:1px solid #b8c7d8;border-radius:20px;padding:4px 10px;background:#edf3f9;color:#263b55}
-.movement{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center}.movement svg{width:100%;height:145px}.controls{display:grid;grid-template-columns:1fr 1fr;gap:6px}.controls button{border:1px solid #7bcaff;border-radius:22px;background:linear-gradient(#2687c8,#07518a);color:white;padding:7px 8px;font-weight:bold;cursor:pointer}.controls button[aria-pressed=true]{background:linear-gradient(#ffe6a4,#c58c30);color:#071a34;border-color:#fff0c4}
-.checks{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:.78rem;color:#263b55}.checks span:before{content:"✓";color:var(--gold);font-size:1.1rem;margin-right:7px}
-.wide-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;align-items:center}.wide-inner .art{height:155px}.gold-title{color:var(--gold);font-weight:bold;font-size:1.15rem}.pill{display:inline-block;border:1px solid #b78325;border-radius:24px;padding:8px 17px;color:#946719;font-size:.78rem;font-weight:bold;margin-top:7px}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-.anatomy-detail{position:relative;margin-top:12px;border-top:1px solid #7898b8;padding-top:9px}
-.anatomy-detail summary{cursor:pointer;color:var(--gold2);font-size:.8rem;font-weight:bold;list-style:none}
-.anatomy-detail summary::-webkit-details-marker{display:none}
-.anatomy-detail summary:after{content:"＋";float:right;color:var(--gold)}
-.anatomy-detail[open] summary:after{content:"－"}
-.anatomy-detail__item{padding:9px 0 4px;border-bottom:1px solid #ffffff20}
-.anatomy-detail__item h3{margin:0 0 4px;color:var(--gold2);font-size:.9rem}
-.anatomy-detail__item p{font-size:.78rem;line-height:1.8;margin:0;color:#e1ebf7}
-\nfooter{text-align:center;padding:22px;color:#65758a;font-size:.75rem;border-top:1px solid #ffffff22}
-@media(max-width:850px){.nav a:not(.reserve){display:none}.hero{width:100%;aspect-ratio:1210/370;padding:0}.hero-visual{display:none}.grid{grid-template-columns:repeat(2,1fr)}.card,.card.wide,.card.side{grid-column:span 1}.card.wide{grid-column:span 2}}
-@media(max-width:540px){.wrap{width:94%}.logo{font-size:1.25rem}.hero{width:100%;aspect-ratio:1210/370}.grid{grid-template-columns:1fr;gap:11px}.card,.card.wide,.card.side{grid-column:1;min-height:unset}.card{padding:14px}.card.wide{grid-column:1}.wide-inner{grid-template-columns:1fr}.wide-inner .art{height:130px}.movement{grid-template-columns:1fr}.art{height:145px}}
+<meta name="description" content="肩関節・肩甲骨の構造、筋肉、動き、身体とのつながりを解説。福岡市城南区七隈のMomdoが肩のメカニズムをわかりやすく紹介します。">
+
+<title>肩・肩甲骨のメカニズム｜MOMDO</title>
+
+<style>
+:root{
+--navy:#04152f;
+--navy2:#09264d;
+--gold:#e8b94f;
+--gold2:#ffe09a;
+--white:#f7f8fb;
+--line:#8fa9c7;
+--cyan:#57caff;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+background:#fff;
+color:#17243a;
+font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+line-height:1.7;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+.wrap{
+width:min(1200px,96%);
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+height:68px;
+background:#020b1bef;
+border-bottom:1px solid #c99c43;
+display:flex;
+align-items:center;
+position:relative;
+z-index:2;
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.logo{
+font:bold 1.6rem Georgia,serif;
+letter-spacing:.12em;
+color:#f3d18a;
+white-space:nowrap;
+}
+
+.logo small{
+display:block;
+font:.55rem Arial,sans-serif;
+letter-spacing:.2em;
+color:white;
+}
+
+.nav{
+display:flex;
+gap:clamp(10px,2vw,28px);
+align-items:center;
+font-size:.8rem;
+}
+
+.nav a:hover{
+color:var(--gold2);
+}
+
+.reserve{
+background:linear-gradient(135deg,#ffe5a4,#bd8628);
+color:#15233a;
+padding:9px 18px;
+border-radius:30px;
+font-weight:bold;
+}
+
+/* HERO IMAGE */
+
+.hero{
+width:100%;
+max-width:1210px;
+min-height:0;
+aspect-ratio:1210/370;
+display:block;
+margin:0 auto;
+padding:0;
+position:relative;
+overflow:hidden;
+
+background-image:url("shoulder/shoulder-hero.jpg");
+background-size:100% 100%;
+background-position:center;
+background-repeat:no-repeat;
+background-color:#061a35;
+
+border-radius:0 0 14px 14px;
+}
+
+.hero:after{
+content:none;
+}
+
+.hero-copy{
+display:none;
+}
+
+.hero-visual{
+display:none;
+}
+
+/* SECTION STRIP */
+
+.strip{
+text-align:center;
+color:#14233b;
+background:linear-gradient(90deg,#c38d32,#ffe7a7,#c38d32);
+font-size:.72rem;
+letter-spacing:.2em;
+font-weight:bold;
+padding:7px;
+}
+
+/* CONTENT CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:14px;
+padding:16px 0 24px;
+}
+
+.card{
+grid-column:span 2;
+min-width:0;
+position:relative;
+border:1px solid #d5dce5;
+border-radius:13px;
+background:linear-gradient(145deg,#fff,#f4f7fb);
+color:#17243a;
+box-shadow:0 8px 24px #0005;
+overflow:hidden;
+padding:15px 15px 13px;
+min-height:300px;
+}
+
+.card.wide{
+grid-column:span 4;
+min-height:220px;
+}
+
+.card.side{
+grid-column:span 2;
+min-height:220px;
+}
+
+.card:before{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(
+ellipse at 85% 90%,
+#dceeff66,
+transparent 55%
+);
+pointer-events:none;
+}
+
+.card-head{
+display:flex;
+align-items:center;
+gap:12px;
+position:relative;
+}
+
+.num{
+font:bold 1.65rem Georgia,serif;
+color:var(--gold);
+}
+
+.card h2{
+font:bold 1.15rem "Yu Mincho",serif;
+margin:0;
+}
+
+.arrow{
+margin-left:auto;
+border:1px solid var(--gold);
+color:var(--gold);
+border-radius:50%;
+width:27px;
+height:27px;
+text-align:center;
+line-height:24px;
+font-size:1.2rem;
+}
+
+.card p{
+font-size:.83rem;
+color:#34445b;
+margin:8px 0 12px;
+max-width:95%;
+position:relative;
+}
+
+.art{
+height:150px;
+display:grid;
+place-items:center;
+position:relative;
+}
+
+.art svg{
+height:100%;
+max-width:100%;
+filter:drop-shadow(0 4px 12px #0008);
+}
+
+.labels{
+display:flex;
+flex-wrap:wrap;
+gap:6px;
+}
+
+.labels span{
+font-size:.72rem;
+border:1px solid #b8c7d8;
+border-radius:20px;
+padding:4px 10px;
+background:#edf3f9;
+color:#263b55;
+}
+
+/* SCAPULA MOVEMENT */
+
+.movement{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+align-items:center;
+}
+
+.movement svg{
+width:100%;
+height:145px;
+}
+
+.controls{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:6px;
+}
+
+.controls button{
+border:1px solid #7bcaff;
+border-radius:22px;
+background:linear-gradient(#2687c8,#07518a);
+color:white;
+padding:7px 8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.controls button[aria-pressed=true]{
+background:linear-gradient(#ffe6a4,#c58c30);
+color:#071a34;
+border-color:#fff0c4;
+}
+
+/* CONCERNS */
+
+.checks{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:6px;
+font-size:.78rem;
+color:#263b55;
+}
+
+.checks span:before{
+content:"✓";
+color:var(--gold);
+font-size:1.1rem;
+margin-right:7px;
+}
+
+/* MOMDO APPROACH */
+
+.wide-inner{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:12px;
+align-items:center;
+}
+
+.wide-inner .art{
+height:155px;
+}
+
+.gold-title{
+color:var(--gold);
+font-weight:bold;
+font-size:1.15rem;
+}
+
+.pill{
+display:inline-block;
+border:1px solid #b78325;
+border-radius:24px;
+padding:8px 17px;
+color:#946719;
+font-size:.78rem;
+font-weight:bold;
+margin-top:7px;
+}
+
+/* ANATOMY DETAILS */
+
+.anatomy-detail{
+position:relative;
+margin-top:12px;
+border-top:1px solid #7898b8;
+padding-top:9px;
+}
+
+.anatomy-detail summary{
+cursor:pointer;
+color:var(--gold2);
+font-size:.8rem;
+font-weight:bold;
+list-style:none;
+}
+
+.anatomy-detail summary::-webkit-details-marker{
+display:none;
+}
+
+.anatomy-detail summary:after{
+content:"＋";
+float:right;
+color:var(--gold);
+}
+
+.anatomy-detail[open] summary:after{
+content:"－";
+}
+
+.anatomy-detail__item{
+padding:9px 0 4px;
+border-bottom:1px solid #ffffff20;
+}
+
+.anatomy-detail__item h3{
+margin:0 0 4px;
+color:var(--gold2);
+font-size:.9rem;
+}
+
+.anatomy-detail__item p{
+font-size:.78rem;
+line-height:1.8;
+margin:0;
+color:#e1ebf7;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:22px;
+color:#65758a;
+font-size:.75rem;
+border-top:1px solid #ffffff22;
+}
+
+/* TABLET */
+
+@media(max-width:850px){
+
+.nav a:not(.reserve){
+display:none;
+}
+
+.hero{
+width:100%;
+aspect-ratio:1210/370;
+padding:0;
+}
+
+.hero-visual{
+display:none;
+}
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.card,
+.card.wide,
+.card.side{
+grid-column:span 1;
+}
+
+.card.wide{
+grid-column:span 2;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:540px){
+
+.wrap{
+width:94%;
+}
+
+.logo{
+font-size:1.25rem;
+}
+
+.hero{
+width:100%;
+aspect-ratio:1210/370;
+}
+
+.grid{
+grid-template-columns:1fr;
+gap:11px;
+}
+
+.card,
+.card.wide,
+.card.side{
+grid-column:1;
+min-height:unset;
+}
+
+.card{
+padding:14px;
+}
+
+.card.wide{
+grid-column:1;
+}
+
+.wide-inner{
+grid-template-columns:1fr;
+}
+
+.wide-inner .art{
+height:130px;
+}
+
+.movement{
+grid-template-columns:1fr;
+}
+
+.art{
+height:145px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
-<header><div class="wrap head"><a class="logo" href="../../index.html">MOMDO<small>MASSAGE & BODYWORK</small></a><nav class="nav"><a href="../../index.html">ホーム</a><a href="../../concerns.html">お悩みから探す</a><a href="../body-explorer/body-explorer.html">身体のつながりを知る</a><a href="../../approach.html">Momdoの施術</a><a href="../../menu.html">メニュー</a><a href="../../faq.html">FAQ</a><a href="../../access.html">アクセス</a><a class="reserve" href="../../contact.html">ご予約はこちら</a></nav></div></header>
+
+<header>
+<div class="wrap head">
+
+<a class="logo" href="../../index.html">
+MOMDO
+<small>MASSAGE & BODYWORK</small>
+</a>
+
+<nav class="nav">
+<a href="../../index.html">ホーム</a>
+<a href="../../concerns.html">お悩みから探す</a>
+<a href="../body-explorer/body-explorer.html">身体のつながりを知る</a>
+<a href="../../approach.html">Momdoの施術</a>
+<a href="../../menu.html">メニュー</a>
+<a href="../../faq.html">FAQ</a>
+<a href="../../access.html">アクセス</a>
+<a class="reserve" href="../../contact.html">ご予約はこちら</a>
+</nav>
+
+</div>
+</header>
+
 <main>
-<section class="wrap hero"><div class="hero-copy"><div class="eyebrow">SHOULDER & SCAPULA</div><h1>肩・肩甲骨の<br><span>メカニズム</span></h1><div class="tag">肩は、肩だけで動いているわけではない。</div><p>肩関節、肩甲骨、鎖骨、胸郭、背骨——それぞれが連動することで、私たちは腕を自由に動かすことができます。肩の仕組みを知ることが、身体を理解する第一歩です。</p></div>
-<div class="hero-visual"><svg viewBox="0 0 600 390" role="img" aria-label="肩と胸郭の骨格を表すイメージ"><defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#fff1ca"/><stop offset=".5" stop-color="#d6a95d"/><stop offset="1" stop-color="#6fbce9"/></linearGradient><radialGradient id="g"><stop stop-color="#ffdc82" stop-opacity=".9"/><stop offset="1" stop-color="#ff9d35" stop-opacity="0"/></radialGradient></defs><ellipse cx="330" cy="180" rx="185" ry="170" fill="url(#g)"/><g fill="none" stroke="url(#b)" stroke-width="11" stroke-linecap="round" opacity=".88"><path d="M205 75 Q290 25 375 70 Q435 100 500 70"/><path d="M230 100 Q160 160 205 245 Q245 310 325 270 Q365 235 355 155 Q320 95 230 100Z"/><path d="M360 95 Q430 135 440 210 L485 350"/><path d="M245 125 Q300 155 355 130"/><path d="M255 150 Q210 190 245 245 M275 145 Q235 195 270 260 M295 140 Q265 200 295 270 M315 135 Q295 205 320 275" stroke-width="5"/></g><path d="M340 100 Q380 110 405 150" stroke="#ffbd58" stroke-width="17" fill="none" stroke-linecap="round" opacity=".8"/><circle cx="355" cy="145" r="55" fill="url(#g)"/></svg></div></section>
-<div class="strip">STRUCTURE　・　MOVEMENT　・　CONNECTION　・　UNDERSTANDING</div>
+
+<!-- HERO IMAGE -->
+
+<section class="wrap hero">
+
+<div class="hero-copy">
+<div class="eyebrow">SHOULDER & SCAPULA</div>
+
+<h1>
+肩・肩甲骨の<br>
+<span>メカニズム</span>
+</h1>
+
+<div class="tag">
+肩は、肩だけで動いているわけではない。
+</div>
+
+<p>
+肩関節、肩甲骨、鎖骨、胸郭、背骨——
+それぞれが連動することで、私たちは腕を自由に動かすことができます。
+肩の仕組みを知ることが、身体を理解する第一歩です。
+</p>
+</div>
+
+</section>
+
+<div class="strip">
+STRUCTURE　・　MOVEMENT　・　CONNECTION　・　UNDERSTANDING
+</div>
+
 <section class="wrap grid">
-<article class="card"><div class="card-head"><span class="num">01</span><h2>肩の骨格と関節</h2><span class="arrow">›</span></div><p>肩を構成する骨や関節の位置と役割を確認しましょう。</p><div class="art"><svg viewBox="0 0 300 160"><g fill="none" stroke="#e8c987" stroke-width="13" stroke-linecap="round"><path d="M40 48 Q110 12 170 48 L240 35"/><path d="M95 50 Q50 95 90 140 Q145 160 175 100 Q160 55 120 48Z" fill="#d9b66f" fill-opacity=".35"/><path d="M190 48 Q230 80 240 145"/></g><g fill="#fff0c9" font-size="12"><text x="15" y="25">鎖骨</text><text x="55" y="155">肩甲骨</text><text x="225" y="155">上腕骨</text></g></svg></div><div class="labels"><span>鎖骨</span><span>肩甲骨</span><span>上腕骨</span><span>肩関節</span></div>
-<details class="anatomy-detail"><summary>骨の特徴と役割を詳しく読む</summary>
-<div class="anatomy-detail__item"><h3>肩甲骨（けんこうこつ）</h3><p>平らな三角形に近い形をした骨で、胸郭の背面の外側寄り、第2〜第7肋骨の高さに位置します。後面には、肩甲骨を上下に分けるように走る隆起があり、これを<strong>肩甲棘</strong>と呼びます。肩甲棘の外側の先端にある突起が<strong>肩峰</strong>です。また、肩甲骨の外側には、上腕骨頭と向かい合うカップ状のくぼみ<strong>関節窩</strong>があります。</p></div>
-<div class="anatomy-detail__item"><h3>上腕骨（じょうわんこつ）</h3><p>上腕にある、長く大きな骨です。上端（近位端）は丸い<strong>上腕骨頭</strong>となっており、肩甲骨の関節窩と組み合わさって肩関節をつくります。下端（遠位端）は、前腕の骨とともに肘関節を構成します。</p></div>
-<div class="anatomy-detail__item"><h3>鎖骨（さこつ）</h3><p>胸の前面上部に左右一対で位置する、ゆるやかなS字形の骨です。内側は胸骨、外側は肩甲骨の肩峰とつながり、上肢を体幹につなぐ役割を担います。腕から体幹へ、また体幹から腕へ力を伝えるうえでも重要です。</p></div>
-</details></article>
-<article class="card"><div class="card-head"><span class="num">02</span><h2>肩甲骨の動きを体験する</h2><span class="arrow">›</span></div><p>ボタンをクリックして、肩甲骨の動きを見てみましょう。</p><div class="movement"><svg viewBox="0 0 200 160" role="img" aria-label="肩甲骨の動きの模式図"><path d="M70 12 Q120 5 145 35 L150 130 Q105 165 55 130Z" fill="#173d65" stroke="#6e9cc5" stroke-width="3"/><g id="blade" style="transform-box:fill-box;transform-origin:center;transition:transform .4s"><path d="M65 40 Q105 18 135 52 Q138 95 105 130 Q65 115 65 40Z" fill="#dcb66e" stroke="#fff0c5" stroke-width="4"/></g></svg><div class="controls"><button data-m="elevate">↑ 挙上</button><button data-m="depress">↓ 下制</button><button data-m="retract">← 内転</button><button data-m="protract">→ 外転</button><button data-m="up">↗ 上方回旋</button><button data-m="down">↙ 下方回旋</button></div></div><p id="movementText" aria-live="polite">動きのボタンを選択してください。</p></article>
-<article class="card"><div class="card-head"><span class="num">03</span><h2>肩を動かす筋肉</h2><span class="arrow">›</span></div><p>肩の動きを支える主な筋肉をご紹介します。</p><div class="art"><svg viewBox="0 0 300 160"><path d="M75 145 Q55 80 105 30 Q150 5 205 40 Q250 85 220 150Z" fill="#a94f43" stroke="#f0a08a" stroke-width="5"/><path d="M105 40 Q145 70 130 145 M145 25 Q180 75 165 150 M185 35 Q210 85 200 145" stroke="#f4b09a" stroke-width="12" fill="none"/><path d="M100 65 Q155 100 225 65" stroke="#ffd1ad" stroke-width="5" fill="none"/></svg></div><div class="labels"><span>僧帽筋</span><span>棘上筋</span><span>棘下筋</span><span>小円筋</span><span>三角筋</span></div></article>
-<article class="card"><div class="card-head"><span class="num">04</span><h2>肩と身体のつながり</h2><span class="arrow">›</span></div><p>肩は、首・胸郭・背骨・骨盤とつながっています。</p><div class="art"><svg viewBox="0 0 300 160"><g stroke="#68bdf2" fill="none" stroke-width="5"><path d="M150 12 L150 145 M90 38 Q150 5 210 38 L230 115 Q150 155 70 115Z"/><path d="M95 45 Q150 70 205 45 M80 70 Q150 100 220 70 M85 95 Q150 125 215 95"/></g><g fill="#ffcb67"><circle cx="150" cy="25" r="9"/><circle cx="95" cy="47" r="8"/><circle cx="205" cy="47" r="8"/><circle cx="150" cy="140" r="8"/></g></svg></div><div class="labels"><span>首とのつながり</span><span>胸郭</span><span>背骨</span><span>骨盤</span></div></article>
-<article class="card"><div class="card-head"><span class="num">05</span><h2>腕を上げる仕組み</h2><span class="arrow">›</span></div><p>腕を上げるとき、肩甲骨や胸郭がどのように動くのかを解説します。</p><div class="art"><svg viewBox="0 0 300 160"><path d="M120 145 Q90 95 120 45 Q145 20 175 50 L190 145" fill="none" stroke="#6eb9ed" stroke-width="16" stroke-linecap="round"/><path d="M170 95 Q210 45 245 15" stroke="#e8b94f" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M224 18 L250 8 L247 38" fill="#e8b94f"/><path d="M100 70 Q145 95 185 65" stroke="#ffca6d" stroke-width="8" fill="none"/></svg></div><div class="labels"><span>肩甲上腕リズム</span><span>上方回旋</span><span>胸郭の動き</span></div></article>
-<article class="card"><div class="card-head"><span class="num">06</span><h2>肩のお悩みと身体の関係</h2><span class="arrow">›</span></div><p>肩こり、四十肩・五十肩など、よくあるお悩みを解説します。</p><div class="art"><svg viewBox="0 0 300 160"><circle cx="175" cy="35" r="24" fill="#d7a77d"/><path d="M125 155 Q115 85 150 65 Q205 55 230 100 L250 160Z" fill="#75899b"/><path d="M145 78 Q180 65 210 90" stroke="#e8b94f" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="160" cy="78" r="28" fill="#ff9c42" opacity=".45"/></svg></div><div class="checks"><span>肩こり</span><span>巻き肩</span><span>四十肩・五十肩</span><span>腕が上がりにくい</span><span>肩甲骨周辺の張り</span></div></article>
-<article class="card wide"><div class="wide-inner"><div><div class="card-head"><span class="num">07</span><h2>Momdoの施術アプローチ</h2><span class="arrow">›</span></div><div class="gold-title">深層筋へのアプローチ × 神経ストレッチ</div><p>肩だけでなく、背中や体幹まで含めた全身のバランスを整え、本来の動きを取り戻すことを目指します。</p><a class="pill" href="../../approach.html">Momdoの施術について見る　›</a></div><div class="art"><svg viewBox="0 0 300 170"><path d="M150 10 Q85 20 80 85 L60 160 M150 10 Q215 20 220 85 L240 160" stroke="#3e9fe0" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M150 20 L150 160" stroke="#ffbd53" stroke-width="8" fill="none"/><path d="M110 45 Q150 65 190 45 M100 80 Q150 105 200 80 M90 115 Q150 140 210 115" stroke="#ffd47b" stroke-width="5" fill="none"/></svg></div></div></article>
-<article class="card side"><div class="gold-title">身体を知ることが、<br>健康への近道です。</div><p>肩のことをもっと詳しく知りたい方は、ぜひ他のコンテンツもご覧ください。</p><a class="pill" href="../body-explorer/body-explorer.html">BODY EXPLORERへ　›</a></article>
-</section></main>
-<footer>© MOMDO MASSAGE & BODYWORK</footer>
+
+<!-- 01 -->
+
+<article class="card">
+
+<div class="card-head">
+<span class="num">01</span>
+<h2>肩の骨格と関節</h2>
+<span class="arrow">›</span>
+</div>
+
+<p>
+肩を構成する骨や関節の位置と役割を確認しましょう。
+</p>
+
+<div class="art">
+<!-- 骨格イラスト -->
+<svg viewBox="0 0 300 160">
+<g fill="none" stroke="#e8c987" stroke-width="13" stroke-linecap="round">
+<path d="M40 48 Q110 12 170 48 L240 35"/>
+<path d="M95 50 Q50 95 90 140 Q145 160 175 100 Q160 55 120 48Z" fill="#d9b66f" fill-opacity=".35"/>
+<path d="M190 48 Q230 80 240 145"/>
+</g>
+<g fill="#fff0c9" font-size="12">
+<text x="15" y="25">鎖骨</text>
+<text x="55" y="155">肩甲骨</text>
+<text x="225" y="155">上腕骨</text>
+</g>
+</svg>
+</div>
+
+<div class="labels">
+<span>鎖骨</span>
+<span>肩甲骨</span>
+<span>上腕骨</span>
+<span>肩関節</span>
+</div>
+
+<details class="anatomy-detail">
+
+<summary>骨の特徴と役割を詳しく読む</summary>
+
+<div class="anatomy-detail__item">
+<h3>肩甲骨（けんこうこつ）</h3>
+<p>
+平らな三角形に近い形をした骨で、胸郭の背面の外側寄り、第2〜第7肋骨の高さに位置します。
+後面には、肩甲骨を上下に分けるように走る隆起があり、これを<strong>肩甲棘</strong>と呼びます。
+肩甲棘の外側の先端にある突起が<strong>肩峰</strong>です。
+また、肩甲骨の外側には、上腕骨頭と向かい合うカップ状のくぼみ<strong>関節窩</strong>があります。
+</p>
+</div>
+
+<div class="anatomy-detail__item">
+<h3>上腕骨（じょうわんこつ）</h3>
+<p>
+上腕にある、長く大きな骨です。
+上端（近位端）は丸い<strong>上腕骨頭</strong>となっており、肩甲骨の関節窩と組み合わさって肩関節をつくります。
+下端（遠位端）は、前腕の骨とともに肘関節を構成します。
+</p>
+</div>
+
+<div class="anatomy-detail__item">
+<h3>鎖骨（さこつ）</h3>
+<p>
+胸の前面上部に左右一対で位置する、ゆるやかなS字形の骨です。
+内側は胸骨、外側は肩甲骨の肩峰とつながり、上肢を体幹につなぐ役割を担います。
+腕から体幹へ、また体幹から腕へ力を伝えるうえでも重要です。
+</p>
+</div>
+
+</details>
+</article>
+
+<!-- 02 -->
+
+<article class="card">
+
+<div class="card-head">
+<span class="num">02</span>
+<h2>肩甲骨の動きを体験する</h2>
+<span class="arrow">›</span>
+</div>
+
+<p>
+ボタンをクリックして、肩甲骨の動きを見てみましょう。
+</p>
+
+<div class="movement">
+
+<svg viewBox="0 0 200 160" role="img" aria-label="肩甲骨の動きの模式図">
+
+<path d="M70 12 Q120 5 145 35 L150 130 Q105 165 55 130Z"
+fill="#173d65"
+stroke="#6e9cc5"
+stroke-width="3"/>
+
+<g id="blade"
+style="transform-box:fill-box;transform-origin:center;transition:transform .4s">
+
+<path d="M65 40 Q105 18 135 52 Q138 95 105 130 Q65 115 65 40Z"
+fill="#dcb66e"
+stroke="#fff0c5"
+stroke-width="4"/>
+
+</g>
+</svg>
+
+<div class="controls">
+
+<button data-m="elevate">↑ 挙上</button>
+<button data-m="depress">↓ 下制</button>
+<button data-m="retract">← 内転</button>
+<button data-m="protract">→ 外転</button>
+<button data-m="up">↗ 上方回旋</button>
+<button data-m="down">↙ 下方回旋</button>
+
+</div>
+</div>
+
+<p id="movementText" aria-live="polite">
+動きのボタンを選択してください。
+</p>
+
+</article>
+
+<!-- 03 -->
+
+<article class="card">
+
+<div class="card-head">
+<span class="num">03</span>
+<h2>肩を動かす筋肉</h2>
+<span class="arrow">›</span>
+</div>
+
+<p>
+肩の動きを支える主な筋肉をご紹介します。
+</p>
+
+<div class="art">
+
+<svg viewBox="0 0 300 160">
+
+<path d="M75 145 Q55 80 105 30 Q150 5 205 40 Q250 85 220 150Z"
+fill="#a94f43"
+stroke="#f0a08a"
+stroke-width="5"/>
+
+<path d="M105 40 Q145 70 130 145 M145 25 Q180 75 165 150 M185 35 Q210 85 200 145"
+stroke="#f4b09a"
+stroke-width="12"
+fill="none"/>
+
+<path d="M100 65 Q155 100 225 65"
+stroke="#ffd1ad"
+stroke-width="5"
+fill="none"/>
+
+</svg>
+
+</div>
+
+<div class="labels">
+<span>僧帽筋</span>
+<span>棘上筋</span>
+<span>棘下筋</span>
+<span>小円筋</span>
+<span>三角筋</span>
+</div>
+
+</article>
+
+<!-- 04 -->
+
+<article class="card">
+
+<div class="card-head">
+<span class="num">04</span>
+<h2>肩と身体のつながり</h2>
+<span class="arrow">›</span>
+</div>
+
+<p>
+肩は、首・胸郭・背骨・骨盤とつながっています。
+</p>
+
+<div class="art">
+
+<svg viewBox="0 0 300 160">
+
+<g stroke="#68bdf2" fill="none" stroke-width="5">
+
+<path d="M150 12 L150 145 M90 38 Q150 5 210 38 L230 115 Q150 155 70 115Z"/>
+
+<path d="M95 45 Q150 70 205 45 M80 70 Q150 100 220 70 M85 95 Q150 125 215 95"/>
+
+</g>
+
+<g fill="#ffcb67">
+<circle cx="150" cy="25" r="9"/>
+<circle cx="95" cy="47" r="8"/>
+<circle cx="205" cy="47" r="8"/>
+<circle cx="150" cy="140" r="8"/>
+</g>
+
+</svg>
+
+</div>
+
+<div class="labels">
+<span>首とのつながり</span>
+<span>胸郭</span>
+<span>背骨</span>
+<span>骨盤</span>
+</div>
+
+</article>
+
+<!-- 05 -->
+
+<article class="card">
+
+<div class="card-head">
+<span class="num">05</span>
+<h2>腕を上げる仕組み</h2>
+<span class="arrow">›</span>
+</div>
+
+<p>
+腕を上げるとき、肩甲骨や胸郭がどのように動くのかを解説します。
+</p>
+
+<div class="art">
+
+<svg viewBox="0 0 300 160">
+
+<path d="M120 145 Q90 95 120 45 Q145 20 175 50 L190 145"
+fill="none"
+stroke="#6eb9ed"
+stroke-width="16"
+stroke-linecap="round"/>
+
+<path d="M170 95 Q210 45 245 15"
+stroke="#e8b94f"
+stroke-width="12"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M224 18 L250 8 L247 38"
+fill="#e8b94f"/>
+
+<path d="M100 70 Q145 95 185 65"
+stroke="#ffca6d"
+stroke-width="8"
+fill="none"/>
+
+</svg>
+
+</div>
+
+<div class="labels">
+<span>肩甲上腕リズム</span>
+<span>上方回旋</span>
+<span>胸郭の動き</span>
+</div>
+
+</article>
+
+<!-- 06 -->
+
+<article class="card">
+
+<div class="card-head">
+<span class="num">06</span>
+<h2>肩のお悩みと身体の関係</h2>
+<span class="arrow">›</span>
+</div>
+
+<p>
+肩こり、四十肩・五十肩など、よくあるお悩みを解説します。
+</p>
+
+<div class="art">
+
+<svg viewBox="0 0 300 160">
+
+<circle cx="175" cy="35" r="24" fill="#d7a77d"/>
+
+<path d="M125 155 Q115 85 150 65 Q205 55 230 100 L250 160Z"
+fill="#75899b"/>
+
+<path d="M145 78 Q180 65 210 90"
+stroke="#e8b94f"
+stroke-width="13"
+fill="none"
+stroke-linecap="round"/>
+
+<circle cx="160" cy="78" r="28"
+fill="#ff9c42"
+opacity=".45"/>
+
+</svg>
+
+</div>
+
+<div class="checks">
+<span>肩こり</span>
+<span>巻き肩</span>
+<span>四十肩・五十肩</span>
+<span>腕が上がりにくい</span>
+<span>肩甲骨周辺の張り</span>
+</div>
+
+</article>
+
+<!-- 07 -->
+
+<article class="card wide">
+
+<div class="wide-inner">
+
+<div>
+
+<div class="card-head">
+<span class="num">07</span>
+<h2>Momdoの施術アプローチ</h2>
+<span class="arrow">›</span>
+</div>
+
+<div class="gold-title">
+深層筋へのアプローチ × 神経ストレッチ
+</div>
+
+<p>
+肩だけでなく、背中や体幹まで含めた全身のバランスを整え、本来の動きを取り戻すことを目指します。
+</p>
+
+<a class="pill" href="../../approach.html">
+Momdoの施術について見る　›
+</a>
+
+</div>
+
+<div class="art">
+
+<svg viewBox="0 0 300 170">
+
+<path d="M150 10 Q85 20 80 85 L60 160 M150 10 Q215 20 220 85 L240 160"
+stroke="#3e9fe0"
+stroke-width="22"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M150 20 L150 160"
+stroke="#ffbd53"
+stroke-width="8"
+fill="none"/>
+
+<path d="M110 45 Q150 65 190 45 M100 80 Q150 105 200 80 M90 115 Q150 140 210 115"
+stroke="#ffd47b"
+stroke-width="5"
+fill="none"/>
+
+</svg>
+
+</div>
+
+</div>
+</article>
+
+<!-- BODY EXPLORER -->
+
+<article class="card side">
+
+<div class="gold-title">
+身体を知ることが、<br>
+健康への近道です。
+</div>
+
+<p>
+肩のことをもっと詳しく知りたい方は、ぜひ他のコンテンツもご覧ください。
+</p>
+
+<a class="pill" href="../body-explorer/body-explorer.html">
+BODY EXPLORERへ　›
+</a>
+
+</article>
+
+</section>
+</main>
+
+<footer>
+© MOMDO MASSAGE & BODYWORK
+</footer>
+
 <script>
-const movementMap={elevate:["挙上","肩甲骨が上方向へ移動する動きです。肩をすくめる動作などで見られます。"],depress:["下制","肩甲骨が下方向へ移動する動きです。肩を下げる動作などで見られます。"],retract:["内転","肩甲骨が背骨に近づく方向へ動きます。"],protract:["外転","肩甲骨が背骨から離れる方向へ動きます。"],up:["上方回旋","肩甲骨の関節窩が上を向くように回旋します。腕を上げる際に重要です。"],down:["下方回旋","肩甲骨の関節窩が下を向く方向へ回旋します。"]};
-const transforms={elevate:"translateY(-18px)",depress:"translateY(18px)",retract:"translateX(-18px)",protract:"translateX(18px)",up:"rotate(-16deg)",down:"rotate(16deg)"};
-document.querySelectorAll("[data-m]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-m]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));const k=b.dataset.m;document.getElementById("blade").style.transform=transforms[k];document.getElementById("movementText").textContent=movementMap[k][0]+"： "+movementMap[k][1];}));
+
+/* 肩甲骨の動き */
+
+const movementMap={
+
+elevate:[
+"挙上",
+"肩甲骨が上方向へ移動する動きです。肩をすくめる動作などで見られます。"
+],
+
+depress:[
+"下制",
+"肩甲骨が下方向へ移動する動きです。肩を下げる動作などで見られます。"
+],
+
+retract:[
+"内転",
+"肩甲骨が背骨に近づく方向へ動きます。"
+],
+
+protract:[
+"外転",
+"肩甲骨が背骨から離れる方向へ動きます。"
+],
+
+up:[
+"上方回旋",
+"肩甲骨の関節窩が上を向くように回旋します。腕を上げる際に重要です。"
+],
+
+down:[
+"下方回旋",
+"肩甲骨の関節窩が下を向く方向へ回旋します。"
+]
+
+};
+
+const transforms={
+
+elevate:"translateY(-18px)",
+depress:"translateY(18px)",
+retract:"translateX(-18px)",
+protract:"translateX(18px)",
+up:"rotate(-16deg)",
+down:"rotate(16deg)"
+
+};
+
+document.querySelectorAll("[data-m]").forEach(b=>{
+
+b.addEventListener("click",()=>{
+
+document.querySelectorAll("[data-m]").forEach(x=>{
+x.setAttribute("aria-pressed",String(x===b));
+});
+
+const k=b.dataset.m;
+
+document.getElementById("blade").style.transform=transforms[k];
+
+document.getElementById("movementText").textContent=
+movementMap[k][0]+"： "+movementMap[k][1];
+
+});
+
+});
+
 </script>
-</body></html>
+
+</body>
+</html>
