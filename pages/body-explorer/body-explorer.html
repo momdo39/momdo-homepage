@@ -126,7 +126,37 @@
    <div class="wrap"><div class="wrap"><div class="eyebrow">BODY EXPLORER <span>/ COUNSELLING MODE</span></div>
      <h2>身体の状態を、一緒に見つめる。</h2>
      <p class="lead">気になる症状や身体の動きを確認しながら、施術者と一緒に状態を整理するための説明画面です。</p>
-     <div class="explorer-grid counselling-grid"><aside class="counselling-input"><div class="panel-kicker">検査データ・インプット</div><h3>坐骨神経痛 <span>Sciatica</span></h3><p class="input-caption">状態を一緒に確認しながら選択してください。</p><div class="input-group"><strong>1. 骨盤アライメント</strong><div class="choice-row" role="group" aria-label="骨盤アライメント"><button class="state-choice" type="button" data-alignment="前傾">前傾</button><button class="state-choice" type="button" data-alignment="後傾">後傾</button><button class="state-choice is-active" type="button" data-alignment="右UP" aria-pressed="true">右UP</button><button class="state-choice" type="button" data-alignment="左UP">左UP</button></div></div><div class="input-group"><label for="mobility"><strong>2. 可動域（モビリティ）</strong><output id="mobility-value" for="mobility">+20 cm</output></label><input id="mobility" type="range" min="0" max="30" value="20"><div class="range-labels"><span>低い</span><span>高い</span></div></div><div class="input-group"><strong>3. ペインマップ（感覚検査）</strong><div class="pain-choices"><button type="button" class="pain-choice is-active" data-pain="お尻"><i></i>お尻</button><button type="button" class="pain-choice" data-pain="太もも裏"><i></i>太もも裏</button><button type="button" class="pain-choice" data-pain="足先"><i></i>足先</button></div></div><button class="save-note" type="button" id="reset-counselling">入力をリセット</button><p class="privacy-note">入力内容はこの画面内だけで扱われ、保存・送信されません。</p></aside><div class="body-panel"><div class="anatomy-viewer"><iframe id="anatomy-model" src="models/viewer/index.html" title="操作できる3D人体モデル。骨格と筋肉を表示します。モデル内で構造を選択できます。" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen"></iframe><p class="viewer-attribution">3Dモデル：<a href="https://github.com/Charleeh/ecorche" target="_blank" rel="noopener">Écorché</a>（CC BY-SA 4.0）。BodyParts3D / Z-Anatomy由来。<a href="models/viewer/ATTRIBUTION.md">クレジット・改変内容・ライセンス</a>。モデルを回転・拡大し、骨格や筋肉の構造を確認できます。</p><p class="model-link-status" id="model-link-status" aria-live="polite">部位ボタンを選ぶと、モデル内の関連する骨・筋肉を強調表示します。</p><p class="viewer-limit">モデルに神経・内臓は含まれません。部位名との対応はモデル収録構造に基づく参考表示です。3D表示は学習用で、診断や施術効果を示すものではありません。</p></div>
+     <div class="explorer-grid counselling-grid"><aside class="counselling-input"><div class="panel-kicker">検査データ・インプット</div>
+       <h3>坐骨神経痛 <span>Sciatica</span></h3><p class="input-caption">状態を一緒に確認しながら選択してください。</p>
+       <div class="input-group">
+         <strong>1. 骨盤アライメント</strong>
+         <div class="choice-row" role="group" aria-label="骨盤アライメント">
+           <button class="state-choice" type="button" data-alignment="前傾">前傾</button>
+           <button class="state-choice" type="button" data-alignment="後傾">後傾</button>
+           <button class="state-choice is-active" type="button" data-alignment="右UP" aria-pressed="true">右UP</button><button class="state-choice" type="button" data-alignment="左UP">左UP</button>
+         </div></div>
+       <div class="input-group">
+         <label for="mobility">
+           <strong>2. 可動域（モビリティ）</strong>
+           <output id="mobility-value" for="mobility">+20 cm</output>
+         </label><input id="mobility" type="range" min="0" max="30" value="20">
+         <div class="range-labels"><span>低い</span><span>高い</span>
+         </div></div>
+       <div class="input-group"><strong>3. ペインマップ（感覚検査）</strong><div class="pain-choices">
+         <button type="button" class="pain-choice is-active" data-pain="お尻"><i>
+         </i>お尻</button><button type="button" class="pain-choice" data-pain="太もも裏"><i>
+
+         </i>太もも裏</button><button type="button" class="pain-choice" data-pain="足先"><i>
+           
+         </i>足先</button>
+       </div></div>
+       <button class="save-note" type="button" id="reset-counselling">入力をリセット</button>
+       <p class="privacy-note">入力内容はこの画面内だけで扱われ、保存・送信されません。</p>
+     </aside><div class="body-panel">
+       <div class="anatomy-viewer">
+         <iframe id="anatomy-model" src="models/viewer/index.html" title="操作できる3D人体モデル。骨格と筋肉を表示します。モデル内で構造を選択できます。" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen">
+           
+         </iframe><p class="viewer-attribution">3Dモデル：<a href="https://github.com/Charleeh/ecorche" target="_blank" rel="noopener">Écorché</a>（CC BY-SA 4.0）。BodyParts3D / Z-Anatomy由来。<a href="models/viewer/ATTRIBUTION.md">改変内容</a>。モデルを回転・拡大し、骨格や筋肉の構造を確認できます。</p><p class="model-link-status" id="model-link-status" aria-live="polite">部位ボタンを選ぶと、モデル内の関連する骨・筋肉を強調表示します。</p><p class="viewer-limit">モデルに神経・内臓は含まれません。部位名との対応はモデル収録構造に基づく参考表示です。3D表示は学習用で、診断や施術効果を示すものではありません。</p></div>
        <svg viewBox="0 0 360 510" role="img" aria-label="クリックして部位を選べる人体模式図"><defs>
   <linearGradient id="bodySkin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b92bd"/><stop offset=".45" stop-color="#28618d"/><stop offset="1" stop-color="#173c67"/></linearGradient>
   <linearGradient id="bodyShade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#102d52"/><stop offset=".5" stop-color="#4a8db5"/><stop offset="1" stop-color="#102d52"/></linearGradient>
