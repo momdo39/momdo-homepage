@@ -1,1 +1,80 @@
-pages/body parts/body-hip-pelvis.html
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="骨盤と股関節の構造、関節の動き、骨・靭帯・筋肉の役割を解説。身体のつながりから歩行や姿勢を考えるMomdo BODY EXPLORER。">
+<title>骨盤・股関節のメカニズム｜MOMDO BODY EXPLORER</title>
+<style>
+:root{--navy:#06142f;--blue:#123d63;--cyan:#66e5f2;--gold:#e6c27b;--ink:#18263c;--muted:#627187;--line:#d8e0ea}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#f5f7fa;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.8}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(1180px,94%);margin:auto}
+header{background:#030d20;color:#fff;border-bottom:1px solid #b88c43}.head{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font:600 1.45rem Georgia,serif;letter-spacing:.13em;color:var(--gold)}.logo small{display:block;font:.52rem Arial,sans-serif;letter-spacing:.2em;color:#fff}.nav{display:flex;align-items:center;gap:clamp(9px,1.7vw,23px);font-size:.78rem}.nav a:hover{color:var(--gold)}.reserve{background:linear-gradient(135deg,#ffe7aa,#bd8a35);padding:8px 16px;border-radius:30px;color:#17243a;font-weight:bold}
+.hero{position:relative;background:#06142f;overflow:hidden}.hero>img{width:100%;height:auto;aspect-ratio:1304/800;object-fit:cover}.hero-caption{position:absolute;left:4.2%;bottom:5%;color:white;text-shadow:0 2px 12px #00142d;max-width:42%}.eyebrow{font:.8rem Georgia,serif;letter-spacing:.18em;color:var(--gold)}.hero-caption h1{font-family:"Yu Mincho",serif;font-size:clamp(1.8rem,4vw,3.5rem);line-height:1.35;margin:.3em 0}.hero-caption p{font-size:clamp(.7rem,1.15vw,.98rem);margin:0}
+.band{background:linear-gradient(90deg,#071a35,#123d63,#071a35);color:#fff;padding:16px;text-align:center;font-size:.78rem;letter-spacing:.13em;color:var(--gold)}
+main{padding-bottom:55px}.lead{padding:42px 0 28px;text-align:center}.lead h2{font-family:"Yu Mincho",serif;font-size:clamp(1.5rem,3vw,2.2rem);margin:8px 0 12px}.lead p{max-width:850px;margin:auto;color:#4d5c70}
+.section{padding:25px 0}.title{display:flex;align-items:center;gap:14px;margin:0 0 18px}.title b{font:1.8rem Georgia,serif;color:#bd8c3b}.title h2{font:600 clamp(1.3rem,2.4vw,1.8rem) "Yu Mincho",serif;margin:0}.title:after{content:"";height:1px;background:linear-gradient(90deg,#c59b54,transparent);flex:1}
+.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 25px #10294a0b}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}.anatomy{width:100%;border-radius:10px;background:#f1f3f6;object-fit:contain;max-height:390px}.copy h3,.tile h3{font-size:1.08rem;margin:0 0 8px;color:#153a60}.copy p{margin:0 0 12px}.note{background:#eef7fb;border-left:4px solid #4bb9d1;padding:12px 15px;border-radius:0 9px 9px 0;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.tile p{margin:0;font-size:.88rem;color:#536176}
+.rom{width:100%;border-collapse:collapse;background:#fff}.rom th,.rom td{padding:11px 14px;border-bottom:1px solid #e2e7ee;text-align:left}.rom th{background:#0c2a4b;color:white}.rom td:last-child{font-weight:bold;color:#9a702d}
+.images{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.image-card{background:white;border:1px solid var(--line);border-radius:14px;padding:14px}.image-card img{width:100%;height:270px;object-fit:contain;background:#f5f6f8;border-radius:9px}.image-card h3{margin:10px 0 4px;color:#153a60}.image-card p{margin:0;font-size:.9rem}
+.muscles{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}.muscle{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px}.muscle h3{margin:0 0 7px;color:#153a60}.muscle p{margin:0;font-size:.92rem}
+.dark{background:linear-gradient(120deg,#071a35,#123b60);color:#fff;border-radius:16px;padding:24px}.dark h2{font-family:"Yu Mincho",serif;color:var(--gold);margin-top:0}.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.buttons a{border:1px solid #d5b36e;color:#ffdf9a;padding:8px 14px;border-radius:30px;font-size:.85rem}
+footer{background:#030d20;color:#aebbd0;text-align:center;padding:25px;font-size:.75rem}
+@media(max-width:800px){.nav a:not(.reserve){display:none}.hero-caption{max-width:48%;bottom:4%}.two{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.head{min-height:60px}.logo{font-size:1.2rem}.hero>img{min-height:330px;object-fit:cover;object-position:center}.hero-caption{left:5%;bottom:5%;max-width:58%}.hero-caption h1{font-size:1.55rem}.hero-caption p{font-size:.67rem}.lead{padding:30px 0 18px}.panel{padding:16px}.grid,.images,.muscles{grid-template-columns:1fr}.image-card img{height:auto;max-height:290px}.section{padding:20px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap head">
+<a class="logo" href="../../index.html">MOMDO<small>MASSAGE &amp; BODYWORK</small></a>
+<nav class="nav"><a href="../../index.html">ホーム</a><a href="../../concerns.html">お悩みから探す</a>
+  
+  <a href="../body-explorer/body-explorer.html">身体のつながりを知る</a><a href="../../approach.html">Momdoの施術</a>
+  <a href="../../menu.html">メニュー</a><a href="../../faq.html">FAQ</a>
+  <a href="../../access.html">アクセス</a>
+  <a class="reserve" href="../../contact.html">ご予約はこちら</a>
+</nav>
+</div></header>
+<section class="hero">
+  <img
+    src="hip-pelvis-images/hip-pelvis-hero.jpg"
+    alt="骨盤・股関節と身体のつながりを表現したBODY EXPLORERのメインビジュアル"
+  >
+
+  <div class="hero-caption">
+    <div class="eyebrow">MOMDO BODY EXPLORER</div>
+
+    <h1>骨盤・股関節を<br>深く理解する。</h1>
+
+    <p>
+      身体は、ひとつの関節だけで動いているわけではありません。
+      つながりを知ることで、今の自分の身体が見えてきます。
+    </p>
+  </div>
+</section>
+<div class="band">STRUCTURE　・　MOVEMENT　・　CONNECTION　・　UNDERSTANDING</div>
+<main class="wrap">
+<section class="lead"><div class="eyebrow">PELVIS &amp; HIP JOINT</div><h2>骨盤と股関節は、身体を支え、動きをつなぐ。</h2><p>股関節は下肢と骨盤を結ぶ可動性の高い球関節です。体幹と下半身の間で力を伝えたり、着地などの衝撃を受け止めたりしながら、立つ・歩く・走るといった動作を支えています。</p></section>
+<section class="section"><div class="title"><b>01</b><h2>骨盤・股関節とは</h2></div><div class="panel two">
+<img class="anatomy" src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_01.jpg" alt="股関節の構造">
+<div class="copy"><h3>身体の中心と脚をつなぐ重要な関節</h3><p>股関節は、大腿骨の丸い骨頭が骨盤側の寛骨臼にはまり込む構造をした球関節です。大きな可動域を持ち、脚を前後・左右に動かしたり、回旋させたりできます。</p><p>骨盤は仙骨を介して脊柱とつながり、左右の寛骨は前方の恥骨結合で連結しています。股関節と骨盤は、体幹と下肢の動きをつなぐユニットとして働きます。</p><p>股関節には大きな力と安定性が求められるため、周囲を強い靭帯や関節包、関節唇、複数の筋肉が支えています。</p><div class="note">股関節や骨盤周辺の痛み・動かしにくさには複数の要因が関わることがあります。痛みの原因を一つに決めつけず、状態に応じて確認することが大切です。</div></div>
+</div></section>
+<section class="section"><div class="title"><b>02</b><h2>関節の動き</h2></div><div class="panel"><p>股関節は、前後・左右・回旋の動きを組み合わせられる関節です。骨盤も脊柱や股関節との連動によって、傾きや回旋が生じます。</p><div class="grid">
+<div class="tile"><h3>屈曲・伸展</h3><p>脚を前に上げる／後ろへ引く動き。</p></div><div class="tile"><h3>外転・内転</h3><p>脚を身体の外側へ開く／内側へ寄せる動き。</p></div><div class="tile"><h3>外旋・内旋</h3><p>太ももを外側／内側へ回す動き。</p></div><div class="tile"><h3>骨盤の前傾・後傾</h3><p>骨盤が前・後ろへ傾く動き。</p></div><div class="tile"><h3>骨盤の側方傾斜</h3><p>左右の骨盤が上がる／下がる動き。</p></div><div class="tile"><h3>骨盤の回旋</h3><p>骨盤が左右方向へ向きを変える動き。</p></div></div>
+<h3 style="color:#153a60;margin:22px 0 10px">股関節の参考可動域</h3><table class="rom"><thead><tr><th>運動</th><th>参考可動域</th></tr></thead><tbody><tr><td>屈曲</td><td>125°</td></tr><tr><td>伸展</td><td>15°</td></tr><tr><td>外転</td><td>45°</td></tr><tr><td>内転</td><td>20°</td></tr><tr><td>外旋</td><td>45°</td></tr><tr><td>内旋</td><td>45°</td></tr></tbody></table><p style="font-size:.78rem;color:#627187">※提示いただいた参考値を掲載しています。測定姿勢や個人差などによって異なります。痛みがある場合は無理に動かさないでください。</p></div></section>
+<section class="section"><div class="title"><b>03</b><h2>骨盤と股関節をつくる骨</h2></div><div class="images">
+<div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_03.jpg" alt="骨盤と股関節の骨格"></div><div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_04.jpg" alt="骨盤を構成する骨"></div></div><div class="panel copy" style="margin-top:16px"><h3>寛骨・仙骨・尾骨と大腿骨</h3><p>股関節は骨盤の寛骨臼と大腿骨頭によって形成されます。骨盤は左右の寛骨、仙骨、尾骨などで構成されます。寛骨は成長の過程で腸骨・坐骨・恥骨が癒合して一つの骨になります。</p><p>腸骨は仙骨と仙腸関節をつくり、左右の恥骨は前方の恥骨結合でつながります。腸骨の上前腸骨棘（ASIS）、上後腸骨棘（PSIS）、腸骨稜などは、筋肉や靭帯が付着する重要な目印です。</p></div></section>
+<section class="section"><div class="title"><b>04</b><h2>靭帯・関節唇・関節包</h2></div><div class="images">
+<div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_05.jpg" alt="股関節を支える靭帯"></div><div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_06.jpg" alt="股関節の関節包と周辺組織"></div></div><div class="panel copy" style="margin-top:16px"><h3>大きな可動域と安定性を両立する仕組み</h3><p>股関節は、腸骨大腿靭帯・恥骨大腿靭帯・坐骨大腿靭帯などの強い靭帯に支えられています。腸骨大腿靭帯は前面を補強する強靭な靭帯で、形状からY靭帯とも呼ばれます。</p><p>寛骨臼の縁にある関節唇は、関節窩を深くして大腿骨頭との適合性を高めます。関節全体を包む関節包も、関節の安定性を支える組織です。</p><p>仙腸関節も前仙腸靭帯・骨間仙腸靭帯・後仙腸靭帯などによって補強されています。仙腸関節や恥骨結合の動きはごく小さいものですが、骨盤全体の力の伝達に関わります。</p></div></section>
+<section class="section"><div class="title"><b>05</b><h2>股関節・骨盤を動かす筋肉</h2></div><div class="images">
+<div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_07.jpg" alt="股関節と骨盤周囲の筋肉"></div><div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_09.jpg" alt="股関節外側の筋肉"></div><div class="image-card"><img src="https://www.mcdavid.co.jp/wp-content/uploads/2024/12/MD_hipjoint_anatomy_08.jpg" alt="臀部の筋肉"></div></div><div class="muscles">
+<div class="muscle"><h3>腸腰筋</h3><p>大腰筋・腸骨筋などからなる筋群で、股関節を曲げる働きに関わります。歩行や走行で脚を前へ振り出すときにも重要です。</p></div>
+<div class="muscle"><h3>大腿筋膜張筋</h3><p>股関節の外側に位置し、股関節の屈曲・外転などに関わります。腸脛靭帯につながり、歩行時の脚の向きや安定性にも関係します。</p></div>
+<div class="muscle"><h3>中殿筋</h3><p>臀部の外側にある筋肉で、股関節の外転に働きます。歩行中に骨盤が左右へ大きく傾きすぎないよう制御する役割も担います。</p></div>
+<div class="muscle"><h3>大殿筋</h3><p>臀部を形づくる大きな筋肉で、股関節の伸展や外旋に関わります。立ち上がる、階段を上る、走るなどの動作で働きます。</p></div>
+<div class="muscle"><h3>深層外旋六筋</h3><p>梨状筋・上双子筋・内閉鎖筋・下双子筋・大腿方形筋・外閉鎖筋の総称です。股関節を外旋させるほか、股関節の安定性にも関与します。</p></div>
+</div></section>
+<section class="section"><div class="dark"><h2>身体のつながりを知る。</h2><p>股関節は骨盤・腰椎・体幹と連動しながら働きます。歩く、立つ、しゃがむといった動作を理解するには、股関節だけでなく周囲とのつながりを見ることが大切です。</p><div class="buttons"><a href="../body-explorer/body-explorer.html">BODY EXPLORERへ</a><a href="body-shoulder.html">肩・肩甲骨のメカニズム</a><a href="../../approach.html">Momdoの施術アプローチ</a></div></div></section>
+</main><footer>© MOMDO MASSAGE &amp; BODYWORK</footer>
+</body></html>
+
