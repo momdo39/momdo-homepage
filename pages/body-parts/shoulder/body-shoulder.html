@@ -24,13 +24,48 @@ header{height:68px;background:#020b1beF;border-bottom:1px solid #c99c43;display:
 .anatomy-detail__item{padding:9px 0 4px;border-bottom:1px solid #ffffff20}
 .anatomy-detail__item h3{margin:0 0 4px;color:var(--gold2);font-size:.9rem}
 .anatomy-detail__item p{font-size:.78rem;line-height:1.8;margin:0;color:#e1ebf7}
-\nfooter{text-align:center;padding:22px;color:#65758a;font-size:.75rem;border-top:1px solid #ffffff22}
+footer{text-align:center;padding:22px;color:#65758a;font-size:.75rem;border-top:1px solid #ffffff22}
 @media(max-width:850px){.nav a:not(.reserve){display:none}.hero{width:100%;aspect-ratio:1210/370;padding:0}.hero-visual{display:none}.grid{grid-template-columns:repeat(2,1fr)}.card,.card.wide,.card.side{grid-column:span 1}.card.wide{grid-column:span 2}}
 @media(max-width:540px){.wrap{width:94%}.logo{font-size:1.25rem}.hero{width:100%;aspect-ratio:1210/370}.grid{grid-template-columns:1fr;gap:11px}.card,.card.wide,.card.side{grid-column:1;min-height:unset}.card{padding:14px}.card.wide{grid-column:1}.wide-inner{grid-template-columns:1fr}.wide-inner .art{height:130px}.movement{grid-template-columns:1fr}.art{height:145px}}
+
+/* 追加解説セクション */
+.reference-content{padding:30px 0 54px}
+.reference-heading{margin:0 0 18px;padding-bottom:12px;border-bottom:2px solid #d7b66e}
+.reference-heading .eyebrow{display:block;color:#a87822;font-size:.72rem;letter-spacing:.18em}
+.reference-heading h2{margin:4px 0;color:#10294b;font-family:"Yu Mincho",serif;font-size:clamp(1.5rem,3vw,2.2rem)}
+.reference-heading p{margin:6px 0 0;color:#526174;font-size:.9rem}
+.reference-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.72fr);gap:24px;align-items:center;background:linear-gradient(135deg,#071b37,#12365c);color:#f4f7fb;border-radius:16px;padding:22px;margin:18px 0 28px;box-shadow:0 12px 28px #071b3722}
+.reference-panel p{margin:0 0 10px;font-size:.9rem;line-height:1.9}
+.reference-panel img,.reference-figure img{display:block;width:100%;height:auto;border-radius:10px;object-fit:contain;background:#fff}
+.reference-panel figcaption,.reference-figure figcaption{font-size:.7rem;color:#c7d4e4;margin-top:6px}
+.reference-figure{margin:18px 0;padding:12px;background:#f4f7fb;border:1px solid #dbe3ec;border-radius:12px}
+.reference-figure img{max-height:320px}
+.reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:16px 0 28px}
+.reference-card{background:#fff;border:1px solid #d9e1eb;border-radius:13px;padding:17px;box-shadow:0 6px 18px #0b234012}
+.reference-card h3{margin:0 0 8px;color:#12345a;font-family:"Yu Mincho",serif;font-size:1.05rem}
+.reference-card p{margin:0;color:#42536a;font-size:.84rem;line-height:1.85}
+.reference-card strong{color:#183c66}
+.reference-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 26px}
+.reference-list details{background:#f6f8fb;border:1px solid #dce4ed;border-radius:10px;padding:13px 15px}
+.reference-list summary{cursor:pointer;color:#15365b;font-weight:bold}
+.reference-list details p{margin:9px 0 0;color:#42536a;font-size:.83rem;line-height:1.85}
+.reference-note{padding:13px 16px;background:#fff8e9;border-left:4px solid #d7a642;color:#5d4a27;font-size:.78rem;line-height:1.8}
+.reference-source{font-size:.72rem;color:#69798c;margin-top:14px}
+@media(max-width:760px){.reference-panel{grid-template-columns:1fr}.reference-grid{grid-template-columns:1fr}.reference-list{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
-<header><div class="wrap head"><a class="logo" href="../../index.html">MOMDO<small>MASSAGE & BODYWORK</small></a><nav class="nav"><a href="../../index.html">ホーム</a><a href="../../concerns.html">お悩みから探す</a><a href="../body-explorer/body-explorer.html">身体のつながりを知る</a><a href="../../approach.html">Momdoの施術</a><a href="../../menu.html">メニュー</a><a href="../../faq.html">FAQ</a><a href="../../access.html">アクセス</a><a class="reserve" href="../../contact.html">ご予約はこちら</a></nav></div></header>
+<header>
+  <div class="wrap head"><a class="logo" href="../../../index.html">MOMDO<small>MASSAGE & BODYWORK</small>
+</a><nav class="nav">
+  <a href="../../../index.html">ホーム</a><a href="../../../concerns.html">お悩みから探す</a>
+  <a href="../../body-explorer/body-explorer.html">身体のつながりを知る</a>
+  <a href="../../../approach.html">Momdoの施術</a><a href="../../../menu.html">メニュー</a>
+  <a href="../../../faq.html">FAQ</a><a href="../../../access.html">アクセス</a>
+  <a class="reserve" href="../../../contact.html">ご予約はこちら</a>
+</nav></div>
+</header>
 <main>
 <section class="wrap hero"><div class="hero-copy"><div class="eyebrow">SHOULDER & SCAPULA</div><h1>肩・肩甲骨の<br><span>メカニズム</span></h1><div class="tag">肩は、肩だけで動いているわけではない。</div><p>肩関節、肩甲骨、鎖骨、胸郭、背骨——それぞれが連動することで、私たちは腕を自由に動かすことができます。肩の仕組みを知ることが、身体を理解する第一歩です。</p></div>
 <div class="hero-visual"><svg viewBox="0 0 600 390" role="img" aria-label="肩と胸郭の骨格を表すイメージ"><defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#fff1ca"/><stop offset=".5" stop-color="#d6a95d"/><stop offset="1" stop-color="#6fbce9"/></linearGradient><radialGradient id="g"><stop stop-color="#ffdc82" stop-opacity=".9"/><stop offset="1" stop-color="#ff9d35" stop-opacity="0"/></radialGradient></defs><ellipse cx="330" cy="180" rx="185" ry="170" fill="url(#g)"/><g fill="none" stroke="url(#b)" stroke-width="11" stroke-linecap="round" opacity=".88"><path d="M205 75 Q290 25 375 70 Q435 100 500 70"/><path d="M230 100 Q160 160 205 245 Q245 310 325 270 Q365 235 355 155 Q320 95 230 100Z"/><path d="M360 95 Q430 135 440 210 L485 350"/><path d="M245 125 Q300 155 355 130"/><path d="M255 150 Q210 190 245 245 M275 145 Q235 195 270 260 M295 140 Q265 200 295 270 M315 135 Q295 205 320 275" stroke-width="5"/></g><path d="M340 100 Q380 110 405 150" stroke="#ffbd58" stroke-width="17" fill="none" stroke-linecap="round" opacity=".8"/><circle cx="355" cy="145" r="55" fill="url(#g)"/></svg></div></section>
@@ -47,9 +82,136 @@ header{height:68px;background:#020b1beF;border-bottom:1px solid #c99c43;display:
 <article class="card"><div class="card-head"><span class="num">04</span><h2>肩と身体のつながり</h2><span class="arrow">›</span></div><p>肩は、首・胸郭・背骨・骨盤とつながっています。</p><div class="art"><svg viewBox="0 0 300 160"><g stroke="#68bdf2" fill="none" stroke-width="5"><path d="M150 12 L150 145 M90 38 Q150 5 210 38 L230 115 Q150 155 70 115Z"/><path d="M95 45 Q150 70 205 45 M80 70 Q150 100 220 70 M85 95 Q150 125 215 95"/></g><g fill="#ffcb67"><circle cx="150" cy="25" r="9"/><circle cx="95" cy="47" r="8"/><circle cx="205" cy="47" r="8"/><circle cx="150" cy="140" r="8"/></g></svg></div><div class="labels"><span>首とのつながり</span><span>胸郭</span><span>背骨</span><span>骨盤</span></div></article>
 <article class="card"><div class="card-head"><span class="num">05</span><h2>腕を上げる仕組み</h2><span class="arrow">›</span></div><p>腕を上げるとき、肩甲骨や胸郭がどのように動くのかを解説します。</p><div class="art"><svg viewBox="0 0 300 160"><path d="M120 145 Q90 95 120 45 Q145 20 175 50 L190 145" fill="none" stroke="#6eb9ed" stroke-width="16" stroke-linecap="round"/><path d="M170 95 Q210 45 245 15" stroke="#e8b94f" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M224 18 L250 8 L247 38" fill="#e8b94f"/><path d="M100 70 Q145 95 185 65" stroke="#ffca6d" stroke-width="8" fill="none"/></svg></div><div class="labels"><span>肩甲上腕リズム</span><span>上方回旋</span><span>胸郭の動き</span></div></article>
 <article class="card"><div class="card-head"><span class="num">06</span><h2>肩のお悩みと身体の関係</h2><span class="arrow">›</span></div><p>肩こり、四十肩・五十肩など、よくあるお悩みを解説します。</p><div class="art"><svg viewBox="0 0 300 160"><circle cx="175" cy="35" r="24" fill="#d7a77d"/><path d="M125 155 Q115 85 150 65 Q205 55 230 100 L250 160Z" fill="#75899b"/><path d="M145 78 Q180 65 210 90" stroke="#e8b94f" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="160" cy="78" r="28" fill="#ff9c42" opacity=".45"/></svg></div><div class="checks"><span>肩こり</span><span>巻き肩</span><span>四十肩・五十肩</span><span>腕が上がりにくい</span><span>肩甲骨周辺の張り</span></div></article>
-<article class="card wide"><div class="wide-inner"><div><div class="card-head"><span class="num">07</span><h2>Momdoの施術アプローチ</h2><span class="arrow">›</span></div><div class="gold-title">深層筋へのアプローチ × 神経ストレッチ</div><p>肩だけでなく、背中や体幹まで含めた全身のバランスを整え、本来の動きを取り戻すことを目指します。</p><a class="pill" href="../../approach.html">Momdoの施術について見る　›</a></div><div class="art"><svg viewBox="0 0 300 170"><path d="M150 10 Q85 20 80 85 L60 160 M150 10 Q215 20 220 85 L240 160" stroke="#3e9fe0" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M150 20 L150 160" stroke="#ffbd53" stroke-width="8" fill="none"/><path d="M110 45 Q150 65 190 45 M100 80 Q150 105 200 80 M90 115 Q150 140 210 115" stroke="#ffd47b" stroke-width="5" fill="none"/></svg></div></div></article>
-<article class="card side"><div class="gold-title">身体を知ることが、<br>健康への近道です。</div><p>肩のことをもっと詳しく知りたい方は、ぜひ他のコンテンツもご覧ください。</p><a class="pill" href="../body-explorer/body-explorer.html">BODY EXPLORERへ　›</a></article>
-</section></main>
+<article class="card wide"><div class="wide-inner"><div><div class="card-head"><span class="num">07</span><h2>Momdoの施術アプローチ</h2><span class="arrow">›</span></div><div class="gold-title">深層筋へのアプローチ × 神経ストレッチ</div><p>肩だけでなく、背中や体幹まで含めた全身のバランスを整え、本来の動きを取り戻すことを目指します。</p><a class="pill" href="../../../approach.html">Momdoの施術について見る　›</a></div><div class="art"><svg viewBox="0 0 300 170"><path d="M150 10 Q85 20 80 85 L60 160 M150 10 Q215 20 220 85 L240 160" stroke="#3e9fe0" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M150 20 L150 160" stroke="#ffbd53" stroke-width="8" fill="none"/><path d="M110 45 Q150 65 190 45 M100 80 Q150 105 200 80 M90 115 Q150 140 210 115" stroke="#ffd47b" stroke-width="5" fill="none"/></svg></div></div></article>
+<article class="card side"><div class="gold-title">身体を知ることが、<br>健康への近道です。</div><p>肩のことをもっと詳しく知りたい方は、ぜひ他のコンテンツもご覧ください。</p><a class="pill" href="../../body-explorer/body-explorer.html">BODY EXPLORERへ　›</a></article>
+</section>
+
+<section class="wrap reference-content" id="shoulder-anatomy">
+  <div class="reference-heading">
+    <span class="eyebrow">SHOULDER ANATOMY / 01</span>
+    <h2>肩関節とは</h2>
+    <p>肩は、複数の関節と筋肉が協力して大きな動きを生み出す、柔軟性に富んだ構造です。</p>
+  </div>
+
+  <div class="reference-panel">
+    <div>
+      <p>肩関節（肩甲上腕関節）は、腕をさまざまな方向へ動かせる一方、骨同士のかみ合わせだけでは安定性を保ちにくい関節です。そのため、周囲の筋肉や腱、関節包などが協力して上腕骨頭を支えています。</p>
+      <p>肩の動きには、肩甲上腕関節だけでなく、鎖骨と肩甲骨の間にある肩鎖関節、胸郭の上を肩甲骨が滑るように動く肩甲胸郭の機能も関わります。</p>
+      <p>投球動作などで肩に直接大きな力が加わる場合や、転倒時に手・腕を通じて力が伝わる場合など、肩にはさまざまな負荷がかかります。</p>
+    </div>
+    <figure>
+      <img src="https://www.mcdavid.co.jp/wp-content/uploads/2021/10/MD_shoulder_ill_01_cap02.jpg" alt="肩関節の構造を示す解剖図" loading="lazy">
+      <figcaption>肩関節の構造イメージ</figcaption>
+    </figure>
+  </div>
+
+  <div class="reference-heading">
+    <span class="eyebrow">JOINT TYPES / 02</span>
+    <h2>関節の種類</h2>
+    <p>肩の複雑な動きは、異なる特徴を持つ関節・機能的な連結が組み合わさって生まれます。</p>
+  </div>
+  <figure class="reference-figure">
+    <img src="https://www.mcdavid.co.jp/wp-content/uploads/2021/10/MD_shoulder_ill_02_cap02-2.jpg" alt="肩を構成する関節の種類を示す図" loading="lazy">
+    <figcaption>肩を構成する関節のイメージ</figcaption>
+  </figure>
+  <div class="reference-grid">
+    <article class="reference-card">
+      <h3>肩甲上腕関節｜球関節</h3>
+      <p>上腕骨頭の球状の関節面と、肩甲骨の関節窩が向かい合う関節です。関節窩が比較的小さいため、広い可動域を持つ一方、安定性には周囲の軟部組織や筋肉の働きが重要になります。屈曲・伸展、外転・内転、内旋・外旋などの動きに関わります。</p>
+    </article>
+    <article class="reference-card">
+      <h3>肩鎖関節｜平面関節</h3>
+      <p>肩甲骨の肩峰と鎖骨の外側端をつなぐ関節です。肩甲骨の位置調整に関わり、腕を動かすときの肩甲骨の滑りや回旋を助けます。</p>
+    </article>
+    <article class="reference-card">
+      <h3>肩甲胸郭の機能</h3>
+      <p>肩甲骨が胸郭の背面を滑るように動く機能的な連結です。骨同士が関節包や靭帯で直接つながった一般的な滑膜関節ではありませんが、腕を上げる動作などで重要な役割を担います。</p>
+    </article>
+  </div>
+
+  <div class="reference-heading">
+    <span class="eyebrow">BONES / 03</span>
+    <h2>肩を構成する骨</h2>
+    <p>肩まわりの骨の位置と特徴を確認しましょう。</p>
+  </div>
+  <figure class="reference-figure">
+    <img src="https://www.mcdavid.co.jp/wp-content/uploads/2020/07/MD_shoulder_ill_02_cap03.jpg" alt="肩甲骨・上腕骨・鎖骨の位置を示す図" loading="lazy">
+    <figcaption>肩甲骨・上腕骨・鎖骨のイメージ</figcaption>
+  </figure>
+  <div class="reference-list">
+    <details open>
+      <summary>肩甲骨（けんこうこつ）</summary>
+      <p>平らな形状をしていて、胸部の背面の外側寄り、第2〜第7肋骨の高さに位置します。後面を上下に分けるような隆起を肩甲棘と呼び、その外側先端の突起が肩峰です。肩峰の下には、上腕骨頭と向かい合うカップ状のくぼみである関節窩があります。</p>
+    </details>
+    <details open>
+      <summary>上腕骨（じょうわんこつ）</summary>
+      <p>上肢のなかでもっとも長く大きい骨です。近位端は丸い上腕骨頭となり、肩甲骨の関節窩と組み合わさって肩甲上腕関節をつくります。遠位端は前腕の骨とともに肘関節を形成します。</p>
+    </details>
+    <details open>
+      <summary>鎖骨（さこつ）</summary>
+      <p>身体の前面上部に左右一対で位置する、ゆるやかなS字形の骨です。内側は胸骨、外側は肩甲骨の肩峰とつながり、上肢を体幹につなぐ役割や、腕と体幹の間で力を伝える役割を担います。</p>
+    </details>
+  </div>
+
+  <div class="reference-heading">
+    <span class="eyebrow">LIGAMENTS & SUPPORT / 04</span>
+    <h2>靭帯・関節を支える組織</h2>
+    <p>肩の安定性と、動きを滑らかにするために働く組織です。</p>
+  </div>
+  <figure class="reference-figure">
+    <img src="https://www.mcdavid.co.jp/wp-content/uploads/2021/10/MD_shoulder_ill_03_cap02.jpg" alt="肩関節の靭帯や関節包を示す図" loading="lazy">
+    <figcaption>肩関節を支える組織のイメージ</figcaption>
+  </figure>
+  <div class="reference-grid">
+    <article class="reference-card">
+      <h3>関節包（かんせつほう）</h3>
+      <p>関節を袋状に包む線維性の組織です。関節を覆い、関節内を保護するとともに、関節の安定性に関わります。</p>
+    </article>
+    <article class="reference-card">
+      <h3>関節上腕靭帯</h3>
+      <p>関節包の前方部分を補強する靭帯群です。上腕骨頭の過度な移動を抑え、肩関節の安定性を支えます。</p>
+    </article>
+    <article class="reference-card">
+      <h3>肩峰下滑液包</h3>
+      <p>肩峰の下にある滑液を含む袋状の組織です。腱板など周囲の組織同士の摩擦を減らし、腕を動かす際の滑走を助けます。</p>
+    </article>
+  </div>
+
+  <div class="reference-heading">
+    <span class="eyebrow">MUSCLES / 05</span>
+    <h2>肩を動かす筋肉</h2>
+    <p>肩の動きは、複数の筋肉がそれぞれの方向から協力することで生まれます。</p>
+  </div>
+  <figure class="reference-figure">
+    <img src="https://www.mcdavid.co.jp/wp-content/uploads/2020/07/MD_shoulder_ill_04_cap02.jpg" alt="肩まわりの筋肉を示す解剖図" loading="lazy">
+    <figcaption>肩まわりの筋肉のイメージ</figcaption>
+  </figure>
+  <div class="reference-list">
+    <details open><summary>僧帽筋（そうぼうきん）</summary><p>上部・中部・下部に分けられ、肩甲骨の挙上・内転・上方回旋や安定に関わります。</p></details>
+    <details open><summary>三角筋（さんかくきん）</summary><p>前部は肩関節の屈曲や内旋、中部は外転、後部は伸展や外旋に関わります。</p></details>
+    <details><summary>広背筋（こうはいきん）</summary><p>上腕を伸展・内転・内旋させる働きがあります。</p></details>
+    <details><summary>菱形筋（りょうけいきん）</summary><p>肩甲骨を内転・挙上させ、下方回旋にも関わります。</p></details>
+    <details><summary>棘上筋（きょくじょうきん）</summary><p>肩関節の外転を補助し、上腕骨頭の位置を保つ働きにも関わります。</p></details>
+    <details><summary>棘下筋（きょくかきん）</summary><p>上腕を外旋させ、肩関節の安定性を支えます。</p></details>
+    <details><summary>小円筋（しょうえんきん）</summary><p>上腕の外旋に関わり、肩関節の安定性を支えます。</p></details>
+    <details><summary>大円筋（だいえんきん）</summary><p>上腕を伸展・内転・内旋させる働きがあります。</p></details>
+    <details><summary>前鋸筋（ぜんきょきん）</summary><p>肩甲骨を外転させ、上方回旋や胸郭に沿った安定に関わります。</p></details>
+    <details><summary>肩甲下筋（けんこうかきん）</summary><p>上腕を内旋させ、上腕骨頭を関節窩に保つ働きがあります。</p></details>
+    <details><summary>大胸筋（だいきょうきん）</summary><p>上腕の内転・内旋や、屈曲の補助に関わります。</p></details>
+  </div>
+  <div class="reference-panel">
+    <div>
+      <h3 style="margin:0 0 8px;color:#ffe09a">腱板（けんばん）／ローテーターカフ</h3>
+      <p>棘上筋・棘下筋・小円筋・肩甲下筋の4つは、腱板（ローテーターカフ）と呼ばれます。上腕骨頭を関節窩に引き寄せるように支え、腕を動かすときの肩関節の安定性に重要な役割を果たします。</p>
+    </div>
+    <div class="labels"><span>棘上筋</span><span>棘下筋</span><span>小円筋</span><span>肩甲下筋</span></div>
+  </div>
+
+  <p class="reference-note">このページは身体の構造を理解するための一般的な解説です。痛みや動かしにくさの原因を自己判断するものではありません。症状が続く場合や、外傷後に強い痛み・腫れ・動かせない状態がある場合は、医療機関にご相談ください。</p>
+  <p class="reference-source">画像出典：McDavid公式サイト掲載画像。画像の利用・転載条件を確認し、必要に応じて許諾を得たうえで公開してください。</p>
+</section>
+
+</main>
 <footer>© MOMDO MASSAGE & BODYWORK</footer>
 <script>
 const movementMap={elevate:["挙上","肩甲骨が上方向へ移動する動きです。肩をすくめる動作などで見られます。"],depress:["下制","肩甲骨が下方向へ移動する動きです。肩を下げる動作などで見られます。"],retract:["内転","肩甲骨が背骨に近づく方向へ動きます。"],protract:["外転","肩甲骨が背骨から離れる方向へ動きます。"],up:["上方回旋","肩甲骨の関節窩が上を向くように回旋します。腕を上げる際に重要です。"],down:["下方回旋","肩甲骨の関節窩が下を向く方向へ回旋します。"]};
