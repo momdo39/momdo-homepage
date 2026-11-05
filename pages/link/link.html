@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Momdoホームページ内の各ページをご案内するリンク一覧です。">
+<title>リンク一覧｜Momdo</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f5f1;
+  color: #29343a;
+  line-height: 1.8;
+}
+
+header {
+  background: #172b36;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #d5c39b;
+}
+
+main {
+  max-width: 900px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  border-left: 4px solid #a9ad91;
+  padding-left: 14px;
+  font-size: 20px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.links a {
+  display: block;
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  color: #29343a;
+  text-decoration: none;
+  border: 1px solid #e5e5df;
+  transition: .2s;
+}
+
+.links a:hover {
+  background: #e9ede5;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #172b36;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MOMDO</h1>
+  <p>LINK COLLECTION</p>
+  <h2>リンク一覧</h2>
+  <p>Momdoのホームページをご案内します。</p>
+</header>
+
+<main>
+
+<section>
+<h2>メインページ</h2>
+<div class="links">
+<a href="../../index.html">ホーム</a>
+<a href="../menu/menu.html">メニュー・料金</a>
+<a href="../story/momdo-story.html">Momdoストーリー</a>
+</div>
+</section>
+
+<section>
+<h2>BODY EXPLORER</h2>
+<div class="links">
+<a href="../body-explorer/body-explorer.html">BODY EXPLORER</a>
+</div>
+</section>
+
+<section>
+<h2>身体のお悩み・症状</h2>
+<div class="links">
+<!-- ここに症状別ページを追加 -->
+</div>
+</section>
+
+<section>
+<h2>お問い合わせ・その他</h2>
+<div class="links">
+<!-- 実際の問い合わせ先を確認してから追加 -->
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© Momdo Massage & Body Care</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+01｜メインページ
+- ホーム
+- Momdoについて
+- コンセプト・施術方針
+- お問い合わせ
+
+02｜施術・メニュー
+- 施術メニュー・料金
+- ご予約について
+- 施術の流れ
+
+03｜身体のお悩み・症状
+- 症状別ページ一覧
+- 首・肩
+- 腰・骨盤
+- 頭・自律神経
+- 股関節・膝・足
+- その他の身体のお悩み
+
+04｜BODY EXPLORER
+- BODY EXPLORER トップ
+- 3D人体モデル
+- 身体の部位別解説
+
+05｜読みもの・情報
+- Momdoストーリー
+- 健康コラム
+- お知らせ
+
+06｜その他
+- プライバシーポリシー
+- サイトマップ
+- 関連リンク
+
+※これはデザインと分類のイメージ。実際のリンク先は現在のGitHubリポジトリ内のファイルに合わせて設定する。
+さらに大切なこと
+今回のページは、単にリンクを並べるだけでなく、既存ページからもアクセスできるようにしたい。
+
+おすすめは次の3か所。
+1. ヘッダーのメニューに「リンク一覧」を追加。
+2. フッターに「サイトマップ・リンク一覧」を追加。
+3. 各ページからリンク一覧へ戻れるようにする。
+実装方針
+今あるHTMLファイルは削除・移動せず、新しく pages/link/link.html を作成する。
+
+また、既存の全HTMLを確認して、実際に存在するページだけを掲載する。404になるリンクは作らない。
