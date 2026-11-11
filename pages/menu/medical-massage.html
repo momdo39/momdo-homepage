@@ -131,7 +131,7 @@
     }
 
     .technique-card h3 {
-      margin: 0 0 8px;
+      margin: 0 0 12px;
       color: #60472e;
       font-size: 1.1rem;
     }
@@ -140,6 +140,23 @@
       margin: 0;
       color: var(--muted);
       font-size: .95rem;
+    }
+
+    .technique-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 380px;
+      margin: 0 0 14px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 4px;
+      background: #f7f3eb;
+    }
+
+    .technique-image--device {
+      max-height: 250px;
+      padding: 12px;
     }
 
     .notice {
@@ -191,6 +208,9 @@
       main { padding-top: 34px; }
       .intro { padding: 20px; }
       .technique-grid { grid-template-columns: 1fr; }
+      .technique-card { padding: 18px; }
+      .technique-image { max-height: none; }
+      .technique-image--device { max-height: 220px; }
       .cta { flex-direction: column; }
       .button { width: 100%; }
     }
@@ -239,16 +259,34 @@
       <div class="technique-grid">
         <article class="technique-card">
           <h3>ダブルモーションテクニック</h3>
+          <img
+            class="technique-image"
+            src="medical-double-motion.png"
+            alt="ダブルモーションテクニックの施術イメージ。筋膜と骨格への2つのアプローチを示す"
+            loading="lazy"
+          >
           <p>身体の動きや関節の連動に目を向けながら行う手技です。内容はお身体の状態を確認してご案内します。</p>
         </article>
 
         <article class="technique-card">
           <h3>CSFプラクティス</h3>
+          <img
+            class="technique-image"
+            src="medical-csf-practice.png"
+            alt="頭蓋骨を用いたCSFプラクティスの説明イメージ"
+            loading="lazy"
+          >
           <p>頭部や身体の状態を確認しながら行う手技です。適応や施術内容については事前にご相談ください。</p>
         </article>
 
         <article class="technique-card">
           <h3>超音波治療器</h3>
+          <img
+            class="technique-image technique-image--device"
+            src="medical-ultrasound-device.png"
+            alt="SプローブとLプローブを備えた超音波治療器"
+            loading="lazy"
+          >
           <p>必要に応じて使用する機器の一つです。使用の可否は状態を確認したうえでご案内します。</p>
         </article>
 
@@ -287,4 +325,3 @@
   </footer>
 </body>
 </html>
-
