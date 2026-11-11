@@ -97,6 +97,44 @@
       border-radius: 4px;
     }
 
+    .technique-overview-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+      gap: 28px;
+      align-items: center;
+      margin: 26px 0 34px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .technique-overview {
+      margin: 0;
+    }
+
+    .technique-overview .concept-image {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      border-radius: 6px;
+    }
+
+    .technique-overview-copy p {
+      margin: 0 0 12px;
+      line-height: 1.9;
+    }
+
+    .technique-overview-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .technique-overview-emphasis {
+      margin-top: 18px !important;
+      color: var(--gold);
+      font-size: 1.12rem;
+    }
+
     .intro {
       padding: 28px;
       background: var(--cream);
@@ -209,6 +247,11 @@
       .intro { padding: 20px; }
       .technique-grid { grid-template-columns: 1fr; }
       .technique-card { padding: 18px; }
+      .technique-overview-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 16px;
+      }
       .technique-image { max-height: none; }
       .technique-image--device { max-height: 220px; }
       .cta { flex-direction: column; }
@@ -255,14 +298,25 @@
       <h2 id="techniques-title">手技・機器について</h2>
       <p>状態やご希望に応じて、以下の手技・機器を取り入れる場合があります。すべての施術で一律に使用するものではありません。</p>
 
-      <figure class="technique-overview">
-        <img
-          class="concept-image"
-          src="medical-techniques-overview.jpg"
-          alt="手首・肩・骨盤・足首・膝など、身体の関節に着目したイメージ"
-          loading="lazy"
-        >
-      </figure>
+      <div class="technique-overview-layout">
+        <figure class="technique-overview">
+          <img
+            class="concept-image"
+            src="medical-techniques-overview.jpg"
+            alt="手首・肩・骨盤・足首・膝など、身体の関節に着目したイメージ"
+            loading="lazy"
+          >
+        </figure>
+        <div class="technique-overview-copy">
+          <p>メディカルマッサージでは、筋肉や関節に適切な動きを促しながら、身体全体のバランスを整えることを目指します。</p>
+          <p>身体のどの部位が痛みや疲労に関係しているのかを確認し、その状態に合わせて施術を組み立てていきます。</p>
+          <p>年齢を重ねるにつれて、筋肉や関節、周囲の組織には変化が生じます。そうした変化が、身体のさまざまな部位の動かしにくさや痛みにつながることもあります。</p>
+          <p>痛みのある場所だけでなく、その背景にある身体の使い方や筋肉の状態にも目を向け、つらさの軽減を目指した施術を行います。</p>
+          <p>筋肉の緊張が続くと、痛みが離れた場所に感じられることがあります。長く続く肩こりや腰の不快感では、筋肉内の過敏なポイント（トリガーポイント）が関係している場合もあります。</p>
+          <p>また、身体を曲げたり伸ばしたりしたときの痛みは、筋肉そのものだけでなく、筋膜や関節など複数の組織が関係していることもあります。</p>
+          <p class="technique-overview-emphasis"><strong>深層筋リリースのアプローチを、ぜひご体感ください。</strong></p>
+        </div>
+      </div>
 
       <div class="technique-grid">
         <article class="technique-card">
