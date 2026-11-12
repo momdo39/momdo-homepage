@@ -49,15 +49,14 @@ canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block
 .info .x { position: absolute; top: 5px; right: 5px; width: 26px; height: 26px; border-radius: 50%; color: var(--ink-2); }
 .info .x:hover { background: var(--bg); color: var(--ink); }
 
-.control-panel { min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
-.control-panel summary { padding: 7px 11px; color: var(--ink-2); cursor: pointer; font-size: .76rem; font-weight: 600; }
-.dock { position: static; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px; width: 100%; max-width: none; padding: 5px 9px 8px; border-top: 1px solid var(--line); background: transparent; }
+.control-panel { min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 8px 12px; }
+.dock { position: static; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 22px; width: 100%; max-width: none; padding: 4px 6px; background: transparent; }
 .seg { display: flex; gap: 2px; }
 .seg button { height: 30px; padding: 0 12px; border-radius: 999px; color: var(--ink-2); font-size: .82rem; transition: background-color .3s, color .3s; }
 .seg button:hover { color: var(--ink); }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--panel); }
-.xray { display: flex; align-items: center; gap: 8px; padding-right: 6px; font-size: .76rem; color: var(--ink-2); }
-.xray input { width: 110px; accent-color: var(--accent); }
+.xray { display: flex; align-items: center; gap: 14px; padding: 4px 10px; font-size: 1rem; font-weight: 700; color: var(--ink); }
+.xray input { width: clamp(190px, 28vw, 320px); height: 28px; accent-color: var(--accent); cursor: pointer; }
 
 .foot { min-width: 0; margin: 0; font-size: .63rem; line-height: 1.3; color: var(--ink-2); }
 .foot a { color: inherit; }
@@ -76,12 +75,12 @@ canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block
   .links { gap: 5px 9px; font-size: .72rem; }
   .info { height: 88px; padding: 7px 32px 6px 8px; }
   .info dl { grid-template-columns: auto minmax(0,1fr) auto minmax(0,1fr); gap: 2px 6px; font-size: .65rem; }
-  .control-panel summary { padding: 6px 9px; }
-  .dock { display: grid; grid-template-columns: 1fr auto; gap: 4px 7px; padding: 4px 7px 7px; }
+  .control-panel { padding: 7px 8px; }
+  .dock { display: grid; grid-template-columns: 1fr auto; gap: 8px 7px; padding: 2px 3px; }
   .seg { grid-column: 1 / -1; justify-content: center; }
   .seg button { padding: 0 9px; font-size: .76rem; }
-  .xray { grid-column: 1; gap: 5px; padding: 0; white-space: nowrap; font-size: .68rem; }
-  .xray input { width: min(24vw, 90px); }
+  .xray { grid-column: 1 / -1; gap: 10px; padding: 3px 2px; white-space: nowrap; font-size: .9rem; }
+  .xray input { width: min(48vw, 240px); height: 30px; }
   .dock > #reset-view { grid-column: 2; height: 29px; padding: 0 8px; font-size: .72rem; }
   .interaction-help { font-size: .63rem; }
   .foot { font-size: .56rem; }
@@ -122,8 +121,7 @@ canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block
   <dl id="iMeta"></dl>
 </section>
 
-<details class="control-panel" id="control-panel">
-  <summary>表示設定（筋肉・骨格・透過率）</summary>
+<section class="control-panel" id="control-panel" aria-label="表示設定（筋肉・骨格・透過率）">
   <div class="dock">
     <div class="seg" role="group" aria-label="表示する構造">
       <button type="button" data-layer="both" aria-pressed="true">すべて</button>
@@ -133,7 +131,7 @@ canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block
     <label class="xray">表層筋の透過 <input type="range" id="xray" min="0.08" max="1" step="0.01" value="0.35"></label>
     <button type="button" id="reset-view" aria-label="モデルの初期位置に戻す">リセット</button>
   </div>
-</details>
+</section>
 
 <p class="interaction-help">3Dモデルはドラッグで回転、ホイールまたはピンチで拡大・縮小できます。部位ボタンから説明内容も切り替えられます。</p>
 
