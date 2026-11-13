@@ -121,7 +121,18 @@ footer a{color:var(--gold-light);text-decoration:none}
  .header .nav-dropdown-toggle{width:100%;justify-content:space-between;padding:12px 8px}
  .header .nav-dropdown-menu{position:static;min-width:0;margin:0 0 8px;box-shadow:none}
  .header .nav-dropdown-menu a{padding-left:24px}
-}</style>
+}
+/* FIRST STEP 前：頭痛の基礎説明 */
+.headache-intro{padding:46px 0;background:#fff;border-bottom:1px solid var(--line)}
+.headache-intro-inner{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:34px;align-items:center}
+.headache-intro-visual{margin:0;padding:12px;background:#f8f5ef;border:1px solid var(--line);border-radius:10px}
+.headache-intro-visual img{width:100%;max-height:390px;object-fit:contain;border-radius:6px}
+.headache-intro-copy{font-size:14px;line-height:2;color:var(--ink)}
+.headache-intro-copy p{margin:0 0 12px}
+.headache-intro-copy p:last-child{margin-bottom:0}
+.headache-intro-copy .intro-heading{margin:0 0 14px;color:var(--brown2);font:500 23px/1.6 "Shippori Mincho",serif}
+@media(max-width:760px){.headache-intro{padding:32px 0}.headache-intro-inner{grid-template-columns:1fr;gap:20px}.headache-intro-visual img{max-height:300px}.headache-intro-copy{font-size:13px}}
+</style>
 </head>
 <body>
 <div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>MOMDO MASSAGE &amp; MANIPULATIVE</span></div></div>
@@ -163,6 +174,21 @@ footer a{color:var(--gold-light);text-decoration:none}
 <div class="hero-actions"><a class="btn btn-gold" href="#body-connection">頭痛と身体のつながりを見る</a><a class="btn btn-outline" href="#medical-check">受診の目安を確認する</a></div></div>
 <div class="hero-art"><img src="headache-hero.webp" alt="頭痛専門ページのメインビジュアル" fetchpriority="high"></div>
 </div></section>
+<section class="headache-intro" aria-label="頭痛について">
+  <div class="wrap headache-intro-inner">
+    <figure class="headache-intro-visual">
+      <img src="headache-neck-care.jpg" alt="頭痛と首まわりのケアについての解説画像" loading="lazy">
+    </figure>
+    <div class="headache-intro-copy">
+      <h2 class="intro-heading">ひとくちに頭痛といっても、種類はさまざまです。</h2>
+      <p>ひとくちに頭痛とはいっても、たくさんの種類があります。</p>
+      <p>今、15歳以上の日本人の4割は頭痛持ちといわれています。家族、親戚、職場や学校などで、頭痛に悩んでいる方もいるのではないでしょうか。</p>
+      <p>頭痛は、一時的で軽い痛みのものから、継続的なもの、耐えがたい痛みのものまでさまざまです。脳の重大な病気が原因となっている場合もあるため、「たかが頭痛」と軽く考えるのは危険です。</p>
+      <p>一方で、すべてを深刻なものとばかり捉える必要もありません。ストレスや生活習慣、姿勢など、さまざまな要因が頭痛に関係することもあります。</p>
+      <p>頭痛についてよく知り、必要なときには医療機関に相談しながら、自分に合ったケアを考えていきましょう。</p>
+    </div>
+  </div>
+</section>
 <section class="section white"><div class="wrap"><div class="section-head"><div class="kicker">FIRST STEP</div><h2>こんなお悩みはありませんか？</h2><p>頭痛の感じ方や起こるタイミングは人によって異なります。まずは、どのような不調があるかを整理してみましょう。</p></div>
 <div class="grid-3">
 <article class="card"><span class="num">01 / HEAD</span><h3>頭が締め付けられる</h3><p>頭全体や後頭部が重く、圧迫されるように感じる。</p></article>
