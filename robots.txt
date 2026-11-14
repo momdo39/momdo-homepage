@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://momdo39.github.io/momdo-homepage/sitemap.xml
