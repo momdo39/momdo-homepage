@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MomdoのCSFプラクティス。脳脊髄液（CSF）の基礎知識、ソフトブロック®を用いた手技、施術の考え方と流れをご紹介します。">
+<meta name="theme-color" content="#1C100B">
+<title>CSFプラクティス｜脳脊髄液と身体のコンディション｜Momdo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brown:#1C100B;--brown2:#352219;--gold:#C69B52;--gold-light:#F3DDA6;--cream:#F8F5EF;--paper:#fff;--ink:#33251D;--muted:#786A60;--line:#E8DFD2}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.9}
+a{color:inherit}img{max-width:100%;height:auto;display:block}
+.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+.topbar{padding:7px 0;background:var(--brown);color:#eee4d8;font-size:11px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.header{position:sticky;top:0;z-index:20;background:rgba(28,16,11,.97);color:#fff;border-bottom:1px solid rgba(198,155,82,.45);backdrop-filter:blur(8px)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{color:#fff;text-decoration:none;font-family:"Shippori Mincho",serif;font-size:24px;letter-spacing:.12em;line-height:1.35;white-space:nowrap}
+.brand small{display:block;color:var(--gold-light);font:9px Cinzel,serif;letter-spacing:.17em}
+.navlinks{display:flex;align-items:center;gap:clamp(10px,1.8vw,22px);font-size:13px}
+.navlinks a{color:#fff;text-decoration:none}.navlinks a:hover{color:var(--gold-light)}
+.nav-dropdown{position:relative}.nav-dropdown-toggle{border:0;background:none;color:#fff;font:inherit;cursor:pointer;padding:8px 0}
+.nav-dropdown-menu{position:absolute;right:0;top:100%;z-index:30;min-width:190px;padding:8px;background:#25140D;border:1px solid var(--gold);border-radius:5px}
+.nav-dropdown-menu[hidden]{display:none}.nav-dropdown-menu a{display:block;padding:9px 12px;border-bottom:1px solid #ffffff20}.nav-dropdown-menu a:last-child{border:0}
+.menu-toggle{display:none;padding:8px 11px;border:1px solid var(--gold);border-radius:4px;background:transparent;color:#fff}
+.btn{display:inline-flex;justify-content:center;align-items:center;min-height:45px;padding:10px 19px;border:1px solid var(--gold);text-decoration:none;font-size:13px;font-weight:700;transition:.2s}
+.btn-gold{background:linear-gradient(135deg,#f1d89b,#c89b4e);color:var(--brown);border:0}.btn-outline{color:#fff;background:transparent}
+.btn:hover{transform:translateY(-2px)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,#705638 0%,#352219 35%,#1C100B 76%);color:#fff}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,16,11,.96),rgba(28,16,11,.76) 52%,rgba(28,16,11,.18));pointer-events:none}
+.hero-inner{position:relative;z-index:1;min-height:520px;display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;padding:68px 0}
+.eyebrow{color:var(--gold-light);font:12px Cinzel,serif;letter-spacing:.24em}
+.hero h1{margin:14px 0 18px;font:500 clamp(34px,5vw,58px)/1.45 "Shippori Mincho",serif;letter-spacing:.04em}
+.hero p{max-width:620px;color:#f0e7dc;font-size:15px;margin:0}
+.hero-art{padding:18px;background:#fff;border-radius:8px;box-shadow:0 18px 50px #0004}
+.hero-art img{width:100%;max-height:390px;object-fit:contain}
+.hero-note{margin-top:18px;color:#d9cabb;font-size:11px}
+.breadcrumb{padding:12px 0;background:#fff;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
+.breadcrumb a{color:#8b672a;text-decoration:none}
+.section{padding:76px 0}.section.white{background:#fff}.section.dark{background:var(--brown);color:#eee4d8}
+.section-head{text-align:center;max-width:820px;margin:0 auto 38px}
+.kicker{color:#9a762e;font:11px Cinzel,serif;letter-spacing:.2em}
+.section-head h2{margin:8px 0 12px;color:var(--brown2);font:500 clamp(25px,3.5vw,36px)/1.55 "Shippori Mincho",serif}
+.section-head p{margin:0;color:var(--muted);font-size:14px}
+.dark .section-head h2{color:#fff}.dark .section-head p{color:#d8cabe}.dark .kicker{color:var(--gold-light)}
+.lead-box{max-width:920px;margin:auto;padding:30px 34px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);font:18px/2 "Shippori Mincho",serif}
+.lead-box p{margin:0}.lead-box p+p{margin-top:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.diagram{margin:0;padding:18px;background:#fff;border:1px solid var(--line);border-radius:8px}
+.diagram img{width:100%;max-height:440px;object-fit:contain}
+.caption{margin:10px 0 0;color:var(--muted);font-size:11px}
+.copy h3{margin:0 0 12px;color:var(--brown2);font:500 23px "Shippori Mincho",serif}
+.copy p{margin:0 0 14px;font-size:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:24px;background:#fff;border:1px solid var(--line);border-radius:8px}
+.card .num{color:#9a762e;font:12px Cinzel,serif;letter-spacing:.15em}
+.card h3{margin:8px 0;color:var(--brown2);font:500 19px "Shippori Mincho",serif}
+.card p{margin:0;color:var(--muted);font-size:13px}
+.feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}
+.feature{padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:7px}
+.feature h3{margin:0 0 7px;font:500 18px "Shippori Mincho",serif;color:var(--brown2)}
+.feature p{margin:0;color:var(--muted);font-size:13px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{padding:22px 18px;background:#fff;border:1px solid var(--line);border-radius:7px}
+.step b{font:20px Cinzel,serif;color:#a17a35}.step h3{margin:8px 0;font:500 17px "Shippori Mincho",serif}.step p{margin:0;color:var(--muted);font-size:12px}
+.note{margin-top:26px;padding:18px 20px;background:#f8f5ef;border-left:4px solid var(--gold);font-size:12px;color:var(--muted);line-height:1.9}
+.faq{max-width:850px;margin:auto}.faq-item{padding:20px 0;border-bottom:1px solid var(--line)}.faq-item h3{margin:0 0 8px;font-size:15px;color:var(--brown2)}.faq-item p{margin:0;color:var(--muted);font-size:13px}
+.cta-panel{text-align:center;padding:34px;background:#fff;border:1px solid var(--line);border-radius:8px}.cta-panel h2{font:500 25px "Shippori Mincho",serif;color:var(--brown2)}.cta-panel p{color:var(--muted);font-size:14px}
+footer{padding:30px 0;background:var(--brown);color:#eee4d8;font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner a{color:var(--gold-light);text-decoration:none}
+@media(max-width:850px){.nav{flex-wrap:wrap;padding:12px 0}.menu-toggle{display:block}.header-contact{display:none}.navlinks{display:none;order:3;width:100%;align-items:stretch;flex-direction:column;gap:0;padding:8px 0 12px}.navlinks.is-open{display:flex}.navlinks>a,.nav-dropdown-toggle{display:block;width:100%;padding:12px 8px;text-align:left;border-bottom:1px solid #ffffff20}.nav-dropdown-menu{position:static;box-shadow:none}.hero-inner{grid-template-columns:1fr;gap:26px;min-height:0;padding:52px 0}.hero-art{max-width:650px;margin:auto}.two{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.section{padding:56px 0}.lead-box{padding:22px;font-size:16px}.grid-3,.feature-list,.steps{grid-template-columns:1fr}.hero h1{font-size:34px}.hero-art{padding:10px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>MOMDO MASSAGE &amp; MANIPULATIVE</span></div></div>
+<header class="header">
+<div class="wrap nav">
+<a class="brand" href="../../index.html" aria-label="Momdo トップページ">Momdo<small>Massage &amp; Manipulative</small></a>
+<nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
+<a href="../concerns/concerns.html">お悩みから探す</a><a href="../body-explorer/body-explorer.html">BODY EXPLORER</a><a href="menu.html">メニュー・料金</a><a href="../access/access.html">アクセス</a><a href="../others/FAQ.html">FAQ</a>
+<div class="nav-dropdown"><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="other-menu">その他 ▼</button><div class="nav-dropdown-menu" id="other-menu" hidden><a href="../story/momdo-story.html">Momdo STORY</a><a href="../../index.html#blog">ブログ・お知らせ</a><a href="../link/link.html">リンク集</a></div></div>
+</nav>
+<button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="メニューを開く">☰ メニュー</button>
+<a class="btn btn-outline header-contact" href="../../contact.html">お問い合わせ</a>
+</div>
+</header>
+<section class="hero"><div class="wrap hero-inner">
+<div><div class="eyebrow">MOMDO ORIGINAL APPROACH</div><h1>CSF<br>プラクティス</h1><p>脳脊髄液（CSF）と全身のコンディションに着目する。身体を一部分だけで捉えず、頭部から全身のつながりを丁寧に確認する、Momdo独自の考え方に基づく手技です。</p><div class="hero-note">※医療行為や脳脊髄液の流れを変化させることを保証するものではありません。</div></div>
+<figure class="hero-art"><img src="medical-csf-practice.png" alt="頭蓋骨を用いたCSFプラクティスの説明イメージ"></figure>
+</div></section>
+<div class="breadcrumb"><div class="wrap"><a href="../../index.html">トップページ</a>　›　<a href="menu.html">メニュー・料金</a>　›　CSFプラクティス</div></div>
+<section class="section white"><div class="wrap"><div class="section-head"><div class="kicker">ABOUT CSF</div><h2>脳脊髄液（CSF）とは</h2><p>まずは、身体の中で脳脊髄液がどのような役割を担っているのかを知ることから始めます。</p></div>
+<div class="lead-box"><p>脳脊髄液（Cerebrospinal Fluid：CSF）は、脳室でつくられ、脳や脊髄の周囲を満たしている透明な液体です。</p><p>脳や脊髄を浮かせるように支え、外部からの衝撃を和らげる働きのほか、脳や神経の周囲の環境を保つことにも関わっています。</p></div>
+<div class="feature-list"><article class="feature"><h3>脳・脊髄を保護する</h3><p>脳や脊髄の周囲を満たし、浮力によって組織を支え、衝撃を和らげる役割があります。</p></article><article class="feature"><h3>内部環境を保つ</h3><p>脳や神経の周囲の化学的な環境を保ち、物質の移動や老廃物の排出に関わる仕組みの一部を担います。</p></article></div>
+</div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div class="kicker">PRODUCTION / CIRCULATION / ABSORPTION</div><h2>産生・循環・吸収のしくみ</h2><p>脳脊髄液は、つくられ、脳室や脳・脊髄の周囲を循環し、体内へ吸収される動的な仕組みの中にあります。</p></div>
+<div class="two"><div class="copy"><h3>身体の中で保たれる循環</h3><p>脳脊髄液は主に脳室内の脈絡叢で産生され、脳室内を通った後、脳と脊髄の周囲に広がります。その後、複数の経路を通じて静脈系やリンパ系などへ移行・吸収されます。</p><p>この循環は、脳や脊髄を取り巻く環境を保つための生理的な仕組みです。流れの状態を外から見た印象だけで判断することはできません。</p></div><figure class="diagram"><img src="medical-csf-practice.png" alt="CSFプラクティスの説明に用いる頭蓋骨のイメージ"><figcaption class="caption">画像はCSFプラクティスの説明イメージです。脳脊髄液の流れを示す医学的な模式図ではありません。</figcaption></figure></div>
+</div></section>
+<section class="section white"><div class="wrap"><div class="section-head"><div class="kicker">MOMDO VIEWPOINT</div><h2>身体を、一部分だけで見ない。</h2><p>筋肉や関節の動きだけでなく、日々の生活や身体全体の状態にも目を向けます。</p></div>
+<div class="grid-3"><article class="card"><div class="num">01 / MOVEMENT</div><h3>動きの特徴</h3><p>姿勢や動作、関節の動き、筋肉の緊張などを確認します。</p></article><article class="card"><div class="num">02 / CONDITION</div><h3>組織とコンディション</h3><p>身体の柔軟性や違和感、疲労感、日常生活での変化などを伺います。</p></article><article class="card"><div class="num">03 / WHOLE BODY</div><h3>全身のつながり</h3><p>相談内容に応じて、気になる場所だけでなく関連する部位にも目を向けます。</p></article></div>
+</div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div class="kicker">CSF PRACTICE</div><h2>ソフトブロック®と手技を用いたアプローチ</h2><p>強い刺激を加えることを目的とせず、お身体の状態を確認しながら、無理のない範囲で行います。</p></div>
+<div class="two"><figure class="diagram"><img src="medical-csf-practice.png" alt="頭蓋骨を用いたCSFプラクティスの説明イメージ"><figcaption class="caption">施術の考え方を伝えるためのイメージです。実際の施術手順や効果を示すものではありません。</figcaption></figure><div class="copy"><h3>状態に合わせて、やさしく働きかける</h3><p>CSFプラクティスでは、ソフトブロック®や手技を用い、頭部や身体にやさしく働きかけます。施術前にお話を伺い、身体の状態やご希望を確認したうえで、刺激量や方法を調整します。</p><p>すべての方に同じ方法を行うのではなく、その日の体調や不安の有無も確認しながら進めます。痛みや不快感がある場合は、すぐにお知らせください。</p><p>Momdoでは、組織の柔軟性や身体のコンディションを整えることを目指す「ナチュラル再生法」という考え方でご案内しています。</p></div></div>
+<div class="note">大切なご案内：脳脊髄液の産生・循環・吸収を施術によって促進・改善できること、組織の若返りや再生を実現できることは、医学的に確立した効果として確認されていません。本ページでは、Momdo独自の施術コンセプトとして紹介しています。特定の症状への効果を保証するものではありません。</div>
+</div></section>
+<section class="section white"><div class="wrap"><div class="section-head"><div class="kicker">TREATMENT FLOW</div><h2>施術の流れ</h2><p>施術内容を一方的に決めるのではなく、お話と身体の状態を確認しながら進めます。</p></div>
+<div class="steps"><article class="step"><b>01</b><h3>お話を伺う</h3><p>気になっていること、これまでの経過、体調やご希望を伺います。</p></article><article class="step"><b>02</b><h3>身体の状態を確認</h3><p>無理のない範囲で姿勢や動き、触れられることへの不安などを確認します。</p></article><article class="step"><b>03</b><h3>施術方法を相談</h3><p>内容や刺激の程度をご説明し、納得いただいてから進めます。</p></article><article class="step"><b>04</b><h3>状態に合わせて施術</h3><p>施術中も反応を確認し、必要に応じて方法や刺激量を調整します。</p></article></div>
+</div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div class="kicker">FAQ</div><h2>よくあるご質問</h2></div><div class="faq">
+<div class="faq-item"><h3>Q. CSFプラクティスは、脳脊髄液を増やす施術ですか？</h3><p>脳脊髄液の産生量を増やしたり、循環・吸収を促進したりする効果が医学的に確立しているわけではありません。CSFに着目したMomdo独自の考え方に基づく手技としてご案内しています。</p></div>
+<div class="faq-item"><h3>Q. 強い刺激や痛みを伴いますか？</h3><p>強い刺激を目的とした施術ではありません。お身体の状態やご希望を確認し、刺激量や方法を調整します。不快感や痛みがあればすぐにお知らせください。</p></div>
+<div class="faq-item"><h3>Q. 病気や頭痛を治す施術ですか？</h3><p>病気の診断や治療を目的とするものではありません。頭痛や神経症状などがある場合は、まず医療機関で適切な診察を受けてください。</p></div>
+<div class="faq-item"><h3>Q. どなたでも受けられますか？</h3><p>体調や既往歴、現在の症状によっては施術を控えたり、医療機関への相談を優先したりする場合があります。事前に状態をお知らせください。</p></div>
+</div>
+<div class="note">突然の激しい頭痛、麻痺・しびれ、意識や視覚の異常、発熱を伴う強い頭痛などがある場合は、施術よりも医療機関への受診を優先してください。緊急性が疑われる場合は救急要請を検討してください。</div>
+</div></section>
+<section class="section white"><div class="wrap"><div class="cta-panel"><div class="kicker">MORE ABOUT MOMDO</div><h2>施術について、さらに詳しく。</h2><p>メディカルマッサージの考え方や、ほかの手技・機器についてもご覧いただけます。</p><a class="btn btn-gold" href="medical-massage.html">メディカルマッサージを見る</a>　<a class="btn" href="menu.html">メニュー・料金を見る</a></div></div></section>
+<footer><div class="wrap footer-inner"><div><strong style="font:22px 'Shippori Mincho',serif">Momdo</strong><br>MASSAGE &amp; MANIPULATIVE<br>福岡市城南区七隈｜金山駅徒歩2分</div><div><a href="../concerns/concerns.html">お悩みから探す</a>　/　<a href="../body-explorer/body-explorer.html">BODY EXPLORER</a><br><a href="../../index.html">トップページへ</a></div><div>© Momdo Massage &amp; Manipulative</div></div></footer>
+<script>
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#main-navigation');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕ 閉じる':'☰ メニュー';});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰ メニュー';}));const dt=nav.querySelector('.nav-dropdown-toggle'),dm=nav.querySelector('.nav-dropdown-menu');if(dt&&dm)dt.addEventListener('click',()=>{const open=dt.getAttribute('aria-expanded')==='true';dt.setAttribute('aria-expanded',String(!open));dm.hidden=open;});}
+</script>
+</body>
+</html>
