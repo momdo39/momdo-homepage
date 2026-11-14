@@ -60,7 +60,25 @@
     }
 
     .site-nav a { text-decoration: none; }
-    .site-nav a:hover { color: #e2c98e; }
+    .site-nav a:hover, .nav-dropdown summary:hover { color: #e2c98e; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown summary { cursor: pointer; list-style: none; white-space: nowrap; }
+    .nav-dropdown summary::-webkit-details-marker { display: none; }
+    .nav-dropdown-menu {
+      position: absolute; z-index: 20; top: calc(100% + 10px); right: 0;
+      min-width: 190px; padding: 10px; display: grid; gap: 8px;
+      background: #110b08; border: 1px solid #8e7548; border-radius: 4px;
+    }
+    .nav-dropdown-menu a { display: block; padding: 5px 8px; }
+    .header-contact {
+      flex: 0 0 auto; padding: 8px 14px; border: 1px solid #b99a61;
+      color: #e2c98e; text-decoration: none; white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+      .header-inner { align-items: flex-start; flex-direction: column; }
+      .site-nav { gap: 12px 16px; }
+      .nav-dropdown-menu { left: 0; right: auto; }
+    }
 
     main {
       width: min(960px, calc(100% - 36px));
@@ -262,11 +280,26 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html">Momdo</a>
+      <a class="brand" href="../../index.html" aria-label="Momdo トップページ">Momdo</a>
       <nav class="site-nav" aria-label="メインメニュー">
-        <a href="index.html">トップページ</a>
+        <a href="../concerns/concerns.html">お悩みから探す</a>
+        <a href="../body-explorer/body-explorer.html">BODY EXPLORER</a>
         <a href="menu.html">メニュー・料金</a>
+        <a href="../access/access.html">アクセス</a>
+        <a href="../others/FAQ.html">FAQ</a>
+        <details class="nav-dropdown">
+          <summary>その他 <span aria-hidden="true">▼</span></summary>
+          <div class="nav-dropdown-menu">
+            <a href="menu.html">お客様の声</a>
+            <a href="../../index.html#blog">ブログ・お知らせ</a>
+            <a href="../story/momdo-story.html">Momdo STORY</a>
+            <a href="../link/link.html">link</a>
+            <a href="../body-parts/hip-pelvis/body-hip-pelvis.html">股関節</a>
+            <a href="../../privacy.html">プライバシーポリシー</a>
+          </div>
+        </details>
       </nav>
+      <a class="header-contact" href="../../contact.html">お問い合わせ</a>
     </div>
   </header>
 
