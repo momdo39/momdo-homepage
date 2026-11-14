@@ -11,9 +11,28 @@
     *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.85;background:#fff}a{color:inherit}.header,footer{background:var(--brown);color:#fff}.header{padding:16px 4%;border-bottom:1px solid #c69b5266}.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.brand{color:#e5c17a;text-decoration:none;font:700 1.35rem Georgia,serif;letter-spacing:.1em}.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem}.navlinks a{color:#fff;text-decoration:none}.navlinks a:hover{color:#e5c17a}main{width:min(900px,92%);margin:0 auto;padding:52px 0 76px}.eyebrow{color:#9b762d;letter-spacing:.18em;font:700 .78rem Georgia,serif}h1{margin:8px 0 12px;font-size:clamp(2rem,5vw,3rem);line-height:1.4}h2{margin:0 0 10px;font-size:1.3rem}.lead{color:var(--muted);margin:0 0 32px}.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.contact-card{padding:24px;background:var(--cream);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:5px}.contact-card p{margin:8px 0;color:var(--muted)}.phone{display:inline-block;margin-top:8px;color:#805d22;font-size:1.35rem;font-weight:700;text-decoration:underline;text-underline-offset:4px}.notice{margin-top:20px;padding:18px 20px;border-left:3px solid var(--gold);background:#fbf8f1;color:var(--muted);font-size:.92rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-block;padding:11px 18px;border:1px solid var(--gold);border-radius:3px;background:var(--brown);color:#fff;text-decoration:none;font-weight:700}.button.secondary{background:transparent;color:var(--ink)}footer{padding:22px 4%;text-align:center;font-size:.85rem}footer a{color:#e5c17a}
     @media(max-width:600px){.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:10px 15px}main{padding-top:36px}.contact-grid{grid-template-columns:1fr}.contact-card{padding:20px}.actions{flex-direction:column}.button{text-align:center}}
   </style>
+<style id="momdo-global-navigation-style">
+.momdo-global-nav{position:relative;z-index:15;display:flex;justify-content:center;align-items:center;gap:clamp(10px,2vw,24px);flex-wrap:wrap;padding:10px 18px;background:#f8f5ef;border-top:1px solid #e8dfd2;border-bottom:1px solid #e8dfd2;font-family:Arial,"Noto Sans JP",sans-serif;font-size:12px;line-height:1.6}
+.momdo-global-nav a,.momdo-global-footer a{color:#49372a;text-decoration:none}
+.momdo-global-nav a:hover,.momdo-global-footer a:hover{color:#a47c38;text-decoration:underline}
+.momdo-global-nav .momdo-global-nav-map{font-weight:700;color:#8b6428}
+.momdo-global-footer{margin-top:28px;padding:17px 16px;background:#24170f;color:#f4eadb;font:12px/1.8 Arial,"Noto Sans JP",sans-serif}
+.momdo-global-footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:center;align-items:center;gap:10px 22px;flex-wrap:wrap}
+.momdo-global-footer a{color:#f0d9ad}
+@media(max-width:600px){.momdo-global-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding:11px 14px}.momdo-global-footer-inner{justify-content:flex-start}}
+</style>
 </head>
 <body>
   <header class="header"><nav class="nav" aria-label="メインメニュー"><a class="brand" href="index.html">Momdo</a><div class="navlinks"><a href="index.html">トップページ</a><a href="menu.html">メニュー・料金</a><a href="faq.html">よくあるご質問</a><a href="access.html">アクセス</a><a href="contact.html" aria-current="page">ご予約・お問い合わせ</a></div></nav></header>
+<nav class="momdo-global-nav" aria-label="Momdo共通ナビゲーション">
+<a href="/momdo-homepage/index.html">ホーム</a>
+<a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>
+<a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
+<a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a>
+<a href="/momdo-homepage/pages/access/access.html">アクセス</a>
+<a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a>
+<a class="momdo-global-nav-map" href="/momdo-homepage/pages/link/link.html">全ページ一覧</a>
+</nav>
   <main>
     <div class="eyebrow">Contact</div>
     <h1>ご予約・お問い合わせ</h1>
@@ -35,5 +54,14 @@
     <div class="actions"><a class="button" href="menu.html">メニュー・料金を見る</a><a class="button secondary" href="access.html">アクセス・ご来店について</a><a class="button secondary" href="index.html">トップページへ戻る</a></div>
   </main>
   <footer>Momdoマッサージ整体　｜　<a href="index.html">トップページ</a></footer>
+<div class="momdo-global-footer" aria-label="Momdo共通フッターリンク">
+<div class="momdo-global-footer-inner">
+<a href="/momdo-homepage/index.html">ホーム</a>
+<a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a>
+<a href="/momdo-homepage/sitemap.xml">XMLサイトマップ</a>
+<a href="/momdo-homepage/contact.html">お問い合わせ</a>
+<a href="/momdo-homepage/privacy.html">プライバシーポリシー</a>
+<a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">ページ上部へ ↑</a>
+</div></div>
 </body>
 </html>
