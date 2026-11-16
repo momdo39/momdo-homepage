@@ -276,32 +276,78 @@
       .button { width: 100%; }
     }
   </style>
-<style id="momdo-global-navigation-style">.momdo-global-nav{position:relative;z-index:15;display:flex;justify-content:center;align-items:center;gap:clamp(10px,2vw,24px);flex-wrap:wrap;padding:10px 18px;background:#f8f5ef;border-top:1px solid #e8dfd2;border-bottom:1px solid #e8dfd2;font-family:Arial,"Noto Sans JP",sans-serif;font-size:12px;line-height:1.6}.momdo-global-nav a,.momdo-global-footer a{color:#49372a;text-decoration:none}.momdo-global-nav a:hover,.momdo-global-footer a:hover{color:#a47c38;text-decoration:underline}.momdo-global-nav .momdo-global-nav-map{font-weight:700;color:#8b6428}.momdo-global-footer{margin-top:28px;padding:17px 16px;background:#24170f;color:#f4eadb;font:12px/1.8 Arial,"Noto Sans JP",sans-serif}.momdo-global-footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:center;align-items:center;gap:10px 22px;flex-wrap:wrap}.momdo-global-footer a{color:#f0d9ad}@media(max-width:600px){.momdo-global-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding:11px 14px}.momdo-global-footer-inner{justify-content:flex-start}}</style></head>
+<style id="momdo-global-navigation-style">.momdo-global-nav{position:relative;z-index:15;display:flex;justify-content:center;align-items:center;gap:clamp(10px,2vw,24px);flex-wrap:wrap;padding:10px 18px;background:#f8f5ef;border-top:1px solid #e8dfd2;border-bottom:1px solid #e8dfd2;font-family:Arial,"Noto Sans JP",sans-serif;font-size:12px;line-height:1.6}.momdo-global-nav a,.momdo-global-footer a{color:#49372a;text-decoration:none}.momdo-global-nav a:hover,.momdo-global-footer a:hover{color:#a47c38;text-decoration:underline}.momdo-global-nav .momdo-global-nav-map{font-weight:700;color:#8b6428}.momdo-global-footer{margin-top:28px;padding:17px 16px;background:#24170f;color:#f4eadb;font:12px/1.8 Arial,"Noto Sans JP",sans-serif}.momdo-global-footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:center;align-items:center;gap:10px 22px;flex-wrap:wrap}.momdo-global-footer a{color:#f0d9ad}@media(max-width:600px){.momdo-global-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding:11px 14px}.momdo-global-footer-inner{justify-content:flex-start}}</style>
+<style id="medical-massage-index-header">
+.header{background:#030b1d;color:#fff;border-bottom:1px solid rgba(230,197,135,.32)}
+.medical-header-wrap{width:min(1160px,92%);margin:0 auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.header .brand{display:block;color:#e5c17a;font-family:Georgia,serif;font-size:1.55rem;font-weight:700;letter-spacing:.12em;text-decoration:none;white-space:nowrap}
+.header .brand small{display:block;color:#e8efff;font-family:Georgia,serif;font-size:.58rem;letter-spacing:.2em}
+.header .navlinks{display:flex;align-items:center;gap:22px;font-size:.85rem}
+.header .navlinks>a{color:#fff;text-decoration:none;white-space:nowrap}
+.header .navlinks>a:hover,.nav-dropdown-toggle:hover{color:#61e5ff}
+.header .nav-dropdown{position:relative}
+.header .nav-dropdown-toggle{display:inline-flex;align-items:center;gap:6px;padding:8px 0;border:0;background:transparent;color:#fff;font:inherit;cursor:pointer;white-space:nowrap}
+.header .nav-dropdown-menu{position:absolute;top:100%;right:0;z-index:200;min-width:210px;padding:8px;background:#25140D;border:1px solid #e5c17a;border-radius:6px;box-shadow:0 8px 20px #0005}
+.header .nav-dropdown-menu[hidden]{display:none}
+.header .nav-dropdown-menu a{display:block;padding:12px;color:#fff;text-decoration:none;border-bottom:1px solid #ffffff20}
+.header .nav-dropdown-menu a:last-child{border-bottom:0}
+.header .nav-dropdown-menu a:hover{color:#61e5ff;background:#ffffff0d}
+.header .menu-toggle{display:none;align-items:center;justify-content:center;gap:8px;padding:10px 12px;border:1px solid #e5c17a;border-radius:4px;background:transparent;color:#fff;cursor:pointer;white-space:nowrap}
+.header .menu-icon{font-size:1.25rem;line-height:1}
+.header .header-contact{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border:1px solid #e5c17a;border-radius:3px;background:transparent;color:#fff;text-decoration:none;font-size:.85rem;white-space:nowrap}
+.header .header-contact:hover{background:#e5c17a;color:#091936}
+@media(max-width:850px){
+  .medical-header-wrap{position:relative;min-height:70px;gap:10px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+  .header .menu-toggle{display:inline-flex;margin-left:auto}
+  .header .header-contact{display:none}
+  .header .navlinks{display:none;position:absolute;top:100%;left:0;right:0;z-index:100;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px;background:#25140D;border:1px solid #D4AF37;box-shadow:0 8px 18px #0005;font-size:.95rem}
+  .header .navlinks.is-open{display:flex}
+  .header .navlinks>a{display:block;padding:12px 8px;border-bottom:1px solid #ffffff20}
+  .header .navlinks>.nav-dropdown{width:100%}
+  .header .nav-dropdown-toggle{width:100%;justify-content:space-between;padding:12px 8px}
+  .header .nav-dropdown-menu{position:static;min-width:0;margin:0 0 8px;box-shadow:none}
+  .header .nav-dropdown-menu a{padding-left:24px}
+}
+</style>
+</head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="../../index.html" aria-label="Momdo トップページ">Momdo</a>
-      <nav class="site-nav" aria-label="メインメニュー">
-        <a href="../concerns/concerns.html">お悩みから探す</a>
-        <a href="../body-explorer/body-explorer.html">BODY EXPLORER</a>
-        <a href="menu.html">メニュー・料金</a>
-        <a href="../access/access.html">アクセス</a>
-        <a href="../others/FAQ.html">FAQ</a>
-        <details class="nav-dropdown">
-          <summary>その他 <span aria-hidden="true">▼</span></summary>
-          <div class="nav-dropdown-menu">
-            <a href="menu.html">お客様の声</a>
-            <a href="../../index.html#blog">ブログ・お知らせ</a>
-            <a href="../story/momdo-story.html">Momdo STORY</a>
-            <a href="../link/link.html">link</a>
-            <a href="../body-parts/hip-pelvis/body-hip-pelvis.html">股関節</a>
-            <a href="../../privacy.html">プライバシーポリシー</a>
-          </div>
-        </details>
-      </nav>
-      <a class="header-contact" href="../../contact.html">お問い合わせ</a>
-    </div>
-  </header><nav class="momdo-global-nav" aria-label="Momdo共通ナビゲーション"><a href="/momdo-homepage/index.html">ホーム</a><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a><a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a><a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a><a href="/momdo-homepage/pages/access/access.html">アクセス</a><a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a><a class="momdo-global-nav-map" href="/momdo-homepage/pages/link/link.html">全ページ一覧</a></nav>
+  <header class="header">
+  <div class="medical-header-wrap nav">
+    <a class="brand" href="/momdo-homepage/index.html#home" aria-label="Momdo トップページ">
+      Momdo
+      <small>Massage &amp; Manipulative</small>
+    </a>
+
+    <nav class="navlinks" id="main-navigation" aria-label="メインメニュー">
+      <a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>
+      <a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
+      <a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a>
+      <a href="/momdo-homepage/pages/access/access.html">アクセス</a>
+      <a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="other-menu">
+          その他 <span aria-hidden="true">▼</span>
+        </button>
+        <div class="nav-dropdown-menu" id="other-menu" hidden>
+          <a href="/momdo-homepage/pages/menu/menu.html">お客様の声</a>
+          <a href="/momdo-homepage/index.html#blog">ブログ・お知らせ</a>
+          <a href="/momdo-homepage/pages/story/momdo-story.html">Momdo STORY</a>
+          <a href="/momdo-homepage/pages/link/link.html">link</a>
+          <a href="/momdo-homepage/pages/body-parts/hip-pelvis/body-hip-pelvis.html">股関節</a>
+          <a href="/momdo-homepage/privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="メニューを開く">
+      <span class="menu-icon">☰</span>
+      <span>メニュー</span>
+    </button>
+
+    <a class="btn btn-outline header-contact" href="/momdo-homepage/contact.html">お問い合わせ</a>
+  </div>
+</header>
 
   <main>
     <p class="eyebrow">Medical Massage</p>
@@ -488,5 +534,46 @@
     <a href="index.html">トップページ</a> ／
     <a href="menu.html">メニュー・料金</a>
   </footer><div class="momdo-global-footer"><div class="momdo-global-footer-inner"><a href="/momdo-homepage/index.html">ホーム</a><a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a><a href="/momdo-homepage/sitemap.xml">XMLサイトマップ</a><a href="/momdo-homepage/contact.html">お問い合わせ</a><a href="/momdo-homepage/privacy.html">プライバシーポリシー</a><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">ページ上部へ ↑</a></div></div>
+
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNavigation = document.querySelector('#main-navigation');
+
+if (menuToggle && mainNavigation) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNavigation.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+    const menuIcon = menuToggle.querySelector('.menu-icon');
+    if (menuIcon) menuIcon.textContent = isOpen ? '✕' : '☰';
+  });
+
+  mainNavigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNavigation.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'メニューを開く');
+      const menuIcon = menuToggle.querySelector('.menu-icon');
+      if (menuIcon) menuIcon.textContent = '☰';
+    });
+  });
+
+  const dropdownToggle = mainNavigation.querySelector('.nav-dropdown-toggle');
+  const dropdownMenu = mainNavigation.querySelector('.nav-dropdown-menu');
+  if (dropdownToggle && dropdownMenu) {
+    dropdownToggle.addEventListener('click', () => {
+      const isOpen = dropdownToggle.getAttribute('aria-expanded') === 'true';
+      dropdownToggle.setAttribute('aria-expanded', String(!isOpen));
+      dropdownMenu.hidden = isOpen;
+    });
+    dropdownMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.hidden = true;
+      });
+    });
+  }
+}
+</script>
 </body>
 </html>
