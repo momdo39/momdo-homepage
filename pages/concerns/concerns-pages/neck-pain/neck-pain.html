@@ -52,6 +52,27 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 .card .num{color:#9a762e;font:12px Cinzel,serif;letter-spacing:.12em}
 .card h3{margin:8px 0;color:var(--brown2);font:500 19px "Shippori Mincho",serif}
 .card p{margin:0;color:var(--muted);font-size:13px}
+.cause-anchor{display:inline-block;margin-top:13px;color:#8b672a;font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.cause-panel{margin-top:30px;padding:30px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold)}
+.cause-panel-head{max-width:760px;margin:0 auto 22px;text-align:center}
+.cause-panel-head h3{margin:7px 0 9px;color:var(--brown2);font:500 22px/1.6 "Shippori Mincho",serif}
+.cause-panel-head p{margin:0;color:var(--muted);font-size:13px}
+.cause-accordion{margin-top:12px;border:1px solid var(--line);background:#fff}
+.cause-accordion summary{display:flex;align-items:center;gap:14px;padding:17px 20px;cursor:pointer;list-style:none;color:var(--brown2)}
+.cause-accordion summary::-webkit-details-marker{display:none}
+.cause-accordion summary::after{content:"＋";margin-left:auto;color:#9a762e;font-size:19px}
+.cause-accordion[open] summary::after{content:"－"}
+.cause-number{color:#9a762e;font:16px Cinzel,serif}
+.cause-title{font-weight:700;font-size:14px}
+.cause-toggle{margin-left:auto;color:#8b672a;font-size:11px;white-space:nowrap}
+.cause-accordion[open] .cause-toggle{display:none}
+.cause-content{padding:4px 22px 18px;border-top:1px solid var(--line)}
+.cause-item{padding:13px 0;border-bottom:1px solid #eee8df}
+.cause-item:last-child{border-bottom:0}
+.cause-item h4{margin:0 0 4px;color:var(--brown2);font:600 14px "Noto Sans JP",sans-serif}
+.cause-item p{margin:0;color:var(--muted);font-size:13px}
+.cause-note{margin:18px 0 0;color:var(--muted);font-size:12px}
+@media(max-width:600px){.cause-panel{padding:20px 14px}.cause-accordion summary{gap:9px;padding:15px 12px}.cause-title{font-size:12px}.cause-toggle{font-size:10px}.cause-content{padding:4px 14px 14px}}
 .callout{margin-top:24px;padding:18px 22px;background:var(--cream);border-left:3px solid var(--gold);color:var(--muted);font-size:13px}
 .content-two{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
 .content-figure figcaption{font-size:12px;color:var(--muted);padding:10px 4px 0}
@@ -113,13 +134,37 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 </div></section>
 <section class="section white" id="first-step"><div class="wrap"><div class="section-head"><div class="kicker">FIRST STEP</div><h2>こんなお悩みはありませんか？</h2><p>首の痛みや動かしにくさの感じ方は人それぞれです。まずは気になる状態を整理してみましょう。</p></div>
 <div class="grid-3">
-<article class="card"><span class="num">01 / PAIN</span><h3>首を動かすと痛む</h3><p>左右を向く、上を向く、下を向く動きがつらい。</p></article>
+<article class="card"><span class="num">01 / PAIN</span><h3>首を動かすと痛む</h3><p>左右を向く、上を向く、下を向く動きがつらい。</p><a class="cause-anchor" href="#neck-pain-causes">考えられる原因を見る ↓</a></article>
 <article class="card"><span class="num">02 / STIFFNESS</span><h3>首すじが張る・こる</h3><p>首の後ろや横に重さ、張り、こわばりを感じる。</p></article>
 <article class="card"><span class="num">03 / SHOULDER</span><h3>首から肩にかけてつらい</h3><p>首の付け根や肩の上部まで不快感が広がる。</p></article>
 <article class="card"><span class="num">04 / MOVEMENT</span><h3>振り向きにくい</h3><p>後ろを確認するときなど、首を回しにくく感じる。</p></article>
 <article class="card"><span class="num">05 / MORNING</span><h3>朝起きると首がつらい</h3><p>起床時に首がこわばり、動かしにくさを感じる。</p></article>
 <article class="card"><span class="num">06 / REPEAT</span><h3>首の不調を繰り返す</h3><p>楽になっても、同じようなつらさが何度も起こる。</p></article>
-</div><div class="callout">※これらはよくある訴えの例です。症状だけで原因や病名を判断することはできません。</div>
+</div>
+<div class="cause-panel" id="neck-pain-causes">
+  <div class="cause-panel-head"><span class="kicker">POSSIBLE CAUSES</span><h3>首を動かすと痛むときに、考えられる要因</h3><p>原因は一つとは限りません。ここでは代表的な例を紹介します。症状だけで自己判断せず、気になる症状が続く場合は医療機関にご相談ください。</p></div>
+  <details class="cause-accordion">
+    <summary><span class="cause-number">01</span><span class="cause-title">筋肉・関節・姿勢に関係する要因</span><span class="cause-toggle">詳しく見る</span></summary>
+    <div class="cause-content">
+      <div class="cause-item"><h4>寝違え</h4><p>睡眠中の姿勢などをきっかけに、首まわりの筋肉や関節に負担がかかり、起床時から痛みや動かしにくさが現れることがあります。</p></div>
+      <div class="cause-item"><h4>筋肉の緊張や疲労</h4><p>長時間同じ姿勢で過ごすことや、作業環境・身体の使い方などが重なり、首や肩まわりに張りや痛みを感じる場合があります。</p></div>
+      <div class="cause-item"><h4>首の一部に負担が集中する動き方</h4><p>首だけで振り向くなど、肩や背中を含めた動きが少ない場合、首の特定の部分に負担が偏ることがあります。</p></div>
+      <div class="cause-item"><h4>緊張やストレス、睡眠不足</h4><p>精神的な緊張や睡眠不足は、筋肉のこわばりや痛みの感じ方に影響することがあります。</p></div>
+    </div>
+  </details>
+  <details class="cause-accordion">
+    <summary><span class="cause-number">02</span><span class="cause-title">神経・骨・関節などに関係する要因</span><span class="cause-toggle">詳しく見る</span></summary>
+    <div class="cause-content">
+      <div class="cause-item"><h4>頚椎椎間板ヘルニア</h4><p>椎間板の一部が突出し、神経を刺激・圧迫すると、首の痛みに加えて腕や手の痛み、しびれなどが現れることがあります。</p></div>
+      <div class="cause-item"><h4>頚椎症</h4><p>加齢などに伴う頚椎や椎間板の変化が、神経の刺激につながる場合があります。首の痛みのほか、腕や手のしびれ、動かしにくさが現れることもあります。</p></div>
+      <div class="cause-item"><h4>後頭神経痛</h4><p>後頭部へ向かう神経が刺激され、後頭部から首すじにかけて、電気が走るような痛みや鋭い痛みが生じることがあります。</p></div>
+      <div class="cause-item"><h4>まれな炎症性疾患</h4><p>頚長筋の石灰沈着や頚椎の結晶による炎症など、まれな病気で強い首の痛みが起こることがあります。飲み込みにくさや発熱を伴う場合もあります。</p></div>
+      <div class="cause-item"><h4>頚椎捻挫（むちうち）</h4><p>交通事故や転倒などの衝撃によって、首の筋肉・靱帯などを損傷した状態です。痛みや動かしにくさが現れることがあります。</p></div>
+    </div>
+  </details>
+  <p class="cause-note">※ここに挙げた内容は原因の例であり、症状から病名を判断することはできません。強い痛み、外傷後の痛み、しびれや脱力、発熱などがある場合は、下記の受診案内をご確認ください。</p>
+</div>
+<div class="callout">※これらはよくある訴えの例です。症状だけで原因や病名を判断することはできません。</div>
 </div></section>
 <section class="section"><div class="wrap"><div class="section-head"><div class="kicker">NECK ANATOMY</div><h2>首の痛みについて、身体の仕組みから知る。</h2><p>首の動きには、骨・関節・筋肉・神経など複数の組織が関わっています。</p></div>
 <div class="content-two">
