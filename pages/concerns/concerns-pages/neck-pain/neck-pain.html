@@ -76,6 +76,21 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 .neck-message-visual img{display:block;width:100%;height:auto;object-fit:contain}
 @media(max-width:600px){.neck-message-visual{padding-top:20px}}
 
+
+/* Neck stiffness cause accordion */
+.cause-trigger{display:inline-block;margin-top:13px;color:#8b672a;font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.cause-section{max-width:1080px;margin:34px auto 0;padding:30px 0 0;border-top:1px solid var(--line)}
+.cause-accordions{display:grid;gap:12px;max-width:900px;margin:0 auto}
+.cause-accordion{background:#fff;border:1px solid var(--line)}
+.cause-accordion summary{position:relative;padding:18px 48px 18px 20px;color:var(--brown2);font:500 16px/1.6 "Shippori Mincho",serif;cursor:pointer;list-style:none}
+.cause-accordion summary::-webkit-details-marker{display:none}
+.cause-accordion summary:after{content:"＋";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:#9a762e;font:20px sans-serif}
+.cause-accordion[open] summary:after{content:"−"}
+.cause-body{padding:0 20px 18px;border-top:1px solid var(--line)}
+.cause-body h3{margin:16px 0 5px;color:var(--brown2);font:500 15px "Shippori Mincho",serif}
+.cause-body p,.cause-note{margin:0;color:var(--muted);font-size:13px;line-height:1.9}
+.cause-note{max-width:900px;margin:16px auto 0}
+@media(max-width:600px){.cause-section{padding-top:24px}.cause-accordion summary{font-size:15px;padding:16px 42px 16px 15px}.cause-body{padding:0 15px 16px}}
 </style>
 </head>
 <body id="top">
@@ -125,12 +140,29 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 <section class="section white" id="first-step"><div class="wrap"><div class="section-head"><div class="kicker">FIRST STEP</div><h2>こんなお悩みはありませんか？</h2><p>首の痛みや動かしにくさの感じ方は人それぞれです。まずは気になる状態を整理してみましょう。</p></div>
 <div class="grid-3">
 <article class="card"><span class="num">01 / PAIN</span><h3>首を動かすと痛む</h3><p>左右を向く、上を向く、下を向く動きがつらい。</p></article>
-<article class="card"><span class="num">02 / STIFFNESS</span><h3>首すじが張る・こる</h3><p>首の後ろや横に重さ、張り、こわばりを感じる。</p></article>
+<article class="card"><span class="num">02 / STIFFNESS</span><h3>首すじが張る・こる</h3><p>首の後ろや横に重さ、張り、こわばりを感じる。</p><a class="cause-trigger" href="#neck-stiffness-causes">考えられる原因を見る ↓</a></article>
 <article class="card"><span class="num">03 / SHOULDER</span><h3>首から肩にかけてつらい</h3><p>首の付け根や肩の上部まで不快感が広がる。</p></article>
 <article class="card"><span class="num">04 / MOVEMENT</span><h3>振り向きにくい</h3><p>後ろを確認するときなど、首を回しにくく感じる。</p></article>
 <article class="card"><span class="num">05 / MORNING</span><h3>朝起きると首がつらい</h3><p>起床時に首がこわばり、動かしにくさを感じる。</p></article>
 <article class="card"><span class="num">06 / REPEAT</span><h3>首の不調を繰り返す</h3><p>楽になっても、同じようなつらさが何度も起こる。</p></article>
-</div><div class="callout">※これらはよくある訴えの例です。症状だけで原因や病名を判断することはできません。</div>
+</div>
+<section class="cause-section" id="neck-stiffness-causes" aria-labelledby="neck-stiffness-title">
+<div class="section-head"><div class="kicker">02 / STIFFNESS</div><h2 id="neck-stiffness-title">首すじの張り・こりに考えられること。</h2><p>首すじの張りやこわばりには、日々の姿勢や筋肉の負担など、さまざまな要因が関係することがあります。</p></div>
+<div class="cause-accordions">
+<details class="cause-accordion"><summary>筋肉・姿勢・生活習慣に関係する要因</summary><div class="cause-body">
+<h3>同じ姿勢が長く続く</h3><p>デスクワークやスマートフォンの操作などで頭を一定の位置に保つ時間が長いと、首や肩まわりの筋肉に負担がかかり、張りやこわばりを感じることがあります。</p>
+<h3>筋肉の疲労や緊張</h3><p>長時間の作業、慣れない動作、休息不足などによって、首まわりの筋肉に疲労や緊張が生じることがあります。</p>
+<h3>ストレスや睡眠不足</h3><p>心身の緊張や睡眠の質の低下が、筋肉のこわばりや不快感に影響する場合があります。原因を一つに決めつけず、生活全体を振り返ることが大切です。</p>
+</div></details>
+<details class="cause-accordion"><summary>神経・骨・関節などに関係する要因</summary><div class="cause-body">
+<h3>頸椎の変化</h3><p>加齢などに伴う頸椎や椎間板の変化が、首の痛みや動かしにくさに関係することがあります。ただし、画像検査で変化が見つかっても、それが症状の原因とは限りません。</p>
+<h3>神経への刺激や圧迫</h3><p>首の神経が刺激されると、首の張りに加えて肩や腕の痛み、しびれなどが現れることがあります。症状の範囲や筋力の変化などを含めて医療機関で確認することが大切です。</p>
+<h3>首以外の状態が関係する場合</h3><p>肩まわりや背中の状態、頭痛などが首すじの不快感と同時に現れることもあります。張りだけで原因を判断することはできません。</p>
+</div></details>
+</div>
+<p class="cause-note">※ここに挙げたものは考えられる要因の例であり、自己診断のためのものではありません。強い痛み、発熱を伴う首のこわばり、激しい頭痛、手足のしびれや脱力などがある場合は、施術を受ける前に医療機関へご相談ください。</p>
+</section>
+<div class="callout">※これらはよくある訴えの例です。症状だけで原因や病名を判断することはできません。</div>
 </div></section>
 <section class="section white"><div class="wrap"><div class="section-head"><div class="kicker">LIFESTYLE &amp; CONDITION</div><h2>日々の過ごし方も、振り返ってみる。</h2><p>生活の中で首に負担を感じる場面がないか、無理のない範囲で振り返ってみましょう。</p></div>
 <div class="grid-3">
