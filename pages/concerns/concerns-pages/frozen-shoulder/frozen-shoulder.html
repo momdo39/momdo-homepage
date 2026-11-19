@@ -7,22 +7,22 @@
 <style>
 /* Layout: 左寄せの読み物。要点 → 構造図(正常/拘縮) → 経過の時間軸 → 動きの確認 → 治療 → 受診 → 鑑別表 → 出典 */
 :root {
-  --bg: #F2F5F6;
-  --surface: #FFFFFF;
-  --fg: #17262E;
-  --muted: #56666F;
-  --line: #D3DCE0;
-  --accent: #1B6A86;
+  --bg: #F7F3EC;
+  --surface: #FFFEFB;
+  --fg: #34271F;
+  --muted: #75675B;
+  --line: #E4D8C8;
+  --accent: #94652F;
   --acute: #B94A2A;
-  --stiff: #8A5F12;
+  --stiff: #A87928;
   --recover: #2B7A5F;
   --acute-bg: #F8E8E2;
-  --stiff-bg: #F5ECD9;
+  --stiff-bg: #F5EBD8;
   --recover-bg: #E0F0E9;
   --danger: #A3221A;
   --danger-bg: #FBEAE7;
-  --bone: #DFE6E9;
-  --bone-line: #9FB0B8;
+  --bone: #E9DFD0;
+  --bone-line: #A9957C;
   --cuff: #C9705A;
   --font-display: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
   --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
@@ -123,15 +123,12 @@ h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
 .caption { font-size: 13px; color: var(--muted); margin: 10px 0 0; line-height: 1.7; }
 .term { font-size: .86em; color: var(--muted); }
 
-/* anatomy */
-.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 6px 0 0; }
-.fig { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 14px 10px; min-width: 0; }
-.fig figcaption { font-family: var(--font-display); font-weight: 700; font-size: 16px; margin-bottom: 6px; }
-.fig.frozen figcaption { color: var(--acute); }
-.fig svg { display: block; width: 100%; height: auto; max-width: 100%; }
-.fig text, .chart-scroll text, .tool svg text { font-family: var(--font-body); fill: var(--fg); font-size: 13px; }
-.fig .sub { font-size: 11px; fill: var(--muted); }
-.fig .leader { stroke: var(--muted); stroke-width: 1; fill: none; }
+/* anatomy comparison image */
+.comparison-figure { margin: 18px 0 0; padding: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.comparison-figure img { display: block; width: 100%; height: auto; border-radius: 5px; }
+.comparison-figure figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.medical-note { margin: 12px 0 0; padding: 12px 14px; background: var(--stiff-bg); border-left: 4px solid var(--stiff); border-radius: 0 6px 6px 0; font-size: 14px; line-height: 1.8; }
+.chart-scroll text, .tool svg text { font-family: var(--font-body); fill: var(--fg); font-size: 13px; }
 
 /* phase chart */
 .chart-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
@@ -220,47 +217,13 @@ tr.urgent th { color: var(--danger); }
     <h2>肩の中で起きていること</h2>
     <p>四十肩・五十肩の正式な病名は肩関節周囲炎で、その多くは、肩の関節を包む袋(<b>関節包</b>)が炎症を起こし、厚く縮んで上腕骨頭に張りつく癒着性関節包炎の状態です。袋が縮むと、関節の中の空間が狭くなり、動かせる範囲が小さくなります。年齢によって呼び名が変わるだけで、40歳でも50歳でも同じ病態をさします。</p>
 
-    <div class="figs">
-      <figure class="fig">
-        <figcaption>正常な肩(右肩を正面から見た模式図)</figcaption>
-        <svg viewBox="0 0 340 310" role="img" aria-label="正常な肩の断面の模式図。関節包は上腕骨頭を包み、下側に余裕のあるたるみ(腋窩陥凹)がある。">
-          <path d="M124 200 L120 300 H190 L186 200 Z" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-          <path d="M78 70 H232 a8 8 0 0 1 0 16 H94 V248 a8 8 0 0 1 -16 0 Z" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-          <circle cx="156" cy="168" r="46" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-          <ellipse cx="156" cy="97" rx="34" ry="9" fill="var(--accent)" fill-opacity=".22" stroke="var(--accent)" stroke-width="1"/>
-          <path d="M100 150 A56 56 0 0 1 212 150" fill="none" stroke="var(--cuff)" stroke-width="8" stroke-linecap="round"/>
-          <path d="M94 130 C112 118 130 120 156 120 C184 120 202 140 204 168 C205 188 196 200 188 206" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round"/>
-          <path d="M94 218 C92 258 124 262 126 206" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round"/>
-          <line class="leader" x1="240" y1="78" x2="252" y2="78"/><text x="256" y="83">肩峰</text>
-          <line class="leader" x1="190" y1="97" x2="252" y2="110"/><text x="256" y="115">肩峰下滑液包</text>
-          <line class="leader" x1="203" y1="129" x2="252" y2="142"/><text x="256" y="147">腱板</text>
-          <line class="leader" x1="205" y1="168" x2="252" y2="174"/><text x="256" y="179" style="fill:var(--accent);font-weight:700">関節包</text>
-          <line class="leader" x1="180" y1="196" x2="252" y2="206"/><text x="256" y="211">上腕骨頭</text>
-          <line class="leader" x1="76" y1="284" x2="108" y2="262"/><text x="8" y="288">下側の</text><text x="8" y="304">たるみ</text>
-        </svg>
-        <p class="caption">関節包は骨頭を包み、下側にゆとり(腋窩陥凹)があります。このゆとりが、腕を上げるときに伸びます。</p>
-      </figure>
-      <figure class="fig frozen">
-        <figcaption>四十肩・五十肩の肩</figcaption>
-        <svg viewBox="0 0 340 310" role="img" aria-label="四十肩・五十肩の肩の模式図。関節包が炎症で厚くなって縮み、下側のたるみが消えている。">
-          <path d="M124 200 L120 300 H190 L186 200 Z" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-          <path d="M78 70 H232 a8 8 0 0 1 0 16 H94 V248 a8 8 0 0 1 -16 0 Z" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-          <circle cx="156" cy="168" r="46" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-          <ellipse cx="156" cy="97" rx="34" ry="9" fill="var(--accent)" fill-opacity=".22" stroke="var(--accent)" stroke-width="1"/>
-          <path d="M100 150 A56 56 0 0 1 212 150" fill="none" stroke="var(--cuff)" stroke-width="8" stroke-linecap="round"/>
-          <path d="M94 130 C112 120 130 122 156 122 C182 122 200 142 202 168 C203 186 196 198 188 206" fill="none" stroke="var(--acute)" stroke-opacity=".28" stroke-width="16" stroke-linecap="round"/>
-          <path d="M94 130 C112 120 130 122 156 122 C182 122 200 142 202 168 C203 186 196 198 188 206" fill="none" stroke="var(--acute)" stroke-width="6" stroke-linecap="round"/>
-          <path d="M94 220 L126 206" fill="none" stroke="var(--acute)" stroke-opacity=".28" stroke-width="16" stroke-linecap="round"/>
-          <path d="M94 220 L126 206" fill="none" stroke="var(--acute)" stroke-width="6" stroke-linecap="round"/>
-          <line class="leader" x1="206" y1="168" x2="252" y2="168"/>
-          <text x="256" y="164" style="fill:var(--acute);font-weight:700">関節包が</text><text x="256" y="181" style="fill:var(--acute);font-weight:700">厚く縮む</text>
-          <line class="leader" x1="76" y1="284" x2="108" y2="224"/>
-          <text x="8" y="288" style="fill:var(--acute);font-weight:700">下側の</text><text x="8" y="304" style="fill:var(--acute);font-weight:700">たるみが消える</text>
-          <text x="256" y="215" class="sub">赤い部分は</text><text x="256" y="230" class="sub">炎症と癒着</text>
-        </svg>
-        <p class="caption">袋が縮むと、腕を上げる、外へひねる、背中に回すといった動きで、骨頭が動く余地がなくなります。模式図のため、実際の形とは異なります。</p>
-      </figure>
-    </div>
+    <figure class="comparison-figure">
+      <img src="images/shoulder-comparison.png"
+        alt="健康な右肩と四十肩・五十肩の肩を前から比較した説明用イラスト。肩関節周囲の構造と、痛みや動きの制限を示しています。"
+        loading="lazy" width="1536" height="1024">
+      <figcaption>健康な肩と四十肩・五十肩の違いをイメージしやすくするための比較図です。</figcaption>
+    </figure>
+    <p class="medical-note"><strong>医学的な補足：</strong>四十肩・五十肩（癒着性関節包炎）の中心となる変化は、肩関節を包む<strong>関節包の炎症・肥厚・拘縮</strong>です。このイラストにある「腱や組織が厚くなる」「肩の筋肉がこわばる」という表現は、すべての患者さんに起きる病変を示すものではありません。実際の状態には個人差があります。</p>
 
     <div class="cols" style="margin-top:32px">
       <div>
