@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>四十肩・五十肩ガイド</title>
+<!doctype html><html><head><meta charset="utf-8"><title>四十肩・五十肩ガイド｜Momdo</title><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body id="top">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,22 +6,22 @@
 <style>
 /* Layout: 左寄せの読み物。要点 → 構造図(正常/拘縮) → 経過の時間軸 → 動きの確認 → 治療 → 受診 → 鑑別表 → 出典 */
 :root {
-  --bg: #F7F3EC;
-  --surface: #FFFEFB;
-  --fg: #34271F;
-  --muted: #75675B;
-  --line: #E4D8C8;
-  --accent: #94652F;
+  --bg: #F2F5F6;
+  --surface: #FFFFFF;
+  --fg: #17262E;
+  --muted: #56666F;
+  --line: #D3DCE0;
+  --accent: #1B6A86;
   --acute: #B94A2A;
-  --stiff: #A87928;
+  --stiff: #8A5F12;
   --recover: #2B7A5F;
   --acute-bg: #F8E8E2;
-  --stiff-bg: #F5EBD8;
+  --stiff-bg: #F5ECD9;
   --recover-bg: #E0F0E9;
   --danger: #A3221A;
   --danger-bg: #FBEAE7;
-  --bone: #E9DFD0;
-  --bone-line: #A9957C;
+  --bone: #DFE6E9;
+  --bone-line: #9FB0B8;
   --cuff: #C9705A;
   --font-display: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
   --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
@@ -123,12 +122,15 @@ h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
 .caption { font-size: 13px; color: var(--muted); margin: 10px 0 0; line-height: 1.7; }
 .term { font-size: .86em; color: var(--muted); }
 
-/* anatomy comparison image */
-.comparison-figure { margin: 18px 0 0; padding: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
-.comparison-figure img { display: block; width: 100%; height: auto; border-radius: 5px; }
-.comparison-figure figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.75; }
-.medical-note { margin: 12px 0 0; padding: 12px 14px; background: var(--stiff-bg); border-left: 4px solid var(--stiff); border-radius: 0 6px 6px 0; font-size: 14px; line-height: 1.8; }
-.chart-scroll text, .tool svg text { font-family: var(--font-body); fill: var(--fg); font-size: 13px; }
+/* anatomy */
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 6px 0 0; }
+.fig { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 14px 10px; min-width: 0; }
+.fig figcaption { font-family: var(--font-display); font-weight: 700; font-size: 16px; margin-bottom: 6px; }
+.fig.frozen figcaption { color: var(--acute); }
+.fig svg { display: block; width: 100%; height: auto; max-width: 100%; }
+.fig text, .chart-scroll text, .tool svg text { font-family: var(--font-body); fill: var(--fg); font-size: 13px; }
+.fig .sub { font-size: 11px; fill: var(--muted); }
+.fig .leader { stroke: var(--muted); stroke-width: 1; fill: none; }
 
 /* phase chart */
 .chart-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
@@ -190,7 +192,26 @@ tr.urgent th { color: var(--danger); }
 @media (max-width: 480px) { body { font-size: 15.5px; } .lede { font-size: 16px; } }
 </style>
 
-<div class="wrap">
+<div class="topbar"><div class="site-width"><span>MOMDO MASSAGE &amp; MANIPULATIVE</span><span>身体を、ひとつながりで考える。</span></div></div>
+<header class="site-header"><div class="site-width site-nav">
+  <a class="brand" href="/momdo-homepage/index.html">Momdo<small>Massage &amp; Manipulative</small></a>
+  <nav aria-label="メインメニュー">
+    <a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>
+    <a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
+    <a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a>
+    <a href="/momdo-homepage/pages/access/access.html">アクセス</a>
+    <a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a>
+  </nav>
+  <a class="nav-contact" href="/momdo-homepage/contact.html">お問い合わせ</a>
+</div></header>
+<nav class="global-nav" aria-label="サイト内ナビゲーション">
+  <a href="/momdo-homepage/index.html">ホーム</a>
+  <a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>
+  <a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
+  <a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a>
+</nav>
+<div class="breadcrumb"><div class="site-width"><a href="/momdo-homepage/index.html">ホーム</a>　›　<a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>　›　四十肩・五十肩</div></div>
+<main class="wrap">
   <header>
     <p class="eyebrow">肩関節周囲炎 / 癒着性関節包炎</p>
     <h1>四十肩・五十肩ガイド</h1>
@@ -215,17 +236,19 @@ tr.urgent th { color: var(--danger); }
 
   <section id="about">
     <h2>肩の中で起きていること</h2>
-    <p>四十肩・五十肩の正式な病名は肩関節周囲炎で、その多くは、肩の関節を包む袋(<b>関節包</b>)が炎症を起こし、
-      厚く縮んで上腕骨頭に張りつく癒着性関節包炎の状態です。袋が縮むと、関節の中の空間が狭くなり、動かせる範囲が小さくなります。
-      年齢によって呼び名が変わるだけで、40歳でも50歳でも同じ病態をさします。</p>
+    <p>四十肩・五十肩の正式な病名は肩関節周囲炎で、その多くは、肩の関節を包む袋(<b>関節包</b>)が炎症を起こし、厚く縮んで上腕骨頭に張りつく癒着性関節包炎の状態です。袋が縮むと、関節の中の空間が狭くなり、動かせる範囲が小さくなります。年齢によって呼び名が変わるだけで、40歳でも50歳でも同じ病態をさします。</p>
 
     <figure class="comparison-figure">
-      <img src="shoulder-comparison.png"
+      <img
+        src="shoulder-comparison.png"
         alt="健康な右肩と四十肩・五十肩の肩を前から比較した説明用イラスト。肩関節周囲の構造と、痛みや動きの制限を示しています。"
-        loading="lazy" width="1536" height="1024">
+        width="1536"
+        height="1024"
+        loading="lazy"
+        decoding="async">
       <figcaption>健康な肩と四十肩・五十肩の違いをイメージしやすくするための比較図です。</figcaption>
     </figure>
-    <p class="medical-note"><strong>医学的な補足：</strong>四十肩・五十肩（癒着性関節包炎）の中心となる変化は、肩関節を包む<strong>関節包の炎症・肥厚・拘縮</strong>です。このイラストにある「腱や組織が厚くなる」「肩の筋肉がこわばる」という表現は、すべての患者さんに起きる病変を示すものではありません。実際の状態には個人差があります。</p>
+    <p class="medical-note"><strong>医学的な補足：</strong>四十肩・五十肩（癒着性関節包炎）の中心となる変化は、肩関節を包む関節包の炎症・肥厚・拘縮です。イラストは説明用の模式図で、実際の状態や程度には個人差があります。</p>
 
     <div class="cols" style="margin-top:32px">
       <div>
@@ -438,7 +461,11 @@ tr.urgent th { color: var(--danger); }
     <p class="caption">各時期の月数や回復の割合は、これらの資料にもとづく目安で、時期の区切りに明確な根拠は確立していません。最終確認日:2026年11月18日。</p>
     <p class="disclaimer">このページは一般的な情報をまとめたもので、診断や治療の代わりにはなりません。症状が気になる方は、医療機関に相談してください。</p>
   </section>
-</div>
+</main>
+<footer class="site-footer"><div class="site-width">
+  <span>© Momdo Massage &amp; Manipulative</span>
+  <span><a href="/momdo-homepage/pages/concerns/concerns.html">お悩み一覧へ戻る</a>　｜　<a href="/momdo-homepage/contact.html">お問い合わせ</a></span>
+</div></footer>
 
 <script>
 (function () {
