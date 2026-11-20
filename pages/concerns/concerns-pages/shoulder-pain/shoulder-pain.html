@@ -29,6 +29,58 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 @media(max-width:800px){.navlinks{gap:10px;font-size:12px}.navbtn{display:none}.two-col{grid-template-columns:1fr}.visual{min-height:250px}.explorer-callout{grid-template-columns:1fr}.callout-actions{min-width:0}}
 @media(max-width:600px){.topbar .wrap{justify-content:center;text-align:center}.nav{min-height:62px}.brand{font-size:22px}.navlinks{gap:9px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{font-size:11px}.global-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.hero{padding:58px 0}.hero h1{font-size:34px}.hero-lead{font-size:14px}.section{padding:54px 0}.symptoms,.cards{grid-template-columns:1fr 1fr;gap:10px}.symptom,.card{padding:16px}.symptom b{font-size:16px}.message{font-size:16px;padding:18px}.connection-list{grid-template-columns:1fr 1fr}.cta{padding:56px 0}.hero-actions .button{width:100%}}
 @media(max-width:420px){.symptoms,.cards{grid-template-columns:1fr}.navlinks a:nth-child(2){display:none}}
+
+/* Image-first visual layer: photography + simple explanatory diagrams */
+.hero{background:#1c100b}
+.hero:before{content:"";position:absolute;inset:0 0 0 42%;background:
+linear-gradient(90deg,#1c100b 0%,rgba(28,16,11,.28) 38%,rgba(28,16,11,.08) 100%),
+url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1600&q=85') center 42%/cover no-repeat;opacity:.9}
+.hero:after{background:linear-gradient(90deg,rgba(28,16,11,.98) 0%,rgba(28,16,11,.92) 40%,rgba(28,16,11,.25) 100%)}
+.hero-inner{min-height:430px}
+.hero-copy{max-width:680px}
+.photo-strip{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin:28px 0 0}
+.photo-strip img{width:100%;height:190px;object-fit:cover;border-radius:3px}
+.photo-strip .photo-caption{font-size:12px;color:#eee4d8;margin-top:6px}
+.symptoms{grid-template-columns:repeat(3,1fr)}
+.symptom{padding:0;overflow:hidden;border-top:0}
+.symptom img{width:100%;height:145px;object-fit:cover}
+.symptom .symptom-body{padding:17px 18px 19px;border-top:2px solid var(--gold)}
+.symptom b{font-size:17px}
+.diagram-card{background:#fff;border:1px solid var(--line);padding:18px;box-shadow:0 12px 35px rgba(53,34,25,.06)}
+.diagram-card svg{display:block;width:100%;height:auto;max-height:330px}
+.diagram-caption{font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0}
+.two-col.visual-layout{grid-template-columns:1fr 1fr}
+.connection-list{grid-template-columns:repeat(3,1fr)}
+.connection{position:relative;padding:18px 16px 18px 58px;min-height:92px}
+.connection:before{content:"";position:absolute;left:16px;top:19px;width:28px;height:28px;border:1px solid var(--gold);border-radius:50%;background:radial-gradient(circle,var(--gold) 0 3px,transparent 4px)}
+.daily-card{padding:0;overflow:hidden}
+.daily-card img{width:100%;height:155px;object-fit:cover}
+.daily-card .card-copy{padding:18px 20px 21px}
+.approach-photo{width:100%;height:360px;object-fit:cover;border:1px solid #c69b5266}
+.photo-note{font-size:11px;color:var(--muted);margin-top:7px}
+.cta{position:relative;overflow:hidden}
+.cta:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(28,16,11,.82),rgba(28,16,11,.94)),url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1600&q=80') center/cover}
+.cta .wrap{position:relative;z-index:1}
+@media(max-width:800px){
+ .hero:before{inset:0;background-position:center;background-size:cover}
+ .hero:after{background:linear-gradient(90deg,rgba(28,16,11,.94),rgba(28,16,11,.72))}
+ .hero-inner{min-height:390px}
+ .connection-list{grid-template-columns:repeat(2,1fr)}
+ .approach-photo{height:280px}
+}
+@media(max-width:600px){
+ .photo-strip{grid-template-columns:1fr 1fr;gap:8px}
+ .photo-strip img{height:125px}
+ .symptoms{grid-template-columns:1fr 1fr}
+ .symptom img{height:112px}
+ .symptom .symptom-body{padding:12px}
+ .symptom b{font-size:15px}
+ .symptom p{font-size:12px}
+ .connection-list{grid-template-columns:1fr 1fr}
+ .approach-photo{height:230px}
+}
+@media(max-width:420px){.symptoms{grid-template-columns:1fr 1fr}}
+
 </style>
 </head>
 <body id="top">
@@ -54,6 +106,10 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 <h1>つらい肩こり<br><span>肩まわりの重さ・張りを考える</span></h1>
 <p class="hero-lead">首から肩にかけて重い、肩まわりが張る、長く同じ姿勢でいるとつらくなる。そんな肩こりは、肩の筋肉だけでなく、首・肩甲骨・胸郭・背中の動きや日々の姿勢が関係していることがあります。毎日の過ごし方と身体のつながりから、肩こりを見つめ直してみましょう。</p>
 <div class="hero-actions"><a class="button" href="#symptoms">肩こりのサインを確認する</a><a class="button button-outline" href="/momdo-homepage/pages/body-parts/shoulder/body-shoulder.html">肩の仕組みを知る</a></div>
+<div class="photo-strip" aria-label="肩こりに関係する日常のイメージ">
+  <div><img src="https://images.unsplash/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="肩まわりの不調を気にする女性"><div class="photo-caption">肩まわりの重さや張り</div></div>
+  <div><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="パソコンを使うデスクワーク環境"><div class="photo-caption">長時間のデスクワーク</div></div>
+</div>
 </div></div></section>
 
 <section class="section white" id="symptoms"><div class="wrap">
@@ -61,12 +117,12 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
   <h2>こんな肩こりのサインはありませんか？</h2>
   <p>肩こりの感じ方や、つらくなるタイミングは人によって異なります。</p></div>
 <div class="symptoms">
-<div class="symptom"><b>首から肩が重い</b><p>首のつけ根から肩にかけて、重さやだるさを感じる。</p></div>
-<div class="symptom"><b>肩まわりが張っている</b><p>肩や背中の上部が張り、力が抜けにくく感じる。</p></div>
-<div class="symptom"><b>同じ姿勢でつらくなる</b><p>パソコンやスマートフォンを使い続けると、肩がこわばる。</p></div>
-<div class="symptom"><b>肩甲骨まわりがこわばる</b><p>背中の上部や肩甲骨の内側に張りを感じる。</p></div>
-<div class="symptom"><b>休んでもすっきりしない</b><p>休息をとっても、肩まわりの重さが残るように感じる。</p></div>
-<div class="symptom"><b>頭や首まで重く感じる</b><p>肩こりとともに、首すじや後頭部の重さを感じることがある。</p></div>
+<div class="symptom"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80" alt="肩や首まわりを伸ばす人" loading="lazy"><div class="symptom-body"><b>首から肩が重い</b><p>首のつけ根から肩にかけて、重さやだるさを感じる。</p></div></div>
+<div class="symptom"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=700&q=80" alt="首から肩の重さを気にする人" loading="lazy"><div class="symptom-body"><b>肩まわりが張っている</b><p>肩や背中の上部が張り、力が抜けにくく感じる。</p></div></div>
+<div class="symptom"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="パソコン作業の様子" loading="lazy"><div class="symptom-body"><b>同じ姿勢でつらくなる</b><p>パソコンやスマートフォンを使い続けると、肩がこわばる。</p></div></div>
+<div class="symptom"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80" alt="背中や肩を動かす運動" loading="lazy"><div class="symptom-body"><b>肩甲骨まわりがこわばる</b><p>背中の上部や肩甲骨の内側に張りを感じる。</p></div></div>
+<div class="symptom"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=700&q=80" alt="休息する人" loading="lazy"><div class="symptom-body"><b>休んでもすっきりしない</b><p>休息をとっても、肩まわりの重さが残るように感じる。</p></div></div>
+<div class="symptom"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="首や頭の不快感を気にする人" loading="lazy"><div class="symptom-body"><b>頭や首まで重く感じる</b><p>肩こりとともに、首すじや後頭部の重さを感じることがある。</p></div></div>
 </div>
 <div class="message">肩こりの出方はさまざまです。どんな姿勢や作業でつらくなるのか、いつから続いているのかを振り返ることが手がかりになります。</div>
 </div></section>
@@ -76,7 +132,25 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 <p>頭を支える首、肩甲骨、胸郭、背中は互いに関係しながら、頭や腕を支えています。長時間同じ姿勢が続くと、これらの部位の筋肉に負担がかかり、肩まわりの重さや張りにつながることがあります。</p>
 <p>姿勢を保つために同じ筋肉を使い続けたり、身体を動かす機会が少なくなったりすると、筋肉の緊張や疲労を感じやすくなる場合があります。</p>
 <p>肩こりを考えるときは、肩だけでなく、仕事中の姿勢や休憩の取り方、首や背中の動かしやすさにも目を向けてみましょう。</p></div>
-<div class="visual"><div class="visual-title">SHOULDER &amp; NECK BALANCE</div><div class="visual-sub">首・肩まわりの筋肉　＋　肩甲骨<br>胸郭　＋　背中・姿勢</div><div class="visual-sub">頭や腕を支える姿勢と、首・肩・背中の筋肉の働きはつながっています。</div></div>
+<div class="diagram-card">
+<svg viewBox="0 0 520 340" role="img" aria-label="首、肩甲骨、胸郭、背中のつながりを示す模式図">
+ <defs><linearGradient id="torso" x1="0" x2="1"><stop stop-color="#ead9c4"/><stop offset="1" stop-color="#c9a77e"/></linearGradient></defs>
+ <path d="M210 42 Q260 10 310 42 L338 88 Q365 105 390 120 L365 188 Q345 205 338 245 L325 315 L195 315 L182 245 Q175 205 155 188 L130 120 Q155 105 182 88Z" fill="url(#torso)" stroke="#9b7957" stroke-width="2"/>
+ <path d="M230 38 Q260 62 290 38 L298 100 Q260 124 222 100Z" fill="#d8b98f" stroke="#9b7957" stroke-width="2"/>
+ <path d="M190 112 Q225 95 244 130 L220 205 Q190 196 180 155Z" fill="#b98b55" opacity=".85" stroke="#805b35" stroke-width="2"/>
+ <path d="M330 112 Q295 95 276 130 L300 205 Q330 196 340 155Z" fill="#b98b55" opacity=".85" stroke="#805b35" stroke-width="2"/>
+ <path d="M260 105 L260 294 M205 145 Q260 170 315 145 M198 190 Q260 220 322 190" fill="none" stroke="#fff8ed" stroke-width="5" opacity=".9"/>
+ <g fill="#352219" font-family="sans-serif" font-size="15" font-weight="600">
+  <text x="18" y="72">首</text><text x="18" y="92" font-size="11" font-weight="400">頭を支える</text>
+  <text x="385" y="116">肩甲骨</text><text x="385" y="136" font-size="11" font-weight="400">腕の動きを支える</text>
+  <text x="385" y="220">胸郭</text><text x="385" y="240" font-size="11" font-weight="400">呼吸・姿勢と関係</text>
+  <text x="18" y="250">背中</text><text x="18" y="270" font-size="11" font-weight="400">姿勢を保つ</text>
+ </g>
+ <g stroke="#c69b52" stroke-width="2" fill="none"><path d="M65 78 L218 78"/><path d="M370 124 L330 145"/><path d="M370 226 L310 218"/><path d="M68 250 L194 220"/></g>
+ <g fill="#c69b52"><circle cx="218" cy="78" r="4"/><circle cx="330" cy="145" r="4"/><circle cx="310" cy="218" r="4"/><circle cx="194" cy="220" r="4"/></g>
+</svg>
+<p class="diagram-caption">身体のつながりを簡略化したイメージ図です。実際の構造を正確な縮尺で示すものではありません。</p>
+</div>
 </div></section>
 
 <section class="section white" id="connections"><div class="wrap">
@@ -95,17 +169,17 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 <section class="section" id="daily"><div class="wrap">
 <div class="section-head"><p class="eyebrow">DAILY HABITS</p><h2>毎日の習慣が、肩こりにつながっていることも。</h2><p>仕事や家事、スマートフォンの使い方など、日々の過ごし方を振り返ってみましょう。</p></div>
 <div class="cards">
-<div class="card"><span class="num">01 / DESKWORK</span><h3>長時間のデスクワーク</h3><p>画面を見る姿勢が続くと、頭や腕を支える首・肩まわりの筋肉に負担がかかりやすくなります。</p></div>
-<div class="card"><span class="num">02 / POSTURE</span><h3>前かがみの姿勢</h3><p>スマートフォンやパソコンを見るときに頭が前へ出る姿勢が続くと、首や肩の筋肉が緊張しやすくなります。</p></div>
-<div class="card"><span class="num">03 / OVERUSE</span><h3>休憩をとらずに作業を続ける</h3><p>集中して作業を続けると、姿勢を変えたり肩まわりを動かしたりする機会が少なくなります。</p></div>
-<div class="card"><span class="num">04 / REST</span><h3>休息・睡眠の不足</h3><p>疲れが十分に回復しないと、肩まわりの重さや不快感が気になりやすくなることがあります。</p></div>
-<div class="card"><span class="num">05 / MOVEMENT</span><h3>身体を動かす機会の減少</h3><p>同じ姿勢が続き、首・肩・背中を動かす機会が少ないと、こわばりを感じることがあります。</p></div>
-<div class="card"><span class="num">06 / INDIVIDUAL</span><h3>肩こりの感じ方は人それぞれ</h3><p>肩こりの背景や感じ方には個人差があります。長く続く不調や、いつもと違う症状がある場合は医療機関への相談も大切です。</p></div>
+<div class="card daily-card"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="パソコンで作業するデスク" loading="lazy"><div class="card-copy"><span class="num">01 / DESKWORK</span><h3>長時間のデスクワーク</h3><p>画面を見る姿勢が続くと、頭や腕を支える首・肩まわりの筋肉に負担がかかりやすくなります。</p></div></div>
+<div class="card daily-card"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9e?auto=format&fit=crop&w=800&q=80" alt="スマートフォンを操作する手元" loading="lazy"><div class="card-copy"><span class="num">02 / POSTURE</span><h3>前かがみの姿勢</h3><p>スマートフォンやパソコンを見るときに頭が前へ出る姿勢が続くと、首や肩の筋肉が緊張しやすくなります。</p></div></div>
+<div class="card daily-card"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="仕事中のコミュニケーション" loading="lazy"><div class="card-copy"><span class="num">03 / OVERUSE</span><h3>休憩をとらずに作業を続ける</h3><p>集中して作業を続けると、姿勢を変えたり肩まわりを動かしたりする機会が少なくなります。</p></div></div>
+<div class="card daily-card"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="落ち着いて休息するイメージ" loading="lazy"><div class="card-copy"><span class="num">04 / REST</span><h3>休息・睡眠の不足</h3><p>疲れが十分に回復しないと、肩まわりの重さや不快感が気になりやすくなることがあります。</p></div></div>
+<div class="card daily-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="身体を動かす運動" loading="lazy"><div class="card-copy"><span class="num">05 / MOVEMENT</span><h3>身体を動かす機会の減少</h3><p>同じ姿勢が続き、首・肩・背中を動かす機会が少ないと、こわばりを感じることがあります。</p></div></div>
+<div class="card daily-card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="日々の体調を振り返るイメージ" loading="lazy"><div class="card-copy"><span class="num">06 / INDIVIDUAL</span><h3>肩こりの感じ方は人それぞれ</h3><p>肩こりの背景や感じ方には個人差があります。長く続く不調や、いつもと違う症状がある場合は医療機関への相談も大切です。</p></div></div>
 </div>
 </div></section>
 
 <section class="section white"><div class="wrap two-col">
-<div class="visual"><div class="visual-title">MOMDO BODYWORK</div><div class="visual-sub">肩の重さ・張りだけでなく<br>姿勢や首・肩甲骨・背中の状態も確認</div><div class="visual-sub">お話を伺いながら、一人ひとりに合わせた施術を考えます。</div></div>
+<div><img class="approach-photo" src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1100&q=85" alt="落ち着いた空間で身体のケアを受けるイメージ" loading="lazy"><p class="photo-note">施術イメージ写真</p></div>
 <div class="copy"><p class="eyebrow">MOMDO APPROACH</p><h3>肩だけに注目せず、身体全体から考える。</h3>
 <p>Momdoでは、肩こりが気になる場面や日常の過ごし方を伺い、首・肩甲骨・胸郭・背中などの状態や姿勢にも目を向けます。</p>
 <p>強い刺激を一方的に加えるのではなく、その日の状態やご希望を確認しながら、無理のない施術を組み立てていきます。施術だけでなく、日常で取り入れやすい姿勢や休憩の工夫も一緒に考えます。</p>
@@ -124,5 +198,5 @@ footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wr
 
 <section class="cta"><div class="wrap"><h2>つらい肩こり、<br>ひとりで抱え込まずご相談ください。</h2><p>肩まわりの重さや張り、日常生活で気になることを伺いながら、身体の状態に合わせた方法を一緒に考えます。</p><a class="button" href="/momdo-homepage/pages/menu/menu.html">メニュー・料金を見る</a><a class="button button-outline" href="/momdo-homepage/contact.html">ご予約・お問い合わせ</a><small>福岡市城南区七隈｜金山駅徒歩2分</small></div></section>
 </main>
-<footer><div class="wrap"><span>Momdo Massage &amp; Manipulative</span><span><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>　｜　<a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>　｜　<a href="/momdo-homepage/pages/menu/menu.html">メニュー</a>　｜　<a href="/momdo-homepage/index.html">トップページ</a></span></div></footer>
+<footer><div class="wrap"><span>Momdo Massage &amp; Manipulative</span><span><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>　｜　<a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>　｜　<a href="/momdo-homepage/pages/menu/menu.html">メニュー</a>　｜　<a href="/momdo-homepage/index.html">トップページ</a></span></div><div class="wrap" style="padding-top:8px;color:#b9a99a">写真：Unsplash（外部画像）／図解：Momdoページ用オリジナル模式図</div></footer>
 </body></html>
