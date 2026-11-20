@@ -1,522 +1,129 @@
-<!doctype html><html><head><meta charset="utf-8"><title>四十肩・五十肩ガイド｜Momdo</title><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body id="top">
-<meta name="claude:viewport-fit-sides" content="cover">
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="四十肩・五十肩による肩の痛みや動かしにくさでお悩みの方へ。症状の特徴や日常生活での注意点、身体の状態を確認する大切さを紹介するMomdoの案内ページ。">
+<meta name="theme-color" content="#1C100B">
+<title>四十肩・五十肩でお悩みの方へ｜肩の痛み・動かしにくさ｜Momdo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-/* Layout: 左寄せの読み物。要点 → 構造図(正常/拘縮) → 経過の時間軸 → 動きの確認 → 治療 → 受診 → 鑑別表 → 出典 */
-:root {
-  --bg: #F2F5F6;
-  --surface: #FFFFFF;
-  --fg: #17262E;
-  --muted: #56666F;
-  --line: #D3DCE0;
-  --accent: #1B6A86;
-  --acute: #B94A2A;
-  --stiff: #8A5F12;
-  --recover: #2B7A5F;
-  --acute-bg: #F8E8E2;
-  --stiff-bg: #F5ECD9;
-  --recover-bg: #E0F0E9;
-  --danger: #A3221A;
-  --danger-bg: #FBEAE7;
-  --bone: #DFE6E9;
-  --bone-line: #9FB0B8;
-  --cuff: #C9705A;
-  --font-display: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-  --font-body: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0E181D;
-    --surface: #152229;
-    --fg: #E3EBEE;
-    --muted: #9AAAB2;
-    --line: #2A3A43;
-    --accent: #5DB6D3;
-    --acute: #EA8767;
-    --stiff: #DDAA52;
-    --recover: #63C29F;
-    --acute-bg: #2A1C17;
-    --stiff-bg: #292010;
-    --recover-bg: #142A22;
-    --danger: #FF9F95;
-    --danger-bg: #2E1816;
-    --bone: #2D3E47;
-    --bone-line: #62808E;
-    --cuff: #C4694F;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0E181D;
-  --surface: #152229;
-  --fg: #E3EBEE;
-  --muted: #9AAAB2;
-  --line: #2A3A43;
-  --accent: #5DB6D3;
-  --acute: #EA8767;
-  --stiff: #DDAA52;
-  --recover: #63C29F;
-  --acute-bg: #2A1C17;
-  --stiff-bg: #292010;
-  --recover-bg: #142A22;
-  --danger: #FF9F95;
-  --danger-bg: #2E1816;
-  --bone: #2D3E47;
-  --bone-line: #62808E;
-  --cuff: #C4694F;
-  color-scheme: dark;
-}
-
-* { box-sizing: border-box; }
-body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.85;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 28px 56px;
-}
-.wrap { max-width: 920px; margin: 0 auto; }
-h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.35; margin: 0; }
-p { margin: 0 0 1em; }
-a { color: var(--accent); }
-a:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
-
-/* hero */
-.eyebrow { font-size: 13px; letter-spacing: .12em; color: var(--muted); margin: 0 0 10px; }
-h1 { font-size: clamp(34px, 7vw, 56px); font-weight: 900; letter-spacing: .02em; }
-.lede { font-size: 17px; max-width: 40em; margin: 18px 0 22px; }
-.jump { display: flex; flex-wrap: wrap; gap: 8px 10px; padding: 0; margin: 0 0 26px; list-style: none; }
-.jump a {
-  display: inline-block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
-  background: var(--surface); text-decoration: none; color: var(--fg); font-size: 14px; font-weight: 500;
-}
-.jump a:hover { border-color: var(--accent); color: var(--accent); }
-
-.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0; margin: 0 0 26px; border-top: 2px solid var(--fg); border-bottom: 1px solid var(--line); }
-.facts div { padding: 14px 16px 12px 0; min-width: 0; }
-.facts dt { font-size: 12.5px; color: var(--muted); letter-spacing: .06em; }
-.facts dd { margin: 2px 0 0; font-family: var(--font-display); font-weight: 700; font-size: 18px; line-height: 1.5; }
-.facts dd small { display: block; font-family: var(--font-body); font-weight: 400; font-size: 12.5px; color: var(--muted); line-height: 1.6; }
-
-.alert {
-  background: var(--danger-bg); border: 1px solid var(--danger);
-  border-radius: 6px; padding: 16px 18px; margin: 0 0 8px;
-}
-.alert strong { color: var(--danger); font-family: var(--font-display); font-size: 17px; display: block; margin-bottom: 4px; }
-.alert p { margin: 0; font-size: 15px; line-height: 1.8; }
-
-/* sections */
-section { padding-top: 44px; margin-top: 44px; border-top: 1px solid var(--line); }
-h2 { font-size: clamp(24px, 4.4vw, 32px); font-weight: 700; margin-bottom: 18px; }
-h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
-.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px 40px; }
-.cols > div { min-width: 0; }
-.plain { margin: 0; padding-left: 1.2em; }
-.plain li { margin-bottom: .45em; }
-.plain li::marker { color: var(--accent); }
-.caption { font-size: 13px; color: var(--muted); margin: 10px 0 0; line-height: 1.7; }
-.term { font-size: .86em; color: var(--muted); }
-
-/* anatomy */
-.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 6px 0 0; }
-.fig { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 14px 10px; min-width: 0; }
-.fig figcaption { font-family: var(--font-display); font-weight: 700; font-size: 16px; margin-bottom: 6px; }
-.fig.frozen figcaption { color: var(--acute); }
-.fig svg { display: block; width: 100%; height: auto; max-width: 100%; }
-.fig text, .chart-scroll text, .tool svg text { font-family: var(--font-body); fill: var(--fg); font-size: 13px; }
-.fig .sub { font-size: 11px; fill: var(--muted); }
-.fig .leader { stroke: var(--muted); stroke-width: 1; fill: none; }
-
-/* phase chart */
-.chart-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
-.chart-scroll svg { display: block; width: 100%; min-width: 620px; height: auto; }
-.band-label { font-size: 16px !important; font-weight: 700; font-family: var(--font-display) !important; }
-.note-text { font-size: 12.5px !important; fill: var(--muted) !important; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 14px; }
-.legend li { display: flex; align-items: center; gap: 8px; }
-.swatch { width: 28px; height: 0; border-top: 3.5px solid; }
-.swatch.dash { border-top-style: dashed; }
-
-.phases { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 28px; }
-.phase { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 18px 8px; min-width: 0; }
-.chip { display: inline-block; font-size: 13px; font-weight: 700; padding: 2px 10px; border-radius: 4px; margin-bottom: 10px; }
-.phase.acute .chip { background: var(--acute-bg); color: var(--acute); }
-.phase.stiff .chip { background: var(--stiff-bg); color: var(--stiff); }
-.phase.recover .chip { background: var(--recover-bg); color: var(--recover); }
-.phase.acute h3 { color: var(--acute); }
-.phase.stiff h3 { color: var(--stiff); }
-.phase.recover h3 { color: var(--recover); }
-.phase h3 .term { font-weight: 400; }
-.phase dl { margin: 0; }
-.phase dt { font-size: 13px; font-weight: 700; color: var(--muted); margin-top: 10px; }
-.phase dd { margin: 0 0 10px; font-size: 15px; line-height: 1.75; }
-
-/* ROM tool */
-.tool { display: grid; grid-template-columns: minmax(240px, 300px) minmax(0, 1fr); gap: 24px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; }
-@media (max-width: 640px) { .tool { grid-template-columns: minmax(0, 1fr); } .tool svg { max-width: 300px; margin: 0 auto; } }
-.tool svg { display: block; width: 100%; height: auto; }
-.tool-tag { font-size: 12.5px; color: var(--muted); margin: 0 0 10px; }
-.tool label { display: flex; justify-content: space-between; gap: 12px; font-weight: 500; font-size: 15px; margin-top: 14px; }
-.tool output { font-family: var(--font-display); font-weight: 700; font-variant-numeric: tabular-nums; }
-.tool input[type="range"] { width: 100%; margin: 6px 0 0; accent-color: var(--accent); }
-.tool .scale { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.result { margin: 16px 0 0; padding: 12px 14px; border-left: 4px solid var(--accent); background: var(--bg); border-radius: 0 6px 6px 0; font-size: 14.5px; line-height: 1.8; }
-.result b { font-family: var(--font-display); display: block; margin-bottom: 2px; font-size: 15.5px; }
-.result.warn { border-left-color: var(--stiff); }
-.moves { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 22px; }
-.move { border-top: 2px solid var(--fg); padding-top: 10px; min-width: 0; }
-.move h3 { font-size: 17px; margin-bottom: 4px; }
-.move p { font-size: 14.5px; line-height: 1.75; margin: 0; }
-
-/* treatment */
-
-/* table */
-.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
-table { border-collapse: collapse; width: 100%; min-width: 860px; font-size: 14px; line-height: 1.7; }
-th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
-thead th { font-family: var(--font-display); font-size: 12.5px; color: var(--muted); letter-spacing: .06em; background: var(--bg); }
-tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
-tbody th { font-family: var(--font-display); font-weight: 700; font-size: 15px; width: 9.5em; }
-tr.focus th, tr.focus td { background: color-mix(in srgb, var(--accent) 9%, var(--surface)); }
-tr.urgent th { color: var(--danger); }
-
-.sources { padding-left: 1.2em; font-size: 14px; }
-.sources li { margin-bottom: .4em; }
-.disclaimer { margin-top: 28px; font-size: 13px; color: var(--muted); line-height: 1.8; }
-
-@media (max-width: 480px) { body { font-size: 15.5px; } .lede { font-size: 16px; } }
+:root{--brown:#1C100B;--brown2:#352219;--gold:#C69B52;--gold-light:#F3DDA6;--cream:#F8F5EF;--ink:#33251D;--muted:#786A60;--line:#E8DFD2;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.9}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+.topbar{background:var(--brown);color:#eee4d8;font-size:12px;padding:7px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.header{position:sticky;top:0;z-index:100;background:rgba(28,16,11,.97);border-bottom:1px solid rgba(198,155,82,.4);color:#fff}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{color:#fff;font:500 25px "Shippori Mincho",serif;letter-spacing:.12em}.brand small{display:block;color:var(--gold-light);font:10px Cinzel,serif;letter-spacing:.16em}.navlinks{display:flex;align-items:center;gap:20px;font-size:13px}.navlinks a:hover{color:var(--gold-light)}.navbtn{padding:9px 15px;border:1px solid var(--gold);color:#fff}
+.global-nav{display:flex;justify-content:center;gap:clamp(10px,2vw,24px);flex-wrap:wrap;padding:10px 16px;background:#f8f5ef;border-bottom:1px solid var(--line);font-size:12px}.global-nav a{color:#49372a}.global-nav a:hover{color:#a47c38}
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 78% 45%,#705638 0%,#352219 35%,#1C100B 76%);padding:78px 0 76px}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,16,11,.97),rgba(28,16,11,.82) 70%,rgba(28,16,11,.3));pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:1080px;min-height:320px;display:flex;align-items:center}.hero-copy{max-width:780px}.eyebrow{color:var(--gold);font:12px Cinzel,serif;letter-spacing:.24em}.hero h1{margin:16px 0 20px;font:500 clamp(32px,5vw,54px)/1.55 "Shippori Mincho",serif;letter-spacing:.04em}.hero h1 span{color:var(--gold-light)}.hero-lead{max-width:730px;color:#eee4d8;font-size:16px;line-height:2.15}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 23px;background:linear-gradient(120deg,#b88e43,#f3dda6,#c69b52);color:#2b1b11;font-weight:700;font-size:14px}.button-outline{border:1px solid var(--gold);color:#f3dda6;background:transparent}
+.breadcrumb{padding:12px 0;background:#fff;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}.breadcrumb a{color:#8b672a}
+.section{padding:74px 0}.section.white{background:#fff}.section-head{text-align:center;margin:0 auto 36px;max-width:760px}.section-head .eyebrow{color:#9a762e}.section-head h2{margin:8px 0 12px;font:500 clamp(25px,3.4vw,36px)/1.6 "Shippori Mincho",serif;color:var(--brown2)}.section-head p{margin:0;color:var(--muted);font-size:16px}
+.symptoms{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.symptom{padding:22px 20px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold)}.symptom b{display:block;color:var(--brown2);font:500 18px/1.7 "Shippori Mincho",serif}.symptom p{margin:5px 0 0;color:var(--muted);font-size:14px}
+.message{margin-top:26px;padding:22px 25px;background:var(--cream);border-left:3px solid var(--gold);color:var(--brown2);font:500 18px/1.8 "Shippori Mincho",serif;text-align:center}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.copy h3{margin:0 0 12px;color:var(--brown2);font:500 24px/1.6 "Shippori Mincho",serif}.copy p{margin:0 0 14px;color:var(--muted);font-size:16px}.visual{min-height:310px;padding:30px;background:linear-gradient(145deg,#38271c,#1c100b);color:#fff;display:flex;flex-direction:column;justify-content:center;border:1px solid #c69b5266}.visual .visual-title{color:var(--gold-light);font:500 22px "Shippori Mincho",serif}.visual .visual-sub{margin-top:12px;color:#e7ddd2;font-size:14px}.connection-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}.connection{padding:14px;background:#fff;border:1px solid var(--line)}.connection b{display:block;color:#9a762e;font:500 17px "Shippori Mincho",serif}.connection span{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:23px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold)}.card .num{color:#9a762e;font:12px Cinzel,serif;letter-spacing:.12em}.card h3{margin:8px 0;color:var(--brown2);font:500 19px "Shippori Mincho",serif}.card p{margin:0;color:var(--muted);font-size:15px}
+.explorer-callout{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:28px 32px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold)}.explorer-callout .eyebrow{color:#9a762e}.explorer-callout h3{margin:5px 0;color:var(--brown2);font:500 22px/1.5 "Shippori Mincho",serif}.explorer-callout p{margin:0;color:var(--muted);font-size:14px}.callout-actions{display:flex;flex-direction:column;gap:10px;min-width:240px}
+.caution{padding:20px 22px;background:#fff;border:1px solid var(--line);border-left:3px solid #a66d50;color:var(--muted);font-size:14px;line-height:1.9}.caution strong{display:block;color:var(--brown2);margin-bottom:5px}
+.cta{padding:76px 0;text-align:center;color:#fff;background:radial-gradient(ellipse at 50% 0,rgba(198,155,82,.18),transparent 55%),linear-gradient(135deg,#38271c,#1c100b)}.cta h2{margin:0;font:500 clamp(25px,3.5vw,36px)/1.65 "Shippori Mincho",serif;color:var(--gold-light)}.cta p{margin:15px auto 25px;max-width:680px;color:#eee4d8;font-size:15px}.cta small{display:block;margin-top:16px;color:#d6c8b9;font-size:12px}
+footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer a{color:var(--gold-light)}
+@media(max-width:800px){.navlinks{gap:10px;font-size:12px}.navbtn{display:none}.two-col{grid-template-columns:1fr}.visual{min-height:250px}.explorer-callout{grid-template-columns:1fr}.callout-actions{min-width:0}}
+@media(max-width:600px){.topbar .wrap{justify-content:center;text-align:center}.nav{min-height:62px}.brand{font-size:22px}.navlinks{gap:9px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{font-size:11px}.global-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.hero{padding:58px 0}.hero h1{font-size:34px}.hero-lead{font-size:14px}.section{padding:54px 0}.symptoms,.cards{grid-template-columns:1fr 1fr;gap:10px}.symptom,.card{padding:16px}.symptom b{font-size:16px}.message{font-size:16px;padding:18px}.connection-list{grid-template-columns:1fr 1fr}.cta{padding:56px 0}.hero-actions .button{width:100%}}
+@media(max-width:420px){.symptoms,.cards{grid-template-columns:1fr}.navlinks a:nth-child(2){display:none}}
 </style>
-
-<div class="topbar"><div class="site-width"><span>MOMDO MASSAGE &amp; MANIPULATIVE</span><span>身体を、ひとつながりで考える。</span></div></div>
-<header class="site-header"><div class="site-width site-nav">
-  <a class="brand" href="/momdo-homepage/index.html">Momdo<small>Massage &amp; Manipulative</small></a>
-  <nav aria-label="メインメニュー">
-    <a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>
-    <a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
-    <a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a>
-    <a href="/momdo-homepage/pages/access/access.html">アクセス</a>
-    <a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a>
-  </nav>
-  <a class="nav-contact" href="/momdo-homepage/contact.html">お問い合わせ</a>
+</head>
+<body id="top">
+<div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>Momdo Massage &amp; Manipulative</span></div></div>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="/momdo-homepage/index.html">Momdo<small>Massage &amp; Manipulative</small></a>
+<nav class="navlinks" aria-label="メインメニュー"><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a><a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a><a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a><a href="/momdo-homepage/pages/access/access.html">アクセス</a></nav>
+<a class="navbtn" href="/momdo-homepage/contact.html">ご予約・お問い合わせ</a>
 </div></header>
-<nav class="global-nav" aria-label="サイト内ナビゲーション">
-  <a href="/momdo-homepage/index.html">ホーム</a>
+<nav class="global-nav" aria-label="Momdo共通ナビゲーション"><a href="/momdo-homepage/index.html">ホーム</a>
   <a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>
   <a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>
-  <a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a>
-</nav>
-<div class="breadcrumb"><div class="site-width"><a href="/momdo-homepage/index.html">ホーム</a>　›　<a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>　›　四十肩・五十肩</div></div>
-<main class="wrap">
-  <header>
-    <p class="eyebrow">肩関節周囲炎 / 癒着性関節包炎</p>
-    <h1>四十肩・五十肩ガイド</h1>
-    <p class="lede">腕が上がらない、服の袖が通しにくい、夜に肩の痛みで目が覚める。そんなときに知っておきたい、肩の中で起きていること、経過の見通し、動きによる見分け方を、医学的な根拠に沿ってまとめました。</p>
-    <ul class="jump">
-      <li><a href="#about">肩の中で起きていること</a></li>
-      <li><a href="#phases">経過の3つの時期</a></li>
-      <li><a href="#check">動きで確かめる</a></li>
-      <li><a href="#compare">ほかの病気との見分け方</a></li>
-    </ul>
-    <dl class="facts">
-      <div><dt>多い年代</dt><dd>40〜60代<small>40〜70歳にピーク。女性にやや多い</small></dd></div>
-      <div><dt>経過の長さ</dt><dd>1〜2年<small>痛みや動かしにくさが続く期間の目安</small></dd></div>
-      <div><dt>自然な回復</dt><dd>約2年で約8割<small>放置しても可動域が戻る例が多い</small></dd></div>
-      <div><dt>手術になる人</dt><dd>5%未満<small>保存的な治療で改善しなかった人のうち</small></dd></div>
-    </dl>
-    <div class="alert" role="note">
-      <strong>先に確認:胸の症状を伴う肩の痛み</strong>
-      <p>肩の痛みと一緒に、胸の圧迫感、息苦しさ、冷や汗、吐き気がある場合は、心臓などの病気の可能性があります。様子を見ずに、すぐ119番か救急外来に相談してください。</p>
-    </div>
-  </header>
+  <a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a>
+  <a href="/momdo-homepage/pages/access/access.html">アクセス</a>
+  <a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a>
+  <a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a></nav>
+<div class="breadcrumb"><div class="wrap">
+  <a href="/momdo-homepage/index.html">ホーム</a>　›　<a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>　›　肩の痛み</div>
+</div>
+<main>
+<section class="hero"><div class="wrap hero-inner"><div class="hero-copy">
+<p class="eyebrow">FROZEN SHOULDER</p>
+<h1>四十肩・五十肩<br><span>肩の痛みと動かしにくさ</span></h1>
+<p class="hero-lead">腕を上げにくい、後ろに手を回せない、夜間に肩が痛む。こうした症状は、いわゆる四十肩・五十肩でみられることがあります。
+  症状の経過や状態には個人差があるため、無理に動かさず、今の状態を確認することが大切です。</p>
+<div class="hero-actions"><a class="button" href="#symptoms">症状の特徴を確認する</a><a class="button button-outline" href="/momdo-homepage/pages/body-parts/shoulder/body-shoulder.html">肩の仕組みを知る</a></div>
+</div></div></section>
 
-  <section id="about">
-    <h2>肩の中で起きていること</h2>
-    <p>四十肩・五十肩の正式な病名は肩関節周囲炎で、その多くは、肩の関節を包む袋(<b>関節包</b>)が炎症を起こし、厚く縮んで上腕骨頭に張りつく癒着性関節包炎の状態です。袋が縮むと、関節の中の空間が狭くなり、動かせる範囲が小さくなります。年齢によって呼び名が変わるだけで、40歳でも50歳でも同じ病態をさします。</p>
+<section class="section white" id="symptoms"><div class="wrap">
+<div class="section-head"><p class="eyebrow">CHECK YOUR SYMPTOMS</p>
+  <h2>四十肩・五十肩でみられる症状</h2>
+  <p>痛みの出方や動かしにくさ、経過には個人差があります。</p></div>
+<div class="symptoms">
+<div class="symptom"><b>腕を上げると痛む</b><p>棚の物を取る、髪を整えるなどの動作で痛みが出る。</p></div>
+<div class="symptom"><b>肩を動かしにくい</b><p>腕を上げたり、外へ開いたりする動きが制限される。</p></div>
+<div class="symptom"><b>肩の奥に痛みがある</b><p>肩関節の周辺や奥の方に痛みを感じる。</p></div>
+<div class="symptom"><b>背中に手を回しにくい</b><p>エプロンのひもを結ぶ、服を着替える動作がつらい。</p></div>
+<div class="symptom"><b>夜、寝ていると痛む</b><p>夜間や寝返りの際に痛みが強くなることがある。</p></div>
+<div class="symptom"><b>肩から腕にかけて重い</b><p>肩から上腕にかけて痛みや重だるさを感じることがある。</p></div>
+</div>
+<div class="message">四十肩・五十肩と思っていても、別の疾患が隠れている場合があります。自己判断せず、症状に応じて医療機関へ相談しましょう。</div>
+</div></section>
 
-    <figure class="comparison-figure">
-      <img
-        src="shoulder-comparison.png"
-        alt="健康な右肩と四十肩・五十肩の肩を前から比較した説明用イラスト。肩関節周囲の構造と、痛みや動きの制限を示しています。"
-        width="1536"
-        height="1024"
-        loading="lazy"
-        decoding="async">
-      <figcaption>健康な肩と四十肩・五十肩の違いをイメージしやすくするための比較図です。</figcaption>
-    </figure>
-    <p class="medical-note"><strong>医学的な補足：</strong>四十肩・五十肩（癒着性関節包炎）の中心となる変化は、肩関節を包む関節包の炎症・肥厚・拘縮です。イラストは説明用の模式図で、実際の状態や程度には個人差があります。</p>
+<section class="section" id="why"><div class="wrap two-col">
+<div class="copy"><p class="eyebrow">WHY DOES IT HURT?</p><h3>肩の動きが制限されると、日常の動作にも影響します。</h3>
+<p>四十肩・五十肩では、肩関節周辺の組織に炎症や硬さなどが生じ、痛みや動かしにくさにつながることがあります。</p>
+<p>痛みを避けて肩を動かさない状態が続くと、さらに動かしにくさが強まることもあります。一方で、痛みを我慢して無理に動かすことも避けましょう。</p>
+<p>症状の段階や原因によって適切な対応は異なります。痛みの強さや動かせる範囲を確認しながら対応することが大切です。</p></div>
+<div class="visual"><div class="visual-title">FROZEN SHOULDER CARE</div><div class="visual-sub">痛みの状態を確認<br>動かせる範囲を確認</div><div class="visual-sub">無理のない範囲で、状態に合わせたケアを考えます。</div></div>
+</div></section>
 
-    <div class="cols" style="margin-top:32px">
-      <div>
-        <h3>よくある症状</h3>
-        <ul class="plain">
-          <li>腕を上げる、後ろに回す、外にひねると痛む</li>
-          <li>寝返りや、安静時の痛みで目が覚める(夜間痛)</li>
-          <li>袖を通す、髪を結ぶ、エプロンやブラジャーの紐に手が届かない</li>
-          <li>時間とともに、動かせる範囲が狭くなる</li>
-        </ul>
-      </div>
-      <div>
-        <h3>なりやすい人と原因</h3>
-        <p>はっきりした原因は分かっていません。糖尿病(予備群を含む)や甲状腺の病気がある人は、なりやすく長引きやすいことが知られています。片方の肩になった人は、反対側にも起こりやすくなります。腱板の炎症、骨折、手術のあとに続いて起こることもあります。</p>
-      </div>
-    </div>
-  </section>
+<section class="section white" id="connections"><div class="wrap">
+<div class="section-head"><p class="eyebrow">BODY CONNECTIONS</p><h2>肩の状態と、日常生活への影響を確認する。</h2><p>痛みの場所だけでなく、動作や生活の困りごとも大切な手がかりです。</p></div>
+<div class="connection-list">
+<div class="connection"><b>首</b><span>頭の位置や首まわりの緊張と肩の負担</span></div>
+<div class="connection"><b>肩甲骨</b><span>腕を上げる・伸ばす動きの土台</span></div>
+<div class="connection"><b>胸郭</b><span>呼吸や胸の動き、肩甲骨の動く環境</span></div>
+<div class="connection"><b>背中</b><span>姿勢を保ち、肩や腕の動きを支える</span></div>
+<div class="connection"><b>腕</b><span>肩から肘・手へつながる動作と負担</span></div>
+<div class="connection"><b>骨盤・体幹</b><span>全身の姿勢や重心のバランス</span></div>
+</div>
+<div class="message">痛みの原因を一つに決めつけず、必要に応じて医療機関で状態を確認しましょう。</div>
+</div></section>
 
-  <section id="phases">
-    <h2>経過の3つの時期</h2>
-    <p>典型的には、急性期(痛みの時期)、拘縮期(固まる時期)、回復期(ほぐれる時期)の順に進みます。次の図は、痛みと、動かせる範囲の変化を、月数で示した模式図です。</p>
+<section class="section" id="daily"><div class="wrap">
+<div class="section-head"><p class="eyebrow">DAILY HABITS</p><h2>日常生活では、肩に無理をさせない工夫を。</h2><p>痛みがある時期は、動作や睡眠時の姿勢を工夫し、肩に負担をかけすぎないことが大切です。</p></div>
+<div class="cards">
+<div class="card"><span class="num">01 / DESKWORK</span><h3>痛みを我慢した動作</h3><p>痛みを我慢して腕を高く上げたり、無理に後ろへ回したりすることは控えましょう。</p></div>
+<div class="card"><span class="num">02 / POSTURE</span><h3>寝るときの姿勢</h3><p>痛む側を下にして寝るとつらい場合は、抱き枕やクッションで腕を支える方法もあります。</p></div>
+<div class="card"><span class="num">03 / OVERUSE</span><h3>家事・仕事の工夫</h3><p>高い場所の物を取る、重い物を持つなどの動作は、できる範囲で工夫しましょう。</p></div>
+<div class="card"><span class="num">04 / REST</span><h3>痛みの強い時期</h3><p>痛みが強いときは無理な運動や強いストレッチを避け、楽な姿勢で休みましょう。</p></div>
+<div class="card"><span class="num">05 / MOVEMENT</span><h3>動かす範囲の調整</h3><p>長期間まったく動かさないことも避けたい一方、動かす範囲は痛みや医療者の指示に合わせましょう。</p></div>
+<div class="card"><span class="num">06 / INDIVIDUAL</span><h3>症状が長引くとき</h3><p>痛みが続く、悪化する、日常生活に大きく支障がある場合は、整形外科などで相談してください。</p></div>
+</div>
+</div></section>
 
-    <div class="chart-scroll">
-      <svg viewBox="0 0 720 310" role="img" aria-label="四十肩・五十肩の経過の模式図。横軸は発症からの月数。痛みは発症後2か月ほどでピークとなり、その後ゆるやかに減る。動かせる範囲は拘縮期に最も狭くなり、24か月ごろまでに約8割まで戻る。">
-        <rect x="50" y="36" width="81" height="234" fill="var(--acute-bg)"/>
-        <rect x="131" y="36" width="163" height="234" fill="var(--stiff-bg)"/>
-        <rect x="294" y="36" width="406" height="234" fill="var(--recover-bg)"/>
-        <text x="90" y="60" text-anchor="middle" class="band-label" style="fill:var(--acute)">急性期</text>
-        <text x="212" y="60" text-anchor="middle" class="band-label" style="fill:var(--stiff)">拘縮期</text>
-        <text x="497" y="60" text-anchor="middle" class="band-label" style="fill:var(--recover)">回復期</text>
-        <line x1="50" y1="270" x2="700" y2="270" stroke="var(--line)" stroke-width="2"/>
-        <g stroke="var(--muted)" stroke-width="1.5">
-          <line x1="50" y1="270" x2="50" y2="276"/><line x1="131" y1="270" x2="131" y2="276"/><line x1="213" y1="270" x2="213" y2="276"/>
-          <line x1="294" y1="270" x2="294" y2="276"/><line x1="375" y1="270" x2="375" y2="276"/><line x1="538" y1="270" x2="538" y2="276"/><line x1="700" y1="270" x2="700" y2="276"/>
-        </g>
-        <g text-anchor="middle" class="note-text">
-          <text x="50" y="292">0</text><text x="131" y="292">3</text><text x="213" y="292">6</text><text x="294" y="292">9</text><text x="375" y="292">12</text><text x="538" y="292">18</text><text x="696" y="292">24か月</text>
-        </g>
-        <text x="50" y="22" class="note-text">上ほど、痛みが強い・動かせる範囲が広い(模式図)</text>
-        <path d="M50 238 C70 238 80 92 105 92 S170 128 205 150 S270 190 294 198 S400 232 480 240 S620 250 700 252" fill="none" stroke="var(--acute)" stroke-width="3.5" stroke-linecap="round"/>
-        <path d="M50 84 C100 86 150 150 190 200 S230 226 262 226 S330 224 380 208 S560 130 700 112" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="9 7"/>
-        <circle cx="105" cy="92" r="5" fill="var(--acute)"/>
-        <text x="114" y="80" class="note-text">痛みのピーク</text>
-        <text x="262" y="250" text-anchor="middle" class="note-text">動かせる範囲が最も狭い</text>
-        <text x="700" y="96" text-anchor="end" class="note-text">約2年で、約8割まで戻る例が多い</text>
-      </svg>
-    </div>
-    <ul class="legend">
-      <li><span class="swatch" style="border-top-color:var(--acute)"></span>痛み</li>
-      <li><span class="swatch dash" style="border-top-color:var(--accent)"></span>肩を動かせる範囲</li>
-    </ul>
-    <p class="caption">期間や強さには個人差が大きく、時期の境目もはっきりしません。時期の区切りは、治療や過ごし方を考えるための目安です。まれに、完全には元の動きに戻らない人もいます。</p>
+<section class="section white"><div class="wrap two-col">
+<div class="visual"><div class="visual-title">MOMDO BODYWORK</div><div class="visual-sub">痛む場所だけではなく<br>身体の状態・動き・つながりを確認</div><div class="visual-sub">お話を伺いながら、一人ひとりに合わせた施術を考えます。</div></div>
+<div class="copy"><p class="eyebrow">MOMDO APPROACH</p><h3>症状と生活に合わせて、無理のないケアを。</h3>
+<p>Momdoでは、痛みの場所や始まった時期、困っている動作などを伺い、身体の状態を確認します。</p>
+<p>痛みの強さや状態に配慮し、無理に肩を動かしたり、強い刺激を加えたりしないように進めます。</p>
+<p>急性の強い痛みや外傷が疑われる場合は、まず医療機関での診察を優先してください。施術については状態を確認したうえでご案内します。</p></div>
+</div></section>
 
-    <div class="phases">
-      <article class="phase acute">
-        <span class="chip">発症〜約3か月</span>
-        <h3>急性期 <span class="term">炎症・疼痛期</span></h3>
-        <dl>
-          <dt>肩の状態</dt>
-          <dd>関節包に強い炎症があります。動かすと鋭く痛み、安静でもズキズキして、夜間痛で眠りにくくなります。</dd>
-          <dt>過ごし方</dt>
-          <dd>痛みが強く出る動きは避けます。無理なストレッチは痛みを悪化させるため控えます。一方で、長く固定すると肩が固まりやすくなるため、三角巾などの使用は必要最小限にします。夜は、痛む側の腕の下にクッションやたたんだタオルを入れて支えます。</dd>
-          <dt>医療でできること</dt>
-          <dd>痛み止め(内服・外用)、関節内注射で痛みを抑えます。</dd>
-        </dl>
-      </article>
-      <article class="phase stiff">
-        <span class="chip">約3〜9か月</span>
-        <h3>拘縮期 <span class="term">凍結期</span></h3>
-        <dl>
-          <dt>肩の状態</dt>
-          <dd>痛みは落ち着いてきますが、関節包が縮んで固まり、腕が上がらない、外にひねれない、背中に回らない状態が最も目立ちます。</dd>
-          <dt>過ごし方</dt>
-          <dd>入浴などで肩を温め、痛みが出る手前までの範囲で、ゆっくり動かします。腕を垂らして小さく揺らす振り子運動が、始めやすい運動です。</dd>
-          <dt>医療でできること</dt>
-          <dd>理学療法士の指導による可動域訓練、温熱療法を行います。</dd>
-        </dl>
-      </article>
-      <article class="phase recover">
-        <span class="chip">約9か月〜2年</span>
-        <h3>回復期 <span class="term">解凍期</span></h3>
-        <dl>
-          <dt>肩の状態</dt>
-          <dd>肩の動く範囲が少しずつ広がり、日常動作が楽になります。</dd>
-          <dt>過ごし方</dt>
-          <dd>可動域を広げる運動を、無理のない回数で続けます。元の動きに戻るまでに時間がかかるため、焦らずに続けることが大切です。</dd>
-          <dt>医療でできること</dt>
-          <dd>運動療法の継続。改善が乏しいときは、主治医に相談します。</dd>
-        </dl>
-      </article>
-    </div>
-  </section>
+<section class="section"><div class="wrap explorer-callout">
+<div><p class="eyebrow">BODY EXPLORER</p><h3>肩関節の構造と、腕の動きを知る。</h3><p>肩関節や肩甲骨の仕組みを知り、肩の動きへの理解を深めましょう。</p></div>
+<div class="callout-actions"><a class="button" href="/momdo-homepage/pages/body-parts/shoulder/body-shoulder.html">肩・肩甲骨のメカニズム</a><a class="button button-outline" href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORERへ</a></div>
+</div></section>
 
-  <section id="check">
-    <h2>動きで確かめる</h2>
-    <p>診察では、肩を<b>自分で動かしたとき</b>(自動)と、<b>他の人に動かしてもらったとき</b>(他動)の可動域を比べます。四十肩・五十肩では、関節そのものが固いため、どちらも同じあたりで止まります。腱板が切れている場合は、他動では上がっても、自動では上がりません。下の図で、その違いを確かめられます。</p>
+<section class="section white"><div class="wrap">
+<div class="section-head"><p class="eyebrow">WHEN TO SEEK MEDICAL CARE</p><h2>四十肩・五十肩と思っても、まず診断が大切です。</h2></div>
+<div class="caution"><strong>四十肩・五十肩かどうかは、自己判断せず整形外科などの医療機関で確認しましょう。</strong>肩の痛みには、腱板断裂など別の疾患や外傷が関係することもあります。転倒などのケガの後に痛む、腕に力が入らない、しびれがある、痛みが強い・長引く・悪化する場合は受診してください。胸の痛み・息苦しさ・冷や汗を伴う場合は、速やかに救急相談・受診をしてください。</div>
+</div></section>
 
-    <div class="tool">
-      <svg viewBox="0 0 300 270" role="img" aria-label="腕を前から上げる角度を示す図。実線が自分で上げた角度、破線が人に支えてもらって上がる角度。">
-        <rect x="82" y="132" width="52" height="116" rx="22" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-        <circle cx="108" cy="102" r="22" fill="var(--bone)" stroke="var(--bone-line)" stroke-width="1.5"/>
-        <path d="M112 246 A100 100 0 0 0 112 46" fill="none" stroke="var(--line)" stroke-width="2"/>
-        <g stroke="var(--muted)" stroke-width="1.5">
-          <line x1="212" y1="146" x2="222" y2="146"/><line x1="112" y1="46" x2="112" y2="36"/>
-          <line x1="182.7" y1="216.7" x2="189.8" y2="223.8"/><line x1="182.7" y1="75.3" x2="189.8" y2="68.2"/>
-        </g>
-        <text x="226" y="150" style="font-size:12px">90° 水平</text>
-        <text x="120" y="38" style="font-size:12px">180° 真上</text>
-        <text x="120" y="258" style="font-size:12px">0°</text>
-        <path id="sector" d="M112 146 L112 206 A60 60 0 0 0 112 206 Z" fill="var(--accent)" fill-opacity=".16"/>
-        <line id="armPassive" x1="112" y1="146" x2="204" y2="146" stroke="var(--muted)" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 9"/>
-        <line id="armActive" x1="112" y1="146" x2="204" y2="146" stroke="var(--accent)" stroke-width="7" stroke-linecap="round"/>
-        <circle cx="112" cy="146" r="6" fill="var(--fg)"/>
-      </svg>
-      <div>
-        <p class="tool-tag">例の値を表示しています。ご自身の肩に合わせて動かしてみてください。</p>
-        <ul class="legend" style="margin:0 0 6px">
-          <li><span class="swatch" style="border-top-color:var(--accent)"></span>自分で上げた角度</li>
-          <li><span class="swatch dash" style="border-top-color:var(--muted)"></span>支えてもらった角度</li>
-        </ul>
-        <label for="activeRange"><span>自分で上げられる角度</span><output id="activeOut" for="activeRange">95°</output></label>
-        <input type="range" id="activeRange" min="0" max="180" step="5" value="95">
-        <label for="passiveRange"><span>人に支えてもらうと上がる角度</span><output id="passiveOut" for="passiveRange">100°</output></label>
-        <input type="range" id="passiveRange" min="0" max="180" step="5" value="100">
-        <div class="scale"><span>0°</span><span>90°</span><span>180°</span></div>
-        <p id="romResult" class="result" aria-live="polite"></p>
-        <p class="caption">支えてもらうときは、痛みが出る手前までにとどめ、無理に押してもらわないでください。健康な肩では、腕はおおむね150〜180°まで上がります。この図は診断ではありません。</p>
-      </div>
-    </div>
-
-    <div class="moves">
-      <div class="move">
-        <h3>挙上</h3>
-        <p>腕を前から真上へ。左右で、上がる高さを比べます。</p>
-      </div>
-      <div class="move">
-        <h3>結帯(けったい)動作</h3>
-        <p>手を背中に回し、親指がどの高さまで届くかを比べます。左右差が大きければ、肩が固まっているサインです。</p>
-      </div>
-      <div class="move">
-        <h3>外旋</h3>
-        <p>肘を脇につけたまま、前腕を外へ開きます。四十肩・五十肩では、最も早く、強く制限されやすい動きです。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="compare">
-    <h2>ほかの肩の痛みとの見分け方</h2>
-    <p>肩の痛みの原因は、四十肩・五十肩だけではありません。見分ける手がかりは、痛みの始まり方と、自分で動かす・支えてもらうときの動きの違いです。下の表は一般的な傾向で、診断は診察と検査で行います。</p>
-    <div class="table-scroll">
-      <table>
-        <thead>
-          <tr><th>状態</th><th>起こり方</th><th>肩の動き</th><th>診察・検査での手がかり</th><th>気づきやすいサイン</th></tr>
-        </thead>
-        <tbody>
-          <tr class="focus">
-            <th>四十肩・五十肩<br><span class="term">癒着性関節包炎</span></th>
-            <td>きっかけなく、徐々に。夜間痛が多い</td>
-            <td>自分でも、支えてもらっても上がらない。外旋、挙上、結帯が制限される</td>
-            <td>他動の可動域が制限される。X線で大きな異常がない(ほかの病気の除外)</td>
-            <td>袖を通す、髪を結ぶ、背中に手を回す動作がつらい</td>
-          </tr>
-          <tr>
-            <th>腱板断裂</th>
-            <td>転倒や重い物を持った後。加齢で起こることも</td>
-            <td>支えてもらうと上がるが、自分では上がらない、または保てない。関節は固くなりにくい</td>
-            <td>ドロップアームサイン(上げた腕を保てず落ちる)、外旋の筋力低下。超音波やMRIで確認</td>
-            <td>夜間痛もある。腕を上げた位置で保てない</td>
-          </tr>
-          <tr>
-            <th>石灰沈着性腱板炎</th>
-            <td>突然の激しい痛み。朝起きたら痛い、ということも</td>
-            <td>痛みのため、ほとんど動かせない</td>
-            <td>X線で、腱板に石灰の影が写る</td>
-            <td>肩の一点を押すと、強く痛む</td>
-          </tr>
-          <tr>
-            <th>肩峰下インピンジメント</th>
-            <td>腕を使う動作の繰り返しで、徐々に</td>
-            <td>腕を横から上げる途中(60〜120°ほど)だけ痛む。上げきると楽になる</td>
-            <td>ペインフルアーク、ニアーやホーキンスの徴候</td>
-            <td>肩が固まるとは限らない</td>
-          </tr>
-          <tr>
-            <th>頸椎症性神経根症</th>
-            <td>首の動きや姿勢で、痛みが変わる</td>
-            <td>肩そのものの動きは保たれる</td>
-            <td>スパーリングテスト。MRIで神経の圧迫を確認</td>
-            <td>腕から指先にかけてのしびれ、首のこり</td>
-          </tr>
-          <tr class="urgent">
-            <th>心臓などの病気</th>
-            <td>動作に関係なく、安静時や運動中に</td>
-            <td>肩を動かしても、痛みは変わらない</td>
-            <td>心電図などの緊急の検査</td>
-            <td>胸の圧迫感、息苦しさ、冷や汗。すぐ救急へ</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="caption">表は横にスクロールできます。複数の病気が重なっていることもあるため、自己判断せず、痛みが続くときは受診して確かめてください。</p>
-  </section>
-
-  <section id="sources">
-    <h2>参考にした情報</h2>
-    <ol class="sources">
-      <li><a href="https://www.aafp.org/pubs/afp/issues/2011/0215/p417.html">Ewald A. Adhesive Capsulitis: A Review. American Family Physician. 2011</a>(病態、診察所見、治療の根拠)</li>
-      <li><a href="https://medicalnote.jp/contents/150703-000013-HUJKAV">メディカルノート「五十肩(肩関節周囲炎)」の解説記事</a>(経過、自然回復、手術に至る割合)</li>
-    </ol>
-    <p class="caption">各時期の月数や回復の割合は、これらの資料にもとづく目安で、時期の区切りに明確な根拠は確立していません。最終確認日:2026年11月18日。</p>
-    <p class="disclaimer">このページは一般的な情報をまとめたもので、診断や治療の代わりにはなりません。症状が気になる方は、医療機関に相談してください。</p>
-  </section>
+<section class="cta"><div class="wrap"><h2>肩の痛みや動かしにくさ、<br>まずは今の状態を大切に。</h2><p>医療機関での診断・治療を大切にしながら、状態に応じたケアについてご相談いただけます。</p><a class="button" href="/momdo-homepage/pages/menu/menu.html">メニュー・料金を見る</a><a class="button button-outline" href="/momdo-homepage/contact.html">ご予約・お問い合わせ</a><small>福岡市城南区七隈｜金山駅徒歩2分</small></div></section>
 </main>
-<footer class="site-footer"><div class="site-width">
-  <span>© Momdo Massage &amp; Manipulative</span>
-  <span><a href="/momdo-homepage/pages/concerns/concerns.html">お悩み一覧へ戻る</a>　｜　<a href="/momdo-homepage/contact.html">お問い合わせ</a></span>
-</div></footer>
-
-<script>
-(function () {
-  try {
-    var CX = 112, CY = 146, L = 92, R = 60;
-    var a = document.getElementById('activeRange');
-    var p = document.getElementById('passiveRange');
-    var ao = document.getElementById('activeOut');
-    var po = document.getElementById('passiveOut');
-    var armA = document.getElementById('armActive');
-    var armP = document.getElementById('armPassive');
-    var sector = document.getElementById('sector');
-    var res = document.getElementById('romResult');
-    function tip(deg, len) {
-      var r = deg * Math.PI / 180;
-      return [CX + len * Math.sin(r), CY + len * Math.cos(r)];
-    }
-    function update() {
-      var av = +a.value, pv = +p.value;
-      ao.textContent = av + '°';
-      po.textContent = pv + '°';
-      var t = tip(av, L), tp = tip(pv, L), s = tip(av, R);
-      armA.setAttribute('x2', t[0].toFixed(1)); armA.setAttribute('y2', t[1].toFixed(1));
-      armP.setAttribute('x2', tp[0].toFixed(1)); armP.setAttribute('y2', tp[1].toFixed(1));
-      sector.setAttribute('d', 'M' + CX + ' ' + CY + ' L' + CX + ' ' + (CY + R) + ' A' + R + ' ' + R + ' 0 0 0 ' + s[0].toFixed(1) + ' ' + s[1].toFixed(1) + ' Z');
-      var title, body, warn = false;
-      if (pv >= 150 && av >= 150) {
-        title = 'どちらも大きく上がります';
-        body = '肩の動きは保たれているパターンです。痛みが続くときは、ほかの原因も含めて整形外科で確かめてください。';
-      } else if (pv - av >= 30) {
-        title = '支えてもらうと上がるが、自分では上がらない';
-        body = '関節は動くのに、自分の力で上げられないパターンです。腱板の損傷や、筋肉・神経の問題が疑われます。四十肩・五十肩とは別の病気のことがあるため、早めに受診してください。';
-        warn = true;
-      } else if (pv < 150) {
-        title = '自分でも、支えてもらっても同じあたりで止まる';
-        body = '関節そのものが固くなっているときに多いパターンで、四十肩・五十肩に典型的です。反対側の肩と比べて差が大きいときは、整形外科で確かめてください。';
-        warn = true;
-      } else {
-        title = '大きな制限はありません';
-        body = '反対側と差がある、痛みがある、夜に痛みで目が覚めるといったときは、受診を考えてください。';
-      }
-      res.className = 'result' + (warn ? ' warn' : '');
-      res.innerHTML = '<b></b><span></span>';
-      res.firstChild.textContent = title;
-      res.lastChild.textContent = body;
-    }
-    a.addEventListener('input', update);
-    p.addEventListener('input', update);
-    update();
-  } catch (e) {}
-})();
-</script>
-
+<footer><div class="wrap"><span>Momdo Massage &amp; Manipulative</span><span><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a>　｜　<a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a>　｜　<a href="/momdo-homepage/pages/menu/menu.html">メニュー</a>　｜　<a href="/momdo-homepage/index.html">トップページ</a></span></div></footer>
 </body></html>
