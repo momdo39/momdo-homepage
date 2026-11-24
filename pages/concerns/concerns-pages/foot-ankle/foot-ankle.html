@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="足首や足裏の痛み、疲れ、歩きにくさが気になる方へ。足部の構造、立つ・歩く動作、足首・膝・股関節の連動を紹介するMomdoのお悩みページ。">
+<meta name="theme-color" content="#1C100B">
+<title>足首・足の悩み｜足部の機能と歩く動作｜Momdo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brown:#1C100B;--brown2:#352219;--gold:#C69B52;--gold-light:#F3DDA6;--cream:#F8F5EF;--ink:#33251D;--muted:#786A60;--line:#E8DFD2;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Sans JP",sans-serif;line-height:1.9}a{color:inherit;text-decoration:none}svg{max-width:100%;display:block}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
+.topbar{background:var(--brown);color:#eee4d8;font-size:12px;padding:7px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.header{position:sticky;top:0;z-index:100;background:rgba(28,16,11,.97);border-bottom:1px solid rgba(198,155,82,.4);color:#fff}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{color:#fff;font:500 25px "Shippori Mincho",serif;letter-spacing:.12em}.brand small{display:block;color:var(--gold-light);font:10px Cinzel,serif;letter-spacing:.16em}.navlinks{display:flex;align-items:center;gap:clamp(10px,2vw,20px);font-size:13px}.navlinks a:hover{color:var(--gold-light)}.navbtn{padding:9px 15px;border:1px solid var(--gold);color:#fff}
+.global-nav{display:flex;justify-content:center;gap:clamp(10px,2vw,24px);flex-wrap:wrap;padding:10px 16px;background:#f8f5ef;border-bottom:1px solid var(--line);font-size:12px}.global-nav a{color:#49372a}.global-nav a:hover{color:#a47c38}
+.hero{position:relative;overflow:hidden;padding:76px 0;color:#fff;background:radial-gradient(ellipse at 78% 45%,#705638 0%,#352219 35%,#1C100B 76%)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}.eyebrow{color:var(--gold-light);font:12px Cinzel,serif;letter-spacing:.24em}.hero h1{margin:14px 0 18px;font:500 clamp(32px,5vw,54px)/1.5 "Shippori Mincho",serif;letter-spacing:.04em}.hero h1 span{color:var(--gold-light)}.hero-lead{max-width:720px;color:#eee4d8;font-size:15px;line-height:2.2}.hero-graphic{background:#fff;border-radius:8px;padding:20px;box-shadow:0 20px 50px #0003}.hero-graphic svg{width:100%;max-height:350px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:12px 22px;background:linear-gradient(120deg,#B88E43,#F3DDA6,#C69B52);color:#2B1B11;font-size:13px;font-weight:700}.outline{border:1px solid var(--gold);background:transparent;color:var(--gold-light)}
+.breadcrumb{padding:12px 0;background:#fff;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}.breadcrumb a{color:#8b672a}
+.section{padding:72px 0}.white{background:#fff}.section-head{text-align:center;max-width:780px;margin:0 auto 34px}.section-head .eyebrow{color:#9a762e}.section-head h2{margin:8px 0 12px;color:var(--brown2);font:500 clamp(25px,3.4vw,36px)/1.6 "Shippori Mincho",serif}.section-head p{margin:0;color:var(--muted);font-size:15px}
+.symptoms{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.symptom{background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);padding:22px}.symptom h3{margin:0;color:var(--brown2);font:500 18px "Shippori Mincho",serif}.symptom p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.callout{margin-top:25px;padding:20px 24px;background:var(--cream);border-left:3px solid var(--gold);text-align:center;color:var(--brown2);font:500 18px/1.8 "Shippori Mincho",serif}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.diagram{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}.diagram svg{width:100%;height:auto}.copy h3{margin:0 0 13px;color:var(--brown2);font:500 24px/1.7 "Shippori Mincho",serif}.copy p{margin:0 0 14px;color:var(--muted);font-size:15px}.list{display:grid;gap:11px;margin-top:20px}.list-item{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:#fff;border:1px solid var(--line)}.list-item b{flex:0 0 32px;color:#9a762e;font:600 16px Cinzel,serif}.list-item span{color:var(--muted);font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:20px 18px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold)}.step .number{color:#9a762e;font:12px Cinzel,serif;letter-spacing:.14em}.step h3{margin:7px 0;color:var(--brown2);font:500 18px "Shippori Mincho",serif}.step p{margin:0;color:var(--muted);font-size:13px}
+.connection{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.connection-card{display:block;padding:20px;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);transition:.2s}.connection-card:hover{transform:translateY(-3px);box-shadow:0 12px 25px #38271c12}.connection-card b{display:block;color:var(--brown2);font:500 18px "Shippori Mincho",serif}.connection-card span{display:block;margin-top:5px;color:var(--muted);font-size:13px}.connection-card i{display:block;margin-top:13px;color:#9a762e;font-size:12px;font-style:normal;font-weight:700}
+.caution{padding:20px 22px;background:#fff;border:1px solid var(--line);border-left:3px solid #a66d50;color:var(--muted);font-size:13px}.caution strong{display:block;color:var(--brown2);margin-bottom:5px}
+.cta{padding:72px 0;text-align:center;color:#fff;background:radial-gradient(ellipse at 50% 0,rgba(198,155,82,.18),transparent 55%),linear-gradient(135deg,#38271c,#1c100b)}.cta h2{margin:0;color:var(--gold-light);font:500 clamp(25px,3.5vw,36px)/1.7 "Shippori Mincho",serif}.cta p{margin:15px auto 25px;max-width:680px;color:#eee4d8;font-size:14px}.cta .button{margin:5px}
+footer{padding:26px 0;background:#1c100b;color:#eee4d8;font-size:12px}footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer a{color:var(--gold-light)}
+@media(max-width:800px){.navlinks a:not(.reserve){display:none}.hero-grid,.two-col{grid-template-columns:1fr}.hero-graphic{max-width:560px;margin:auto}.steps{grid-template-columns:repeat(2,1fr)}.connection{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.topbar .wrap{justify-content:center;text-align:center}.nav{min-height:62px}.brand{font-size:22px}.global-nav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}.hero{padding:55px 0}.hero h1{font-size:34px}.hero-lead{font-size:14px}.section{padding:52px 0}.symptoms{grid-template-columns:1fr 1fr;gap:10px}.symptom{padding:16px}.symptom h3{font-size:16px}.callout{font-size:16px;padding:18px}.steps{grid-template-columns:1fr 1fr;gap:10px}.step{padding:16px}.connection{grid-template-columns:1fr 1fr}.cta{padding:54px 0}.actions .button{width:100%}}
+@media(max-width:420px){.symptoms,.steps,.connection{grid-template-columns:1fr}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>福岡市城南区七隈｜金山駅徒歩2分</span><span>身体のつながりから考える Momdo</span></div></div>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="../../../../index.html">Momdo<small>Massage &amp; Manipulative</small></a>
+<nav class="navlinks" aria-label="メインメニュー"><a href="../../../concerns.html">お悩みから探す</a><a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a><a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a><a href="/momdo-homepage/pages/access/access.html">アクセス</a><a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a><a class="navbtn" href="../../../../contact.html">お問い合わせ</a></nav>
+</div></header>
+<nav class="global-nav" aria-label="Momdo共通ナビ"><a href="/momdo-homepage/index.html">ホーム</a><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a><a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a><a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a><a href="/momdo-homepage/pages/access/access.html">アクセス</a><a href="/momdo-homepage/pages/others/FAQ.html">FAQ</a><a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a></nav>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">FOOT &amp; ANKLE / MOVEMENT</div><h1>足は、身体を支え、<br><span>動きを生み出す。</span></h1><p class="hero-lead">足は体重を受け止めるだけではありません。立つ・歩く・向きを変える。そのたびに足部と足首は、地面からの力を調整しながら身体の動きを支えています。</p><div class="actions"><a class="button" href="#walking">歩く仕組みを見る ↓</a><a class="button outline" href="#body-link">身体のつながりへ</a></div></div>
+<div class="hero-graphic" aria-label="足のアーチと歩行を示す簡略イラスト">
+<svg viewBox="0 0 520 380" role="img" aria-labelledby="footTitle footDesc"><title id="footTitle">足部のアーチと体重を支えるイメージ</title><desc id="footDesc">足の輪郭、足の骨を模した線、アーチを簡略化した図</desc>
+<rect x="8" y="8" width="504" height="364" rx="8" fill="#fbfaf7"/>
+<path d="M312 65 C286 112 272 154 255 201 C236 238 205 259 169 275 C131 292 108 315 113 335 C121 358 154 361 189 352 C232 340 270 321 310 302 C354 282 394 253 415 217 C437 180 435 147 420 116 C405 86 366 68 312 65Z" fill="#e9d8c3" stroke="#987c5b" stroke-width="4" stroke-linejoin="round"/>
+<g fill="none" stroke="#a38b70" stroke-width="7" stroke-linecap="round">
+<path d="M307 91 C289 139 276 181 252 218 C224 251 184 286 147 322"/>
+<path d="M323 103 C305 151 291 191 269 228 C242 257 194 284 158 333"/>
+<path d="M344 110 C328 153 308 193 282 231 C254 264 212 293 176 341"/>
+<path d="M364 123 C347 161 330 204 299 239 C276 274 232 306 198 346"/>
+<path d="M387 142 C366 178 346 216 317 251 C291 283 257 313 222 344"/>
+</g>
+<path d="M147 322 C186 295 216 280 244 276 C266 273 285 284 293 298" fill="none" stroke="#c69b52" stroke-width="9" stroke-linecap="round"/>
+<path d="M145 325 C185 295 217 279 245 276 C269 273 287 286 298 301" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="7 7"/>
+<path d="M112 340 L92 340 L92 295" fill="none" stroke="#c69b52" stroke-width="2.5"/>
+<text x="26" y="281" fill="#6c5942" font-size="17" font-weight="700">かかと</text>
+<path d="M188 272 L176 247 L111 247" fill="none" stroke="#c69b52" stroke-width="2.5"/>
+<text x="26" y="237" fill="#6c5942" font-size="17" font-weight="700">足のアーチ</text>
+<path d="M401 183 L458 183 L458 215" fill="none" stroke="#c69b52" stroke-width="2.5"/>
+<text x="355" y="168" fill="#6c5942" font-size="17" font-weight="700">足趾・前足部</text>
+<text x="260" y="356" text-anchor="middle" fill="#7b6a56" font-size="13">※構造を簡略化したイメージ</text>
+</svg>
+</div></div></section>
+<div class="breadcrumb"><div class="wrap"><a href="../../../../index.html">ホーム</a>　›　<a href="../../../concerns.html">お悩みから探す</a>　›　足首・足の悩み</div></div>
+<section class="section white"><div class="wrap"><div class="section-head"><div class="eyebrow">01 / CONCERNS</div><h2>こんなお悩みありませんか？</h2><p>足首や足裏の気になる感覚。日常のどんな場面で気になるかも、身体を知るヒントになります。</p></div><div class="symptoms">
+<article class="symptom"><h3>足首が硬い・動かしにくい</h3><p>しゃがむ、階段、坂道で足首の動きが気になる。</p></article>
+<article class="symptom"><h3>歩くと足が疲れる</h3><p>短い距離でも足が重い、疲れやすい。</p></article>
+<article class="symptom"><h3>足裏・かかとが痛む</h3><p>立ち始めや歩行時に足裏が気になる。</p></article>
+<article class="symptom"><h3>ふくらはぎが張る</h3><p>歩いた後や立ち仕事の後に張りやすい。</p></article>
+<article class="symptom"><h3>足首を捻挫したことがある</h3><p>以前の捻挫から、動きや安定感が気になる。</p></article>
+<article class="symptom"><h3>長く立つとつらい</h3><p>立ち続けると足の疲れや違和感が出やすい。</p></article>
+</div><div class="callout">気になる場所だけでなく、立ち方・歩き方・日常の動きも振り返ってみましょう。</div></div></section>
+<section class="section"><div class="wrap two-col"><div class="diagram"><svg viewBox="0 0 520 380" role="img" aria-label="足首と足部の簡略図"><rect width="520" height="380" rx="8" fill="#fbfaf7"/><path d="M318 55 C295 103 282 148 266 192 C249 224 219 250 179 276 C139 293 109 313 114 338 C124 361 158 360 193 351 C231 340 273 322 314 302 C361 278 399 246 418 209 C435 176 434 145 418 113 C398 82 363 61 318 55Z" fill="#e6d4bf" stroke="#9c8060" stroke-width="4"/><g fill="none" stroke="#b08f6d" stroke-width="8" stroke-linecap="round"><path d="M316 86 Q282 185 250 219 Q218 271 146 326"/><path d="M337 104 Q306 194 272 234 Q240 273 164 337"/><path d="M362 117 Q331 202 293 246 Q264 287 183 344"/><path d="M389 138 Q357 218 317 261 Q286 300 207 347"/></g><path d="M154 322 Q194 290 232 278 Q268 269 294 299" fill="none" stroke="#c69b52" stroke-width="10" stroke-linecap="round"/><circle cx="294" cy="299" r="10" fill="#c69b52"/><text x="26" y="50" fill="#59442e" font-size="19" font-weight="700">足部の骨格イメージ</text><text x="26" y="356" fill="#7b6a56" font-size="13">足部は多くの骨と関節が組み合わさる構造</text></svg></div><div class="copy"><div class="eyebrow">02 / FOOT STRUCTURE</div><h3>足は、小さな骨と関節の集合体。</h3><p>足部には多くの骨や関節があり、足のアーチなどの構造とともに体重を支え、地面からの力を受け止めます。</p><p>立つときには安定性を、歩くときには柔軟性と推進力を。足は状況に応じて役割を変えています。</p><div class="list"><div class="list-item"><b>01</b><span>足の骨・関節 — 体重を受け止め、動きに対応する</span></div><div class="list-item"><b>02</b><span>足のアーチ — 衝撃や荷重を分散する働きに関わる</span></div><div class="list-item"><b>03</b><span>足裏の感覚 — 地面の状態を感じ、姿勢やバランス調整に役立つ</span></div></div></div></section>
+<section class="section white" id="walking"><div class="wrap"><div class="section-head"><div class="eyebrow">03 / WALKING</div><h2>歩くとき、足はどう働く？</h2><p>一歩の中でも足の役割は移り変わります。簡略化した流れでイメージしてみましょう。</p></div><div class="steps"><article class="step"><div class="number">STEP 01</div><h3>かかとが触れる</h3><p>歩き始め、かかと側から地面に接地することが多い。</p></article><article class="step"><div class="number">STEP 02</div><h3>体重を受け止める</h3><p>足部が荷重を受け、バランスを保ちながら身体を支える。</p></article><article class="step"><div class="number">STEP 03</div><h3>足が前へ移る</h3><p>足首や足部が動き、重心が足の上を移動していく。</p></article><article class="step"><div class="number">STEP 04</div><h3>地面を押して進む</h3><p>足趾・前足部などを使い、次の一歩へ身体を送り出す。</p></article></div><div class="callout">歩き方には個人差があります。ここでは一般的な歩行の流れを簡略化して紹介しています。</div></div></section>
+<section class="section"><div class="wrap two-col"><div class="copy"><div class="eyebrow">04 / THE WHOLE BODY</div><h3>足首だけで、歩いているわけではありません。</h3><p>歩行は足首だけの動作ではありません。ふくらはぎ、膝、股関節、骨盤なども協調し、身体全体で一歩をつくっています。</p><p>足部の動きや負担の変化が、ほかの部分の動きとどのように関係するかを知ることも大切です。</p></div><div class="diagram"><svg viewBox="0 0 520 360" role="img" aria-label="足首から骨盤へつながる下肢の連動図"><rect width="520" height="360" rx="8" fill="#fbfaf7"/><g stroke="#b79b7c" stroke-width="28" stroke-linecap="round" fill="none"><path d="M258 70 L250 150"/><path d="M250 150 L242 245"/><path d="M242 245 L192 295"/><path d="M192 295 L135 318"/></g><g fill="#c69b52" stroke="#fff" stroke-width="3"><circle cx="258" cy="70" r="26"/><circle cx="250" cy="150" r="24"/><circle cx="242" cy="245" r="24"/><circle cx="192" cy="295" r="21"/><circle cx="135" cy="318" r="16/></g><g font-size="18" font-weight="700" fill="#59442e"><text x="310" y="75">膝</text><text x="310" y="156">足首</text><text x="300" y="250">足部</text><text x="225" y="310">前足部</text></g><g stroke="#c69b52" stroke-width="2.5" fill="none"><path d="M280 70 L298 70"/><path d="M273 150 L298 150"/><path d="M265 245 L288 245"/><path d="M213 295 L226 295"/></g><text x="26" y="336" fill="#7b6a56" font-size="13">関節や部位の連動を概念的に示した図</text></svg></div></div></section>
+<section class="section white" id="daily"><div class="wrap"><div class="section-head"><div class="eyebrow">05 / DAILY HABITS</div><h2>毎日の習慣も、足の負担に関わることがあります。</h2><p>仕事や移動、靴、運動習慣など、日常の過ごし方を振り返るきっかけに。</p></div><div class="symptoms"><article class="symptom"><h3>長時間の立ち仕事</h3><p>同じ姿勢で足に荷重がかかり続ける。</p></article><article class="symptom"><h3>靴や履き方</h3><p>靴の形やフィット感、歩く場面によって足の使い方が変わることも。</p></article><article class="symptom"><h3>活動量の変化</h3><p>歩く量や運動量が急に変わると、身体が慣れる時間も必要です。</p></article></div></div></section>
+<section class="section" id="body-link"><div class="wrap"><div class="section-head"><div class="eyebrow">06 / BODY EXPLORER</div><h2>足から、身体のつながりを知る。</h2><p>気になる部位を選んで、構造や動きの仕組みをもう少し詳しく見てみましょう。</p></div><div class="connection">
+<a class="connection-card" href="/momdo-homepage/pages/body-parts/foot/body-foot.html"><b>足部</b><span>骨・関節・アーチの構造</span><i>詳しく見る ↗</i></a>
+<a class="connection-card" href="/momdo-homepage/pages/body-parts/ankle/body-ankle.html"><b>足首</b><span>足関節の構造と動き</span><i>詳しく見る ↗</i></a>
+<a class="connection-card" href="/momdo-homepage/pages/body-parts/sole/body-sole.html"><b>足の裏</b><span>足底・アーチ・感覚</span><i>詳しく見る ↗</i></a>
+<a class="connection-card" href="/momdo-homepage/pages/body-parts/lowerleg/body-lowerleg.html"><b>ふくらはぎ・すね</b><span>下腿の筋肉と足首の連動</span><i>詳しく見る ↗</i></a>
+<a class="connection-card" href="/momdo-homepage/pages/body-parts/knee/body-knee.html"><b>膝</b><span>荷重と曲げ伸ばしの仕組み</span><i>詳しく見る ↗</i></a>
+<a class="connection-card" href="/momdo-homepage/pages/body-parts/hip-pelvis/body-hip-pelvis.html"><b>股関節・骨盤</b><span>歩行を支える上半身との連携</span><i>詳しく見る ↗</i></a>
+</div></div></section>
+<section class="section white"><div class="wrap"><div class="caution"><strong>ご注意</strong>このページは一般的な身体の仕組みを紹介するもので、診断や個別の症状の原因を特定するものではありません。急な強い痛み、著しい腫れ、歩けない、しびれや力が入りにくいなどの症状がある場合は、医療機関へご相談ください。</div></div></section>
+<section class="cta"><div class="wrap"><h2>足の不調も、身体全体から考える。</h2><p>気になる動きや日常生活についてお聞きしながら、身体の状態を一緒に確認していきます。</p><a class="button" href="../../../../contact.html">予約・お問い合わせ ↗</a><a class="button outline" href="../../../menu/menu.html">メニュー・料金を見る</a></div></section>
+</main>
+<footer><div class="wrap"><div><strong style="font:500 22px 'Shippori Mincho',serif;color:#fff">Momdo</strong><br>Massage &amp; Manipulative<br>福岡市城南区七隈｜金山駅徒歩2分</div><div><a href="../../../concerns.html">お悩みから探す</a>　/　<a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a><br><a href="../../../../index.html">トップページへ ↑</a></div><div><a href="/momdo-homepage/index.html">© Momdo Massage &amp; Manipulative</a></div></div></footer>
+<div class="global-nav"><a href="/momdo-homepage/index.html">ホーム</a><a href="/momdo-homepage/pages/concerns/concerns.html">お悩みから探す</a><a href="/momdo-homepage/pages/body-explorer/body-explorer.html">BODY EXPLORER</a><a href="/momdo-homepage/pages/menu/menu.html">メニュー・料金</a><a href="/momdo-homepage/contact.html">予約・お問い合わせ</a><a href="/momdo-homepage/pages/link/link.html">全ページ一覧</a></div>
+</body>
+</html>
